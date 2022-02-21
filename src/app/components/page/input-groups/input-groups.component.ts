@@ -1,4 +1,11 @@
 import { Component, OnInit } from '@angular/core';
+import { DomSanitizer } from '@angular/platform-browser';
+import { from, map } from 'rxjs';
+import * as data from './../../../data.json';
+
+// interface componentData {
+
+// }
 
 @Component({
   selector: 'app-input-groups',
@@ -7,18 +14,47 @@ import { Component, OnInit } from '@angular/core';
 })
 export class InputGroupsComponent implements OnInit {
 
-componentCode = '';
-componentTitle= '';
-htmlPre = '';
 
-  constructor() { }
+componentData:any = data;
+
+htmlPre = '';
+compUnescape='';
+
+inputGroups: any;
+convertedDatas: any = [];
+  
+constructor(public sanitizer: DomSanitizer) { }
 
   ngOnInit(): void {
 
-    this.componentCode = '<div class=\"form-control\">\r\n        <label for=\"email\" class=\"label\">Email<\/label>\r\n        <div class=\"mt-1\">\r\n          <input type=\"email\" name=\"email\" id=\"email\" class=\"input\" placeholder=\"you@example.com\">\r\n        <\/div>\r\n      <\/div>'
 
-    this.htmlPre = ' <div class="p-8 flex items-center justify-center bg-white"><div class="w-full max-w-xs mx-auto " [ngClass]="previewScreenSize"><div ><div class="form-control"> <label for="email" class="label">Email</label> <div class="mt-1"><input type="email" name="email" class="input" id="email"  placeholder="you@example.com"></div></div></div></div></div>'
-    
+
+   this.inputGroups = this.componentData.input_groups;
+   
+
+   from(this.inputGroups)
+   .pipe(
+     map((data:any) => {
+       const datas = {
+        id: data.id,
+        title: data.title,
+        code: data.code
+       }
+
+       return datas;
+
+       
+       
+     })
+   )
+    .subscribe(dataRes => {
+      this.convertedDatas.push(dataRes)
+      // console.log(this.convertedDatas)
+    })
+
+
   }
+
+
 
 }

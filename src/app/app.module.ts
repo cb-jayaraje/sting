@@ -15,7 +15,7 @@ import { FormsComponent } from './components/forms/forms.component';
 @NgModule({
   declarations: [
     AppComponent,
-    SafeHtmlPipe,
+    // SafeHtmlPipe,
     HeaderComponent,
     HomeComponent,
     SubHeaderComponent,

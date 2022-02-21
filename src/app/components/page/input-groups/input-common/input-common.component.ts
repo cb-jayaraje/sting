@@ -9,7 +9,8 @@ export class InputCommonComponent implements OnInit {
 
   @Input() activeTab = '';
   @Input() codePreview = '';
-  @Input() title= '';
+  @Input() title:any;
+  @Input() codeHtml ='';
 
  
   withLabelactiveTab = "preview"
@@ -21,7 +22,7 @@ export class InputCommonComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-    console.log(this.activeTab)
+   
   }
 
 }

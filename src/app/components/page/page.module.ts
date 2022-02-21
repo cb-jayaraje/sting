@@ -15,7 +15,8 @@ import { InputCommonComponent } from './input-groups/input-common/input-common.c
         WithLabelComponent,
         WithLabelHelpTextComponent,
         InputWithValidationErrorComponent,
-        InputCommonComponent
+        InputCommonComponent,
+        SafeHtmlPipe
   ],
     imports: [
         CommonModule,

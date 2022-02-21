@@ -1,0 +1,35 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~prismjs/plugins/toolbar/prism-toolbar.css";
+@import "~prismjs/themes/prism-okaidia";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html,
+  body {
+    height: 100%;
+  }
+}
+
+div.code-toolbar > .toolbar > .toolbar-item > button {
+  @apply bg-gray-900 p-3  top-0 rounded-lg right-0;
+}
+
+.header-menu a {
+  @apply text-gray-600 text-sm font-medium;
+}
+
+.max-w-container {
+  @apply m-auto;
+  width: 85rem;
+}
+
+.component-box {
+  @apply w-full bg-gray-100  rounded-md shadow;
+}
+
+.component-heading {
+  @apply font-semibold text-lg;
+}

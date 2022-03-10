@@ -3,6 +3,9 @@ const plugin = require("tailwindcss/plugin");
 const Button =  require('./sting-components/button');
 const InputGroups =  require('./sting-components/input-groups');
 
+const Alerts = require('./sting-components/alerts');
+const colors = require("./sting-components/colors.js");
+
 
 module.exports = plugin.withOptions(
     function () {
@@ -17,6 +20,7 @@ module.exports = plugin.withOptions(
         // addComponents(Breadcrumb());
         addComponents(Button());
         addComponents(InputGroups());
+        addComponents(Alerts());
         // addComponents(Card());
         // addComponents(Dialog());
         // addComponents(Drawer());
@@ -35,7 +39,7 @@ module.exports = plugin.withOptions(
       return {
         theme: {
           extend: {
-            //colors,
+          colors,
             inset: {
               "1/2": "50%",
             },

@@ -11,6 +11,9 @@ import { ComponentsComponent } from './components/components.component';
 import { PageComponent } from './components/page/page.component';
 import { PageModule } from './components/page/page.module';
 import { FormsComponent } from './components/forms/forms.component';
+import { FeedbackComponent } from './components/feedback/feedback.component';
+import { HashLocationStrategy, LocationStrategy } from '@angular/common';
+import { ElementsComponent } from './components/elements/elements.component';
 
 @NgModule({
   declarations: [
@@ -22,13 +25,15 @@ import { FormsComponent } from './components/forms/forms.component';
     ComponentsComponent,
     PageComponent,
     FormsComponent,
+    FeedbackComponent,
+    ElementsComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     PageModule
   ],
-  providers: [],
+  providers: [{provide: LocationStrategy, useClass: HashLocationStrategy}],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

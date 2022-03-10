@@ -1,10 +1,8 @@
-  <!-- forms -->
-
-  <section >
+<section >
     <div class="my-16"></div>
     <div class="flex items-center mb-3 whitespace-nowrap">
         <h2 class="font-medium text-gray-900 truncate">
-            <a href="#" class="mr-1">Input with label and help text </a>
+            <a href="#" class="mr-1">{{title}} </a>
         </h2>
 
         <div class="flex-none flex items-center ml-auto pl-4 sm:pl-6">
@@ -61,32 +59,19 @@
             class="block">
             <div 
             
-                class="min-w-full sm:min-w-[392px] relative sm:pr-4">
-                <div id="frame-d6ba419d2b33a8ab4fd662189bfd8a31" class="bg-white">
-                    
+                class="min-w-full sm:min-w-[392px] relative sm:pr-4 " >
+                <div id="frame-d6ba419d2b33a8ab4fd662189bfd8a31" class="bg-white resize-x overflow-auto " [ngClass]="previewHeight" >
+              
 
                         <!--priview-->
-                        <div class="p-8 flex items-center justify-center bg-white">
-                            <div class="w-full max-w-xs mx-auto" [ngClass]="previewScreenSize">
-                                
-                                <!--block-->
-                                <div class="form-control">
-                                    <label for="email" class="label">Email</label>
-                                    <div class="mt-1">
-                                    <input type="email" name="email" id="email" class="input"  placeholder="you@example.com" aria-describedby="email-description">
-                                    </div>
-                                    <p class="help-text" id="email-description">We'll only use this for spam.</p>
-                                </div>
-                                <!--block-->
-  
-                        
-                            </div>
-                          </div>
+                        <ng-content></ng-content>
 
+                           <!--preview-->
+                         
 
                         </div>
 
-                        <!--preview-->
+                       
 
 
                     <div 
@@ -101,13 +86,15 @@
                             <path d="M8 5h2v14H8zM14 5h2v14h-2z" />
                         </svg>
                     </div>
+
+                    
                 </div>
             </div>
         </div>
         <div [ngClass]="{ 'block': activeTab === 'code', 'hidden': activeTab !== 'code' }"
             class="hidden bg-black overflow-auto relative">
             <div class="text-gray-50 text-xs">
-                <pre class="language-markup break-all"><code class="language-markup break-all">
+                <pre class="language-markup break-all"><code class="language-markup break-all" >
                   {{codePreview}}
                 </code></pre>
 
@@ -118,12 +105,8 @@
 
         </div>
 
+   
 
 
 
 </section>
-
-
-
-
-

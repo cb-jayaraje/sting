@@ -42,14 +42,51 @@ select {
   @apply px-4 py-2 bg-blue-100 text-white;
 }
 
-.form-control .cb-input {
-  @apply px-3 py-2 shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md;
-}
+/*inputgroups*/
 
-.form-control .cb-label {
+.form-control .input {
+  @apply shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md;
+}
+.form-control .label {
   @apply block text-sm font-medium text-gray-700;
 }
 
 .form-control .help-text {
   @apply mt-2 text-sm text-gray-500;
+}
+.form-control .input-error {
+  @apply block w-full pr-10 border-red-300 text-red-900 placeholder-red-300 focus:outline-none focus:ring-red-500 focus:border-red-500 sm:text-sm rounded-md;
+}
+.form-control .error-text {
+  @apply mt-2 text-sm text-red-600;
+}
+.form-control .hint-text {
+  @apply text-sm text-gray-500;
+}
+
+/* alert ---------------------------- */
+
+.alert {
+  @apply rounded-md  p-4;
+}
+.alert .title {
+  @apply text-sm font-medium;
+}
+.alert .description {
+  @apply mt-2 text-sm;
+}
+.alert .description-only {
+  @apply text-sm;
+}
+.alert .alert-ul {
+  @apply list-disc pl-5 space-y-1;
+}
+.alert .alert-btn {
+  @apply inline-flex px-2 py-1.5 rounded-md text-sm font-medium focus:outline-none focus:ring-2 focus:ring-offset-2;
+}
+.alert .alert-a {
+  @apply whitespace-nowrap font-medium;
+}
+.accent-border {
+  @apply border-l-4;
 }

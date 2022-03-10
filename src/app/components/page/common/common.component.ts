@@ -3,23 +3,29 @@ import { Title } from '@angular/platform-browser';
 import { HighlightService } from 'src/app/services/high-light.service';
 
 @Component({
-  selector: 'app-input-common',
-  templateUrl: './input-common.component.html',
-  styleUrls: ['./input-common.component.css']
+  selector: 'app-common',
+  templateUrl: './common.component.html',
+  styleUrls: ['./common.component.css']
 })
-export class InputCommonComponent implements OnInit {
+export class CommonComponent implements OnInit {
+
 
   @Input() activeTab = '';
   @Input() codePreview = '';
   @Input() title:any;
   @Input() codeHtml ='';
+  @Input() mainTitle = '';
 
- 
+  previewHeight = ''
+
   withLabelactiveTab = "preview"
   previewScreenSize =  ""
   highlighted: boolean = false;
 
   withLabelcodePreview = '';
+
+  codePreviewRec = '';
+
 
   constructor( private highlightService: HighlightService, private titleService: Title) { 
     
@@ -28,10 +34,17 @@ export class InputCommonComponent implements OnInit {
   ngAfterViewChecked() {
     this.highlightService.highlightAll();
     this.highlighted = true;
+
   }
 
   ngOnInit(): void {
-    
+
+    this.codePreviewRec = this.codePreview;
+
+    if(this.mainTitle === 'select_menus'){
+      this.previewHeight = 'h-52'
+    }
+  
   }
 
 }

@@ -1,7 +1,9 @@
 import { Component, OnInit } from '@angular/core';
-import { DomSanitizer } from '@angular/platform-browser';
+import { DomSanitizer, Title, SafeHtml } from '@angular/platform-browser';
 import { from, map } from 'rxjs';
+import { inputGroupsService } from 'src/app/services/input-groups.service';
 import * as data from './../../../data.json';
+
 
 // interface componentData {
 
@@ -22,23 +24,29 @@ compUnescape='';
 
 inputGroups: any;
 convertedDatas: any = [];
+html: SafeHtml = '';
+
   
-constructor(public sanitizer: DomSanitizer) { }
+constructor(public sanitizer: DomSanitizer, private titleService: Title, private inputgroupService: inputGroupsService) {
+  this.titleService.setTitle("Sting - Input Groups");
+ }
 
   ngOnInit(): void {
 
 
 
-   this.inputGroups = this.componentData.input_groups;
+   this.inputGroups =  this.inputgroupService.inputGroupDatas;
    
 
    from(this.inputGroups)
    .pipe(
      map((data:any) => {
+       this.html = data.code;
+       console.log(this.html)
        const datas = {
         id: data.id,
         title: data.title,
-        code: data.code
+        code:this.html
        }
 
        return datas;

@@ -1,0 +1,7 @@
+<app-common  *ngFor="let convertedData of convertedDatas" [activeTab]="'preview'"  mainTitle="dropdowns" [codePreview]="convertedData.code" [codeHtml]="convertedData.code" [title]="convertedData.title" >
+    <div class="p-8 flex items-top justify-center bg-gray-100 h-96"><div class="w-full max-w-lg mx-auto " >
+  
+      <div [innerHTML] = "convertedData.code | safeHtml" class="w-full text-center"></div>
+  
+  </div></div>
+  </app-common>

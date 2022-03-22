@@ -18,7 +18,9 @@ export class ElementsComponent implements OnInit {
 
   ngOnInit(): void {
     this.elementComponents = [
-      {title: "Badges", noOfComponents: 7, image: `badges.png`, link: 'page/badges'},
+      {title: "Badges", noOfComponents: 2, image: `badges.png`, link: 'page/badges'},
+      {title: "Dropdowns", noOfComponents: 2, image: `dropdowns.png`, link: 'page/dropdowns'},
+      {title: "Buttons", noOfComponents: 1, image: `buttons.png`, link: 'page/buttons'},
       
       ];
   }

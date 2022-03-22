@@ -10,6 +10,9 @@ import { AlertsCommonComponent } from './alerts/alerts-common/alerts-common.comp
 import { SelectMenusComponent } from './select-menus/select-menus.component';
 import { CommonComponent } from './common/common.component';
 import { BadgesComponent } from './badges/badges.component';
+import { DropdownsComponent } from './dropdowns/dropdowns.component';
+import { ButtonsComponent } from './buttons/buttons.component';
+import { SignInFormsComponent } from './sign-in-forms/sign-in-forms.component';
 
 @NgModule({
     declarations: [
@@ -21,7 +24,10 @@ import { BadgesComponent } from './badges/badges.component';
         AlertsCommonComponent,
         SelectMenusComponent,
         CommonComponent,
-        BadgesComponent
+        BadgesComponent,
+        DropdownsComponent,
+        ButtonsComponent,
+        SignInFormsComponent
   ],
     imports: [
         CommonModule,

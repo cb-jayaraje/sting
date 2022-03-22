@@ -107,12 +107,14 @@
 </app-common> -->
 
 <app-common  *ngFor="let convertedData of convertedDatas" [activeTab]="'preview'" [codePreview]="convertedData.code" [codeHtml]="convertedData.code" [title]="convertedData.title" >
-  <div class="p-8 flex items-center justify-center bg-white"><div class="w-full max-w-xs mx-auto " >
+  <div class="p-8 flex items-top justify-center bg-gray-100 h-56"><div class="w-full max-w-xs mx-auto " >
 
     <div [innerHTML] = "convertedData.code | safeHtml"></div>
 
 </div></div>
 </app-common>
+
+
 
 
 

@@ -1,37 +1,35 @@
 import { Component, OnInit } from '@angular/core';
 import { DomSanitizer, SafeHtml, Title } from '@angular/platform-browser';
-import { from } from 'rxjs/internal/observable/from';
-import { map } from 'rxjs/operators';
-import { BadgesService } from 'src/app/services/badges.service';
-
+import { from, map } from 'rxjs';
+import { ButtonService } from 'src/app/services/buttons.service';
+import { inputGroupsService } from 'src/app/services/input-groups.service';
 
 @Component({
-  selector: 'app-badges',
-  templateUrl: './badges.component.html',
-  styleUrls: ['./badges.component.css']
+  selector: 'app-buttons',
+  templateUrl: './buttons.component.html',
+  styleUrls: ['./buttons.component.css']
 })
-export class BadgesComponent implements OnInit {
+export class ButtonsComponent implements OnInit {
 
-  componentData:any = [];
+
+
+
 
 htmlPre = '';
 compUnescape='';
 
-badges: any;
+buttons: any;
 convertedDatas: any = [];
 html: SafeHtml = '';
 
-
-
-
-constructor(public sanitizer: DomSanitizer, private titleService: Title, private inputgroupService: BadgesService) {
-  this.titleService.setTitle("Sting - Badges");
+  
+constructor(public sanitizer: DomSanitizer, private titleService: Title, private buttonServices: ButtonService) {
+  this.titleService.setTitle("Sting - Buttons");
  }
-
   ngOnInit(): void {
-    this.badges =  this.inputgroupService.badgeDatas;
+    this.buttons = this.buttonServices.buttonDatas
 
-    from(this.badges)
+    from(this.buttons)
     .pipe(
       map((data:any) => {
         this.html = data.code;
@@ -52,6 +50,7 @@ constructor(public sanitizer: DomSanitizer, private titleService: Title, private
        this.convertedDatas.push(dataRes)
        // console.log(this.convertedDatas)
      })
+ 
   }
 
 }

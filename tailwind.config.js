@@ -11,6 +11,8 @@ module.exports = {
   },
  
   plugins: [
+   
     require('./sting'),
+    require('@tailwindcss/forms'),
   ],
 }

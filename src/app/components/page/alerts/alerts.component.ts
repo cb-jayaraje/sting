@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { DomSanitizer, Title } from '@angular/platform-browser';
 import { from, map } from 'rxjs';
+import { AlertService } from 'src/app/services/alert.service';
 import * as data from './../../../data.json';
 
 @Component({
@@ -24,13 +25,13 @@ convertedDatas: any = [];
 
 
   
-constructor(public sanitizer: DomSanitizer, private titleService: Title) {
+constructor(public sanitizer: DomSanitizer, private titleService: Title, private alertService: AlertService) {
   this.titleService.setTitle("Sting - Alerts");
  }
 
   ngOnInit(): void {
 
-   this.alerts = this.componentData.alerts;
+   this.alerts = this.alertService.alertDatas;
 
    from(this.alerts)
    .pipe(

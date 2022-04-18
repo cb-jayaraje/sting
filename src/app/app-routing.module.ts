@@ -1,11 +1,14 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { ComponentsComponent } from './components/components.component';
+import { LayoutComponent } from './components/layout/layout.component';
 import { AlertsComponent } from './components/page/alerts/alerts.component';
 import { BadgesComponent } from './components/page/badges/badges.component';
 import { ButtonsComponent } from './components/page/buttons/buttons.component';
 import { DropdownsComponent } from './components/page/dropdowns/dropdowns.component';
 import { InputGroupsComponent } from './components/page/input-groups/input-groups.component';
+import { ListContainersComponent } from './components/page/list-containers/list-containers.component';
+import { ModalsComponent } from './components/page/modals/modals.component';
 import { PageComponent } from './components/page/page.component';
 import { SelectMenusComponent } from './components/page/select-menus/select-menus.component';
 import { SignInFormsComponent } from './components/page/sign-in-forms/sign-in-forms.component';
@@ -18,13 +21,16 @@ const routes: Routes = [
     {path: '', component: ComponentsComponent},
     {path: 'page', component: PageComponent, children: [
       {path: '', redirectTo: '/components', pathMatch: 'full'},
+      // {path: 'components', component: ComponentsComponent},
       {path: 'input-groups', component: InputGroupsComponent},
       {path: 'sign-in-forms', component: SignInFormsComponent},
       {path: 'alerts', component: AlertsComponent},
       {path: 'select-menus', component: SelectMenusComponent},
       {path: 'badges', component: BadgesComponent},
       {path: 'dropdowns', component: DropdownsComponent},
-      {path: 'buttons', component: ButtonsComponent}
+      {path: 'buttons', component: ButtonsComponent},
+      {path: 'list-containers', component: ListContainersComponent},
+      {path: 'modals', component: ModalsComponent}
     ]}
   ]}
  
@@ -33,7 +39,7 @@ const routes: Routes = [
 
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes, {useHash: true})],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }

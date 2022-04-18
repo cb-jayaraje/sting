@@ -14,6 +14,9 @@ import { FormsComponent } from './components/forms/forms.component';
 import { FeedbackComponent } from './components/feedback/feedback.component';
 import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 import { ElementsComponent } from './components/elements/elements.component';
+import { SidenavComponent } from './layout/sidenav/sidenav.component';
+import { LayoutComponent } from './components/layout/layout.component';
+import { OverlayComponent } from './components/overlay/overlay.component';
 
 @NgModule({
   declarations: [
@@ -27,6 +30,9 @@ import { ElementsComponent } from './components/elements/elements.component';
     FormsComponent,
     FeedbackComponent,
     ElementsComponent,
+    SidenavComponent,
+    LayoutComponent,
+    OverlayComponent,
   ],
   imports: [
     BrowserModule,

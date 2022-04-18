@@ -5,6 +5,7 @@ import { Injectable } from "@angular/core";
 export class CommonService {
 
     imagePath= './assets/images/';
+    componentPath = '/components/page/'
     
 
 }

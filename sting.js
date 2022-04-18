@@ -7,6 +7,7 @@ const Alerts = require('./sting-components/alerts');
 const colors = require("./sting-components/colors.js");
 const SelectMenus = require("./sting-components/select-menu")
 const Dropdown = require('./sting-components/dropdowns')
+const ListGroups = require('./sting-components/list-groups')
 
 
 module.exports = plugin.withOptions(
@@ -28,6 +29,7 @@ module.exports = plugin.withOptions(
         // addComponents(Dialog());
         // addComponents(Drawer());
          addComponents(Dropdown());
+         addComponents(ListGroups());
         // addComponents(Forms());
         // addComponents(List());
         // addComponents(Pagination());

@@ -1,0 +1,45 @@
+
+
+    {
+        "forms": [
+            {"title": "Input Groups", "noOfComponents": 6, "image":  "input-groups.png", "link": "input-groups"},
+            {"title": "Select Menus", "noOfComponents": 7, "image": "select-menus.png", "link": "select-menus"},
+            {"title": "Sign-in and Registration", "noOfComponents": 2, "image": "sign-in-forms.png", "link": "sign-in-forms"}
+        ],
+        "elements": [
+            {"title": "Badges", "noOfComponents": 2, "image": "badges.png", "link": "badges"},
+            {"title": "Dropdowns", "noOfComponents": 2, "image": "dropdowns.png", "link": "dropdowns"},
+            {"title": "Buttons", "noOfComponents": 1, "image": "buttons.png", "link": "buttons"}
+        ],
+        "layout": [
+            {"title": "List Containers", "noOfComponents": 7, "image": "list-containers.png", "link": "list-containers"}
+          
+        ],
+        "feedBack": [
+            {"title": "Alerts", "noOfComponents": 6, "image": "alerts.png", "link": "alerts"}
+          
+        ],
+        "overlays": [
+            {"title": "Modals", "noOfComponents": 6, "image": "modals.png", "link": "modals"}
+        ],
+        
+        "leftNav": [
+            {"title":"Alerts", "link": "alerts" },
+            {"title":"Input Groups", "link": "input-groups" },
+            {"title":"Select Menus", "link": "select-menus" },
+           
+            {"title":"Badges", "link": "badges" },
+            {"title":"Dropdowns", "link": "dropdowns" },
+            {"title":"Buttons", "link": "buttons" },
+            {"title":"Modals", "link": "modals" }
+            
+            
+        ],
+        "templates": [
+            {"title":"Sign-in and Registration", "link": "sign-in-forms" },
+            {"title":"List Containers", "link": "list-containers" }
+        ]
+    }
+  
+
+

@@ -13,6 +13,8 @@ import { BadgesComponent } from './badges/badges.component';
 import { DropdownsComponent } from './dropdowns/dropdowns.component';
 import { ButtonsComponent } from './buttons/buttons.component';
 import { SignInFormsComponent } from './sign-in-forms/sign-in-forms.component';
+import { ListContainersComponent } from './list-containers/list-containers.component';
+import { ModalsComponent } from './modals/modals.component';
 
 @NgModule({
     declarations: [
@@ -27,7 +29,9 @@ import { SignInFormsComponent } from './sign-in-forms/sign-in-forms.component';
         BadgesComponent,
         DropdownsComponent,
         ButtonsComponent,
-        SignInFormsComponent
+        SignInFormsComponent,
+        ListContainersComponent,
+        ModalsComponent
   ],
     imports: [
         CommonModule,

@@ -16,5 +16,12 @@ export class ButtonService {
             <button type="button" class="btn-outline px-6 py-3 text-base ">Button text</button>
             `
         },
+        {
+            id: 'button_2',
+            title: 'Button solid',
+            code: `<button type="button" class="btn-solid btn-primary">Button text</button>
+                    <button type="button" class="btn-solid btn-secondary">Button text</button>
+            `
+        },
     ]
 }

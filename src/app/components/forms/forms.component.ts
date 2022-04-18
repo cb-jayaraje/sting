@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { concat, from, map } from 'rxjs';
+import * as formsData from './../../data-page.json';
 
 @Component({
   selector: 'app-forms',
@@ -9,23 +11,64 @@ export class FormsComponent implements OnInit {
 
  
   formComponents:any = [];
-  imageUrl= "./assets/images/"
+  formData: any = formsData;
+  imageUrl= "./assets/images/";
+  path = '/components/page/'
+
+  testdata: any = formsData;
 
   constructor() { }
 
   ngOnInit(): void {
 
-    this.formComponents = [
-      // {title: "Form Layouts", noOfComponents: 5, image: `form-layouts.png`, link: '/dist/components/input-groups.html'},
-      {title: "Input Groups", noOfComponents: 6, image:  "input-groups.png", link: 'page/input-groups'},
-       {title: "Select Menus", noOfComponents: 7, image: "select-menus.png", link: 'page/select-menus'},
-       {title: "Sign-in and Registration", noOfComponents: 3, image: "sign-in-forms.png"},
-      // {title: "Textareas", noOfComponents: 5, image: "textareas.png"},
-      // {title: "Radio Groups", noOfComponents: 12, image:"radio-groups.png"},
-      // {title: "Checkboxes", noOfComponents: 4, image: "checkboxes.png"},
-      // {title: "Toggles", noOfComponents: 5, image: "toggles.png"},
-      // {title: "Action Panels", noOfComponents: 8, image:  "action-panels.png"}
-      ];
+
+
+
+    // console.log(this.formData)
+    // Object.keys(this.formData).forEach((prop)=> {
+    //   // `prop` is the property name
+    //   // `data[prop]` is the property value
+    //   let tr = this.formData[prop];
+    //  // console.log(tr)
+
+    //   // for (const [key, value] of Object.entries(tr)) {
+    //   //   console.log(`${key}: ${value}`);
+    //   // }
+    //  this.te += tr
+      
+    // });
+
+
+    // from(this.formData).pipe(map(d => {
+
+    //   let newArr = [];
+
+    //   newArr.push(d);
+
+
+
+    //   // newArr.forEach((element: any) => {
+    //   //   element.forEach( y => console.log(y))
+    //   // });
+      
+
+    //   return newArr;
+  
+      
+    // }
+    // )).subscribe(data=> console.log(data))
+
+   
+
+
+    // this.formData = formsData
+    
+
+    this.formComponents = this.formData.forms;
+
+    console.log(this.formData.forms)
+
+
   }
 
 }

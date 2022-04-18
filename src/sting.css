@@ -140,3 +140,155 @@ select {
 .btn-primary {
   @apply py-3 px-4 border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500;
 }
+/* [multiple],
+[type="date"],
+[type="datetime-local"],
+[type="email"],
+[type="month"],
+[type="number"],
+[type="password"],
+[type="search"],
+[type="tel"],
+[type="text"],
+[type="time"],
+[type="url"],
+[type="week"],
+select,
+textarea {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: #fff;
+  border-color: #6b7280;
+  border-width: 1px;
+  border-radius: 0;
+  padding-top: 0.5rem;
+  padding-right: 0.75rem;
+  padding-bottom: 0.5rem;
+  padding-left: 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
+} */
+
+select {
+	/* background-image: url(data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3e%3cpath stroke='%236b7280' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M6 8l4 4 4-4'/%3e%3c/svg%3e); */
+	background-position: right 0.5rem center;
+	background-repeat: no-repeat;
+	background-size: 1.5em 1.5em;
+	padding-right: 2.5rem;
+	-webkit-print-color-adjust: exact;
+	color-adjust: exact;
+  }
+  
+  /* .btn {
+	@apply px-4 py-2 bg-blue-100 text-white;
+  } */
+  
+  /*inputgroups*/
+  
+  .form-control .input {
+	@apply shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md;
+  }
+  .form-control .label {
+	@apply block text-sm font-medium text-gray-600;
+  }
+  
+  .form-control .help-text {
+	@apply mt-2 text-sm text-gray-500;
+  }
+  .form-control .input-error {
+	@apply block w-full pr-10 border-red-300 text-red-900 placeholder-red-300 focus:outline-none focus:ring-red-500 focus:border-red-500 sm:text-sm rounded-md;
+  }
+  .form-control .error-text {
+	@apply mt-2 text-sm text-red-600;
+  }
+  .form-control .hint-text {
+	@apply text-sm text-gray-500;
+  }
+  .form-control .select {
+	@apply mt-1 block w-full pl-3 pr-10 py-2 text-base border-gray-300 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm rounded-md;
+  }
+  .form-control .select-button {
+	@apply bg-white relative w-full border border-gray-300 rounded-md shadow-sm pl-3 pr-10 py-2 text-left cursor-default focus:outline-none focus:ring-1 focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm;
+  }
+  
+  .form-control .select-button-icon-container {
+	@apply absolute inset-y-0 right-0 flex items-center pr-2 pointer-events-none;
+  }
+  
+  .form-control .select-ul {
+	@apply absolute z-10 mt-1 w-full bg-white shadow-lg max-h-60 rounded-md py-1 text-base ring-1 ring-black ring-opacity-5 overflow-auto focus:outline-none sm:text-sm;
+  }
+  
+  .form-control .select-li {
+	@apply text-gray-900 cursor-default select-none relative py-2;
+  }
+  .form-control .select-li-icon {
+	@apply text-indigo-600 absolute inset-y-0  flex items-center;
+  }
+  .form-control .select-secondary-text {
+	@apply truncate text-gray-500;
+  }
+  
+  .form-control .input-select {
+	@apply focus:ring-indigo-500 focus:border-indigo-500 h-full py-0 pl-3 pr-7 border-transparent bg-transparent text-gray-500 sm:text-sm rounded-md;
+  }
+  
+  /* alert ---------------------------- */
+  
+  .alert {
+	@apply rounded-md  p-4;
+  }
+  .alert .title {
+	@apply text-sm font-medium;
+  }
+  .alert .description {
+	@apply mt-2 text-sm;
+  }
+  .alert .description-only {
+	@apply text-sm;
+  }
+  .alert .alert-ul {
+	@apply list-disc pl-5 space-y-1;
+  }
+  .alert .alert-btn {
+	@apply inline-flex px-2 py-1.5 rounded-md text-sm font-medium focus:outline-none focus:ring-2 focus:ring-offset-2;
+  }
+  .alert .alert-a {
+	@apply whitespace-nowrap font-medium;
+  }
+  .accent-border {
+	@apply border-l-4;
+  }
+  
+  /* dropdown ---------------------------- */
+  .dropdown {
+	@apply origin-top-right absolute right-0 mt-2 w-auto rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none z-20;
+  }
+  
+  .dropdown-list__a {
+	@apply text-gray-700 block px-4 py-2 text-sm hover:bg-gray-100;
+  }
+  
+  /* button ---------------------------- */
+  .btn {
+	@apply w-full inline-flex justify-center rounded-md border shadow-sm px-4 py-2 focus:outline-none focus:ring-2 focus:ring-offset-2 font-medium;
+  }
+  
+  .btn-outline {
+	@apply inline-flex justify-center rounded-md border border-gray-300 shadow-sm px-4 py-2 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-100 focus:ring-indigo-500;
+  }
+  
+  .btn-solid {
+	@apply py-3 px-4 border-transparent rounded-md shadow-sm text-sm font-medium ;
+  }
+
+  .btn-primary {
+	  @apply text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500
+  }
+
+  .btn-secondary {
+	@apply text-indigo-700 bg-indigo-100 hover:bg-indigo-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500
+  }
+
+  

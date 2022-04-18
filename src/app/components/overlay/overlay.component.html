@@ -1,0 +1,29 @@
+  <!-- forms -->
+  <div class="border-t border-gray-300  pt-8 space-y-5">
+    <div class="w-3/12 component-heading ">Layout</div>
+    <div class="grid grid-cols-3 w-9/12 gap-10">
+      
+
+        <div *ngFor="let overlayComponent of overlayCompopnents">
+            <a [routerLink]="path+overlayComponent.link">
+                <div class="component-box">
+                  <div class="">
+                    <img [src]="'./assets/images/'+overlayComponent.image" alt="">
+                  </div>
+                  <div class=" bg-white rounded-br-md rounded-bl-md px-4 py-3  ">
+                    <div class="text-sm font-semibold" [innerText]="overlayComponent.title"></div>
+                    <p class="text-xs pt-1 text-gray-500" ><span [innerText]="overlayComponent.noOfComponents"></span> Components</p>
+                  </div>
+                </div>
+              </a>
+        </div>
+
+
+
+    </div>
+
+
+    
+
+  
+  </div> 

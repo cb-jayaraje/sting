@@ -1,6 +1,8 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { ComponentsComponent } from './components/components.component';
+import { ColorsComponent } from './components/config/colors/colors.component';
+import { ThemesComponent } from './components/config/themes/themes.component';
 import { LayoutComponent } from './components/layout/layout.component';
 import { AlertsComponent } from './components/page/alerts/alerts.component';
 import { BadgesComponent } from './components/page/badges/badges.component';
@@ -30,7 +32,9 @@ const routes: Routes = [
       {path: 'dropdowns', component: DropdownsComponent},
       {path: 'buttons', component: ButtonsComponent},
       {path: 'list-containers', component: ListContainersComponent},
-      {path: 'modals', component: ModalsComponent}
+      {path: 'modals', component: ModalsComponent},
+      {path:'colors', component: ColorsComponent},
+      {path:'themes', component: ThemesComponent}
     ]}
   ]}
  

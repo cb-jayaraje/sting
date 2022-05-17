@@ -5,7 +5,7 @@ import { Injectable } from "@angular/core";
 export class ModalService {
     modalsdata = [
         {
-            "id": "modal_!",
+            "id": "modal_1",
             "title": "Centered with single action",
             "code": `
             <div class="fixed -z-10 inset-0 overflow-y-auto" aria-labelledby="modal-title" role="dialog" aria-modal="true">
@@ -31,7 +31,7 @@ export class ModalService {
                     </div>
                   </div>
                   <div class="mt-5 sm:mt-6">
-                    <button type="button" class="inline-flex justify-center w-full rounded-md border border-transparent shadow-sm px-4 py-2 bg-indigo-600 text-base font-medium text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 sm:text-sm">Go back to dashboard</button>
+                    <button type="button" class="btn btn-primary">Go back to dashboard</button>
                   </div>
                 </div>
               </div>

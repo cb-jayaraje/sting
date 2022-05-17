@@ -9,7 +9,7 @@ module.exports = ListGroupss = (styles) => ({
         "@apply min-w-0 flex-1 sm:flex sm:items-center sm:justify-between": {},
          },
 '.list-group__title': {
-        "@apply font-medium text-indigo-600 truncate": {},
+        "@apply font-medium text-neutral-800 truncate": {},
          },
 '.list-group__subtext': {
         "@apply flex items-center text-sm text-gray-500": {},

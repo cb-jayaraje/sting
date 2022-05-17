@@ -17,6 +17,9 @@ import { ElementsComponent } from './components/elements/elements.component';
 import { SidenavComponent } from './layout/sidenav/sidenav.component';
 import { LayoutComponent } from './components/layout/layout.component';
 import { OverlayComponent } from './components/overlay/overlay.component';
+import { FormsModule } from '@angular/forms';
+import { ColorsComponent } from './components/config/colors/colors.component';
+import { ThemesComponent } from './components/config/themes/themes.component';
 
 @NgModule({
   declarations: [
@@ -33,9 +36,12 @@ import { OverlayComponent } from './components/overlay/overlay.component';
     SidenavComponent,
     LayoutComponent,
     OverlayComponent,
+    ColorsComponent,
+    ThemesComponent,
   ],
   imports: [
     BrowserModule,
+    FormsModule,
     AppRoutingModule,
     PageModule
   ],

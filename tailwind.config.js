@@ -7,7 +7,9 @@ module.exports = {
   ],
   theme: {
    
-    extend: {},
+    extend: {
+     // colors: require('./sting-components/default-colors')
+    },
   },
  
   plugins: [

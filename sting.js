@@ -4,7 +4,8 @@ const Button =  require('./sting-components/button');
 const InputGroups =  require('./sting-components/input-groups');
 
 const Alerts = require('./sting-components/alerts');
-const colors = require("./sting-components/colors.js");
+//const colors = require("./sting-components/colors.js");
+const colors = require("./sting-components/default-colors.js");
 const SelectMenus = require("./sting-components/select-menu")
 const Dropdown = require('./sting-components/dropdowns')
 const ListGroups = require('./sting-components/list-groups')

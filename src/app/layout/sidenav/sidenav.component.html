@@ -1,6 +1,31 @@
 <div class="w-2/12 h-full bg-slate-100 fixed">
     <div class=" bg-blue-100 py-3 px-6"><a routerLink="/">STING UI</a></div>
     <div class="">
+
+        <div class="p-2">
+            <div>
+                <label for="email" class="sr-only">Search</label>
+                <input type="text" name="search" (input)="searchPosts($event.target)" [(ngModel)]="search" id="search" #searchCtrl="ngModel" class="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md" placeholder="Search">
+              </div>
+        </div>
+
+        
+        <ng-container *ngIf="(search$ | async) as se">
+            <!-- <p>User posts titles: {{se}}</p> -->
+           
+          </ng-container>
+
+          <div class="border-y">
+            <ul class="py-3 leftNav">
+                <li  class=" px-6 font-bold flex justify-between items-center">
+                    Config
+                </li>
+                <li [routerLink]="path+'colors'" class=" cursor-pointer px-6 hover:bg-blue-200 text-sm text-gray-700" >Colors</li>
+                <li [routerLink]="path+'themes'" class=" cursor-pointer px-6 hover:bg-blue-200 text-sm text-gray-700" >Themes</li>
+             
+              
+            </ul>
+        </div>
         <ul class="py-3 leftNav">
             <li routerLink="/components/" class="cursor-pointer px-6 hover:bg-blue-200 flex justify-between items-center">
                 Main

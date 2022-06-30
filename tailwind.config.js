@@ -1,3 +1,5 @@
+/** @type {import('tailwindcss').Config} */
+
 module.exports = {
   darkMode: 'class',
   prefix: '',
@@ -8,7 +10,8 @@ module.exports = {
   theme: {
    
     extend: {
-     // colors: require('./sting-components/default-colors')
+      //colors: require('./sting-components/default-colors')
+      
     },
   },
  

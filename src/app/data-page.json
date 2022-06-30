@@ -31,13 +31,15 @@
             {"title":"Badges", "link": "badges" },
             {"title":"Dropdowns", "link": "dropdowns" },
             {"title":"Buttons", "link": "buttons" },
-            {"title":"Modals", "link": "modals" }
+            {"title":"Modals", "link": "modals" },
+            {"title":"Table", "link": "table" }
             
             
         ],
         "templates": [
             {"title":"Sign-in and Registration", "link": "sign-in-forms" },
-            {"title":"List Containers", "link": "list-containers" }
+            {"title":"List Containers", "link": "list-containers" },
+            {"title":"Checkout", "link": "checkout" }
         ]
     }
   

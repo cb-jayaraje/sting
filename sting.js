@@ -9,6 +9,9 @@ const colors = require("./sting-components/default-colors.js");
 const SelectMenus = require("./sting-components/select-menu")
 const Dropdown = require('./sting-components/dropdowns')
 const ListGroups = require('./sting-components/list-groups')
+const Token = require('./sting-components/token');
+const Badge = require('./sting-components/badge');
+const Checkout = require('./sting-components/checkout');
 
 
 module.exports = plugin.withOptions(
@@ -20,7 +23,7 @@ module.exports = plugin.withOptions(
        //addUtilities(newUtilities);
         // addComponents(Alert());
         // addComponents(Avatar());
-        // addComponents(Badge())
+         addComponents(Badge())
         // addComponents(Breadcrumb());
         addComponents(Button());
         addComponents(InputGroups());
@@ -31,6 +34,8 @@ module.exports = plugin.withOptions(
         // addComponents(Drawer());
          addComponents(Dropdown());
          addComponents(ListGroups());
+         addComponents(Token());
+         addComponents(Checkout());
         // addComponents(Forms());
         // addComponents(List());
         // addComponents(Pagination());

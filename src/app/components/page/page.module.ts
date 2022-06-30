@@ -15,6 +15,8 @@ import { ButtonsComponent } from './buttons/buttons.component';
 import { SignInFormsComponent } from './sign-in-forms/sign-in-forms.component';
 import { ListContainersComponent } from './list-containers/list-containers.component';
 import { ModalsComponent } from './modals/modals.component';
+import { GelatoComponent } from './checkout/gelato/gelato.component';
+import { TableComponent } from './table/table.component';
 
 @NgModule({
     declarations: [
@@ -31,7 +33,9 @@ import { ModalsComponent } from './modals/modals.component';
         ButtonsComponent,
         SignInFormsComponent,
         ListContainersComponent,
-        ModalsComponent
+        ModalsComponent,
+        GelatoComponent,
+        TableComponent
   ],
     imports: [
         CommonModule,

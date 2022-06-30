@@ -7,6 +7,7 @@ import { LayoutComponent } from './components/layout/layout.component';
 import { AlertsComponent } from './components/page/alerts/alerts.component';
 import { BadgesComponent } from './components/page/badges/badges.component';
 import { ButtonsComponent } from './components/page/buttons/buttons.component';
+import { GelatoComponent } from './components/page/checkout/gelato/gelato.component';
 import { DropdownsComponent } from './components/page/dropdowns/dropdowns.component';
 import { InputGroupsComponent } from './components/page/input-groups/input-groups.component';
 import { ListContainersComponent } from './components/page/list-containers/list-containers.component';
@@ -14,6 +15,7 @@ import { ModalsComponent } from './components/page/modals/modals.component';
 import { PageComponent } from './components/page/page.component';
 import { SelectMenusComponent } from './components/page/select-menus/select-menus.component';
 import { SignInFormsComponent } from './components/page/sign-in-forms/sign-in-forms.component';
+import { TableComponent } from './components/page/table/table.component';
 import { HomeComponent } from './home/home.component';
 
 const routes: Routes = [
@@ -26,6 +28,7 @@ const routes: Routes = [
       // {path: 'components', component: ComponentsComponent},
       {path: 'input-groups', component: InputGroupsComponent},
       {path: 'sign-in-forms', component: SignInFormsComponent},
+      {path: 'checkout', component: GelatoComponent},
       {path: 'alerts', component: AlertsComponent},
       {path: 'select-menus', component: SelectMenusComponent},
       {path: 'badges', component: BadgesComponent},
@@ -34,7 +37,8 @@ const routes: Routes = [
       {path: 'list-containers', component: ListContainersComponent},
       {path: 'modals', component: ModalsComponent},
       {path:'colors', component: ColorsComponent},
-      {path:'themes', component: ThemesComponent}
+      {path:'themes', component: ThemesComponent},
+      {path:'table', component: TableComponent}
     ]}
   ]}
  

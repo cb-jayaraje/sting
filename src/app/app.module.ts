@@ -20,6 +20,7 @@ import { OverlayComponent } from './components/overlay/overlay.component';
 import { FormsModule } from '@angular/forms';
 import { ColorsComponent } from './components/config/colors/colors.component';
 import { ThemesComponent } from './components/config/themes/themes.component';
+import { DropdownDirective } from './shared/dropdown.directive';
 
 @NgModule({
   declarations: [
@@ -38,6 +39,7 @@ import { ThemesComponent } from './components/config/themes/themes.component';
     OverlayComponent,
     ColorsComponent,
     ThemesComponent,
+    DropdownDirective
   ],
   imports: [
     BrowserModule,

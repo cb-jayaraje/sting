@@ -9,7 +9,11 @@ module.exports = {
       300: "var(--color-primary-300)",
       400: "var(--color-primary-400)",
       500: "var(--color-primary-500)",
-      600: "var(--color-primary-600)"
+      600: "var(--color-primary-600)",
+      default: "var(--color-primary-default)",
+      hover: "var(--color-primary-hover)",
+      active: "var(--color-primary-active)",
+      btnText:"var(--color-primary-button-text)",
     },
     secondary: {
       50: 'var(--color-secondary-50)',
@@ -20,6 +24,10 @@ module.exports = {
       400: "var(--color-secondary-400)",
       500: "var(--color-secondary-500)",
       600: "var(--color-secondary-600)",
+      default: "var(--color-secondary-default)",
+      hover: "var(--color-secondary-hover)",
+      active: "var(--color-secondary-active)",
+      btnText:"var(--color-secondary-button-text)",
     },
     info: {
       50: 'var(--color-info-50)',

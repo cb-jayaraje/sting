@@ -30,6 +30,25 @@ export class inputGroupsService {
                 </div>
            `
          },
+         {
+          id: "input_2_1",
+           title: "Input with leading icon",
+           code: `
+           <div class="form-control">
+  <label for="email" class="label">Email</label>
+  <div class="mt-1 relative rounded-md shadow-sm">
+    <div class="input-leading__icon">
+      <!-- Heroicon name: solid/mail -->
+      <svg class="h-5 w-5 text-gray-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+        <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
+        <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
+      </svg>
+    </div>
+    <input type="email" name="email" id="email" class="input pl-10" placeholder="you@example.com">
+  </div>
+</div>
+         `
+       },
  
          {
              id: "input_3",

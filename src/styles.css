@@ -3,36 +3,85 @@
 @import "~prismjs/themes/prism-okaidia";
 
 @tailwind base;
+
 @tailwind components;
+
 @tailwind utilities;
 
 @layer base {
+  
 
   :root {
-    --color-primary-50: #F2E9FF;
-    --color-primary-75: #DAC0FF;
-    --color-primary-100: #A066F2;
-    --color-primary-200: #6200EA;
-    --color-primary-300: #4f46e5;
-    --color-primary-400: #4338ca;
-    --color-primary-500: #2C0069;
-    --color-primary-600: #1D0046;
-    --color-primary-default: #4f46e5;
-    --color-primary-hover: #4338ca;
-    --color-primary-active: #6366f1;
-    --color-primary-button-text: #FFFFFF; 
 
-    --color-secondary-50: #FFEFEA;
-      --color-secondary-75: #FFD7C8;
-      --color-secondary-100: #FFAE90;
-      --color-secondary-200: #FF6A28;
-      --color-secondary-300: #BB4D1D;
-      --color-secondary-400: #4C2314;
-      --color-secondary-500: #33180E;
-      --color-secondary-default: #e0e7ff;
-      --color-secondary-hover: #c7d2fe;
-      --color-secondary-active: #6366f1;
-      --color-secondary-button-text: #4338ca; 
+    --color-brand-50: 255 235 230;
+    --color-brand-100: 255 214 204;
+    --color-brand-200: 255 173 153;
+    --color-brand-300: 255 133 102;
+    --color-brand-400: 255 92 51;
+    --color-brand-500: 255 51 0;
+    --color-brand-600: 204 41 0;
+    --color-brand-700: 153 31 0;
+    --color-brand-800: 102 20 0;
+    --color-brand-900: 51 10 0;
+
+
+    --color-primary-50: 231 239 246;
+    --color-primary-100:  206 223 237; 
+    --color-primary-200:  157 191 219;
+    --color-primary-300:  109 159 201;
+    --color-primary-400: 60 127 183; 
+    --color-primary-500: 11 95 165;
+    --color-primary-600: 9 76 132; 
+    --color-primary-700: 7 57 99; 
+    --color-primary-800: 4 38 66; 
+    --color-primary-900: 2 19 33;
+      
+
+      --color-neutral-50: 241 242 243;
+      --color-neutral-100: 217 221 223;
+      --color-neutral-200: 180 187 190;
+      --color-neutral-300: 142 152 158;
+      --color-neutral-400: 105 118 125;
+      --color-neutral-500: 67 84 93;
+      --color-neutral-600: 54 67 74;
+      --color-neutral-700: 40 50 56;
+      --color-neutral-800: 27 34 37;
+      --color-neutral-900: 13 17 19;
+     
+
+
+      --color-red-50: 255 230 231;
+      --color-red-100: 254 204 207;
+      --color-red-200: 253 153 158;
+      --color-red-300: 253 102 110;
+      --color-red-400: 252 51 61;
+      --color-red-500: 251 0 13;
+      --color-red-600: 201 0 10;
+      --color-red-700: 151 0 8;
+      --color-red-800: 100 0 5;
+      --color-red-900: 50 0 3;
+
+      --color-orange-50: 255 241 230;
+      --color-orange-100: 255 227 204;
+      --color-orange-200: 255 199 153;
+      --color-orange-300: 255 172 102;
+      --color-orange-400: 255 144 51;
+      --color-orange-500: 255 116 0;
+      --color-orange-600: 204 93 0;
+      --color-orange-700: 153 70 0;
+      --color-orange-800: 255 241 230;
+      --color-orange-900: 255 241 230;
+
+      --color-green-50: 230 249 235;
+      --color-green-100: 204 242 214;
+      --color-green-200: 153 229 173;
+      --color-green-300: 102 217 132;
+      --color-green-400: 51 204 91;
+      --color-green-500: 0 191 50;
+      --color-green-600: 0 153 40;
+      --color-green-700: 0 115 30;
+      --color-green-800: 0 76 20;
+      --color-green-900: 230 249 235;
       
 
     --color-info-50: #e6eefa;
@@ -70,33 +119,39 @@
     }
 
     .theme-leap {
-      --color-primary-50: #F2E9FF;
-      --color-primary-75: #DAC0FF;
-      --color-primary-100: #A066F2;
-      --color-primary-200: #6200EA;
-      --color-primary-300: #4E0EA6;
-      /* --color-primary-300:78 14 166 ; */
-      --color-primary-400: #4B0E9F;
-      --color-primary-500: #2C0069;
-      --color-primary-600: #1D0046;
-      --color-primary-default: #4E0EA6;
-    --color-primary-hover: #2C0069;
-    --color-primary-active: #4B0E9F;
-    --color-primary-button-text: #FFFFFF; 
-      
-
-      --color-secondary-50: #FFEFEA;
-      --color-secondary-75: #000;
-      --color-secondary-100: #FFAE90;
-      --color-secondary-200: #FF6A28;
-      --color-secondary-300: #BB4D1D;
-      --color-secondary-400: #4C2314;
-      --color-secondary-500: #33180E;
-      --color-secondary-600: #33180E;
-      --color-secondary-default: #BB4D1D;
-      --color-secondary-hover: #4C2314;
-      --color-secondary-active: #4C2314;
-      --color-secondary-button-text: #fff; 
+      --color-brand-50: #ffebe6;
+      --color-brand-100: #ffd6cc;
+      --color-brand-200: #ff562b;
+      --color-brand-300: #64748b;
+      --color-brand-400: #b32400;
+      --color-brand-500: #9c1f00;
+      --color-brand-600: #9c1f00;
+      --color-brand-700: #9c1f00;
+      --color-brand-800: #9c1f00;
+      --color-brand-900: #9c1f00;
+  
+  
+      --color-primary-50: 231 239 246;
+      --color-primary-100:  206 223 237; 
+      --color-primary-200:  157 191 219;
+      --color-primary-300:  109 159 201;
+      --color-primary-400: 60 127 183; 
+      --color-primary-500: 11 95 165;
+      --color-primary-600: 9 76 132; 
+      --color-primary-700: 7 57 99; 
+      --color-primary-800: 4 38 66; 
+      --color-primary-900: 2 19 33;
+  
+        --color-neutral-50: #f6f9f9;
+        --color-neutral-100: #c9dbdd;
+        --color-neutral-200: #b2ccce;
+        --color-neutral-300: #a2c1c4;
+        --color-neutral-400: #718789;
+        --color-neutral-500: #637678;
+        --color-neutral-600: #637678;
+        --color-neutral-700: #637678;
+        --color-neutral-800: #637678;
+        --color-neutral-900: #637678;
 
      
 
@@ -105,33 +160,48 @@
 
 
   .theme-sting {
-      --color-primary-50: #ffebe6;
-      --color-primary-75: #ffab96;
-      --color-primary-100: #ff896b;
-      --color-primary-200: #ff562b;
-      --color-primary-300: #64748b;
-      --color-primary-400: #b32400;
-      --color-primary-500: #9c1f00;
-      --color-primary-600: #9c1f00;
-      --color-primary-default: #64748b;
-    --color-primary-hover: #b32400;
-    --color-primary-active: #b32400;
-    --color-primary-button-text: #FFFFFF; 
 
-      --color-secondary-50: #f6f9f9;
-      --color-secondary-75: #d9e6e7;
-      --color-secondary-100: #c9dbdd;
-      --color-secondary-200: #b2ccce;
-      --color-secondary-300: #a2c1c4;
-      --color-secondary-400: #718789;
-      --color-secondary-500: #637678;
-      --color-secondary-default: #a2c1c4;
-      --color-secondary-hover: #718789;
-      --color-secondary-active: #718789;
-      --color-secondary-button-text: #fff; 
+
+    --color-brand-50: 255 235 230;
+    --color-brand-100: 255 214 204;
+    --color-brand-200: 255 173 153;
+    --color-brand-300: 255 133 102;
+    --color-brand-400: 255 92 51;
+    --color-brand-500: 255 51 0;
+    --color-brand-600: 204 41 0;
+    --color-brand-700: 153 31 0;
+    --color-brand-800: 102 20 0;
+    --color-brand-900: 51 10 0;
+
+
+    --color-primary-50: 231 239 246;
+    --color-primary-100:  206 223 237; 
+    --color-primary-200:  157 191 219;
+    --color-primary-300:  109 159 201;
+    --color-primary-400: 60 127 183; 
+    --color-primary-500: 11 95 165;
+    --color-primary-600: 9 76 132; 
+    --color-primary-700: 7 57 99; 
+    --color-primary-800: 4 38 66; 
+    --color-primary-900: 2 19 33;
+      
+
+      --color-neutral-50: 241 242 243;
+      --color-neutral-100: 217 221 223;
+      --color-neutral-200: 180 187 190;
+      --color-neutral-300: 142 152 158;
+      --color-neutral-400: 105 118 125;
+      --color-neutral-500: 67 84 93;
+      --color-neutral-600: 54 67 74;
+      --color-neutral-700: 40 50 56;
+      --color-neutral-800: 27 34 37;
+      --color-neutral-900: 13 17 19;
+      
       
 
   }
+
+
 
 
   html,
@@ -160,3 +230,4 @@ div.code-toolbar > .toolbar > .toolbar-item > button {
 .component-heading {
   @apply font-semibold text-lg;
 }
+

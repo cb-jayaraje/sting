@@ -6,6 +6,7 @@ const InputGroups =  require('./sting-components/input-groups');
 const Alerts = require('./sting-components/alerts');
 //const colors = require("./sting-components/colors.js");
 const colors = require("./sting-components/default-colors.js");
+const fontSize = require("./sting-components/font-style.js");
 const SelectMenus = require("./sting-components/select-menu")
 const Dropdown = require('./sting-components/dropdowns')
 const ListGroups = require('./sting-components/list-groups')
@@ -50,6 +51,7 @@ module.exports = plugin.withOptions(
       return {
         theme: {
           extend: {
+          //fontSize,
           colors,
             inset: {
               "1/2": "50%",

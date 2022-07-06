@@ -9,9 +9,7 @@ module.exports = Badge = (styles) => ({
     '.badge-primary': {
         "@apply  bg-primary-300 hover:bg-primary-100 active:bg-primary-400 focus:ring-primary-300 text-white" :{},
     },
-    '.badge-secondary': {
-        "@apply text-white bg-secondary-300 hover:bg-secondary-100 active:bg-secondary-400 focus:ring-secondary-300":{},
-    },
+   
     '.badge-info': {
         "@apply text-white bg-info-300 hover:bg-info-100 focus:ring-info-300 active:bg-info-400":{},
     },

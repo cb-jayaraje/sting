@@ -34,34 +34,49 @@ module.exports = Alert = (styles) => ({
     //warning
 
     '.alert-warning': {
-        "@apply bg-warning-50": {},
+        "@apply bg-orange-50": {},
     },
     '.alert-warning .content': {
-        "@apply text-warning-200":{}
+        "@apply text-orange-700":{}
     },
     '.alert-warning svg': {
-        "@apply text-warning-400": {},
+        "@apply text-orange-500": {},
     },
     '.alert-warning .title': {
-        "@apply text-warning-600": {},
+        "@apply text-copy font-bold text-orange-700": {},
     },
     '.alert-warning .description': {
-        "@apply text-warning-600": {},
+        "@apply text-orange-700": {},
     },
 
     //danger
 
     '.alert-danger': {
-        "@apply bg-danger-50 text-danger-600": {},
+        "@apply bg-red-50 text-red-500": {},
     },
-    '.alert svg': {
+    '.alert-danger svg': {
         "@apply fill-current": {},
     },
     '.alert-danger .title': {
-        "@apply text-danger-400": {},
+        "@apply text-red-600": {},
     },
     '.alert-danger .description': {
-        "@apply text-danger-600": {},
+        "@apply text-red-600": {},
+    },
+
+    //success
+
+    '.alert-success': {
+        "@apply bg-green-50 text-green-700": {},
+    },
+    'alert-success.alert svg': {
+        "@apply text-green-500": {},
+    },
+    '.alert-success .title': {
+        "@apply text-green-600": {},
+    },
+    '.alert-success .description': {
+        "@apply text-green-700": {},
     },
     
   });

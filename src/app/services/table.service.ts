@@ -14,7 +14,7 @@ export class TableService {
                 <p class="mt-2 text-sm text-gray-700">Your team is on the Startup plan. The next payment of $80 will be due on August 4, 2022.</p>
               </div>
               <div class="mt-4 sm:mt-0 sm:ml-16 sm:flex-none">
-                <button type="button" class="btn btn-primary">Update credit card</button>
+                <button  class="btn btn-primary">Update credit card</button>
               </div>
             </div>
             <div class="mt-8 flex flex-col">
@@ -53,7 +53,7 @@ export class TableService {
                             <div class="hidden sm:block">$40/month</div>
                             </td>
                             <td class="relative py-2.5 pl-3 pr-4 sm:pr-6 text-right text-sm font-medium">
-                            <button type="button" class="btn btn-outline">Select<span class="sr-only">, Hobby</span></button>
+                            <button  class="btn btn-neutral">Select<span class="sr-only">, Hobby</span></button>
                             </td>
                         </tr>
           

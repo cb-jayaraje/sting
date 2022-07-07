@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { ComponentsComponent } from './components/components.component';
 import { ColorsComponent } from './components/config/colors/colors.component';
+import { InstallationComponent } from './components/config/installation/installation.component';
 import { ThemesComponent } from './components/config/themes/themes.component';
 import { LayoutComponent } from './components/layout/layout.component';
 import { AlertsComponent } from './components/page/alerts/alerts.component';
@@ -38,7 +39,8 @@ const routes: Routes = [
       {path: 'modals', component: ModalsComponent},
       {path:'colors', component: ColorsComponent},
       {path:'themes', component: ThemesComponent},
-      {path:'table', component: TableComponent}
+      {path:'table', component: TableComponent},
+      {path: 'installation', component: InstallationComponent}
     ]}
   ]}
  

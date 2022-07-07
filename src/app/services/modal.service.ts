@@ -31,7 +31,7 @@ export class ModalService {
                     </div>
                   </div>
                   <div class="mt-5 sm:mt-6">
-                    <button type="button" class="btn btn-primary">Go back to dashboard</button>
+                    <button  class="btn btn-primary">Go back to dashboard</button>
                   </div>
                 </div>
               </div>

@@ -24,7 +24,7 @@ export class SelectMenuServices {
             <div class="form-control">
               <label id="listbox-label" class="label"> Assigned to </label>
               <div class="mt-1 relative">
-                <button type="button" class="select-button" aria-haspopup="listbox" aria-expanded="true" aria-labelledby="listbox-label">
+                <button class="select-button" aria-haspopup="listbox" aria-expanded="true" aria-labelledby="listbox-label">
                   <span class="block truncate"> Tom Cook </span>
                   <span class="select-button-icon-container">
                     <svg class="h-5 w-5 text-gray-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
@@ -79,7 +79,7 @@ export class SelectMenuServices {
             <div class="form-control">
               <label id="listbox-label" class="label"> Assigned to </label>
               <div class="mt-1 relative">
-                <button type="button" class="select-button" aria-haspopup="listbox" aria-expanded="true" aria-labelledby="listbox-label">
+                <button  class="select-button" aria-haspopup="listbox" aria-expanded="true" aria-labelledby="listbox-label">
                   <span class="block truncate"> Tom Cook </span>
                   <span class="select-button-icon-container">
                     <!-- Heroicon name: solid/selector -->
@@ -135,7 +135,7 @@ export class SelectMenuServices {
             <div class="form-control">
               <label id="listbox-label" class="label"> Assigned to </label>
               <div class="mt-1 relative">
-                <button type="button" class="select-button" aria-haspopup="listbox" aria-expanded="true" aria-labelledby="listbox-label">
+                <button class="select-button" aria-haspopup="listbox" aria-expanded="true" aria-labelledby="listbox-label">
                   <div class="flex items-center">
                     <span aria-label="Online" class="bg-green-400 flex-shrink-0 inline-block h-2 w-2 rounded-full"></span>
                     <span class="ml-3 block truncate"> Tom Cook </span>
@@ -201,7 +201,7 @@ export class SelectMenuServices {
             <div class="form-control">
               <label id="listbox-label" class="label"> Assigned to </label>
               <div class="mt-1 relative">
-                <button type="button" class="select-button" aria-haspopup="listbox" aria-expanded="true" aria-labelledby="listbox-label">
+                <button  class="select-button" aria-haspopup="listbox" aria-expanded="true" aria-labelledby="listbox-label">
                   <span class="flex items-center">
                     <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="" class="flex-shrink-0 h-6 w-6 rounded-full">
                     <span class="ml-3 block truncate"> Tom Cook </span>
@@ -263,7 +263,7 @@ export class SelectMenuServices {
             <div class="form-control">
               <label id="listbox-label" class="label"> Assigned to </label>
               <div class="mt-1 relative">
-                <button type="button" class="select-button" aria-haspopup="listbox" aria-expanded="true" aria-labelledby="listbox-label">
+                <button class="select-button" aria-haspopup="listbox" aria-expanded="true" aria-labelledby="listbox-label">
                   <span class="w-full inline-flex truncate">
                     <span class="truncate"> Tom Cook </span>
                     <span class="ml-2 select-secondary-text"> @tomcook </span>
@@ -328,14 +328,14 @@ export class SelectMenuServices {
               <div class="relative ">
                 <div class="inline-flex shadow-sm rounded-md divide-x divide-indigo-600 ">
                   <div class="relative z-0 inline-flex shadow-sm rounded-md divide-x divide-indigo-600 ">
-                    <div class="relative inline-flex items-center bg-indigo-500 py-2 pl-3 pr-4 border border-transparent rounded-l-md shadow-sm text-white ">
+                    <div class="relative inline-flex items-center bg-primary-500 py-2 pl-3 pr-4 border border-transparent rounded-l-md shadow-sm text-white ">
                       <!-- Heroicon name: solid/check -->
                       <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
                         <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
                       </svg>
                       <p class="ml-2.5 text-sm font-medium">Published</p>
                     </div>
-                    <button type="button" class="relative inline-flex items-center bg-indigo-500 p-2 rounded-l-none rounded-r-md text-sm font-medium text-white hover:bg-indigo-600 focus:outline-none focus:z-10 focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-50 focus:ring-indigo-500" aria-haspopup="listbox" aria-expanded="true" aria-labelledby="listbox-label">
+                    <button  class="relative inline-flex items-center bg-primary-600 p-2 rounded-l-none rounded-r-md text-sm font-medium text-white hover:bg-primary-700 focus:outline-none focus:z-10 focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-50 focus:ring-primary-500" aria-haspopup="listbox" aria-expanded="true" aria-labelledby="listbox-label">
                       <span class="sr-only">Change published status</span>
                       <!-- Heroicon name: solid/chevron-down -->
                       <svg class="h-5 w-5 text-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">

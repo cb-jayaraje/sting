@@ -21,6 +21,7 @@ import { FormsModule } from '@angular/forms';
 import { ColorsComponent } from './components/config/colors/colors.component';
 import { ThemesComponent } from './components/config/themes/themes.component';
 import { DropdownDirective } from './shared/dropdown.directive';
+import { InstallationComponent } from './components/config/installation/installation.component';
 
 @NgModule({
   declarations: [
@@ -39,7 +40,8 @@ import { DropdownDirective } from './shared/dropdown.directive';
     OverlayComponent,
     ColorsComponent,
     ThemesComponent,
-    DropdownDirective
+    DropdownDirective,
+    InstallationComponent
   ],
   imports: [
     BrowserModule,

@@ -38,9 +38,9 @@ codePreview= '';
     <!--Tailwind CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!--Theme CDN -->
-    <link rel="stylesheet" href="http://127.0.0.1:5501/theme.sting.css">
+    <link rel="stylesheet" href="https://cbproductdesign.devcb.in/sting-ui/cdn/theme.sting.css">
     <!--Tailwind config-->
-    <script src="http://127.0.0.1:5501/config.js"></script>
+    <script src="https://cbproductdesign.devcb.in/sting-ui/cdn/config.js"></script>
 
     </head>
     <body>

@@ -179,6 +179,29 @@ export class inputGroupsService {
               </div>
 
            `
+             }, {
+
+              id: "input_9",
+              title: "Input with trailing icon",
+              code: ` 
+              <div class="form-control">
+                <label for="account-number" class="label">Account number</label>
+                <div class="mt-1 relative">
+                    <input type="text" name="account-number" id="account-number" class="input" placeholder="00-00-00">
+                    <div class="input-trailing__icon ">
+                        <!-- Heroicon name: solid/question-mark-circle -->
+                        <svg class="h-5 w-5 text-gray-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
+                        fill="currentColor" aria-hidden="true">
+                        <path fill-rule="evenodd"
+                        d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z"
+                        clip-rule="evenodd" />
+                        </svg>
+                </div>
+            </div>
+        </div>
+              
+              `
+
              }
     ]
 

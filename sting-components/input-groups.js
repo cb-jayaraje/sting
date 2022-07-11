@@ -32,4 +32,9 @@ module.exports = InputGroups = (styles) => ({
                     "@apply text-gray-700 block px-4 py-2 text-sm hover:bg-gray-100": {},
                      },
 
+    '.form-control .input-trailing__icon': {
+                        "@apply absolute inset-y-0 right-0 pr-3 flex items-center pointer-events-none":{}
+                    },
+                    
+
   });

@@ -210,7 +210,7 @@ export class inputGroupsService {
                  <label for="company-website" class="label">Company Website</label>
                  <div class="mt-1 flex">
                      <span class="input-addon__innerlabel "> http:// </span>
-                     <input type="text" name="company-website" id="company-website" class="input input-addon" placeholder="00-00-00">
+                     <input type="text" name="company-website" id="company-website" class="input input-addon" placeholder="www.example.com">
                  </div>
              </div>`
              } ,
@@ -219,7 +219,7 @@ export class inputGroupsService {
              title: 'Input with leading icon and trailing button',
              code: ` 
              <div class="form-control">
-                 <label for="company-website" class="label">Search candidates</label>
+                 <label for="email" class="label">Search candidates</label>
                  <div class="mt-1 relative flex">
                      <div class="input-leading__trailing___iconcontainer">
                          <!-- Heroicon name: solid/users -->
@@ -228,7 +228,7 @@ export class inputGroupsService {
                          </svg>
                      </div>
      
-                     <input type="text" name="company-website" id="company-website" class="input-leading__trailing input" placeholder="00-00-00">
+                     <input type="email" name="email" id="email" class="input-leading__trailing input" placeholder="Jane smith">
      
                      <button type="button" class="input-leading__trailing___button ">
                          <!-- Heroicon name: solid/sort-ascending -->
@@ -353,7 +353,7 @@ export class inputGroupsService {
             title: 'Input with gray background and bottom border',
             code: `
             <div class="form-control">
-                <label for="company-website" class="label">Name</label>
+                <label for="name" class="label">Name</label>
                 <div class="mt-1 border-b border-gray-300 ">
                     <input type="text" name="name" id="name" class="input-graybg__btmborder" placeholder="Jane smith">
                 </div>

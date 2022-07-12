@@ -65,7 +65,7 @@ module.exports = InputGroups = (styles) => ({
      },
 
      ".form-control .input-sharedborders": {
-        "@apply focus:ring-indigo-500 focus:border-indigo-500 relative block w-full rounded-none rounded-bl-md bg-transparent focus:z-10 sm:text-sm border-gray-300": true
+        "@apply focus:ring-indigo-500 focus:border-indigo-500 relative block w-full rounded-none bg-transparent focus:z-10 sm:text-sm border-gray-300": true
       },
       ".form-control .input-inset__container": {
         "@apply border border-gray-300 bg-white rounded-md px-3 py-2 shadow-sm focus-within:ring-1 focus-within:ring-indigo-600 focus-within:border-indigo-600": true

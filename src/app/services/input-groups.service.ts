@@ -257,11 +257,11 @@ export class inputGroupsService {
                            <div class="flex -space-x-px">
                              <div class="w-1/2 flex-1 min-w-0">
                                <label for="card-expiration-date" class="sr-only">Expiration date</label>
-                               <input type="text" name="card-expiration-date" id="card-expiration-date" class="input-sharedborders" placeholder="MM / YY">
+                               <input type="text" name="card-expiration-date" id="card-expiration-date" class="!rounded-bl-md input-sharedborders" placeholder="MM / YY">
                              </div>
                              <div class="flex-1 min-w-0">
                                <label for="card-cvc" class="sr-only">CVC</label>
-                               <input type="text" name="card-cvc" id="card-cvc" class="rounded-none rounded-br-md input-sharedborders" placeholder="CVC">
+                               <input type="text" name="card-cvc" id="card-cvc" class="!rounded-br-md input-sharedborders" placeholder="CVC">
                              </div>
                            </div>
                          </div>
@@ -324,13 +324,15 @@ export class inputGroupsService {
             id: 'input_16',
             title: 'Input with overlapping label',
             code: `
-            <div class="form-control">
-                <div class="mt-1">
-                        <div class="mt-1 relative ">
-                            <label for="name" class="input-overlap__label ">Name</label>
-                            <input type="text" name="name" id="name" class="input" placeholder="Devesh">              
-                        </div>
-                </div>
+            <div class="bg-white py-16 px-8">
+                <div class="form-control">
+                    <div class="mt-1">
+                            <div class="mt-1 relative ">
+                                <label for="name" class="input-overlap__label ">Name</label>
+                                <input type="text" name="name" id="name" class="input" placeholder="Devesh">              
+                            </div>
+                    </div>
+                </div> 
             </div> `
             } ,
 
@@ -339,9 +341,9 @@ export class inputGroupsService {
             title: 'Input with pill shape',
             code: `
             <div class="form-control">
-                <label for="company-website" class="label">Company Website</label>
+                <label for="name" class="label">Name</label>
                 <div class="mt-1">
-                    <input type="text" name="company-website" id="company-website" class="input !rounded-full" placeholder="00-00-00">
+                    <input type="text" name="name" id="name" class="input !rounded-full" placeholder="Jane smith">
                 </div>
             </div> `
             } ,
@@ -351,9 +353,9 @@ export class inputGroupsService {
             title: 'Input with gray background and bottom border',
             code: `
             <div class="form-control">
-                <label for="company-website" class="label">Company Website</label>
+                <label for="company-website" class="label">Name</label>
                 <div class="mt-1 border-b border-gray-300 ">
-                    <input type="text" name="company-website" id="company-website" class="input-graybg__btmborder" placeholder="00-00-00">
+                    <input type="text" name="name" id="name" class="input-graybg__btmborder" placeholder="Jane smith">
                 </div>
             </div>`
             } ,

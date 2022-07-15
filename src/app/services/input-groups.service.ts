@@ -196,12 +196,175 @@ export class inputGroupsService {
                         d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z"
                         clip-rule="evenodd" />
                         </svg>
+<<<<<<< HEAD
                 </div>
             </div>
         </div>
+=======
+                      </div>
+                  </div>
+              </div>
+>>>>>>> 7930e1fd2bd5579bad406d9a2a9086f7a8b93843
               `
+             },
+             {
+               
+             id: "input_10",
+             title: "Input with addon",
+             code: `
+             <div class="form-control">
+                 <label for="company-website" class="label">Company Website</label>
+                 <div class="mt-1 flex">
+                     <span class="input-addon__innerlabel "> http:// </span>
+                     <input type="text" name="company-website" id="company-website" class="input input-addon" placeholder="www.example.com">
+                 </div>
+             </div>`
+             } ,
+             {
+             id: 'input_11',
+             title: 'Input with leading icon and trailing button',
+             code: ` 
+             <div class="form-control">
+                 <label for="email" class="label">Search candidates</label>
+                 <div class="mt-1 relative flex">
+                     <div class="input-leading__trailing___iconcontainer">
+                         <!-- Heroicon name: solid/users -->
+                         <svg class="input-leading__trailing___icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                           <path d="M9 6a3 3 0 11-6 0 3 3 0 016 0zM17 6a3 3 0 11-6 0 3 3 0 016 0zM12.93 17c.046-.327.07-.66.07-1a6.97 6.97 0 00-1.5-4.33A5 5 0 0119 16v1h-6.07zM6 11a5 5 0 015 5v1H1v-1a5 5 0 015-5z" />
+                         </svg>
+                     </div>
+     
+                     <input type="email" name="email" id="email" class="input-leading__trailing input" placeholder="Jane smith">
+     
+                     <button type="button" class="input-leading__trailing___button ">
+                         <!-- Heroicon name: solid/sort-ascending -->
+                         <svg class="input-leading__trailing___icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                           <path d="M3 3a1 1 0 000 2h11a1 1 0 100-2H3zM3 7a1 1 0 000 2h5a1 1 0 000-2H3zM3 11a1 1 0 100 2h4a1 1 0 100-2H3zM13 16a1 1 0 102 0v-5.586l1.293 1.293a1 1 0 001.414-1.414l-3-3a1 1 0 00-1.414 0l-3 3a1 1 0 101.414 1.414L13 10.414V16z" />
+                         </svg>
+                         <span>Sort</span>
+                     </button>
+                 </div>
+             </div>`
+             } ,
 
-             }
+             {
+             id: 'input_12',
+             title: 'Inputs with shared borders',
+             code: `
+             <div class="form-control">
+                 <div class="mt-1">
+                     <fieldset>
+                         <legend class=" input-sharedborders__label ">Card Details</legend>
+                         <div class="mt-1 bg-white rounded-md shadow-sm -space-y-px">
+                           <div>
+                             <label for="card-number" class="sr-only">Card number</label>
+                             <input type="text" name="card-number" id="card-number" class="focus:ring-indigo-500 focus:border-indigo-500 relative block w-full rounded-none rounded-t-md bg-transparent focus:z-10 sm:text-sm border-gray-300" placeholder="Card number">
+                           </div>
+                           <div class="flex -space-x-px">
+                             <div class="w-1/2 flex-1 min-w-0">
+                               <label for="card-expiration-date" class="sr-only">Expiration date</label>
+                               <input type="text" name="card-expiration-date" id="card-expiration-date" class="!rounded-bl-md input-sharedborders" placeholder="MM / YY">
+                             </div>
+                             <div class="flex-1 min-w-0">
+                               <label for="card-cvc" class="sr-only">CVC</label>
+                               <input type="text" name="card-cvc" id="card-cvc" class="!rounded-br-md input-sharedborders" placeholder="CVC">
+                             </div>
+                           </div>
+                         </div>
+                     </fieldset>
+                 </div>
+             </div>`
+             } ,
+
+             {
+             id: 'input_13',
+             title: 'Input with inset label',
+             code: `
+             <div class="form-control">
+                 <div class="mt-1">
+                     <div class="input-inset__container">
+                         <label for="name" class="input-inset__label">Name</label>
+                         <input type="text" name="name" id="name" class="input-inset" placeholder="Jane Smith">
+                       </div>
+                 </div>
+             </div> `
+             } ,
+
+            {
+            id: 'input_14',
+            title: 'Input with inset label shared border',
+            code: `
+            <div class="form-control">
+                <div class="mt-1 ">
+                    <div class="!rounded-b-none input-inset__container">
+                        <label for="name" class="input-inset__label">Name</label>
+                        <input type="text" name="name" id="name" class="input-inset" placeholder="Jane Smith">
+                    </div>
+    
+                    <div class="!rounded-t-none input-inset__container">
+                        <label for="name" class="input-inset__label">Email</label>
+                        <input type="email" name="email" id="email" class="input-inset" placeholder="Jane@makemytrip.com">
+                    </div>
+                </div>
+            </div>`
+            } ,
+            
+            {
+            id: 'input_15',
+            title: 'Input with keyboard shortcut',
+            code: `
+            <div class="form-control">
+                <div class="mt-1">
+                        <label for="name" class="label">Quick search</label>
+                        <div class="mt-1 relative ">
+                            <input type="text" name="name" id="name" class="input">
+                            <div class=" absolute inset-y-0 right-0 flex py-1.5 pr-1.5">
+                                <kbd class="input-shortcut__kbd"> ⌘K </kbd>
+                            </div>
+                        </div>
+                </div>
+            </div>`
+            } ,
+
+            {
+            id: 'input_16',
+            title: 'Input with overlapping label',
+            code: `
+            <div class="bg-white py-16 px-8">
+                <div class="form-control">
+                    <div class="mt-1">
+                            <div class="mt-1 relative ">
+                                <label for="name" class="input-overlap__label ">Name</label>
+                                <input type="text" name="name" id="name" class="input" placeholder="Devesh">              
+                            </div>
+                    </div>
+                </div> 
+            </div> `
+            } ,
+
+            {
+            id: 'input_17',
+            title: 'Input with pill shape',
+            code: `
+            <div class="form-control">
+                <label for="name" class="label">Name</label>
+                <div class="mt-1">
+                    <input type="text" name="name" id="name" class="input !rounded-full" placeholder="Jane smith">
+                </div>
+            </div> `
+            } ,
+
+            {
+            id: 'input_18',
+            title: 'Input with gray background and bottom border',
+            code: `
+            <div class="form-control">
+                <label for="name" class="label">Name</label>
+                <div class="mt-1 border-b border-gray-300 ">
+                    <input type="text" name="name" id="name" class="input-graybg__btmborder" placeholder="Jane smith">
+                </div>
+            </div>`
+            } ,
     ]
 
 }

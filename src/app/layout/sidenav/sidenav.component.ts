@@ -29,13 +29,13 @@ export class SidenavComponent implements OnInit {
   constructor( private router: Router, private route: ActivatedRoute) { }
 
   ngOnInit(): void {
-    console.log(this.route.snapshot.url);
+    // console.log(this.route.snapshot.url);
 
     //console.log(this.leftNav.leftNav)
   }
 
   searchPosts(event: any){
-    console.log(event.value)
+    // console.log(event.value)
     this.searchSubject.next(event.value)
   }
 

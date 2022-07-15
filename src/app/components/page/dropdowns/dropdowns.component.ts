@@ -22,6 +22,8 @@ export class DropdownsComponent implements OnInit {
 
   constructor(public sanitizer: DomSanitizer, private titleService: Title, private dropdownService: DropdownsService) {
     this.titleService.setTitle("Sting - Dropdowns");
+    // console.log(this.dropdownService.badgeDatas.length, "here");
+    
    }
 
   ngOnInit(): void {
@@ -32,7 +34,7 @@ export class DropdownsComponent implements OnInit {
     .pipe(
       map((data:any) => {
         this.html = data.code;
-        console.log(this.html)
+        // console.log(this.html)
         const datas = {
          id: data.id,
          title: data.title,

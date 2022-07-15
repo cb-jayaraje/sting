@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-
+import { getNum } from 'src/app/util';
+import { AlertService } from 'src/app/services/alert.service';
 @Component({
   selector: 'app-feedback',
   templateUrl: './feedback.component.html',
@@ -15,7 +16,7 @@ export class FeedbackComponent implements OnInit {
   ngOnInit(): void {
 
     this.feedbackComponents = [
-      {title: "Alerts", noOfComponents: 6, image: `alerts.png`, link: 'page/alerts'},
+      {title: "Alerts", noOfComponents: getNum(AlertService), image: `alerts.png`, link: 'page/alerts'},
       
       ];
   }

@@ -1,6 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 import { SafeHtml } from '@angular/platform-browser';
 import { CommonService } from 'src/app/services/common.service';
+import { DropdownsService } from 'src/app/services/dropdowns.service';
+import { BadgesService } from 'src/app/services/badges.service';
+import { ButtonService } from 'src/app/services/buttons.service';
+import { getNum } from 'src/app/util';
 // import * as data from './../../../data.json';
 
 @Component({
@@ -18,9 +22,9 @@ export class ElementsComponent implements OnInit {
 
   ngOnInit(): void {
     this.elementComponents = [
-      {title: "Badges", noOfComponents: 2, image: `badges.png`, link: 'page/badges'},
-      {title: "Dropdowns", noOfComponents: 2, image: `dropdowns.png`, link: 'page/dropdowns'},
-      {title: "Buttons", noOfComponents: 1, image: `buttons.png`, link: 'page/buttons'},
+      {title: "Badges", noOfComponents: getNum(BadgesService), image: `badges.png`, link: 'page/badges'},
+      {title: "Dropdowns", noOfComponents: getNum(DropdownsService), image: `dropdowns.png`, link: 'page/dropdowns'},
+      {title: "Buttons", noOfComponents: getNum(ButtonService), image: `buttons.png`, link: 'page/buttons'},
       
       ];
   }

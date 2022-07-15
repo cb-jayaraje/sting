@@ -29,7 +29,7 @@ constructor(public sanitizer: DomSanitizer, private titleService: Title, private
 
     //this.convertedDatas = this.selectMenus;
 
-    console.log(this.convertedDatas)
+    // console.log(this.convertedDatas)
     from(this.selectMenus)
     .pipe(
       map((data:any) => {

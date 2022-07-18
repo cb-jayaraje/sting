@@ -118,14 +118,5 @@ module.exports = {
       500: "var(--color-danger-500)",
       600: "var(--color-danger-500)",
     },
-    neutral: {
-      50: 'var(--color-neutral-50)',
-      75: 'var(--color-neutral-75)',
-      100: 'var(--color-neutral-100)',
-      200: "var(--color-neutral-200)",
-      300: "var(--color-neutral-300)",
-      400: "var(--color-neutral-400)",
-      500: "var(--color-neutral-500)",
-      1000: "var(--color-neutral-1000)"
-    },
+   
   };

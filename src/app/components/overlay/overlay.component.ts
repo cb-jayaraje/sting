@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { CommonService } from 'src/app/services/common.service';
+import { ModalService } from 'src/app/services/modal.service';
+import { getNum } from 'src/app/util';
 import * as data from './../../data-page.json';
 
 @Component({
@@ -23,7 +25,10 @@ export class OverlayComponent implements OnInit {
 
     this.path = this.commonService.componentPath;
     
-    this.overlayCompopnents = this.overlaydata.overlays;
+    // this.overlayCompopnents = this.overlaydata.overlays;
+    this.overlayCompopnents = [
+      {"title": "Modals", "noOfComponents": getNum(ModalService), "image": "modals.png", "link": "modals"}
+  ];
     
   }
 }

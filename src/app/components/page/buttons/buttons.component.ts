@@ -33,7 +33,7 @@ constructor(public sanitizer: DomSanitizer, private titleService: Title, private
     .pipe(
       map((data:any) => {
         this.html = data.code;
-        console.log(this.html)
+        // console.log(this.html)
         const datas = {
          id: data.id,
          title: data.title,

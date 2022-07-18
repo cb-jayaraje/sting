@@ -84,53 +84,23 @@
       --color-green-900: 230 249 235;
       
 
-    --color-info-50: #e6eefa;
-    --color-info-75: #96b8ea;
-    --color-info-100: #6b9be1;
-    --color-info-200: #2b6fd5;
-    --color-info-300: #0052cc;
-    --color-info-400: #00398f;
-    --color-info-500: #00327c;
-
-    --color-warning-50: #fdf9e6;
-    --color-warning-70: #f8e696;
-    --color-warning-100: #f5dc6b;
-    --color-warning-200: #f1cc2b;
-    --color-warning-300: #eec200;
-    --color-warning-400: #a78800;
-    --color-warning-500: #917600;
-
-    --color-success-50: #eef8ec;
-    --color-success-70: #b7e2af;
-    --color-success-100: #9ad68e;
-    --color-success-200: #6ec45d;
-    --color-success-300: #50b83c;
-    --color-success-400: #38812a;
-    --color-success-500: #317025;
-
-    --color-danger-50: #fcebe8;
-    --color-danger-70: #f1ada0;
-    --color-danger-100: #ec8a79;
-    --color-danger-200: #e4583f;
-    --color-danger-300: #de3618;
-    --color-danger-400: #9b2611;
-    --color-danger-500: #87210f;
+   
         
     }
 
     .theme-leap {
-      --color-brand-50: #ffebe6;
-      --color-brand-100: #ffd6cc;
-      --color-brand-200: #ff562b;
-      --color-brand-300: #64748b;
-      --color-brand-400: #b32400;
-      --color-brand-500: #9c1f00;
-      --color-brand-600: #9c1f00;
-      --color-brand-700: #9c1f00;
-      --color-brand-800: #9c1f00;
-      --color-brand-900: #9c1f00;
-  
-  
+      --color-brand-50: 255 235 230;
+      --color-brand-100: 255 214 204;
+      --color-brand-200: 255 173 153;
+      --color-brand-300: 255 133 102;
+      --color-brand-400: 255 92 51;
+      --color-brand-500: 255 51 0;
+      --color-brand-600: 204 41 0;
+      --color-brand-700: 153 31 0;
+      --color-brand-800: 102 20 0;
+      --color-brand-900: 51 10 0;
+    
+    
       --color-primary-50: 231 239 246;
       --color-primary-100:  206 223 237; 
       --color-primary-200:  157 191 219;
@@ -141,17 +111,30 @@
       --color-primary-700: 7 57 99; 
       --color-primary-800: 4 38 66; 
       --color-primary-900: 2 19 33;
-  
-        --color-neutral-50: #f6f9f9;
-        --color-neutral-100: #c9dbdd;
-        --color-neutral-200: #b2ccce;
-        --color-neutral-300: #a2c1c4;
-        --color-neutral-400: #718789;
-        --color-neutral-500: #637678;
-        --color-neutral-600: #637678;
-        --color-neutral-700: #637678;
-        --color-neutral-800: #637678;
-        --color-neutral-900: #637678;
+        
+    
+        --color-neutral-50: 241 242 243;
+        --color-neutral-100: 217 221 223;
+        --color-neutral-200: 180 187 190;
+        --color-neutral-300: 142 152 158;
+        --color-neutral-400: 105 118 125;
+        --color-neutral-500: 67 84 93;
+        --color-neutral-600: 54 67 74;
+        --color-neutral-700: 40 50 56;
+        --color-neutral-800: 27 34 37;
+        --color-neutral-900: 13 17 19;
+
+        --color-neutral-50: 241 242 243;
+        --color-neutral-100: 217 221 223;
+        --color-neutral-200: 180 187 190;
+        --color-neutral-300: 142 152 158;
+        --color-neutral-400: 105 118 125;
+        --color-neutral-500: 67 84 93;
+        --color-neutral-600: 54 67 74;
+        --color-neutral-700: 40 50 56;
+        --color-neutral-800: 27 34 37;
+        --color-neutral-900: 13 17 19;
+          
 
      
 
@@ -163,39 +146,39 @@
 
 
     --color-brand-50: 255 235 230;
-    --color-brand-100: 255 214 204;
-    --color-brand-200: 255 173 153;
-    --color-brand-300: 255 133 102;
-    --color-brand-400: 255 92 51;
-    --color-brand-500: 255 51 0;
-    --color-brand-600: 204 41 0;
-    --color-brand-700: 153 31 0;
-    --color-brand-800: 102 20 0;
-    --color-brand-900: 51 10 0;
+  --color-brand-100: 255 214 204;
+  --color-brand-200: 255 173 153;
+  --color-brand-300: 255 133 102;
+  --color-brand-400: 255 92 51;
+  --color-brand-500: 255 51 0;
+  --color-brand-600: 204 41 0;
+  --color-brand-700: 153 31 0;
+  --color-brand-800: 102 20 0;
+  --color-brand-900: 51 10 0;
 
 
-    --color-primary-50: 231 239 246;
-    --color-primary-100:  206 223 237; 
-    --color-primary-200:  157 191 219;
-    --color-primary-300:  109 159 201;
-    --color-primary-400: 60 127 183; 
-    --color-primary-500: 11 95 165;
-    --color-primary-600: 9 76 132; 
-    --color-primary-700: 7 57 99; 
-    --color-primary-800: 4 38 66; 
-    --color-primary-900: 2 19 33;
-      
+  --color-primary-50: 231 239 246;
+  --color-primary-100:  206 223 237; 
+  --color-primary-200:  157 191 219;
+  --color-primary-300:  109 159 201;
+  --color-primary-400: 60 127 183; 
+  --color-primary-500: 11 95 165;
+  --color-primary-600: 9 76 132; 
+  --color-primary-700: 7 57 99; 
+  --color-primary-800: 4 38 66; 
+  --color-primary-900: 2 19 33;
+    
 
-      --color-neutral-50: 241 242 243;
-      --color-neutral-100: 217 221 223;
-      --color-neutral-200: 180 187 190;
-      --color-neutral-300: 142 152 158;
-      --color-neutral-400: 105 118 125;
-      --color-neutral-500: 67 84 93;
-      --color-neutral-600: 54 67 74;
-      --color-neutral-700: 40 50 56;
-      --color-neutral-800: 27 34 37;
-      --color-neutral-900: 13 17 19;
+    --color-neutral-50: 241 242 243;
+    --color-neutral-100: 217 221 223;
+    --color-neutral-200: 180 187 190;
+    --color-neutral-300: 142 152 158;
+    --color-neutral-400: 105 118 125;
+    --color-neutral-500: 67 84 93;
+    --color-neutral-600: 54 67 74;
+    --color-neutral-700: 40 50 56;
+    --color-neutral-800: 27 34 37;
+    --color-neutral-900: 13 17 19;
       
       
 

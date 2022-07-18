@@ -61,7 +61,7 @@ export class ButtonService {
       <div class="flex gap-x-3 pt-5">
       <!--outline button small-->
         <div>  
-          <butto class=" btn btn-small btn-outline ">Primary</button>
+          <button class=" btn btn-small btn-outline ">Primary</button>
         </div>
         <!--outline button small with icon-->
         <div>

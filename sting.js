@@ -12,6 +12,7 @@ const Dropdown = require('./sting-components/dropdowns')
 const ListGroups = require('./sting-components/list-groups')
 const Token = require('./sting-components/token');
 const Badge = require('./sting-components/badge');
+const Modal = require('./sting-components/modal');
 const Checkout = require('./sting-components/checkout');
 
 
@@ -25,6 +26,7 @@ module.exports = plugin.withOptions(
         // addComponents(Alert());
         // addComponents(Avatar());
          addComponents(Badge())
+         addComponents(Modal())
         // addComponents(Breadcrumb());
         addComponents(Button());
         addComponents(InputGroups());

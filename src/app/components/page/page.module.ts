@@ -17,6 +17,7 @@ import { ListContainersComponent } from './list-containers/list-containers.compo
 import { ModalsComponent } from './modals/modals.component';
 import { GelatoComponent } from './checkout/gelato/gelato.component';
 import { TableComponent } from './table/table.component';
+import { RadioGroupsComponent } from './radio-groups/radio-groups.component';
 
 @NgModule({
     declarations: [
@@ -35,7 +36,8 @@ import { TableComponent } from './table/table.component';
         ListContainersComponent,
         ModalsComponent,
         GelatoComponent,
-        TableComponent
+        TableComponent,
+        RadioGroupsComponent
   ],
     imports: [
         CommonModule,

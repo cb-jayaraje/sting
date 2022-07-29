@@ -41,6 +41,7 @@ constructor(public sanitizer: DomSanitizer, private titleService: Title, private
          title: data.title,
          code:this.html
         }
+        console.log(datas);
  
         return datas;
  

@@ -3,7 +3,7 @@ import { DomSanitizer, SafeHtml, Title } from '@angular/platform-browser';
 import { from, map } from 'rxjs';
 import { CommonService } from 'src/app/services/common.service';
 import { ModalService } from 'src/app/services/modal.service';
-import * as data from './../../../data-page.json';
+
 
 @Component({
   selector: 'app-modals',
@@ -14,9 +14,10 @@ export class ModalsComponent implements OnInit {
 
 
 
-  componentData:any = data;
+  componentData:any = [];
 
-
+  htmlPre = '';
+  compUnescape='';
   
   modals: any;
   convertedDatas: any = [];

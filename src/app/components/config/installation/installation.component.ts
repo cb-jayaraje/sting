@@ -33,6 +33,7 @@ codePreview= '';
     <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    // title
     <!--Sting CDN link -->
     <link rel="stylesheet" href="https://cbproductdesign.devcb.in/sting-ui/cdn/sting.min.css">
     <!--Tailwind CDN -->

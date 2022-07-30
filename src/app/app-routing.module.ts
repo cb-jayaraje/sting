@@ -14,6 +14,7 @@ import { InputGroupsComponent } from './components/page/input-groups/input-group
 import { ListContainersComponent } from './components/page/list-containers/list-containers.component';
 import { ModalsComponent } from './components/page/modals/modals.component';
 import { PageComponent } from './components/page/page.component';
+import { RadioGroupsComponent } from './components/page/radio-groups/radio-groups.component';
 import { SelectMenusComponent } from './components/page/select-menus/select-menus.component';
 import { SignInFormsComponent } from './components/page/sign-in-forms/sign-in-forms.component';
 import { TableComponent } from './components/page/table/table.component';
@@ -40,7 +41,8 @@ const routes: Routes = [
       {path:'colors', component: ColorsComponent},
       {path:'themes', component: ThemesComponent},
       {path:'table', component: TableComponent},
-      {path: 'installation', component: InstallationComponent}
+      {path: 'installation', component: InstallationComponent},
+      {path: 'radio-groups', component: RadioGroupsComponent}
     ]}
   ]}
  

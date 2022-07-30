@@ -32,7 +32,8 @@
             {"title":"Dropdowns", "link": "dropdowns" },
             {"title":"Buttons", "link": "buttons" },
             {"title":"Modals", "link": "modals" },
-            {"title":"Table", "link": "table" }
+            {"title":"Table", "link": "table" },
+            {"title":"Radio Groups", "link": "radio-groups" }
             
             
         ],

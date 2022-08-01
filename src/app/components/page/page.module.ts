@@ -18,6 +18,9 @@ import { ModalsComponent } from './modals/modals.component';
 import { GelatoComponent } from './checkout/gelato/gelato.component';
 import { TableComponent } from './table/table.component';
 import { RadioGroupsComponent } from './radio-groups/radio-groups.component';
+import { ToggleComponent } from './toggle/toggle.component';
+import { TabsComponent } from './tabs/tabs.component';
+import { CheckboxComponent } from './checkbox/checkbox.component';
 
 @NgModule({
     declarations: [
@@ -37,7 +40,10 @@ import { RadioGroupsComponent } from './radio-groups/radio-groups.component';
         ModalsComponent,
         GelatoComponent,
         TableComponent,
-        RadioGroupsComponent
+        RadioGroupsComponent,
+        ToggleComponent,
+        TabsComponent,
+        CheckboxComponent
   ],
     imports: [
         CommonModule,

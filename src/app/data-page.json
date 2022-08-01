@@ -33,7 +33,10 @@
             {"title":"Buttons", "link": "buttons" },
             {"title":"Modals", "link": "modals" },
             {"title":"Table", "link": "table" },
-            {"title":"Radio Groups", "link": "radio-groups" }
+            {"title":"Radio Groups", "link": "radio-groups" },
+            {"title":"Toggles", "link": "toggles" },
+            {"title":"Tabs", "link": "tabs" },
+            {"title":"Checkbox", "link": "checkbox" }
             
             
         ],

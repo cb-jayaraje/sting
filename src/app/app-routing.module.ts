@@ -8,6 +8,7 @@ import { LayoutComponent } from './components/layout/layout.component';
 import { AlertsComponent } from './components/page/alerts/alerts.component';
 import { BadgesComponent } from './components/page/badges/badges.component';
 import { ButtonsComponent } from './components/page/buttons/buttons.component';
+import { CheckboxComponent } from './components/page/checkbox/checkbox.component';
 import { GelatoComponent } from './components/page/checkout/gelato/gelato.component';
 import { DropdownsComponent } from './components/page/dropdowns/dropdowns.component';
 import { InputGroupsComponent } from './components/page/input-groups/input-groups.component';
@@ -18,6 +19,8 @@ import { RadioGroupsComponent } from './components/page/radio-groups/radio-group
 import { SelectMenusComponent } from './components/page/select-menus/select-menus.component';
 import { SignInFormsComponent } from './components/page/sign-in-forms/sign-in-forms.component';
 import { TableComponent } from './components/page/table/table.component';
+import { TabsComponent } from './components/page/tabs/tabs.component';
+import { ToggleComponent } from './components/page/toggle/toggle.component';
 import { HomeComponent } from './home/home.component';
 
 const routes: Routes = [
@@ -42,7 +45,10 @@ const routes: Routes = [
       {path:'themes', component: ThemesComponent},
       {path:'table', component: TableComponent},
       {path: 'installation', component: InstallationComponent},
-      {path: 'radio-groups', component: RadioGroupsComponent}
+      {path: 'radio-groups', component: RadioGroupsComponent},
+      {path: 'toggles', component: ToggleComponent},
+      {path: 'tabs', component: TabsComponent},
+      {path: 'checkbox', component: CheckboxComponent}
     ]}
   ]}
  

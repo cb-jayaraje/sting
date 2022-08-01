@@ -65,7 +65,7 @@ module.exports = RadioGroup = (styles) => ({
         '@apply h-4 w-4 text-indigo-600 border-gray-300 focus:ring-indigo-500': {}
     },
     '.radio-table__label--checked': {
-        ' @apply text-indigo-900': {}
+        '@apply text-indigo-900': {}
     },
     '.radio-table__label': {
         '@apply ml-2 opacity-100': {}

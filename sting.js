@@ -14,6 +14,10 @@ const Token = require('./sting-components/token');
 const Badge = require('./sting-components/badge');
 const Modal = require('./sting-components/modal');
 const Checkout = require('./sting-components/checkout');
+const Toggle = require('./sting-components/toggle');
+const RadioGroup = require('./sting-components/radio-group');
+const Tabs = require('./sting-components/tabs');
+const Checkbox = require('./sting-components/checkbox');
 
 
 module.exports = plugin.withOptions(
@@ -39,12 +43,15 @@ module.exports = plugin.withOptions(
          addComponents(ListGroups());
          addComponents(Token());
          addComponents(Checkout());
+         addComponents(Toggle());
+         addComponents(RadioGroup());
         // addComponents(Forms());
         // addComponents(List());
         // addComponents(Pagination());
         // addComponents(Skeleton());
         // addComponents(Spinner());
-        // addComponents(Tabs());
+        addComponents(Tabs());
+        addComponents(Checkbox());
         // addComponents(Tooltip());
         // Typography().handler(options);
       };

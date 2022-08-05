@@ -22,7 +22,6 @@ export class DropdownsComponent implements OnInit {
 
   constructor(public sanitizer: DomSanitizer, private titleService: Title, private dropdownService: DropdownsService) {
     this.titleService.setTitle("Sting - Dropdowns");
-    // console.log(this.dropdownService.badgeDatas.length, "here");
     
    }
 

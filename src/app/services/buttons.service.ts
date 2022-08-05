@@ -12,7 +12,7 @@ export class ButtonService {
             <div class="flex gap-x-3">
           <!--outline button-->
             <div>  
-              <button class=" btn btn-outline ">Outline</button>
+              <button class=" btn btn-outline " type="submit">Outline</button>
             </div>
             <!--outline button with icon-->
             <div>

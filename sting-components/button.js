@@ -1,5 +1,5 @@
 module.exports = Button = (styles) => ({
-    '.btn': {
+    ' .btn': {
         "@apply  px-3.5 py-2.5 rounded border  text-copy leading-4 focus:outline-none focus:ring-2 focus:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-30": {},
                    },
         '.btn-small': {

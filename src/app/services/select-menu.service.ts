@@ -27,7 +27,7 @@ export class SelectMenuServices {
                 <button class="select-button" aria-haspopup="listbox" aria-expanded="true" aria-labelledby="listbox-label">
                   <span class="block truncate"> Tom Cook </span>
                   <span class="select-button-icon-container">
-                    <svg class="h-5 w-5 text-gray-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                    <svg class="h-5 w-5 " xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
                       <path fill-rule="evenodd" d="M10 3a1 1 0 01.707.293l3 3a1 1 0 01-1.414 1.414L10 5.414 7.707 7.707a1 1 0 01-1.414-1.414l3-3A1 1 0 0110 3zm-3.707 9.293a1 1 0 011.414 0L10 14.586l2.293-2.293a1 1 0 011.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z" clip-rule="evenodd" />
                     </svg>
                   </span>
@@ -47,16 +47,16 @@ export class SelectMenuServices {
                   <!--
                     Select option, manage highlight styles based on mouseenter/mouseleave and keyboard navigation.
             
-                    Highlighted: "text-white bg-indigo-600", Not Highlighted: "text-gray-900"
+                    Highlighted: "text-white bg-primary-600", Not Highlighted: "text-gray-900"
                   -->
-                  <li class="select-li pl-3 pr-9"  id="listbox-option-0" role="option">
+                  <li class="select-li pl-3 pr-9 group"  id="listbox-option-0" role="option">
                     <!-- Selected: "font-semibold", Not Selected: "font-normal" -->
                     <span class="font-normal block truncate"> Wade Cooper </span>
             
                     <!--
                       Checkmark, only display for selected option.
             
-                      Highlighted: "text-white", Not Highlighted: "text-indigo-600"
+                      Highlighted: "text-white", Not Highlighted: "text-primary-600"
                     -->
                     <span class="select-li-icon right-0 pr-4">
                       <!-- Heroicon name: solid/check -->
@@ -103,7 +103,7 @@ export class SelectMenuServices {
                   <!--
                     Select option, manage highlight styles based on mouseenter/mouseleave and keyboard navigation.
             
-                    Highlighted: "text-white bg-indigo-600", Not Highlighted: "text-gray-900"
+                    Highlighted: "text-white bg-primary-600", Not Highlighted: "text-gray-900"
                   -->
                   <li class="select-li pl-8 pr-4" id="listbox-option-0" role="option">
                     <!-- Selected: "font-semibold", Not Selected: "font-normal" -->
@@ -112,7 +112,7 @@ export class SelectMenuServices {
                     <!--
                       Checkmark, only display for selected option.
             
-                      Highlighted: "text-white", Not Highlighted: "text-indigo-600"
+                      Highlighted: "text-white", Not Highlighted: "text-primary-600"
                     -->
                     <span class="select-li-icon left-0 pl-1.5">
                       <!-- Heroicon name: solid/check -->
@@ -162,7 +162,7 @@ export class SelectMenuServices {
                   <!--
                     Select option, manage highlight styles based on mouseenter/mouseleave and keyboard navigation.
             
-                    Highlighted: "text-white bg-indigo-600", Not Highlighted: "text-gray-900"
+                    Highlighted: "text-white bg-primary-600", Not Highlighted: "text-gray-900"
                   -->
                   <li class="select-li pl-3 pr-9" id="listbox-option-0" role="option">
                     <div class="flex items-center">
@@ -178,7 +178,7 @@ export class SelectMenuServices {
                     <!--
                       Checkmark, only display for selected option.
             
-                      Highlighted: "text-white", Not Highlighted: "text-indigo-600"
+                      Highlighted: "text-white", Not Highlighted: "text-primary-600"
                     -->
                     <span class="select-li-icon right-0 pr-4">
                       <!-- Heroicon name: solid/check -->
@@ -228,7 +228,7 @@ export class SelectMenuServices {
                   <!--
                     Select option, manage highlight styles based on mouseenter/mouseleave and keyboard navigation.
             
-                    Highlighted: "text-white bg-indigo-600", Not Highlighted: "text-gray-900"
+                    Highlighted: "text-white bg-primary-600", Not Highlighted: "text-gray-900"
                   -->
                   <li class="select-li pl-3 pr-9" id="listbox-option-0" role="option">
                     <div class="flex items-center">
@@ -240,7 +240,7 @@ export class SelectMenuServices {
                     <!--
                       Checkmark, only display for selected option.
             
-                      Highlighted: "text-white", Not Highlighted: "text-indigo-600"
+                      Highlighted: "text-white", Not Highlighted: "text-primary-600"
                     -->
                     <span class="select-li-icon right-0 pr-4">
                       <!-- Heroicon name: solid/check -->
@@ -270,7 +270,7 @@ export class SelectMenuServices {
                   </span>
                   <span class="select-button-icon-container">
                     <!-- Heroicon name: solid/selector -->
-                    <svg class="h-5 w-5 text-gray-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                    <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
                       <path fill-rule="evenodd" d="M10 3a1 1 0 01.707.293l3 3a1 1 0 01-1.414 1.414L10 5.414 7.707 7.707a1 1 0 01-1.414-1.414l3-3A1 1 0 0110 3zm-3.707 9.293a1 1 0 011.414 0L10 14.586l2.293-2.293a1 1 0 011.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z" clip-rule="evenodd" />
                     </svg>
                   </span>
@@ -290,20 +290,20 @@ export class SelectMenuServices {
                   <!--
                     Select option, manage highlight styles based on mouseenter/mouseleave and keyboard navigation.
             
-                    Highlighted: "text-white bg-indigo-600", Not Highlighted: "text-gray-900"
+                    Highlighted: "text-white bg-primary-600", Not Highlighted: "text-gray-900"
                   -->
                   <li class="select-li pl-3 pr-9" id="listbox-option-0" role="option">
                     <div class="flex">
                       <!-- Selected: "font-semibold", Not Selected: "font-normal" -->
                       <span class="font-normal truncate"> Wade Cooper </span>
-                      <!-- Highlighted: "text-indigo-200", Not Highlighted: "text-gray-500" -->
+                      <!-- Highlighted: "text-primary-200", Not Highlighted: "text-gray-500" -->
                       <span class="select-secondary-text ml-2 "> @wadecooper </span>
                     </div>
             
                     <!--
                       Checkmark, only display for selected option.
             
-                      Highlighted: "text-white", Not Highlighted: "text-indigo-600"
+                      Highlighted: "text-white", Not Highlighted: "text-primary-600"
                     -->
                     <span class="select-li-icon right-0  pr-4">
                       <!-- Heroicon name: solid/check -->
@@ -326,8 +326,8 @@ export class SelectMenuServices {
             <div class="form-control">
               <label id="listbox-label" class="sr-only"> Change published status </label>
               <div class="relative ">
-                <div class="inline-flex shadow-sm rounded-md divide-x divide-indigo-600 ">
-                  <div class="relative z-0 inline-flex shadow-sm rounded-md divide-x divide-indigo-600 ">
+                <div class="inline-flex shadow-sm rounded-md divide-x divide-primary-600 ">
+                  <div class="relative z-0 inline-flex shadow-sm rounded-md divide-x divide-primary-600 ">
                     <div class="relative inline-flex items-center bg-primary-500 py-2 pl-3 pr-4 border border-transparent rounded-l-md shadow-sm text-white ">
                       <!-- Heroicon name: solid/check -->
                       <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
@@ -335,7 +335,7 @@ export class SelectMenuServices {
                       </svg>
                       <p class="ml-2.5 text-sm font-medium">Published</p>
                     </div>
-                    <button  class="relative inline-flex items-center bg-primary-600 p-2 rounded-l-none rounded-r-md text-sm font-medium text-white hover:bg-primary-700 focus:outline-none focus:z-10 focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-50 focus:ring-primary-500" aria-haspopup="listbox" aria-expanded="true" aria-labelledby="listbox-label">
+                    <button  class="select-button-l-curve" aria-haspopup="listbox" aria-expanded="true" aria-labelledby="listbox-label">
                       <span class="sr-only">Change published status</span>
                       <!-- Heroicon name: solid/chevron-down -->
                       <svg class="h-5 w-5 text-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
@@ -359,7 +359,7 @@ export class SelectMenuServices {
                   <!--
                     Select option, manage highlight styles based on mouseenter/mouseleave and keyboard navigation.
             
-                    Highlighted: "text-white bg-indigo-500", Not Highlighted: "text-gray-900"
+                    Highlighted: "text-white bg-primary-500", Not Highlighted: "text-gray-900"
                   -->
                   <li class="text-gray-900 cursor-default select-none relative p-4 text-sm" id="listbox-option-0" role="option">
                     <div class="flex flex-col">
@@ -369,16 +369,16 @@ export class SelectMenuServices {
                         <!--
                           Checkmark, only display for selected option.
             
-                          Highlighted: "text-white", Not Highlighted: "text-indigo-500"
+                          Highlighted: "text-white", Not Highlighted: "text-primary-500"
                         -->
-                        <span class="text-indigo-500">
+                        <span class="text-primary-500">
                           <!-- Heroicon name: solid/check -->
                           <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
                             <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
                           </svg>
                         </span>
                       </div>
-                      <!-- Highlighted: "text-indigo-200", Not Highlighted: "text-gray-500" -->
+                      <!-- Highlighted: "text-primary-200", Not Highlighted: "text-gray-500" -->
                       <p class="text-gray-500 mt-2">This job posting can be viewed by anyone who has the link.</p>
                     </div>
                   </li>

@@ -15,13 +15,16 @@ module.exports = Button = (styles) => ({
             "@apply bg-transparent hover:bg-primary-50 text-primary-500 border-primary-400 focus:ring-primary-500": {},
                        },
     '.btn-primary': {
-        "@apply  text-white bg-primary-500 hover:bg-primary-600 active:bg-primary-600 focus:ring-primary-600 border-primary-500 text-white" :{},
+        "@apply  text-white !bg-primary-500 hover:!bg-primary-600 active:!bg-primary-600 focus:ring-primary-600 border-primary-500 text-white" :{},
+    },
+    '.theme-sting .btn-primary': {
+        "@apply  text-white !bg-primary-500 hover:!bg-primary-600 active:!bg-primary-600 focus:ring-primary-600 border-primary-500 hover:text-lime-400" :{},
     },
     '.btn-primary-small': {
-        "@apply  text-white bg-primary-500 hover:bg-primary-600 active:bg-primary-600 focus:ring-primary-600 border-primary-500 text-white" :{},
+        "@apply  text-white !bg-primary-500 hover:!bg-primary-600 active:!bg-primary-600 focus:ring-primary-600 border-primary-500 text-white" :{},
     },
     '.btn-brand': {
-        "@apply text-white bg-brand-50 hover:bg-brand-100 active:bg-brand-100  focus:ring-brand-100 text-brand-600" :{},
+        "@apply text-white !bg-brand-50 hover:!bg-brand-100 active:!bg-brand-100  focus:ring-brand-100 text-brand-600" :{},
     },
     
     '.btn-neutral': {
@@ -33,26 +36,26 @@ module.exports = Button = (styles) => ({
 
 
     '.btn-red': {
-        "@apply text-white bg-red-50 hover:bg-red-100 active:bg-red-100 focus:ring-red-500 border-red-50 text-white" :{},
+        "@apply text-white !bg-red-50 hover:!bg-red-100 active:!bg-red-100 focus:ring-red-500 border-red-50 text-white" :{},
     },
     '.btn-orange': {
-        "@apply text-white bg-orange hover:bg-orange active:bg-orange focus:ring-orange text-white" :{},
+        "@apply text-white !bg-orange hover:!bg-orange active:!bg-orange focus:ring-orange text-white" :{},
     },
     '.btn-green': {
-        "@apply text-white bg-green hover:bg-green active:bg-green focus:ring-green text-white" :{},
+        "@apply text-white !bg-green hover:!bg-green active:!bg-green focus:ring-green text-white" :{},
     },
 
     '.btn-info': {
-        "@apply text-white bg-info-300 hover:bg-info-100 focus:ring-info-300 active:bg-info-400":{},
+        "@apply text-white !bg-info-300 hover:!bg-info-100 focus:ring-info-300 active:!bg-info-400":{},
     },
     '.btn-warning': {
-        "@apply bg-orange-50 hover:bg-orange-100 text-orange-700 border-orange-50 focus:ring-orange-500":{},
+        "@apply !bg-orange-50 hover:!bg-orange-100 text-orange-700 border-orange-50 focus:ring-orange-500":{},
     },
     '.btn-success': {
-        "@apply text-green-700 bg-green-50 hover:bg-green-100 focus:ring-green-500 active:bg-green-100":{},
+        "@apply text-green-700 !bg-green-50 hover:!bg-green-100 focus:ring-green-500 active:!bg-green-100":{},
     },
     '.btn-danger': {
-        "@apply bg-red-50 hover:bg-red-100 active:bg-red-100 focus:ring-red-400  text-red-600" :{},
+        "@apply !bg-red-50 hover:!bg-red-100 active:!bg-red-100 focus:ring-red-400  text-red-600" :{},
     },
 
     '.btn-icon': {

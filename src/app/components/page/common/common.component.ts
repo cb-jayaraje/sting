@@ -32,10 +32,11 @@ export class CommonComponent implements OnInit {
   }
 
   ngAfterViewChecked() {
+    
     if(this.highlighted == false){
       this.highlightService.highlightAll();
-
     }
+
     this.highlighted = true;
 
   }

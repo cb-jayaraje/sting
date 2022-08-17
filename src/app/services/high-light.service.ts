@@ -18,6 +18,7 @@ import 'prismjs/components/prism-scss';
 
 
 declare var Prism: any;
+let flag = 1
 
 @Injectable({providedIn: 'root'})
 
@@ -26,8 +27,11 @@ export class HighlightService {
   constructor(@Inject(PLATFORM_ID) private platformId: Object) { }
 
   highlightAll() {
+    console.log(flag);
     if (isPlatformBrowser(this.platformId)) {
-      // Prism.highlightAll();   ---- this was the issue for text select
+      Prism.highlightAll();
+      flag = 0
+      
     }
   }
 }

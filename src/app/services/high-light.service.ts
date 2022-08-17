@@ -27,7 +27,7 @@ export class HighlightService {
 
   highlightAll() {
     if (isPlatformBrowser(this.platformId)) {
-      Prism.highlightAll();
+      // Prism.highlightAll();   ---- this was the issue for text select
     }
   }
 }

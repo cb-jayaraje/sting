@@ -16,18 +16,18 @@ export class RadioGroupService {
         <legend class="sr-only">Notification method</legend>
         <div class="space-y-4">
           <div class="flex items-center">
-            <input id="email"  name="notification-method" type="radio" checked class="radio">
-            <label for="email" class="radio-label"> Email </label>
+            <input id="1email"  name="notification-method1" type="radio" checked class="radio">
+            <label for="1email" class="radio-label"> Email </label>
           </div>
     
           <div class="flex items-center">
-            <input id="sms" name="notification-method" type="radio" class="radio">
-            <label for="sms" class="radio-label"> Phone (SMS) </label>
+            <input id="1sms" name="notification-method1" type="radio" class="radio">
+            <label for="1sms" class="radio-label"> Phone (SMS) </label>
           </div>
     
           <div class="flex items-center">
-            <input id="push" name="notification-method" type="radio" class="radio">
-            <label for="push" class="radio-label"> Push notification </label>
+            <input id="1push" name="notification-method1" type="radio" class="radio">
+            <label for="1push" class="radio-label"> Push notification </label>
           </div>
         </div>
       </fieldset>
@@ -47,18 +47,18 @@ export class RadioGroupService {
         <legend class="sr-only">Notification method</legend>
         <div class="space-y-4 sm:flex sm:items-center sm:space-y-0 sm:space-x-10">
           <div class="flex items-center">
-            <input id="email" name="notification-method" type="radio" checked class="radio">
-            <label for="email" class="ml-3 block text-sm font-medium text-gray-700"> Email </label>
+            <input id="email" name="notification-method2" type="radio" checked class="radio">
+            <label for="2email" class="ml-3 block text-sm font-medium text-gray-700"> Email </label>
           </div>
     
           <div class="flex items-center">
-            <input id="sms" name="notification-method" type="radio" class="radio">
-            <label for="sms" class="ml-3 block text-sm font-medium text-gray-700"> Phone (SMS) </label>
+            <input id="sms" name="notification-method2" type="radio" class="radio">
+            <label for="2sms" class="ml-3 block text-sm font-medium text-gray-700"> Phone (SMS) </label>
           </div>
     
           <div class="flex items-center">
-            <input id="push" name="notification-method" type="radio" class="radio">
-            <label for="push" class="ml-3 block text-sm font-medium text-gray-700"> Push notification </label>
+            <input id="push" name="notification-method2" type="radio" class="radio">
+            <label for="2push" class="ml-3 block text-sm font-medium text-gray-700"> Push notification </label>
           </div>
         </div>
       </fieldset>
@@ -78,30 +78,30 @@ export class RadioGroupService {
 
             <div class="relative flex items-start">
               <div class="flex items-center h-5">
-                <input id="small" aria-describedby="small-description" name="plan" type="radio" checked class="radio">
+                <input id="3small" aria-describedby="small-description" name="plan1" type="radio" checked class="radio">
               </div>
               <div class="ml-3 text-sm">
-                <label for="small" class="ml-0 radio-label">Small</label>
+                <label for="3small" class="ml-0 radio-label">Small</label>
                 <p id="small-description" class="text-gray-500">4 GB RAM / 2 CPUS / 80 GB SSD Storage</p>
               </div>
             </div>
         
             <div class="relative flex items-start">
               <div class="flex items-center h-5">
-                <input id="medium" aria-describedby="medium-description" name="plan" type="radio" class="radio">
+                <input id="3medium" aria-describedby="medium-description" name="plan1" type="radio" class="radio">
               </div>
               <div class="ml-3 text-sm">
-                <label for="medium" class="ml-0 radio-label">Medium</label>
+                <label for="3medium" class="ml-0 radio-label">Medium</label>
                 <p id="medium-description" class="text-gray-500">8 GB RAM / 4 CPUS / 160 GB SSD Storage</p>
               </div>
             </div>
         
             <div class="relative flex items-start">
               <div class="flex items-center h-5">
-                <input id="large" aria-describedby="large-description" name="plan" type="radio" class="radio">
+                <input id="3large" aria-describedby="large-description" name="plan1" type="radio" class="radio">
               </div>
               <div class="ml-3 text-sm">
-                <label for="large" class="ml-0 radio-label">Large</label>
+                <label for="3large" class="ml-0 radio-label">Large</label>
                 <p id="large-description" class="text-gray-500">16 GB RAM / 8 CPUS / 320 GB SSD Storage</p>
               </div>
             </div>
@@ -124,30 +124,30 @@ export class RadioGroupService {
           <div class="space-y-5">
             <div class="relative flex items-start">
               <div class="flex items-center h-5">
-                <input id="small" aria-describedby="small-description" name="plan" type="radio" checked class="radio">
+                <input id="4small" aria-describedby="small-description" name="plan" type="radio" checked class="radio">
               </div>
               <div class="ml-3 text-sm">
-                <label for="small" class="ml-0 radio-inline__label">Small</label>
+                <label for="4small" class="ml-0 radio-inline__label">Small</label>
                 <span id="small-description" class="text-gray-500">4 GB RAM / 2 CPUS / 80 GB SSD Storage</span>
               </div>
             </div>
         
             <div class="relative flex items-start">
               <div class="flex items-center h-5">
-                <input id="medium" aria-describedby="medium-description" name="plan" type="radio" class="radio">
+                <input id="4medium" aria-describedby="medium-description" name="plan" type="radio" class="radio">
               </div>
               <div class="ml-3 text-sm">
-                <label for="medium" class="ml-0 radio-inline__label">Medium</label>
+                <label for="4medium" class="ml-0 radio-inline__label">Medium</label>
                 <span id="medium-description" class="text-gray-500">8 GB RAM / 4 CPUS / 160 GB SSD Storage</span>
               </div>
             </div>
         
             <div class="relative flex items-start">
               <div class="flex items-center h-5">
-                <input id="large" aria-describedby="large-description" name="plan" type="radio" class="radio">
+                <input id="4large" aria-describedby="large-description" name="plan" type="radio" class="radio">
               </div>
               <div class="ml-3 text-sm">
-                <label for="large" class="ml-0 radio-inline__label">Large</label>
+                <label for="4large" class="ml-0 radio-inline__label">Large</label>
                 <span id="large-description" class="text-gray-500">16 GB RAM / 8 CPUS / 320 GB SSD Storage</span>
               </div>
             </div>
@@ -174,31 +174,31 @@ export class RadioGroupService {
                 
               <div class="relative flex items-start py-4">
                 <div class="min-w-0 flex-1 text-sm">
-                  <label for="account-checking" class="ml-0 radio-label">Checking</label>
+                  <label for="5account-checking" class="ml-0 radio-label">Checking</label>
                   <p id="account-checking-description" class="text-gray-500">CIBC ••••6610</p>
                 </div>
                 <div class="ml-3 flex items-center h-5">
-                  <input id="account-checking" aria-describedby="account-checking-description" name="account" type="radio" checked class="radio">
+                  <input id="5account-checking" aria-describedby="account-checking-description" name="account" type="radio" checked class="radio">
                 </div>
               </div>
         
               <div class="relative flex items-start py-4">
                 <div class="min-w-0 flex-1 text-sm">
-                  <label for="account-savings" class="ml-0 radio-label">Savings</label>
+                  <label for="5account-savings" class="ml-0 radio-label">Savings</label>
                   <p id="account-savings-description" class="text-gray-500">Bank of America ••••0149</p>
                 </div>
                 <div class="ml-3 flex items-center h-5">
-                  <input id="account-savings" aria-describedby="account-savings-description" name="account" type="radio" class="radio">
+                  <input id="5account-savings" aria-describedby="account-savings-description" name="account" type="radio" class="radio">
                 </div>
               </div>
         
               <div class="relative flex items-start py-4">
                 <div class="min-w-0 flex-1 text-sm">
-                  <label for="account-mastercard" class="ml-0 radio-label">Mastercard</label>
+                  <label for="5account-mastercard" class="ml-0 radio-label">Mastercard</label>
                   <p id="account-mastercard-description" class="text-gray-500">Capital One ••••7877</p>
                 </div>
                 <div class="ml-3 flex items-center h-5">
-                  <input id="account-mastercard" aria-describedby="account-mastercard-description" name="account" type="radio" class="radio">
+                  <input id="5account-mastercard" aria-describedby="account-mastercard-description" name="account" type="radio" class="radio">
                 </div>
               </div>
             </div>
@@ -221,55 +221,55 @@ export class RadioGroupService {
               <div class="mt-4 border-t border-b border-gray-200 divide-y divide-gray-200">
                 <div class="relative flex items-start py-4">
                   <div class="min-w-0 flex-1 text-sm">
-                    <label for="side-null" class="ml-0 radio-label">None</label>
+                    <label for="6side-null" class="ml-0 radio-label">None</label>
                   </div>
                   <div class="ml-3 flex items-center h-5">
-                    <input id="side-null" name="plan" type="radio" checked class="radio">
+                    <input id="6side-null" name="plan" type="radio" checked class="radio">
                   </div>
                 </div>
             
                 <div class="relative flex items-start py-4">
                   <div class="min-w-0 flex-1 text-sm">
-                    <label for="side-1" class="ml-0 radio-label">Baked beans</label>
+                    <label for="6side-1" class="ml-0 radio-label">Baked beans</label>
                   </div>
                   <div class="ml-3 flex items-center h-5">
-                    <input id="side-1" name="plan" type="radio" class="radio">
+                    <input id="6side-1" name="plan" type="radio" class="radio">
                   </div>
                 </div>
             
                 <div class="relative flex items-start py-4">
                   <div class="min-w-0 flex-1 text-sm">
-                    <label for="side-2" class="ml-0 radio-label">Coleslaw</label>
+                    <label for="6side-2" class="ml-0 radio-label">Coleslaw</label>
                   </div>
                   <div class="ml-3 flex items-center h-5">
-                    <input id="side-2" name="plan" type="radio" class="radio">
+                    <input id="6side-2" name="plan" type="radio" class="radio">
                   </div>
                 </div>
             
                 <div class="relative flex items-start py-4">
                   <div class="min-w-0 flex-1 text-sm">
-                    <label for="side-3" class="ml-0 radio-label">French fries</label>
+                    <label for="6side-3" class="ml-0 radio-label">French fries</label>
                   </div>
                   <div class="ml-3 flex items-center h-5">
-                    <input id="side-3" name="plan" type="radio" class="radio">
+                    <input id="6side-3" name="plan" type="radio" class="radio">
                   </div>
                 </div>
             
                 <div class="relative flex items-start py-4">
                   <div class="min-w-0 flex-1 text-sm">
-                    <label for="side-4" class="ml-0 radio-label">Garden salad</label>
+                    <label for="6side-4" class="ml-0 radio-label">Garden salad</label>
                   </div>
                   <div class="ml-3 flex items-center h-5">
-                    <input id="side-4" name="plan" type="radio" class="radio">
+                    <input id="6side-4" name="plan" type="radio" class="radio">
                   </div>
                 </div>
             
                 <div class="relative flex items-start py-4">
                   <div class="min-w-0 flex-1 text-sm">
-                    <label for="side-5" class="ml-0 radio-label">Mashed potatoes</label>
+                    <label for="6side-5" class="ml-0 radio-label">Mashed potatoes</label>
                   </div>
                   <div class="ml-3 flex items-center h-5">
-                    <input id="side-5" name="plan" type="radio" class="radio">
+                    <input id="6side-5" name="plan" type="radio" class="radio">
                   </div>
                 </div>
               </div>

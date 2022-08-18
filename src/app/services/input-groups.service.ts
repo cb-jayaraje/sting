@@ -1,26 +1,26 @@
 import { Injectable } from "@angular/core";
 
-@Injectable({providedIn: 'root'})
+@Injectable({ providedIn: 'root' })
 
 export class inputGroupsService {
 
 
-    inputGroupDatas= [
-        {
-            id: "input_1",
-            title: "Input with label",
-            code: `    <div class="form-control">
+  inputGroupDatas = [
+    {
+      id: "input_1",
+      title: "Input with label",
+      code: `    <div class="form-control">
             <label for="email" class="label">Email</label>
             <div class="mt-1">
               <input type="email" name="email" id="email" class="input" placeholder="you@example.com">
             </div>
           </div>`
 
-        },
-        {
-            id: "input_2",
-             title: "Input with label and help text",
-             code: `
+    },
+    {
+      id: "input_2",
+      title: "Input with label and help text",
+      code: `
              <div class="form-control">
                 <label for="email" class="label">Email</label>
                 <div class="mt-1">
@@ -29,11 +29,11 @@ export class inputGroupsService {
                 <p class="help-text" id="email-description">We'll only use this for spam.</p>
                 </div>
            `
-         },
-         {
-          id: "input_2_1",
-           title: "Input with leading icon",
-           code: `
+    },
+    {
+      id: "input_2_1",
+      title: "Input with leading icon",
+      code: `
            <div class="form-control">
   <label for="email" class="label">Email</label>
   <div class="mt-1 relative rounded-md shadow-sm">
@@ -48,12 +48,12 @@ export class inputGroupsService {
   </div>
 </div>
          `
-       },
- 
-         {
-             id: "input_3",
-              title: "Input with validation error",
-                code: `  <div class="form-control">
+    },
+
+    {
+      id: "input_3",
+      title: "Input with validation error",
+      code: `  <div class="form-control">
                 <label for="email" class="label">Email</label>
                 <div class="mt-1 relative rounded-md shadow-sm">
                   <input type="email" name="email" id="email" class="input-error" placeholder="you@example.com" value="adamwathan" aria-invalid="true" aria-describedby="email-error">
@@ -66,19 +66,19 @@ export class inputGroupsService {
                 <p class="error-text" id="email-error">Your password must be less than 4 characters.</p>
               </div>
                        `
-            },
-          {
-             id: "input_4",
-              title: "Input with hidden label",
-                code: `<div class="form-control">
+    },
+    {
+      id: "input_4",
+      title: "Input with hidden label",
+      code: `<div class="form-control">
                 <label for="email" class="sr-only">Email</label>
                 <input type="email" name="email" id="email" class="input" placeholder="you@example.com">
               </div>`
-            },
-          {
-             id: "input_5",
-              title: "Input with corner hint",
-            code: `      <div class="form-control">
+    },
+    {
+      id: "input_5",
+      title: "Input with corner hint",
+      code: `      <div class="form-control">
             <div class="flex justify-between">
               <label for="email" class="label">Email</label>
               <span class="hint-text" id="email-optional">Optional</span>
@@ -87,11 +87,11 @@ export class inputGroupsService {
               <input type="email" name="email" id="email" class="input" placeholder="you@example.com" aria-describedby="email-optional">
             </div>
           </div>`
-            },
-            {
-              id: "input_6",
-               title: "Input with inline leading dropdown",
-             code: ` <div class="form-control">
+    },
+    {
+      id: "input_6",
+      title: "Input with inline leading dropdown",
+      code: ` <div class="form-control">
              <label for="phone-number" class="label">Phone Number</label>
              <div class="mt-1 relative rounded-md shadow-sm">
                <div class="absolute inset-y-0 left-0 flex items-center">
@@ -105,11 +105,11 @@ export class inputGroupsService {
                <input type="text" name="phone-number" id="phone-number" class="input pl-16 " placeholder="+1 (555) 987-6543">
              </div>
            </div>`
-             },
-             {
-              id: "input_7",
-               title: "Input with inline leading add-on and trailing dropdown",
-             code: ` 
+    },
+    {
+      id: "input_7",
+      title: "Input with inline leading add-on and trailing dropdown",
+      code: ` 
            <div class="form-control">
              <label for="price" class="label">Price</label>
              <div class="mt-1 relative rounded-md shadow-sm">
@@ -128,11 +128,11 @@ export class inputGroupsService {
              </div>
            </div>
            `
-             },
-             {
-              id: "input_8",
-               title: "Input with inline leading add-on and trailing dropdown with list item",
-             code: ` 
+    },
+    {
+      id: "input_8",
+      title: "Input with inline leading add-on and trailing dropdown with list item",
+      code: ` 
              <div class="relative inline-block text-left w-full ">
                 <div class="mt-1 relative rounded-md shadow-sm ">
                   <div class="form-control">
@@ -179,11 +179,11 @@ export class inputGroupsService {
               </div>
 
            `
-             }, {
+    }, {
 
-              id: "input_9",
-              title: "Input with trailing icon",
-              code: ` 
+      id: "input_9",
+      title: "Input with trailing icon",
+      code: ` 
               <div class="form-control">
                 <label for="account-number" class="label">Account number</label>
                 <div class="mt-1 relative">
@@ -200,12 +200,12 @@ export class inputGroupsService {
                   </div>
               </div>
               `
-             },
-             {
-               
-             id: "input_10",
-             title: "Input with addon",
-             code: `
+    },
+    {
+
+      id: "input_10",
+      title: "Input with addon",
+      code: `
              <div class="form-control">
                  <label for="company-website" class="label">Company Website</label>
                  <div class="mt-1 flex">
@@ -213,11 +213,11 @@ export class inputGroupsService {
                      <input type="text" name="company-website" id="company-website" class="input input-addon" placeholder="www.example.com">
                  </div>
              </div>`
-             } ,
-             {
-             id: 'input_11',
-             title: 'Input with leading icon and trailing button',
-             code: ` 
+    },
+    {
+      id: 'input_11',
+      title: 'Input with leading icon and trailing button',
+      code: ` 
              <div class="form-control">
                  <label for="email" class="label">Search candidates</label>
                  <div class="mt-1 relative flex">
@@ -239,12 +239,12 @@ export class inputGroupsService {
                      </button>
                  </div>
              </div>`
-             } ,
+    },
 
-             {
-             id: 'input_12',
-             title: 'Inputs with shared borders',
-             code: `
+    {
+      id: 'input_12',
+      title: 'Inputs with shared borders',
+      code: `
              <div class="form-control">
                  <div class="mt-1">
                      <fieldset>
@@ -268,12 +268,12 @@ export class inputGroupsService {
                      </fieldset>
                  </div>
              </div>`
-             } ,
+    },
 
-             {
-             id: 'input_13',
-             title: 'Input with inset label',
-             code: `
+    {
+      id: 'input_13',
+      title: 'Input with inset label',
+      code: `
              <div class="form-control">
                  <div class="mt-1">
                      <div class="input-inset__container">
@@ -282,12 +282,12 @@ export class inputGroupsService {
                        </div>
                  </div>
              </div> `
-             } ,
+    },
 
-            {
-            id: 'input_14',
-            title: 'Input with inset label shared border',
-            code: `
+    {
+      id: 'input_14',
+      title: 'Input with inset label shared border',
+      code: `
             <div class="form-control">
                 <div class="mt-1 ">
                     <div class="!rounded-b-none input-inset__container">
@@ -301,12 +301,12 @@ export class inputGroupsService {
                     </div>
                 </div>
             </div>`
-            } ,
-            
-            {
-            id: 'input_15',
-            title: 'Input with keyboard shortcut',
-            code: `
+    },
+
+    {
+      id: 'input_15',
+      title: 'Input with keyboard shortcut',
+      code: `
             <div class="form-control">
                 <div class="mt-1">
                         <label for="name" class="label">Quick search</label>
@@ -318,12 +318,12 @@ export class inputGroupsService {
                         </div>
                 </div>
             </div>`
-            } ,
+    },
 
-            {
-            id: 'input_16',
-            title: 'Input with overlapping label',
-            code: `
+    {
+      id: 'input_16',
+      title: 'Input with overlapping label',
+      code: `
             <div class="bg-white py-16 px-8">
                 <div class="form-control">
                     <div class="mt-1">
@@ -334,31 +334,31 @@ export class inputGroupsService {
                     </div>
                 </div> 
             </div> `
-            } ,
+    },
 
-            {
-            id: 'input_17',
-            title: 'Input with pill shape',
-            code: `
+    {
+      id: 'input_17',
+      title: 'Input with pill shape',
+      code: `
             <div class="form-control">
                 <label for="name" class="label">Name</label>
                 <div class="mt-1">
                     <input type="text" name="name" id="name" class="input !rounded-full" placeholder="Jane smith">
                 </div>
             </div> `
-            } ,
+    },
 
-            {
-            id: 'input_18',
-            title: 'Input with gray background and bottom border',
-            code: `
+    {
+      id: 'input_18',
+      title: 'Input with gray background and bottom border',
+      code: `
             <div class="form-control">
                 <label for="name" class="label">Name</label>
                 <div class="mt-1 border-b border-gray-300 ">
                     <input type="text" name="name" id="name" class="input-graybg__btmborder" placeholder="Jane smith">
                 </div>
             </div>`
-            } ,
-    ]
+    },
+  ]
 
 }

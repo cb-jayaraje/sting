@@ -18,6 +18,7 @@ const Toggle = require('./sting-components/toggle');
 const RadioGroup = require('./sting-components/radio-group');
 const Tabs = require('./sting-components/tabs');
 const Checkbox = require('./sting-components/checkbox');
+const Typography = require('./sting-components/typography');
 
 
 module.exports = plugin.withOptions(
@@ -52,6 +53,7 @@ module.exports = plugin.withOptions(
         // addComponents(Spinner());
         addComponents(Tabs());
         addComponents(Checkbox());
+        addComponents(Typography());
         // addComponents(Tooltip());
         // Typography().handler(options);
       };

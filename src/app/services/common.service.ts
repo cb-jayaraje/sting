@@ -8,7 +8,7 @@ export class CommonService {
     imagePath= './assets/images/';
     componentPath = '/components/page/'
 
-    private  _theme = new BehaviorSubject<string>('');
+    private  _theme = new BehaviorSubject<string>('theme-sting');
     private _theme$ = this._theme.asObservable();
 
     constructor(){}

@@ -30,8 +30,7 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css",
-              "src/sting.css"
+              "src/styles.css"
             ],
             "scripts": []
           },

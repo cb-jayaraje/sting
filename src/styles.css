@@ -1,7 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
 @import "~prismjs/plugins/toolbar/prism-toolbar.css";
 @import "~prismjs/themes/prism-okaidia";
-
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Sora:wght@400;600;700&display=swap');
 @tailwind base;
 
 @tailwind components;
@@ -196,6 +196,7 @@
     --color-green-700: 20 118 56;
     --color-green-800: 14 79 38;
     --color-green-900: 7 39 19;
+
     --color-orange-50: 253 247 230;
     --color-orange-100: 251 240 206;
     --color-orange-200: 247 225 156;
@@ -206,6 +207,7 @@
     --color-orange-700: 140 107 5;
     --color-orange-800: 94 72 3;
     --color-orange-900: 47 36 2;
+
     --color-red-50: 253 236 236;
     --color-red-100: 252 218 218;
     --color-red-200: 249 180 180;
@@ -225,6 +227,9 @@
   html,
   body {
     height: 100%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizelegibility;
   }
 }
 

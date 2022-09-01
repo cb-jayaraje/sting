@@ -1,10 +1,10 @@
 module.exports = InputGroups = (styles) => ({
     
     '.form-control .input, .input': {
-                      "@apply shadow-sm focus:!ring-primary-500 focus:!border-primary-500 focus:outline-none block w-full sm:text-sm border-gray-300 rounded-md": {},
+                      "@apply shadow-sm focus:!ring-primary-500 focus:!border-primary-500 focus:outline-none block w-full sm:text-sm border-gray-300 rounded text-neutral-600 placeholder-neutral-300": {},
                        },
     '.form-control .label': {
-                     "@apply block text-sm font-medium text-gray-600": {},
+                     "@apply text-copy text-neutral-600 font-semibold leading-none": {},
                          },
 
     '.form-control .help-text': {

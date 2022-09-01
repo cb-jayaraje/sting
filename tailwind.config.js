@@ -10,6 +10,10 @@ module.exports = {
   theme: {
     
     extend: {
+      fontFamily: {
+        Inter: ['Inter', 'sans-serif'],
+        Sora: ['Sora', 'sans-serif']
+       },
       fontSize: {
         h1: '1.802rem', //28.83px
         h2: '1.424rem', //25.63px

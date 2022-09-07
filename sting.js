@@ -1,6 +1,7 @@
 const plugin = require("tailwindcss/plugin");
 
 const Button =  require('./sting-components/button');
+const Table =  require('./sting-components/table');
 const InputGroups =  require('./sting-components/input-groups');
 
 const Alerts = require('./sting-components/alerts');
@@ -37,6 +38,7 @@ module.exports = plugin.withOptions(
         addComponents(InputGroups());
         addComponents(Alerts());
         addComponents(SelectMenus());
+        addComponents(Table());
         // addComponents(Card());
         // addComponents(Dialog());
         // addComponents(Drawer());

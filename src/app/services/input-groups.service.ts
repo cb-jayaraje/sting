@@ -271,39 +271,6 @@ export class inputGroupsService {
     },
 
     {
-      id: 'input_13',
-      title: 'Input with inset label',
-      code: `
-             <div class="form-control">
-                 <div class="mt-1">
-                     <div class="input-inset__container">
-                         <label for="name" class="input-inset__label">Name</label>
-                         <input type="text" name="name" id="name" class="input-inset" placeholder="Jane Smith">
-                       </div>
-                 </div>
-             </div> `
-    },
-
-    {
-      id: 'input_14',
-      title: 'Input with inset label shared border',
-      code: `
-            <div class="form-control">
-                <div class="mt-1 ">
-                    <div class="!rounded-b-none input-inset__container">
-                        <label for="name" class="input-inset__label">Name</label>
-                        <input type="text" name="name" id="name" class="input-inset" placeholder="Jane Smith">
-                    </div>
-    
-                    <div class="!rounded-t-none input-inset__container">
-                        <label for="name" class="input-inset__label">Email</label>
-                        <input type="email" name="email" id="email" class="input-inset" placeholder="Jane@makemytrip.com">
-                    </div>
-                </div>
-            </div>`
-    },
-
-    {
       id: 'input_15',
       title: 'Input with keyboard shortcut',
       code: `
@@ -316,46 +283,6 @@ export class inputGroupsService {
                                 <kbd class="input-shortcut__kbd"> ⌘K </kbd>
                             </div>
                         </div>
-                </div>
-            </div>`
-    },
-
-    {
-      id: 'input_16',
-      title: 'Input with overlapping label',
-      code: `
-            <div class="bg-white py-16 px-8">
-                <div class="form-control">
-                    <div class="mt-1">
-                            <div class="mt-1 relative ">
-                                <label for="name" class="input-overlap__label ">Name</label>
-                                <input type="text" name="name" id="name" class="input" placeholder="Devesh">              
-                            </div>
-                    </div>
-                </div> 
-            </div> `
-    },
-
-    {
-      id: 'input_17',
-      title: 'Input with pill shape',
-      code: `
-            <div class="form-control">
-                <label for="name" class="label">Name</label>
-                <div class="mt-1">
-                    <input type="text" name="name" id="name" class="input !rounded-full" placeholder="Jane smith">
-                </div>
-            </div> `
-    },
-
-    {
-      id: 'input_18',
-      title: 'Input with gray background and bottom border',
-      code: `
-            <div class="form-control">
-                <label for="name" class="label">Name</label>
-                <div class="mt-1 border-b border-gray-300 ">
-                    <input type="text" name="name" id="name" class="input-graybg__btmborder" placeholder="Jane smith">
                 </div>
             </div>`
     },

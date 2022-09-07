@@ -26,34 +26,7 @@ export class ToggleService {
                 </button>
                 `
         },
-        {
-            id: "toggle_2",
-            title: "Short toggle",
-            code: 
-                `
-                <!-- Short toggle : active -->
 
-                <button type="button" class="toggle-btn items-center justify-center h-5 w-10" role="switch" aria-checked="false">
-                  <span class="sr-only">Use setting</span>
-                  <span aria-hidden="true" class="pointer-events-none absolute bg-white w-full h-full rounded-md"></span>
-                  <!-- Enabled: "bg-primary-500", Not Enabled: "bg-gray-200" -->
-                  <span aria-hidden="true" class="bg-primary-500 pointer-events-none absolute h-4 w-9 mx-auto rounded-full transition-colors ease-in-out duration-200"></span>
-                  <!-- Enabled: "translate-x-5", Not Enabled: "translate-x-0" -->
-                  <span aria-hidden="true" class="translate-x-5 pointer-events-none absolute left-0 toggle-switch"></span>
-                </button>
-
-                <!-- Short toggle : inactive -->
-          
-                <button type="button" class="toggle-btn items-center justify-center h-5 w-10" role="switch" aria-checked="false">
-                  <span class="sr-only">Use setting</span>
-                  <span aria-hidden="true" class="pointer-events-none absolute bg-white w-full h-full rounded-md"></span>
-                  <!-- Enabled: "bg-primary-500", Not Enabled: "bg-gray-200" -->
-                  <span aria-hidden="true" class="bg-gray-200 pointer-events-none absolute h-4 w-9 mx-auto rounded-full transition-colors ease-in-out duration-200"></span>
-                  <!-- Enabled: "translate-x-5", Not Enabled: "translate-x-0" -->
-                  <span aria-hidden="true" class="translate-x-0 pointer-events-none absolute left-0 toggle-switch"></span>
-                </button>
-                `
-        },
         {
             id: "toggle_3",
             title: "Toggle with icon",
@@ -116,25 +89,6 @@ export class ToggleService {
                   <span aria-hidden="true" class="translate-x-5 toggle-switch"></span>
                 </button>
               </div>
-                `
-        },
-        {
-            id: "toggle_5",
-            title: "With right label",
-            code: 
-                `
-                <!-- With right label -->
-                <div class="flex items-center">
-                  <button class="toggle-btn bg-primary-500" role="switch" aria-checked="false">
-                    <span class="sr-only">Use setting</span>
-                    <!-- Enabled: "translate-x-5", Not Enabled: "translate-x-0" -->
-                    <span aria-hidden="true" class="translate-x-5 toggle-switch"></span>
-                  </button>
-                  <span class="ml-3" id="annual-billing-label">
-                    <span class="text-sm font-medium text-gray-900">Annual billing </span>
-                    <span class="text-sm text-gray-500">(Save 10%)</span>
-                  </span>
-                </div>
                 `
         },
     ];

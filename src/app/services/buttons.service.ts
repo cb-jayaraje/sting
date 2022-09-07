@@ -16,7 +16,7 @@ export class ButtonService {
             </div>
             <!--outline button with icon-->
             <div>
-              <butto class="btn btn-outline btn-icon">
+              <button class="btn btn-outline btn-icon">
                 <svg class="h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
                   <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
                   <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
@@ -26,7 +26,7 @@ export class ButtonService {
             </div>
             <!--outline button with trailing icon-->
             <div>
-              <butto class="btn btn-outline btn-icon">
+              <button class="btn btn-outline btn-icon">
                 Trailing Icon
                 <svg class="h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
                   <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
@@ -147,6 +147,7 @@ export class ButtonService {
             Leading Icon
           </button>
         </div>
+        
         <!--primary button small with trailing icon-->
         <div>
           <button class="btn btn-small btn-primary btn-icon">
@@ -369,76 +370,6 @@ export class ButtonService {
   </div>
 </div>
 
-    `
-},
-  {
-    id: 'button_success',
-    title: 'Success',
-    code: `
-    <div class="flex gap-x-5">
-    <!--success button-->
-      <div>  
-        <button  class=" btn btn-success ">success</button>
-      </div>
-      <!--success button with icon-->
-      <div>
-        <button  class="btn btn-success btn-icon">
-          <svg class="h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-            <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
-            <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
-          </svg>
-          Leading Icon
-        </button>
-      </div>
-      <!--success button with trailing icon-->
-      <div>
-        <button  class="btn btn-success btn-icon">
-          Trailing Icon
-          <svg class="h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-            <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
-            <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
-          </svg>
-        </button>
-      </div>
-      <!--success button full width-->
-      <div class="w-1/3">
-        <button  class=" btn btn-success  w-full">Full width</button>
-      </div>
-</div>
-
-
-
-
-<div class="flex gap-x-5 pt-5">
-<!--success button small-->
-  <div>  
-    <button class=" btn btn-small btn-success ">success</button>
-  </div>
-  <!--success button small with icon-->
-  <div>
-    <button class="btn btn-small btn-success btn-icon">
-      <svg class="h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-        <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
-        <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
-      </svg>
-      Leading Icon
-    </butt
-  </div>
-  <!--success button small with trailing icon-->
-  <div>
-    <button class="btn btn-small btn-success btn-icon">
-      Trailing Icon
-      <svg class="h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-        <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
-        <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
-      </svg>
-    </button>
-  </div>
-  <!--success button small full width-->
-  <div class="w-1/3">
-    <button tpe="button" class=" btn btn-small btn-success  w-full">Full width</button>
-  </div>
-</div>
     `
 },
       

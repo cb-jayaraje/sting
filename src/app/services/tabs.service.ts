@@ -143,41 +143,7 @@ export class TabService {
                 </div>
                 `
         },
-        {
-            id: "tab_4",
-            title: "Tabs with pills in brand color",
-            code: 
-                `
-                <!-- Tabs with pills in brand color -->
-                <div>
-                  <div class="sm:hidden form-control">
-                    <label for="tabs" class="sr-only">Select a tab</label>
-                    <!-- Use an "onChange" listener to redirect the user to the selected tab URL. -->
-                    <select id="tabs" name="tabs" class="select">
-                      <option>My Account</option>
-                
-                      <option>Company</option>
-                
-                      <option selected>Team Members</option>
-                
-                      <option>Billing</option>
-                    </select>
-                  </div>
-                  <div class="hidden sm:block">
-                    <nav class="flex space-x-4" aria-label="Tabs">
-                      <!-- Current: "bg-gray-100 text-gray-700", Default: "tab-link_inactive" -->
-                      <a href="#" class="tab-link_inactive tab-pill"> My Account </a>
-                
-                      <a href="#" class="tab-link_inactive tab-pill"> Company </a>
-                
-                      <a href="#" class="tab-pill bg-brand-50 text-brand-600" aria-current="page"> Team Members </a>
-                
-                      <a href="#" class="tab-link_inactive tab-pill"> Billing </a>
-                    </nav>
-                  </div>
-                </div>
-                `
-        },
+
         {
             id: "tab_5",
             title: "Tabs with underline and badges",

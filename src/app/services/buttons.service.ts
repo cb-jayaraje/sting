@@ -6,96 +6,6 @@ export class ButtonService {
 
     buttonDatas = [
         {
-            id: 'button_1',
-            title: 'Outline',
-            code: `
-            <div class="flex gap-x-3">
-          <!--outline button-->
-            <div>  
-              <button class=" btn btn-outline " type="submit">Outline</button>
-            </div>
-            <!--outline button with icon-->
-            <div>
-              <butto class="btn btn-outline btn-icon">
-                <svg class="h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                  <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
-                  <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
-                </svg>
-                Leading Icon
-              </button>
-            </div>
-            <!--outline button with trailing icon-->
-            <div>
-              <butto class="btn btn-outline btn-icon">
-                Trailing Icon
-                <svg class="h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                  <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
-                  <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
-                </svg>
-              </button>
-            </div>
-            <!--outline button rounded-->
-            <div>
-            <button  class=" btn btn-outline rounded-full">Rounded</button>
-          </div>
-          <!--outline icon circular-->
-          <div>
-          <button class="btn btn-outline rounded-full p-2">
-    
-          <svg class="h-7 w-7" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-          <path fill-rule="evenodd" d="M10 5a1 1 0 011 1v3h3a1 1 0 110 2h-3v3a1 1 0 11-2 0v-3H6a1 1 0 110-2h3V6a1 1 0 011-1z" clip-rule="evenodd" />
-        </svg>
-      
-         
-        </button>
-        </div>
-            <!--outline button full width-->
-            <div class="w-1/3">
-            <button  class=" btn btn-outline w-full">Full width</button>
-          </div>
-         
-      </div>
-
-
-
-      <div class="flex gap-x-3 pt-5">
-      <!--outline button small-->
-        <div>  
-          <button class=" btn btn-small btn-outline ">Primary</button>
-        </div>
-        <!--outline button small with icon-->
-        <div>
-          <button class="btn btn-small  btn-outline btn-icon">
-            <svg class="h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-              <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
-              <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
-            </svg>
-            Leading Icon
-          </button>
-        </div>
-        <!--outline button small with trailing icon-->
-        <div>
-          <button class="btn btn-small btn-outline btn-icon">
-            Trailing Icon
-            <svg class="h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-              <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
-              <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
-            </svg>
-          </button>
-        </div>
-        <!--outline button rounded-->
-        <div>
-        <button  class=" btn btn-small btn-outline rounded-full">Rounded</button>
-      </div>
-     
-        <!--outline button small full width-->
-        <div class="w-1/3">
-          <button  class=" btn btn-small btn-outline w-full">Full width</button>
-        </div>
-  </div>
-            `
-        },
-        {
           id: 'button_primary',
           title: 'Primary',
           code: `
@@ -107,7 +17,7 @@ export class ButtonService {
             <!--primary button with icon-->
             <div>
               <button  class="btn btn-primary btn-icon">
-                <svg class="h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                <svg class="btn-leading-icon mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
                   <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
                   <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
                 </svg>
@@ -118,7 +28,7 @@ export class ButtonService {
             <div>
               <button  class="btn btn-primary btn-icon">
                 Trailing Icon
-                <svg class="h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                <svg class="btn-trailing-icon ml-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
                   <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
                   <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
                 </svg>
@@ -140,7 +50,7 @@ export class ButtonService {
         <!--primary button small with icon-->
         <div>
           <button  class="btn btn-small  btn-primary btn-icon">
-            <svg class="h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+            <svg class="btn-leading-icon mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
               <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
               <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
             </svg>
@@ -151,7 +61,7 @@ export class ButtonService {
         <div>
           <button class="btn btn-small btn-primary btn-icon">
             Trailing Icon
-            <svg class="h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+            <svg class="btn-trailing-icon ml-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
               <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
               <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
             </svg>
@@ -165,6 +75,93 @@ export class ButtonService {
           `
       },
       {
+        id: 'button_1',
+        title: 'Secondary',
+        code: `
+        <div class="flex gap-x-3">
+      <!--outline button-->
+        <div>  
+          <button class=" btn btn-secondary " type="submit">Outline</button>
+        </div>
+        <!--outline button with icon-->
+        <div>
+          <butto class="btn btn-secondary btn-icon">
+            <svg class="btn-leading-icon mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+              <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
+              <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
+            </svg>
+            Leading Icon
+          </button>
+        </div>
+        <!--outline button with trailing icon-->
+        <div>
+          <butto class="btn btn-secondary btn-icon">
+            Trailing Icon
+            <svg class="btn-trailing-icon ml-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+              <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
+              <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
+            </svg>
+          </button>
+        </div>
+        <!--outline button rounded-->
+     
+      <!--outline icon circular-->
+      <div>
+      <button class="btn btn-secondary p-2 ">
+
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-4 h-4">
+<path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
+</svg>
+
+    
+  
+     
+    </button>
+    </div>
+        <!--outline button full width-->
+        <div class="w-1/3">
+        <button  class=" btn btn-secondary w-full">Full width</button>
+      </div>
+     
+  </div>
+
+
+
+  <div class="flex gap-x-3 pt-5">
+  <!--outline button small-->
+    <div>  
+      <button class=" btn btn-small btn-secondary ">Primary</button>
+    </div>
+    <!--outline button small with icon-->
+    <div>
+      <button class="btn btn-small  btn-secondary btn-icon">
+        <svg class="btn-leading-icon mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+          <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
+          <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
+        </svg>
+        Leading Icon
+      </button>
+    </div>
+    <!--outline button small with trailing icon-->
+    <div>
+      <button class="btn btn-small btn-secondary btn-icon">
+        Trailing Icon
+        <svg class="btn-trailing-icon ml-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+          <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
+          <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
+        </svg>
+      </button>
+    </div>
+   
+ 
+    <!--outline button small full width-->
+    <div class="w-1/3">
+      <button  class=" btn btn-small btn-secondary w-full">Full width</button>
+    </div>
+</div>
+        `
+    },
+      {
         id: 'button_neutral',
         title: 'Neutral',
         code: `
@@ -176,7 +173,7 @@ export class ButtonService {
           <!--neutral button with icon-->
           <div>
             <button  class="btn btn-neutral btn-icon">
-              <svg class="h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+              <svg class="btn-leading-icon mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
                 <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
                 <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
               </svg>
@@ -187,7 +184,7 @@ export class ButtonService {
           <div>
             <button  class="btn btn-neutral btn-icon">
               Trailing Icon
-              <svg class="h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+              <svg class="btn-trailing-icon ml-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
                 <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
                 <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
               </svg>
@@ -209,7 +206,7 @@ export class ButtonService {
           <!--neutral button small with icon-->
           <div>
             <button  class="btn btn-small btn-neutral btn-icon">
-              <svg class="h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+              <svg class="btn-leading-icon mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
                 <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
                 <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
               </svg>
@@ -220,7 +217,7 @@ export class ButtonService {
           <div>
             <button class="btn btn-small btn-neutral btn-icon">
               Trailing Icon
-              <svg class="h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+              <svg class="btn-trailing-icon ml-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
                 <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
                 <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
               </svg>
@@ -234,6 +231,73 @@ export class ButtonService {
         `
     },
     {
+      id: 'button_danger',
+      title: 'Danger',
+      code: `
+      <div class="flex gap-x-3">
+      <!--danger button-->
+        <div>  
+          <button class=" btn btn-danger ">danger</button>
+        </div>
+        <!--danger button with icon-->
+        <div>
+          <button  class="btn btn-danger btn-icon">
+            <svg class="btn-leading-icon mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+              <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
+              <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
+            </svg>
+            Leading Icon
+          </button>
+        </div>
+        <!--danger button with trailing icon-->
+        <div>
+          <button  class="btn btn-danger btn-icon">
+            Trailing Icon
+            <svg class="btn-trailing-icon ml-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+              <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
+              <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
+            </svg
+          </button>
+        </div>
+        <!--danger button full width-->
+        <div class="w-1/3">
+          <button  class=" btn btn-danger  w-full">Full width</button>
+        </div>
+  </div>
+  <div class="flex gap-x-3 pt-5">
+  <!--danger button  small-->
+    <div>  
+      <button  class=" btn btn-small btn-danger ">danger</button>
+    </div>
+    <!--danger button small with icon-->
+    <div>
+      <button  class="btn btn-small btn-danger btn-icon">
+        <svg class="btn-leading-icon mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+          <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
+          <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
+        </svg>
+        Leading Icon
+      </button>
+    </div>
+    <!--danger button small with trailing icon-->
+    <div>
+      <button class="btn btn-small btn-danger btn-icon">
+        Trailing Icon
+        <svg class="btn-leading-icon ml-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+          <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
+          <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
+        </svg>
+      </button>
+    </div>
+    <!--danger button small full width-->
+    <div class="w-1/3">
+      <button  class=" btn btn-small btn-danger  w-full">Full width</button>
+    </div>
+  </div>
+  
+      `
+  },
+    {
       id: 'button_warning',
       title: 'Warning',
       code: `
@@ -245,7 +309,7 @@ export class ButtonService {
         <!--warning button with icon-->
         <div>
           <button  class="btn btn-warning btn-icon">
-            <svg class="h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+            <svg class="btn-leading-icon mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
               <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
               <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
             </svg>
@@ -256,7 +320,7 @@ export class ButtonService {
         <div>
           <button class="btn btn-warning btn-icon">
             Trailing Icon
-            <svg class="h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+            <svg class="btn-leading-icon ml-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
               <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
               <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
             </svg>
@@ -280,7 +344,7 @@ export class ButtonService {
         <!--warning button small with icon-->
         <div>
           <button  class="btn btn-small btn-warning btn-icon">
-            <svg class="h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+            <svg class="btn-leading-icon mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
               <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
               <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
             </svg>
@@ -291,7 +355,7 @@ export class ButtonService {
         <div>
           <button  class="btn btn-small btn-warning btn-icon">
             Trailing Icon
-            <svg class="h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+            <svg class="btn-leading-icon ml-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
               <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
               <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
             </svg>
@@ -304,73 +368,7 @@ export class ButtonService {
   </div>
       `
   },
-  {
-    id: 'button_danger',
-    title: 'Danger',
-    code: `
-    <div class="flex gap-x-3">
-    <!--danger button-->
-      <div>  
-        <button class=" btn btn-danger ">danger</button>
-      </div>
-      <!--danger button with icon-->
-      <div>
-        <button  class="btn btn-danger btn-icon">
-          <svg class="h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-            <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
-            <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
-          </svg>
-          Leading Icon
-        </button>
-      </div>
-      <!--danger button with trailing icon-->
-      <div>
-        <button  class="btn btn-danger btn-icon">
-          Trailing Icon
-          <svg class="h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-            <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
-            <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
-          </svg
-        </button>
-      </div>
-      <!--danger button full width-->
-      <div class="w-1/3">
-        <button  class=" btn btn-danger  w-full">Full width</button>
-      </div>
-</div>
-<div class="flex gap-x-3 pt-5">
-<!--danger button  small-->
-  <div>  
-    <button  class=" btn btn-small btn-danger ">danger</button>
-  </div>
-  <!--danger button small with icon-->
-  <div>
-    <button  class="btn btn-small btn-danger btn-icon">
-      <svg class="h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-        <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
-        <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
-      </svg>
-      Leading Icon
-    </button>
-  </div>
-  <!--danger button small with trailing icon-->
-  <div>
-    <button class="btn btn-small btn-danger btn-icon">
-      Trailing Icon
-      <svg class="h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-        <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
-        <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
-      </svg>
-    </button>
-  </div>
-  <!--danger button small full width-->
-  <div class="w-1/3">
-    <button  class=" btn btn-small btn-danger  w-full">Full width</button>
-  </div>
-</div>
-
-    `
-},
+ 
   {
     id: 'button_success',
     title: 'Success',
@@ -383,7 +381,7 @@ export class ButtonService {
       <!--success button with icon-->
       <div>
         <button  class="btn btn-success btn-icon">
-          <svg class="h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+          <svg class="btn-leading-icon mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
             <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
             <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
           </svg>
@@ -394,7 +392,7 @@ export class ButtonService {
       <div>
         <button  class="btn btn-success btn-icon">
           Trailing Icon
-          <svg class="h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+          <svg class="btn-trailing-icon ml-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
             <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
             <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
           </svg>
@@ -417,7 +415,7 @@ export class ButtonService {
   <!--success button small with icon-->
   <div>
     <button class="btn btn-small btn-success btn-icon">
-      <svg class="h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+      <svg class="btn-leading-icon mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
         <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
         <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
       </svg>
@@ -428,7 +426,7 @@ export class ButtonService {
   <div>
     <button class="btn btn-small btn-success btn-icon">
       Trailing Icon
-      <svg class="h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+      <svg class="btn-trailing-icon ml-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
         <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
         <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
       </svg>

@@ -4,6 +4,7 @@ import { ComponentsComponent } from './components/components.component';
 import { ColorsComponent } from './components/config/colors/colors.component';
 import { InstallationComponent } from './components/config/installation/installation.component';
 import { ThemesComponent } from './components/config/themes/themes.component';
+import { TypographyComponent } from './components/config/typography/typography.component';
 import { LayoutComponent } from './components/layout/layout.component';
 import { AlertsComponent } from './components/page/alerts/alerts.component';
 import { BadgesComponent } from './components/page/badges/badges.component';
@@ -42,6 +43,7 @@ const routes: Routes = [
       {path: 'list-containers', component: ListContainersComponent},
       {path: 'modals', component: ModalsComponent},
       {path:'colors', component: ColorsComponent},
+      {path:'typography', component: TypographyComponent},
       {path:'themes', component: ThemesComponent},
       {path:'table', component: TableComponent},
       {path: 'installation', component: InstallationComponent},

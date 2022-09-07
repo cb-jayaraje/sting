@@ -22,6 +22,7 @@ import { ColorsComponent } from './components/config/colors/colors.component';
 import { ThemesComponent } from './components/config/themes/themes.component';
 import { DropdownDirective } from './shared/dropdown.directive';
 import { InstallationComponent } from './components/config/installation/installation.component';
+import { TypographyComponent } from './components/config/typography/typography.component';
 
 @NgModule({
   declarations: [
@@ -41,7 +42,8 @@ import { InstallationComponent } from './components/config/installation/installa
     ColorsComponent,
     ThemesComponent,
     DropdownDirective,
-    InstallationComponent
+    InstallationComponent,
+    TypographyComponent
   ],
   imports: [
     BrowserModule,

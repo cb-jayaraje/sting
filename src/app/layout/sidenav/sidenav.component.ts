@@ -21,7 +21,10 @@ export class SidenavComponent implements OnInit {
   readonly search$ = this.searchSubject.pipe(
     debounceTime(250),
     distinctUntilChanged(),
-    switchMap(searchdata => searchdata)
+    switchMap((searchdata: any ) => {
+      console.log(searchdata)
+      return searchdata;
+    })
   )
 
 

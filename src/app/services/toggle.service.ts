@@ -10,6 +10,7 @@ export class ToggleService {
             title: "Simple toggle",
             code: 
                 `
+                <div class="flex gap-3">
                 <!-- Simple toggle : active -->
                 <button class="toggle-btn bg-primary-500" role="switch" aria-checked="false">
                   <span class="sr-only">Use setting</span>
@@ -19,11 +20,12 @@ export class ToggleService {
 
                 <!-- Simple toggle : inactive -->
           
-                <button class="toggle-btn bg-gray-200" role="switch" aria-checked="false">
+                <button class="toggle-btn bg-neutral-200" role="switch" aria-checked="false">
                   <span class="sr-only">Use setting</span>
                   <!-- Enabled: "translate-x-5", Not Enabled: "translate-x-0" -->
                   <span aria-hidden="true" class="translate-x-0 toggle-switch"></span>
                 </button>
+                <div>
                 `
         },
         {
@@ -44,7 +46,7 @@ export class ToggleService {
 
                 <!-- Short toggle : inactive -->
           
-                <button type="button" class="toggle-btn items-center justify-center h-5 w-10" role="switch" aria-checked="false">
+                <button type="button" class="toggle-btn bg-neutral-200 items-center justify-center h-5 w-10" role="switch" aria-checked="false">
                   <span class="sr-only">Use setting</span>
                   <span aria-hidden="true" class="pointer-events-none absolute bg-white w-full h-full rounded-md"></span>
                   <!-- Enabled: "bg-primary-500", Not Enabled: "bg-gray-200" -->
@@ -79,7 +81,7 @@ export class ToggleService {
                   </span>
                 </button>
           
-                <button class="toggle-btn bg-gray-200" role="switch" aria-checked="false">
+                <button class="toggle-btn bg-neutral-200" role="switch" aria-checked="false">
                   <span class="sr-only">Use setting</span>
                   <!-- Enabled: "translate-x-5", Not Enabled: "translate-x-0" -->
                   <span class="translate-x-0 toggle-switch">

@@ -6,10 +6,10 @@ module.exports = Badge = (styles) => ({
       '@apply px-2 py-0.5 text-xs' : {}
       },        
       ' .badge-small': {
-      '@apply px-2.5 py-1 text-sm' : {}
+      '@apply px-2.5 py-0.5 text-copy-small rounded-full' : {}
       },     
       '.badge-base': {
-      '@apply px-2.5 py-1 text-base' : {}
+      '@apply px-3 py-0.5 text-copy-regular' : {}
       },
       '.badge-inverted': {
       '@apply !bg-white' : {}

@@ -2,55 +2,68 @@
     <div class=" bg-blue-100 py-3 px-6"><a routerLink="/">STING UI</a></div>
     <div class="">
 
-        <div class="p-2">
+        <!-- <div class="p-2">
             <div>
                 <label for="email" class="sr-only">Search</label>
-                <input type="text" name="search" (input)="searchPosts($event.target)" [(ngModel)]="search" id="search" #searchCtrl="ngModel" class="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md" placeholder="Search">
-              </div>
-        </div>
+                <input type="text" name="search" (input)="searchPosts($event.target)" [(ngModel)]="search" id="search"
+                    #searchCtrl="ngModel"
+                    class="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md"
+                    placeholder="Search">
+            </div>
+        </div> -->
 
-        
-        <ng-container *ngIf="(search$ | async) as se">
-            <!-- <p>User posts titles: {{se}}</p> -->
-           
-          </ng-container>
 
-          <div class="border-y">
+        <!-- <ng-container *ngIf="(search$ | async) as se">
+            <p>User posts titles: {{se}}</p>
+
+        </ng-container> -->
+
+        <div class="border-y">
             <ul class="py-3 leftNav">
-                <li  class=" px-6 font-bold flex justify-between items-center">
+                <li class=" px-6 font-bold flex justify-between items-center">
                     Config
                 </li>
-                
-                <li [routerLink]="path+'installation'" class=" cursor-pointer px-6 hover:bg-blue-200 text-sm text-gray-700" >Installation</li>
-                <li [routerLink]="path+'colors'" class=" cursor-pointer px-6 hover:bg-blue-200 text-sm text-gray-700" >Colors</li>
+
+                <li [routerLink]="path+'installation'"
+                    class=" cursor-pointer px-6 hover:bg-blue-200 text-sm text-gray-700">Installation</li>
+                <li [routerLink]="path+'colors'" class=" cursor-pointer px-6 hover:bg-blue-200 text-sm text-gray-700">
+                    Colors</li>
+                <li [routerLink]="path+'typography'"
+                    class=" cursor-pointer px-6 hover:bg-blue-200 text-sm text-gray-700">
+                    Typography</li>
                 <!-- <li [routerLink]="path+'themes'" class=" cursor-pointer px-6 hover:bg-blue-200 text-sm text-gray-700" >Themes</li> -->
-             
-              
+
+
             </ul>
         </div>
         <ul class="py-3 leftNav">
-            <li routerLink="/components/" class="cursor-pointer px-6 hover:bg-blue-200 flex justify-between items-center">
+            <li routerLink="/components/"
+                class="cursor-pointer px-6 hover:bg-blue-200 flex justify-between items-center">
                 Main
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
-                  </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
+                </svg>
             </li>
-            <li [routerLink]="path+nav.link" class=" cursor-pointer px-6 hover:bg-blue-200 text-sm text-gray-700" *ngFor="let nav of leftNav.leftNav">{{nav.title}}</li>
-           
-         
-          
+            <li [routerLink]="path+nav.link" class=" cursor-pointer px-6 hover:bg-blue-200 text-sm text-gray-700"
+                *ngFor="let nav of leftNav.leftNav">{{nav.title}}</li>
+
+
+
         </ul>
     </div>
     <div class="border-t">
         <ul class="py-3 leftNav">
-            <li  class=" px-6 font-bold flex justify-between items-center">
+            <li class=" px-6 font-bold flex justify-between items-center">
                 Templates
-               
+
             </li>
-            <li [routerLink]="path+nav.link" class=" cursor-pointer px-6 hover:bg-blue-200 text-sm text-gray-700" *ngFor="let nav of leftNav.templates">{{nav.title}}</li>
-           
-         
-          
+            <li [routerLink]="path+nav.link" class=" cursor-pointer px-6 hover:bg-blue-200 text-sm text-gray-700"
+                *ngFor="let nav of leftNav.templates">{{nav.title}}</li>
+
+
+
         </ul>
     </div>
 </div>

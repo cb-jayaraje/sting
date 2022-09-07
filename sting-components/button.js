@@ -1,6 +1,6 @@
 module.exports = Button = (styles) => ({
     ' .btn': {
-        "@apply  px-3.5 py-2.5 rounded border  text-copy leading-4 focus:outline-none focus:ring-2 focus:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-30": {},
+        "@apply  px-3 py-2 rounded border font-medium  text-copy leading-4 focus:outline-none focus:ring-2 focus:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-30": {},
                    },
         '.btn-small': {
             "@apply px-2.5 py-1.5":{},
@@ -15,29 +15,32 @@ module.exports = Button = (styles) => ({
             "@apply bg-transparent hover:bg-primary-50 text-primary-500 border-primary-400 focus:ring-primary-500": {},
                        },
     '.btn-primary': {
-        "@apply  text-white !bg-primary-500 hover:!bg-primary-600 active:!bg-primary-600 focus:ring-primary-600 border-primary-500 text-white" :{},
+        "@apply text-white !bg-primary-500 hover:!bg-primary-600 active:!bg-primary-600 focus:ring-primary-600 border-primary-500 text-white" :{},
     },
     '.theme-sting .btn-primary': {
-        "@apply  text-white !bg-primary-500 hover:!bg-primary-600 active:!bg-primary-600 focus:ring-primary-600 border-primary-500 hover:text-lime-400" :{},
+        "@apply  text-white !bg-primary-500 hover:!bg-primary-500/90 active:!bg-primary-400 focus:ring-primary-500 border-transparent hover:text-lime-500 focus:outline-none" :{},
     },
-    '.btn-primary-small': {
-        "@apply  text-white !bg-primary-500 hover:!bg-primary-600 active:!bg-primary-600 focus:ring-primary-600 border-primary-500 text-white" :{},
+    '.theme-sting .btn-secondary': {
+        "@apply  text-primary-500 !bg-primary-100 hover:!bg-primary-200/60 active:!bg-primary-100/60 focus:ring-primary-500 border-transparent hover:text-primary-600 focus:outline-none" :{},
     },
+   
     '.btn-brand': {
         "@apply text-white !bg-brand-50 hover:!bg-brand-100 active:!bg-brand-100  focus:ring-brand-100 text-brand-600" :{},
     },
     
-    '.btn-neutral': {
-        "@apply bg-transparent hover:bg-neutral-50 text-neutral-600 border-neutral-200 focus:ring-neutral-600" :{},
+    '.theme-sting .btn-neutral': {
+        "@apply bg-white hover:bg-neutral-100 text-primary-500 hover:text-primary-600 active:bg-neutral-100/50  border-neutral-200 focus:ring-primary-500" :{},
     },
-    '.btn-neutral-small': {
-        "@apply bg-transparent hover:bg-neutral-50 text-neutral-600 border-neutral-200 focus:ring-neutral-600" :{},
-    },
+   
 
 
     '.btn-red': {
         "@apply text-white !bg-red-50 hover:!bg-red-100 active:!bg-red-100 focus:ring-red-500 border-red-50 text-white" :{},
     },
+    '.theme-sting .btn-danger': {
+        "@apply text-white !bg-red-500 hover:!bg-red-400 active:!bg-red-300 focus:ring-red-400 border-transparent text-white" :{},
+    },
+
     '.btn-orange': {
         "@apply text-white !bg-orange hover:!bg-orange active:!bg-orange focus:ring-orange text-white" :{},
     },
@@ -58,11 +61,17 @@ module.exports = Button = (styles) => ({
         "@apply !bg-red-50 hover:!bg-red-100 active:!bg-red-100 focus:ring-red-400  text-red-600" :{},
     },
 
-    '.btn-icon': {
-        "@apply inline-flex gap-x-1.5 items-center text-left":{},
-    },
+  
     '.btn-trailing-icon': {
         "@apply ml-2 -mr-0.5 h-4 w-4":{},
+    },
+
+    '.btn-leading-icon': {
+        "@apply mr-2 -ml-0.5 h-4 w-4":{},
+    },
+
+    '.btn-icon': {
+        "@apply inline-flex items-center":{},
     },
     '.btn-link': {
         "@apply text-gray-700 block w-full text-left px-4 py-2 text-sm":{},

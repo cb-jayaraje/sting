@@ -85,52 +85,52 @@ export class TabService {
             code: 
                 `
                 <!-- Tabs with underline and badges -->
-                <div>
-                  <div class="sm:hidden form-control">
-                    <label for="tabs" class="sr-only">Select a tab</label>
-                    <!-- Use an "onChange" listener to redirect the user to the selected tab URL. -->
-                    <select id="tabs" name="tabs" class="select">
-                      <option>Applied</option>
-                
-                      <option>Phone Screening</option>
-                
-                      <option selected>Interview</option>
-                
-                      <option>Offer</option>
-                
-                      <option>Disqualified</option>
-                    </select>
-                  </div>
-                  <div class="hidden sm:block">
-                    <div class="border-b border-gray-200">
-                      <nav class="-mb-px flex space-x-8" aria-label="Tabs">
-                        <!-- Current: "tab-link_active", Default: "border-transparent tab-link_inactive" -->
-                        <a href="#" class="border-transparent tab-link_inactive tab-link">
-                          Applied
-                
-                          <!-- Current: "bg-indigo-100 tab-link_active", Default: "bg-gray-100 text-gray-900" -->
-                          <span class="bg-gray-100 text-gray-900 tab-link_badges">52</span>
-                        </a>
-                
-                        <a href="#" class="border-transparent tab-link_inactive tab-link">
-                          Phone Screening
-                
-                          <span class="bg-gray-100 text-gray-900 tab-link_badges">6</span>
-                        </a>
-                
-                        <a href="#" class="tab-link_active tab-link" aria-current="page">
-                          Interview
-                
-                          <span class="bg-indigo-100 tab-link_active tab-link_badges">4</span>
-                        </a>
-                
-                        <a href="#" class="border-transparent tab-link_inactive tab-link"> Offer </a>
-                
-                        <a href="#" class="border-transparent tab-link_inactive tab-link"> Disqualified </a>
-                      </nav>
-                    </div>
-                  </div>
-                </div>
+             <div>
+               <div class="sm:hidden form-control">
+                 <label for="tabs" class="sr-only">Select a tab</label>
+                 <!-- Use an "onChange" listener to redirect the user to the selected tab URL. -->
+                 <select id="tabs" name="tabs" class="select">
+                   <option>Applied</option>
+
+                   <option>Phone Screening</option>
+
+                   <option selected>Interview</option>
+
+                   <option>Offer</option>
+
+                   <option>Disqualified</option>
+                 </select>
+               </div>
+               <div class="hidden sm:block">
+                 <div class="border-b border-gray-200">
+                   <nav class="-mb-px flex space-x-8 " aria-label="Tabs">
+                     <!-- Current: "tab-link_active", Default: "border-transparent tab-link_inactive" -->
+                     <a href="#" class="border-transparent tab-link_inactive tab-link group">
+                       Applied
+
+                       <!-- Current: "bg-indigo-100 tab-link_active", Default: "bg-gray-100 text-gray-900" -->
+                       <span class="bg-gray-100 text-gray-900 tab-link_badges group-hover:bg-primary-500 group-hover:text-white">52</span>
+                     </a>
+
+                     <a href="#" class="border-transparent tab-link_inactive tab-link group">
+                       Phone Screening
+
+                       <span class="bg-gray-100 text-gray-900 tab-link_badges group-hover:bg-primary-500 group-hover:text-white">6</span>
+                     </a>
+
+                     <a href="#" class="tab-link_active tab-link" aria-current="page">
+                       Interview
+
+                       <span class="bg-primary-500 text-white tab-link_active tab-link_badges">4</span>
+                     </a>
+
+                     <a href="#" class="border-transparent tab-link_inactive tab-link"> Offer </a>
+
+                     <a href="#" class="border-transparent tab-link_inactive tab-link"> Disqualified </a>
+                   </nav>
+                 </div>
+               </div>
+             </div>
                 `
         },
     ];

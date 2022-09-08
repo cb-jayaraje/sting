@@ -16,7 +16,7 @@ module.exports = Tabs = (styles) => ({
         '@apply bg-primary-500 text-neutral-50': {}
     },
     '.tab-link_badges': {
-        '@apply hidden ml-3 py-0.5 px-2.5 rounded-full text-xs font-medium md:inline-block': {}
+        '@apply hidden ml-3 py-0.5 px-2.5 rounded-full text-xs font-medium md:inline-block hover:bg-primary-500 hover:text-white': {}
     },
 
 });

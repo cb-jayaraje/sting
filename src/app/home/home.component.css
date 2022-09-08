@@ -5,7 +5,8 @@
 
 
 .linear-bg {
-    background: linear-gradient(90deg, #FF3300 0%, #ED4015 51.5%, #ED4015 99.99%, rgba(255, 51, 0, 0) 100%, #ED4015 100%);
+    /* background: linear-gradient(90deg, #FF3300 0%, #ED4015 51.5%, #ED4015 99.99%, rgba(255, 51, 0, 0) 100%, #ED4015 100%); */
+    background:linear-gradient(90deg,#FF3300 0%,#f5481c 51.5%,#f5481e 99.99%,rgba(255,51,0,0) 100%,#f5481e 100%);
     position: relative;
 }
 

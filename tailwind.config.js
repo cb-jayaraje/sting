@@ -31,9 +31,23 @@ module.exports = {
           'copy-small': '0.79rem',
           'copy-upper': '0.702rem'
        
-      }
+      },
       //colors: require('./sting-components/default-colors')
-      
+      animation: {
+        fade: 'fadeIn 1s ease-in-out',
+      },
+      keyframes: () => ({
+        fadeIn: {
+          '0%': {
+            opacity: '0',
+            transform: 'translate3d(0, -100%, 0)',
+          },
+          '100%': {
+            opacity: 1,
+            transform: 'none',
+          },
+        },
+      }),
     },
   },
  

@@ -41,9 +41,11 @@ module.exports = Button = (styles) => ({
         "@apply text-white !bg-red-500 hover:!bg-red-400 active:!bg-red-300 focus:ring-red-400 border-transparent text-white": {},
     },
 
-   
+    '.btn-orange': {
+        "@apply text-white !bg-orange hover:!bg-orange active:!bg-orange focus:ring-orange text-white": {},
+    },
     '.btn-green': {
-        "@apply text-green-700 !bg-green-50 hover:!bg-green-100 focus:ring-green-500 active:!bg-green-100": {},
+        "@apply text-white !bg-green hover:!bg-green active:!bg-green focus:ring-green text-white": {},
     },
 
     '.btn-info': {

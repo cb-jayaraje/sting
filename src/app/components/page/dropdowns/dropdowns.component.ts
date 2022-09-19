@@ -53,4 +53,8 @@ export class DropdownsComponent implements OnInit {
 
   }
 
+  changeTheme(arg: any){
+    console.log(arg)
+  }
+
 }

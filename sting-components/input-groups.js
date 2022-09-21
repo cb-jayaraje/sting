@@ -1,7 +1,7 @@
 module.exports = InputGroups = (styles) => ({
     
     '.form-control .input, .input': {
-                      "@apply shadow-sm focus:!ring-primary-500 focus:!border-primary-500 focus:outline-none block w-full sm:text-sm border-neutral-200 rounded text-neutral-600 placeholder-neutral-300 font-Inter": {},
+                      "@apply shadow-sm focus:!ring-primary-500 focus:!border-primary-500 focus:outline-none block w-full sm:text-sm border-neutral-200 rounded text-neutral-600 placeholder-neutral-300 font-Inter placeholder:text-xs": {},
                        },
     '.form-control .label': {
                      "@apply cb-text-copy-regular font-semibold": {},

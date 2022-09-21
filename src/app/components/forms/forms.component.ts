@@ -86,4 +86,6 @@ export class FormsComponent implements OnInit {
 
   }
 
+  changeTheme(arg=''){}
+
 }

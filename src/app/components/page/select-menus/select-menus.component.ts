@@ -15,6 +15,10 @@ export class SelectMenusComponent implements OnInit {
 
 htmlPre = '';
 compUnescape='';
+optionData =[
+  "Wade Copper", "Arlene Mccoy", "Devon Webb", "Tom Cook", "Tanya Fox", "Hellen"
+]
+hightlight= 'Tom Cook'
 
 selectMenus: any;
 convertedDatas: any = [];

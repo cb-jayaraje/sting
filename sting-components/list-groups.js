@@ -15,6 +15,28 @@ module.exports = ListGroupss = (styles) => ({
         "@apply flex items-center text-sm text-gray-500": {},
          },
 '.list-group--icon': {
-        "ml-5 flex-shrink-0": {},
+        "@apply ml-5 flex-shrink-0": {},
          },
+ '.stacked-list ul, .stacked-list__two___column ul': {
+         "@apply divide-y divide-[#D3D9DC]": {},
+         },
+         '.stacked-list li': {
+                "@apply flex py-4": {},
+                },
+        '.stacked-list__two___column li': {
+                "@apply py-4":{}
+        },
+        
+         '.stacked-list li > div, .stacked-list__two___column > div': {
+                "@apply ml-3": {},
+                },
+        '.stacked-list li .content, .stacked-list__two___column li .content': {
+                "@apply antialiased text-[14.22px] leading-snug font-medium text-[#3F4E54]": {}
+        },
+        '.stacked-list li .content-small, .stacked-list__two___column li .content-small': {
+                "@apply antialiased text-[14.22px] leading-snug font-normal text-[#617178]": {}
+        },
+        
+        
+
 })

@@ -15,6 +15,7 @@ export class CommonComponent implements OnInit {
   @Input() title:any;
   @Input() codeHtml ='';
   @Input() mainTitle = '';
+  @Input() PreviewHeight: string= '';
 
   previewHeight = ''
 
@@ -46,7 +47,7 @@ export class CommonComponent implements OnInit {
     this.codePreviewRec = this.codePreview;
 
     if(this.mainTitle === 'select_menus'){
-      this.previewHeight = 'h-52 min-h-full'
+      // this.previewHeight = 'h-52 min-h-full'
     }else if (this.mainTitle === 'dropdowns'){
       // this.previewHeight = 'h-72 min-h-full'
     }

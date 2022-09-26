@@ -33,38 +33,15 @@ export class SelectMenuServices {
                   </span>
                 </button>
             
-                <!--
-                  Select popover, show/hide based on select state.
-            
-                  Entering: ""
-                    From: ""
-                    To: ""
-                  Leaving: "transition ease-in duration-100"
-                    From: "opacity-100"
-                    To: "opacity-0"
-                -->
+               
                 <ul tabindex="-1" class="select-ul" role="listbox" aria-labelledby="listbox-label" aria-activedescendant="listbox-option-3">
-                  <!--
-                    Select option, manage highlight styles based on mouseenter/mouseleave and keyboard navigation.
-            
-                    Highlighted: "text-white bg-primary-600", Not Highlighted: "text-gray-900"
-                  -->
                   <li class="select-li pl-3 pr-9 group"  id="listbox-option-0" role="option">
-                    <!-- Selected: "font-semibold", Not Selected: "font-normal" -->
                     <span class="font-normal block truncate"> Wade Cooper </span>
-            
-                    <!--
-                      Checkmark, only display for selected option.
-            
-                      Highlighted: "text-white", Not Highlighted: "text-primary-600"
-                    -->
                     <span class="select-li-icon right-0 pr-4">
-                      <!-- Heroicon name: solid/check -->
-                    
                     </span>
                   </li>
             
-                  <!-- More items... -->
+                 
                 </ul>
               </div>
             </div>
@@ -86,41 +63,18 @@ export class SelectMenuServices {
                   </svg>
                 </span>
               </button>
-          
-              <!--
-                Select popover, show/hide based on select state.
-          
-                Entering: ""
-                  From: ""
-                  To: ""
-                Leaving: "transition ease-in duration-100"
-                  From: "opacity-100"
-                  To: "opacity-0"
-              -->
+
               <ul tabindex="-1" class="select-ul" role="listbox" aria-labelledby="listbox-label" aria-activedescendant="listbox-option-3">
-                <!--
-                  Select option, manage highlight styles based on mouseenter/mouseleave and keyboard navigation.
-          
-                  Highlighted: "text-white bg-primary-600", Not Highlighted: "text-gray-900"
-                -->
+                
                 <li class="select-li-selected group"  id="listbox-option-0" role="option">
-                  <!-- Selected: "font-semibold", Not Selected: "font-normal" -->
                   <span class="font-normal block truncate"> Wade Cooper </span>
-          
-                  <!--
-                    Checkmark, only display for selected option.
-          
-                    Highlighted: "text-white", Not Highlighted: "text-primary-600"
-                  -->
                   <span class="select-li-icon ">
-                    <!-- Heroicon name: solid/check -->
                     <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
                       <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
                     </svg>
                   </span>
                 </li>
           
-                <!-- More items... -->
               </ul>
             </div>
           </div>

@@ -24,6 +24,7 @@ import { CheckboxComponent } from './checkbox/checkbox.component';
 import { DropdownDirective } from "src/app/shared/dropdown.directive";
 import { ToggleDropdownDirective } from "src/app/shared/toggleDropDown.directive";
 import { ToggleDirective } from "src/app/shared/toggle.dirctive";
+import { StackedListsComponent } from './stacked-lists/stacked-lists.component';
 
 @NgModule({
     declarations: [
@@ -48,7 +49,8 @@ import { ToggleDirective } from "src/app/shared/toggle.dirctive";
         TabsComponent,
         CheckboxComponent,
         ToggleDropdownDirective,
-        ToggleDirective
+        ToggleDirective,
+        StackedListsComponent
         
   ],
     imports: [

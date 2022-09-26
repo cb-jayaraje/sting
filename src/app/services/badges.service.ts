@@ -15,9 +15,19 @@ export class BadgesService {
 
             <!-- ------------badge-small------------ -->
   
-            <span class="badge badge-small bg-neutral-200 text-neutral-800">
+            <span class="badge-neutral badge-small ">
               Small
             </span>
+
+            <!-- ------------badge-small with button------------ -->
+            <span class="badge-neutral badge-small__icon"> Small 
+            <button type="button" >
+            <span class="sr-only">Remove large option</span>
+            <svg class="h-2 w-2" stroke="currentColor" fill="none" viewBox="0 0 8 8">
+              <path stroke-linecap="round" stroke-width="1" d="M1 1l6 6m0-6L1 7" />
+            </svg>
+          </button>
+        </span>
 
             <!-- ------------badge-base------------ -->
   
@@ -25,6 +35,15 @@ export class BadgesService {
               Base
             </span>
 
+            <!-- ------------badge-base with button------------ -->
+            <span class="badge-neutral badge-small__icon"> Small 
+            <button type="button" >
+            <span class="sr-only">Remove large option</span>
+            <svg class="h-2 w-2" stroke="currentColor" fill="none" viewBox="0 0 8 8">
+              <path stroke-linecap="round" stroke-width="1" d="M1 1l6 6m0-6L1 7" />
+            </svg>
+          </button>
+        </span>
           
   
           </div>

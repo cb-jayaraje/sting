@@ -1,7 +1,6 @@
 import { CommonModule } from "@angular/common";
 import { NgModule } from "@angular/core";
-import { CommonComponent } from "../components/page/common/common.component";
-import { DropdownDirective } from "./dropdown.directive";
+import { CommonComponent } from "./common.component";
 
 @NgModule({
     imports:[
@@ -9,14 +8,14 @@ import { DropdownDirective } from "./dropdown.directive";
     ],
     declarations: [
         // DropdownDirective
-     
+        CommonComponent
     ],
     exports: [
         // DropdownDirective
-      
+        CommonComponent
     ]
 })
 
-export class SharedModule {
+export class commonComponentModule {
 
 }

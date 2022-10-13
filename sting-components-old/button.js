@@ -18,7 +18,7 @@ module.exports = Button = (styles) => ({
         "@apply text-white border-0 !bg-primary-500 hover:!bg-primary-600 active:!bg-primary-600 focus:ring-primary-600 border-primary-500 text-white": {},
     },
     '.theme-sting .btn-primary': {
-        "@apply  text-white !bg-primary-500 hover:!bg-primary-500/90 active:!bg-primary-400 focus:ring-primary-500 border-transparent hover:text-lime-500 focus:outline-none": {},
+        "@apply  text-white !bg-primary-500 hover:!bg-primary-700 active:!bg-primary-400 focus:ring-primary-500 border-transparent hover:text-lime-500 focus:outline-none": {},
     },
     '.theme-sting .btn-secondary': {
         "@apply  text-primary-500 !bg-primary-100 hover:!bg-primary-200/60 active:!bg-primary-100/60 focus:ring-primary-500 border-transparent hover:text-primary-600 focus:outline-none": {},

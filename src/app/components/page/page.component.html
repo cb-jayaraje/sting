@@ -3,43 +3,43 @@
 
     <app-sidenav></app-sidenav>
 
-    <div class="w-full pt-6 pb-16 pl-[20%] pr-14">
+    <div class="w-full pb-16 pl-64 pr-8 pt-5">
         <div class="flex justify-end relative dropDown" appDropdown>
-            <div class="absolute p-3 bg-slate-100 w-40 -bottom-44 z-10 rounded-lg shadow-2xl space-y-3 ">
-                <div class=" space-y-3">
-                    <button (click)="changeTheme('')"
-                        class="bg-white inline-flex items-center gap-x-2 px-3 py-2 rounded-lg w-full">
-                        <span class="theme-leap rounded-full h-5 w-5 bg-indigo-600"></span>
-                        <span>Default</span>
-                    </button>
-
-                    <button (click)="changeTheme('theme-leap')"
-                        class="bg-white inline-flex items-center gap-x-2 px-3 py-2 rounded-lg w-full">
-                        <span class="theme-leap rounded-full h-5 w-5 bg-primary-300"></span>
-                        <span>Leap</span>
-                    </button>
-
-                    <button (click)="changeTheme('theme-sting')"
-                        class="bg-white inline-flex items-center gap-x-2 px-3 py-2 rounded-lg w-full">
-                        <span class="theme-sting rounded-full h-5 w-5 bg-primary-300"></span>
-                        <span>Sting</span>
-                    </button>
+            <div x-transition:enter="transition ease-out duration-100"
+                x-transition:enter-start="transform opacity-0 scale-95"
+                x-transition:enter-end="transform opacity-100 scale-100"
+                x-transition:leave="transition ease-in duration-75"
+                x-transition:leave-start="transform opacity-100 scale-100"
+                x-transition:leave-end="transform opacity-0 scale-95"
+                class="absolute right-0 z-10 mt-9 w-max origin-top-right rounded-md bg-white shadow-lg ring-1 ring-[#E9ECEE] focus:outline-none"
+                role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1">
+                <div role="none">
+                    <a (click)="changeTheme('')"
+                        class="block px-3 py-2 inter antialiased text-[12.64px] font-normal leading-[16.43px] text-[#3F4E54] hover:bg-[#F4F6F6] rounded-t-md flex items-center"
+                        role="menuitem" tabindex="-1" id="menu-item-0">
+                        <span class="h-2.5 w-2.5 rounded-full bg-sky-500 mr-2"></span> Default </a>
+                    <a (click)="changeTheme('theme-leap')"
+                        class="block px-3 py-2 inter antialiased text-[12.64px] font-normal leading-[16.43px] text-[#3F4E54] hover:bg-[#F4F6F6] flex items-center"
+                        role="menuitem" tabindex="-1" id="menu-item-0">
+                        <span class="h-2.5 w-2.5 rounded-full bg-[#6200ea] mr-2"></span> Leap </a>
+                    <a (click)="changeTheme('theme-sting')"
+                        class="block px-3 py-2 inter antialiased text-[12.64px] font-normal leading-[16.43px] text-[#3F4E54] hover:bg-[#F4F6F6] rounded-b-md flex items-center"
+                        role="menuitem" tabindex="-1" id="menu-item-0">
+                        <span class="h-2.5 w-2.5 rounded-full bg-[#012A38] mr-2"></span> Sting </a>
                 </div>
             </div>
-            <button class="flex gap-x-3 hover:bg-slate-100 rounded-lg p-3 cursor-pointer">
+            <button
+                class="inline-flex items-center px-2.5 py-1.5 border border-[#D3D9DC] text-[12.64px] inter antialiased leading-[14px] font-medium rounded bg-white text-[#012A38] hover:bg-[#EDEFF0]/50 active:bg-[#E6EAEB] hover:text-[#01222D]">
                 <div class="flex ">
-                    <svg width="20" height="20" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                        class="inline-block h-5 w-5 stroke-current md:h-6 md:w-6">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01">
-                        </path>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                        class="h-3.5 w-3.5 mr-1.5 -ml-0.5">
+                        <path fill-rule="evenodd"
+                            d="M3.5 2A1.5 1.5 0 002 3.5V15a3 3 0 106 0V3.5A1.5 1.5 0 006.5 2h-3zm11.753 6.99L9.5 14.743V6.257l1.51-1.51a1.5 1.5 0 012.122 0l2.121 2.121a1.5 1.5 0 010 2.122zM8.364 18H16.5a1.5 1.5 0 001.5-1.5v-3a1.5 1.5 0 00-1.5-1.5h-2.136l-6 6zM5 16a1 1 0 100-2 1 1 0 000 2z"
+                            clip-rule="evenodd" />
                     </svg>
                     <span class="">Theme</span>
                 </div>
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
-                    stroke="currentColor" stroke-width="2">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
-                </svg>
+
             </button>
 
 

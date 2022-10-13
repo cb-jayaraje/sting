@@ -114,6 +114,16 @@
         }
     
       
+    ],
+
+    "typography": [
+        {
+            "id": "t_1",
+            "title": "Font Stack",
+            "code": " <p class=\"cb-text-display\">Display</p>"
+
+            
+        }
     ]
        
 }

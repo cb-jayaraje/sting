@@ -1,0 +1,15 @@
+.toggle.active .isActive{
+    @apply block
+}
+
+.toggle .isActive{
+    @apply hidden
+}
+
+.toggle.active .inActive{
+    @apply hidden
+}
+
+.toggle .inActive{
+    @apply block
+}

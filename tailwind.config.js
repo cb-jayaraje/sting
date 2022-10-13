@@ -10,11 +10,12 @@ module.exports = {
   theme: {
     
     extend: {
+      //colors: require('./sting-components/default-colors')
       fontFamily: {
         Inter: ['Inter', 'sans-serif'],
         Sora: ['Sora', 'sans-serif']
-       },
-      fontSize: {
+    },
+    fontSize: {
         display: '2.566rem', //41.05px
         h1: '1.802rem', //28.83px
         h2: '1.602rem', //25.63px
@@ -26,13 +27,11 @@ module.exports = {
         subtitle: '1rem',
         copy: '0.889rem',
         small: '0.79rem',
-          'copy-large': '1rem',
-          'copy-regular': '0.889rem',
-          'copy-small': '0.79rem',
-          'copy-upper': '0.702rem'
-       
-      },
-      //colors: require('./sting-components/default-colors')
+        'copy-large': '1rem',
+        'copy-regular': '0.889rem',
+        'copy-small': '0.79rem',
+        'copy-upper': '0.702rem'
+    },
       animation: {
         fade: 'fadeIn 1s ease-in-out',
       },

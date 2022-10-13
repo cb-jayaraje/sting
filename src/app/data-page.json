@@ -24,19 +24,82 @@
         ],
         
         "leftNav": [
-            {"title":"Alerts", "link": "alerts" },
-            {"title":"Input Groups", "link": "input-groups" },
-            {"title":"Select Menus", "link": "select-menus" },
+
+            {
+                "title": "Getting Started",
+                "subMenu": [
+                    {"title": "Installation", "link":"installation"}
+                    
+                ]
+            },
+            {
+                "title": "Brand",
+                "subMenu": [
+                 
+                    {"title": "Colors", "link":"colors"},
+                    {"title": "Typography", "link":"typography"}
+                    
+                ]
+            },
+            {
+                "title": "Elements",
+                "subMenu": [
+                    {"title":"Buttons", "link": "buttons" },
+                    {"title":"Badges", "link": "badges" },
+                    {"title":"Dropdowns", "link": "dropdowns" }
+
+                    
+                    
+                ]
+            },
+            
+            {
+                "title": "Forms",
+                "subMenu": [
+                    {"title":"Input Groups", "link": "input-groups" },
+                    {"title":"Select Menus", "link": "select-menus" },
+                    {"title":"Toggles", "link": "toggles" },
+                    {"title":"Checkbox", "link": "checkbox" },
+                    {"title":"Radio Groups", "link": "radio-groups" }
+                    
+                ]
+            },
+            {
+                "title": "Lists",
+                "subMenu": [
+                  
+                    {"title": "Stacked Lists", "link":"stacked-lists"},
+                    {"title": "Tables", "link":"table"}
+                   
+               
+                    
+                ]
+            },
+            {
+                "title": "Feedback",
+                "subMenu": [
+                    {"title":"Alerts", "link": "alerts" }
+                    
+                    
+                ]
+            },
+            {
+                "title": "Navigation",
+                "subMenu": [
+                    {"title":"Tabs", "link": "tabs" }
+                    
+                    
+                ]
+            },
            
-            {"title":"Badges", "link": "badges" },
-            {"title":"Dropdowns", "link": "dropdowns" },
-            {"title":"Buttons", "link": "buttons" },
-            {"title":"Modals", "link": "modals" },
-            {"title":"Table", "link": "table" },
-            {"title":"Radio Groups", "link": "radio-groups" },
-            {"title":"Toggles", "link": "toggles" },
-            {"title":"Tabs", "link": "tabs" },
-            {"title":"Checkbox", "link": "checkbox" }
+            {
+                "title": "Layouts",
+                "subMenu": [
+                    {"title":"Modals", "link": "modals" }
+                    
+
+                ]
+            }
             
             
         ],

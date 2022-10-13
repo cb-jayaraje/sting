@@ -23,6 +23,10 @@ import { ThemesComponent } from './components/config/themes/themes.component';
 import { DropdownDirective } from './shared/dropdown.directive';
 import { InstallationComponent } from './components/config/installation/installation.component';
 import { TypographyComponent } from './components/config/typography/typography.component';
+import { HighlightDirective } from './shared/highlight.directive';
+import { TypographyModule } from './components/config/typography/typography.module';
+import { SharedModule } from './shared/shared.module';
+import { commonComponentModule } from './components/page/common/commonComponent.module';
 
 @NgModule({
   declarations: [
@@ -37,19 +41,22 @@ import { TypographyComponent } from './components/config/typography/typography.c
     FeedbackComponent,
     ElementsComponent,
     SidenavComponent,
-    LayoutComponent,
+    LayoutComponent,  
     OverlayComponent,
     ColorsComponent,
     ThemesComponent,
     DropdownDirective,
     InstallationComponent,
-    TypographyComponent
+    TypographyComponent,
+    HighlightDirective,
+    
   ],
   imports: [
     BrowserModule,
     FormsModule,
     AppRoutingModule,
-    PageModule
+    commonComponentModule
+    
   ],
   providers: [{provide: LocationStrategy, useClass: HashLocationStrategy}],
   bootstrap: [AppComponent]

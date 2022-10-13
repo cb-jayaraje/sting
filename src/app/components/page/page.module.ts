@@ -21,6 +21,11 @@ import { RadioGroupsComponent } from './radio-groups/radio-groups.component';
 import { ToggleComponent } from './toggle/toggle.component';
 import { TabsComponent } from './tabs/tabs.component';
 import { CheckboxComponent } from './checkbox/checkbox.component';
+import { DropdownDirective } from "src/app/shared/dropdown.directive";
+import { ToggleDropdownDirective } from "src/app/shared/toggleDropDown.directive";
+import { ToggleDirective } from "src/app/shared/toggle.dirctive";
+import { StackedListsComponent } from './stacked-lists/stacked-lists.component';
+import { commonComponentModule } from "./common/commonComponent.module";
 
 @NgModule({
     declarations: [
@@ -31,7 +36,7 @@ import { CheckboxComponent } from './checkbox/checkbox.component';
         AlertsComponent,
         AlertsCommonComponent,
         SelectMenusComponent,
-        CommonComponent,
+        // CommonComponent,
         BadgesComponent,
         DropdownsComponent,
         ButtonsComponent,
@@ -43,19 +48,23 @@ import { CheckboxComponent } from './checkbox/checkbox.component';
         RadioGroupsComponent,
         ToggleComponent,
         TabsComponent,
-        CheckboxComponent
+        CheckboxComponent,
+        ToggleDropdownDirective,
+        ToggleDirective,
+        StackedListsComponent
+        
   ],
     imports: [
         CommonModule,
         RouterModule,
-        FormsModule
-        
-        
-        
+        FormsModule,
+        commonComponentModule
+
     ],
     exports: [
         
-    ]
+        
+    ]   
 })
 
 export class PageModule {

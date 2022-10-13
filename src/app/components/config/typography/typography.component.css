@@ -1,0 +1,3 @@
+.hint-text{
+    @apply antialiased text-[12.64px] font-normal leading-[16.43px] text-neutral-400 mb-2
+}

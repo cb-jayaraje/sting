@@ -69,30 +69,30 @@ export class CheckboxService {
                         
                         <div class="relative flex items-start">
                           <div class="flex items-center h-5">
-                            <input id="comments" aria-describedby="comments-description" name="comments" type="checkbox" class="checkbox">
+                            <input id="comments2" aria-describedby="comments-description" name="comments" type="checkbox" class="checkbox">
                           </div>
                           <div class="ml-3 text-sm">
-                            <label for="comments" class="text-gray-700 label">New comments</label>
+                            <label for="comments2" class="text-gray-700 label">New comments</label>
                             <span id="comments-description" class="text-gray-500"><span class="sr-only">New comments </span>so you always know what's happening.</span>
                           </div>
                         </div>
     
                         <div class="relative flex items-start">
                           <div class="flex items-center h-5">
-                            <input id="candidates" aria-describedby="candidates-description" name="candidates" type="checkbox" class="checkbox">
+                            <input id="candidates2" aria-describedby="candidates-description" name="candidates" type="checkbox" class="checkbox">
                           </div>
                           <div class="ml-3 text-sm">
-                            <label for="candidates" class="text-gray-700 label">New candidates</label>
+                            <label for="candidates2" class="text-gray-700 label">New candidates</label>
                             <span id="candidates-description" class="text-gray-500"><span class="sr-only">New candidates </span>who apply for any open postings.</span>
                           </div>
                         </div>
     
                         <div class="relative flex items-start">
                           <div class="flex items-center h-5">
-                            <input id="offers" aria-describedby="offers-description" name="offers" type="checkbox" class="checkbox">
+                            <input id="offers2" aria-describedby="offers-description" name="offers" type="checkbox" class="checkbox">
                           </div>
                           <div class="ml-3 text-sm">
-                            <label for="offers" class="text-gray-700 label">Offers</label>
+                            <label for="offers2" class="text-gray-700 label">Offers</label>
                             <span id="offers-description" class="text-gray-500"><span class="sr-only">Offers </span>when they are accepted or rejected by candidates.</span>
                           </div>
                         </div>
@@ -117,31 +117,31 @@ export class CheckboxService {
     
                           <div class="relative flex items-start py-4">
                             <div class="min-w-0 flex-1 text-sm">
-                              <label for="comments" class="text-gray-700 label">Comments</label>
+                              <label for="comments3" class="text-gray-700 label">Comments</label>
                               <p id="comments-description" class="text-gray-500">Get notified when someones posts a comment on a posting.</p>
                             </div>
                             <div class="ml-3 flex items-center h-5">
-                              <input id="comments" aria-describedby="comments-description" name="comments" type="checkbox" class="checkbox">
+                              <input id="comments3" aria-describedby="comments-description" name="comments" type="checkbox" class="checkbox">
                             </div>
                           </div>
     
                           <div class="relative flex items-start py-4">
                             <div class="min-w-0 flex-1 text-sm">
-                              <label for="candidates" class="text-gray-700 label">Candidates</label>
+                              <label for="candidates3" class="text-gray-700 label">Candidates</label>
                               <p id="candidates-description" class="text-gray-500">Get notified when a candidate applies for a job.</p>
                             </div>
                             <div class="ml-3 flex items-center h-5">
-                              <input id="candidates" aria-describedby="candidates-description" name="candidates" type="checkbox" class="checkbox">
+                              <input id="candidates3" aria-describedby="candidates-description" name="candidates" type="checkbox" class="checkbox">
                             </div>
                           </div>
     
                           <div class="relative flex items-start py-4">
                             <div class="min-w-0 flex-1 text-sm">
-                              <label for="offers" class="text-gray-700 label">Offers</label>
+                              <label for="offers3" class="text-gray-700 label">Offers</label>
                               <p id="offers-description" class="text-gray-500">Get notified when a candidate accepts or rejects an offer.</p>
                             </div>
                             <div class="ml-3 flex items-center h-5">
-                              <input id="offers" aria-describedby="offers-description" name="offers" type="checkbox" class="checkbox">
+                              <input id="offers3" aria-describedby="offers-description" name="offers" type="checkbox" class="checkbox">
                             </div>
                           </div>
     

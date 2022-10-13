@@ -30,16 +30,16 @@ module.exports = RadioGroup = (styles) => ({
         '@apply  h-5 w-5': {}
     },
     '.radio-card__checked .radio-card__icon': {
-        '@apply  text-indigo-600 !visible': {}
+        '@apply  text-primary-600 !visible': {}
     },
     '.radio-card__checked': {
-        '@apply border-transparent border-indigo-500 ring-2 ring-indigo-500': {}
+        '@apply border-transparent border-primary-500 ring-2 ring-primary-500': {}
     },
     '.radio-card__sm': {
         '@apply border rounded-md py-3 px-3 flex items-center justify-center text-sm font-medium uppercase sm:flex-1 cursor-pointer focus:outline-none': {}
     },
     '.radio-card__sm--checked': {
-        '@apply bg-indigo-600 border-transparent text-white hover:bg-indigo-700 ring-2 ring-offset-2 ring-indigo-500 cursor-pointer': {}
+        '@apply bg-primary-600 border-transparent text-white hover:bg-primary-700 ring-2 ring-offset-2 ring-primary-500 cursor-pointer': {}
     },
     '.radio-card__sm--inactive': {
         '@apply border rounded-md py-3 px-3 flex items-center justify-center text-sm font-medium uppercase sm:flex-1 opacity-25 cursor-not-allowed': {}
@@ -48,7 +48,7 @@ module.exports = RadioGroup = (styles) => ({
         '@apply relative block bg-white border rounded-lg shadow-sm px-6 py-4 cursor-pointer sm:flex sm:justify-between focus:outline-none': {}
     },
     '.radio-card__stacked--checked': {
-        '@apply border-transparent border-indigo-500 ring-2 ring-indigo-500': {}
+        '@apply border-transparent border-primary-500 ring-2 ring-primary-500': {}
     },
 
     '.radio-card__stacked___labelwrapper': {
@@ -59,13 +59,13 @@ module.exports = RadioGroup = (styles) => ({
         '@apply relative border p-4 flex flex-col cursor-pointer md:pl-4 md:pr-6 md:grid md:grid-cols-3 focus:outline-none': {}
     },
     '.radio-table--checked': {
-        '@apply bg-indigo-50 border-indigo-200': {}
+        '@apply bg-primary-50 border-primary-200': {}
     },
     '.radio-table__input': {
-        '@apply h-4 w-4 text-indigo-600 border-gray-300 focus:ring-indigo-500': {}
+        '@apply h-4 w-4 text-primary-600 border-gray-300 focus:ring-primary-500': {}
     },
     '.radio-table__label--checked': {
-        '@apply text-indigo-900': {}
+        '@apply text-primary-900': {}
     },
     '.radio-table__label': {
         '@apply ml-2 opacity-100': {}

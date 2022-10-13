@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { debounceTime, distinctUntilChanged, Subject, switchMap } from 'rxjs';
+import { CommonService } from 'src/app/services/common.service';
 
 
 import * as data from './../../data-page.json'
@@ -29,7 +30,7 @@ export class SidenavComponent implements OnInit {
 
 
 
-  constructor( private router: Router, private route: ActivatedRoute) { }
+  constructor( private router: Router, private route: ActivatedRoute, public commonService: CommonService) { }
 
   ngOnInit(): void {
     // console.log(this.route.snapshot.url);
@@ -40,6 +41,10 @@ export class SidenavComponent implements OnInit {
   searchPosts(event: any){
     // console.log(event.value)
     this.searchSubject.next(event.value)
+  }
+
+  selectTitle(title: string){
+    this.commonService.setPageTitle(title)
   }
 
 }

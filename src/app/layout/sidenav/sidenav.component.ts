@@ -22,7 +22,7 @@ export class SidenavComponent implements OnInit {
     debounceTime(250),
     distinctUntilChanged(),
     switchMap((searchdata: any ) => {
-      console.log(searchdata)
+      // console.log(searchdata)
       return searchdata;
     })
   )
@@ -34,7 +34,7 @@ export class SidenavComponent implements OnInit {
   ngOnInit(): void {
     // console.log(this.route.snapshot.url);
 
-    //console.log(this.leftNav.leftNav)
+    console.log(this.leftNav.leftNav)
   }
 
   searchPosts(event: any){

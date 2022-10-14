@@ -248,4 +248,8 @@ div.code-toolbar > .toolbar > .toolbar-item > button {
   @apply font-semibold text-lg;
 }
 
+.preview-box{
+  @apply p-8 flex justify-center bg-gradient-to-b from-white to-gray-50 h-auto;
+}
+
 

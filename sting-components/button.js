@@ -85,7 +85,13 @@ module.exports = Button = (styles) => ({
         "@apply inline-flex items-center": {},
     },
     '.btn-link': {
-        "@apply mx-1 antialiased !font-semibold leading-5 !text-primary-500 underline underline-offset-2 focus:rounded-sm focus:outline-none focus:ring-1 focus:ring-offset-2 focus:ring-primary-500": {},
+        "@apply mx-1 flex antialiased !font-semibold !text-primary-500 underline underline-offset-2 focus:rounded-sm focus:outline-none focus:ring-1 focus:ring-offset-2 focus:ring-primary-500": {},
     },
+    '.btn-link--small': {
+        "@apply cb-text-copy-small p-0 leading-none w-max":{},
+    },
+    '.btn-link--regular': {
+        "@apply cb-text-copy-regular p-0 leading-4 w-max":{},
+    }
 
 });

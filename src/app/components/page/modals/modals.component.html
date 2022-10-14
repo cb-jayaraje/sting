@@ -1,5 +1,5 @@
+<app-common *ngFor="let convertedData of convertedDatas" [activeTab]="'preview'" [codePreview]="convertedData.code"
+  [codeHtml]="convertedData.code" [title]="convertedData.title">
 
-  <app-common *ngFor="let convertedData of convertedDatas" [activeTab]="'preview'" [codePreview]="convertedData.code" [codeHtml]="convertedData.code" [title]="convertedData.title">
-    <div [innerHTML] = "convertedData.code | safeHtml"></div>
-  </app-common>
-  
+  <div [innerHTML]="convertedData.code | safeHtml"></div>
+</app-common>

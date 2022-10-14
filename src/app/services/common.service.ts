@@ -11,6 +11,9 @@ export class CommonService {
     private  _theme = new BehaviorSubject<string>('theme-sting');
     private _theme$ = this._theme.asObservable();
 
+    private _pageTitle = new BehaviorSubject<string>('');
+    private _pageTitle$ = this._pageTitle.asObservable();
+
     constructor(){}
 
     setTheme(theme: string){
@@ -19,6 +22,14 @@ export class CommonService {
 
     getTheme(): Observable<string>{
         return this._theme$;
+    }
+
+    
+    setPageTitle(title: string){
+        this._pageTitle.next(title)
+    }
+    getPageTitle(): Observable<string> {
+        return this._pageTitle$
     }
     
 

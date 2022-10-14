@@ -10,7 +10,7 @@
                 <h3 class="inter antialiased text-[14.22px] font-semibold leading-[18.48px] text-[#3F4E54] mb-2">
                     {{nav.title}}</h3>
                 <ul class=" sub-li">
-                    <li *ngFor="let subNav of nav.subMenu">
+                    <li *ngFor="let subNav of nav.subMenu" (click)="selectTitle(subNav.title)">
                         <a [routerLink]="path+subNav.link" routerLinkActive="active">{{subNav.title}}</a>
                     </li>
 

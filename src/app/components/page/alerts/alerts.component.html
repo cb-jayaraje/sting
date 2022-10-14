@@ -1,4 +1,3 @@
-
 <!-- <app-alerts-common></app-alerts-common> -->
 <!-- <app-alerts-common *ngFor="let convertedData of convertedDatas" [activeTab]="'preview'" [codePreview]="convertedData.code" [codeHtml]="convertedData.code" [title]="convertedData.title"  >
   <div class="w-full lg:max-w-2xl m-auto py-4"><div ><span [innerHtml]="convertedData.code | safeHtml"></span></div></div>
@@ -215,11 +214,13 @@
 
 
 
-<app-common  *ngFor="let convertedData of convertedDatas" [activeTab]="'preview'" [codePreview]="convertedData.code" [codeHtml]="convertedData.code" [title]="convertedData.title" >
-  <div class="p-8 flex items-center justify-center bg-white"><div class="w-full max-w-2xl mx-auto " >
+<app-common *ngFor="let convertedData of convertedDatas" [activeTab]="'preview'" [codePreview]="convertedData.code"
+  [codeHtml]="convertedData.code" [title]="convertedData.title">
+  <div class="preview-box">
+    <div class="w-full max-w-2xl mx-auto ">
 
-    <div [innerHTML] = "convertedData.code | safeHtml"></div>
+      <div [innerHTML]="convertedData.code | safeHtml"></div>
 
-</div></div>
+    </div>
+  </div>
 </app-common>
-

@@ -18,7 +18,7 @@ export class PageComponent implements OnInit {
 
   ngOnInit(): void {
     this.pageTitle = this.commonService.getPageTitle();
-    this.pageTitle.subscribe(data => this.title = data)
+    this.pageTitle.pipe().subscribe(data => this.title = data)
   }
 
   changeTheme(theme: string): void {

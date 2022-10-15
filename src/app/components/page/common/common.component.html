@@ -8,10 +8,8 @@
         <div class="flex-none flex items-center ml-auto pl-4 sm:pl-6">
             <div class="group p-0.5 rounded-lg flex bg-gray-100 hover:bg-gray-200">
                 <button type="button" (click)="activeTab = 'preview'"
-                    class="flex focus-visible:ring-2 focus-visible:ring-teal-500 focus-visible:ring-offset-2 rounded-md focus:outline-none focus-visible:ring-offset-gray-100">
-                    <span
-                        class="p-1.5 lg:pl-2.5 lg:pr-3.5 rounded-md flex items-center text-sm font-medium shadow-sm ring-1 ring-black ring-opacity-5"
-                        [ngClass]="activeTab === 'preview' ? 'bg-primary-500 text-primary-50 shadow-sm ring-1 ring-black ring-opacity-5' : ''">
+                    class="inline-flex px-2.5 py-2 items-center text-[12.64px] inter antialiased leading-[14px] font-medium text-gray-600"
+                        [ngClass]="activeTab === 'preview' ? 'bg-white shadow-sm rounded transition ease-in duration-400' : ''">
                         <!-- <svg aria-hidden="true" width="20" height="20" fill="none" class="lg:mr-2 text-primary-300">
                             <path
                                 d="M17.25 10c0 1-1.75 6.25-7.25 6.25S2.75 11 2.75 10 4.5 3.75 10 3.75 17.25 9 17.25 10z"
@@ -20,22 +18,20 @@
                             <circle cx="10" cy="10" r="2.25" stroke="currentColor" stroke-width="1.5"
                                 stroke-linecap="round" stroke-linejoin="round" />
                         </svg> -->
-                        <span class="text-gray-900 sr-only lg:not-sr-only"
-                            [ngClass]="activeTab === 'preview' ? 'text-primary-50' : 'text-gray-900'">Preview</span>
-                    </span>
-
+                        <span class="sr-only lg:not-sr-only"
+                            [ngClass]="activeTab === 'preview' ? '' : ''">Preview</span>
                 </button>
                 <button type="button" (click)="activeTab = 'code'"
-                    class="ml-0.5 p-1.5 lg:pl-2.5 lg:pr-3.5 rounded-md flex items-center text-sm text-gray-600 font-medium focus-visible:ring-2 focus-visible:ring-teal-500 focus-visible:ring-offset-2 focus:outline-none focus-visible:ring-offset-gray-100"
-                    [ngClass]="activeTab === 'code' ? 'bg-primary-500  shadow-sm ring-1 ring-black ring-opacity-5' : ''"
+                    class="inline-flex px-2.5 py-2 items-center text-[12.64px] inter antialiased leading-[14px] font-medium text-gray-600"
+                    [ngClass]="activeTab === 'code' ? 'bg-white shadow-sm rounded transition ease-in duration-400' : ''"
                     tabindex="-1" :tabindex="componentList.activeTab === 'code' ? '0' : '-1'">
                     <!-- <svg aria-hidden="true" width="20" height="20" fill="none" class="lg:mr-2"
                         [ngClass]="activeTab === 'code' ? 'text-teal-500' : 'text-gray-500 group-hover:text-gray-900'">
                         <path d="M13.75 6.75l3.5 3.25-3.5 3.25M6.25 13.25L2.75 10l3.5-3.25" stroke="currentColor"
                             stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                     </svg> -->
-                    <span class="sr-only text-gray-900 lg:not-sr-only"
-                        [ngClass]="activeTab === 'code' ? 'text-primary-50' : 'text-gray-900 group-hover:text-gray-900'">Code</span>
+                    <span class="sr-only lg:not-sr-only"
+                        [ngClass]="activeTab === 'code' ? '' : '' ">Code</span>
                 </button>
 
 

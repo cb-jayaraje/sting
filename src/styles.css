@@ -152,6 +152,7 @@
     --color-brand-700: 153 31 0;
     --color-brand-800: 102 20 0;
     --color-brand-900: 51 10 0;
+
     --color-lime-50: 249 254 231;
     --color-lime-100: 242 256 206;
     --color-lime-200: 229 253 157;
@@ -162,6 +163,7 @@
     --color-lime-700: 115 149 7;
     --color-lime-800: 76 100 4;
     --color-lime-900: 38 50 2;
+
     --color-primary-50: 230 234 235;
     --color-primary-100: 204 212 215;
     --color-primary-200: 153 170 175;
@@ -172,6 +174,7 @@
     --color-primary-700: 1 25 34;
     --color-primary-800: 0 17 22;
     --color-primary-900: 0 8 11;
+
     --color-neutral-50: 244 246 246;
     --color-neutral-100: 233 236 238;
     --color-neutral-200: 211 217 220;
@@ -182,6 +185,7 @@
     --color-neutral-700: 47 58 63;
     --color-neutral-800: 32 39 42;
     --color-neutral-900: 16 19 21;
+
     --color-green-50: 236 249 235;
     --color-green-100: 216 243 215;
     --color-green-200: 178 231 175;
@@ -191,7 +195,8 @@
     --color-green-600: 50 157 43;
     --color-green-700: 37 118 32;
     --color-green-800: 25 78 22;
-    --color-green-900: 12 39 11;
+    --color-green-900: 12 39 12;
+
     --color-orange-50: 255 249 236;
     --color-orange-100: 254 243 217;
     --color-orange-200: 254 231 179;
@@ -201,7 +206,8 @@
     --color-orange-600: 202 157 52;
     --color-orange-700: 151 118 39;
     --color-orange-800: 101 78 26;
-    --color-orange-900: 50 39 13;
+    --color-orange-900: 73 56 19;
+    
     --color-red-50: 253 231 235;
     --color-red-100: 251 207 216;
     --color-red-200: 247 159 176;

@@ -21,7 +21,7 @@ module.exports = Button = (styles) => ({
         "@apply  text-white !bg-primary-500 hover:!bg-primary-700 active:!bg-primary-400 focus:ring-primary-500 border border-transparent hover:text-lime-500 focus:outline-none": {},
     },
     '.theme-sting .btn-secondary': {
-        "@apply  text-primary-500 !bg-primary-100 hover:!bg-primary-200 active:!bg-primary-100 focus:ring-primary-500 border border-transparent hover:text-primary-600 focus:outline-none": {},
+        "@apply  text-primary-500 !bg-primary-50 hover:!bg-primary-100 active:!bg-primary-50 focus:ring-primary-500 border border-transparent hover:text-primary-600 focus:outline-none": {},
     },
 
     '.btn-brand': {
@@ -29,7 +29,7 @@ module.exports = Button = (styles) => ({
     },
 
     '.theme-sting .btn-neutral': {
-        "@apply bg-white hover:bg-neutral-100 text-primary-500 hover:text-primary-600 active:bg-neutral-100/50  border-neutral-200 focus:ring-primary-500": {},
+        "@apply bg-white hover:bg-neutral-50 text-primary-500 hover:text-primary-600 active:bg-neutral-100/50  border-neutral-200 focus:ring-primary-500": {},
     },
 
 

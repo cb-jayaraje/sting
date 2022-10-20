@@ -1,7 +1,7 @@
 module.exports = Alert = (styles) => ({
     
     '.alert': {
-        "@apply rounded-md  p-2": {},
+        "@apply rounded-md  p-4": {},
     },
 
     '.alert .title': {
@@ -35,52 +35,52 @@ module.exports = Alert = (styles) => ({
     //warning
 
     '.alert-warning': {
-        "@apply bg-orange-100": {},
+        "@apply bg-orange-50": {},
     },
     '.alert-warning .content': {
-        "@apply text-orange-800":{}
+        "@apply text-orange-900":{}
     },
     '.alert-warning svg': {
         "@apply text-orange-600": {},
     },
     '.alert-warning .title': {
-        "@apply text-copy font-bold text-orange-800": {},
+        "@apply text-copy font-bold text-orange-900": {},
     },
     '.alert-warning .description': {
-        "@apply text-orange-700": {},
+        "@apply text-orange-900": {},
     },
 
     //danger
 
     '.alert-danger': {
-        "@apply bg-red-50 text-red-700": {},
+        "@apply bg-red-100 text-red-900": {},
     },
     '.alert-danger svg': {
-        "@apply text-red-500": {},
+        "@apply text-red-600": {},
     },
     '.alert-danger .title': {
-        "@apply text-red-700": {},
+        "@apply text-copy font-bold text-red-900": {},
     },
     '.alert-danger .description': {
-        "@apply text-red-700": {},
+        "@apply text-red-900": {},
     },
 
     //success
 
     '.alert-success': {
-        "@apply bg-green-100 text-green-800": {},
+        "@apply bg-green-50 text-green-900": {},
     },
-    'alert-success.alert svg': {
+    '.alert-success svg': {
         "@apply text-green-600": {},
     },
     '.alert-success .title': {
-        "@apply text-green-800": {},
+        "@apply text-copy font-bold text-green-900": {},
     },
     '.alert-success .description': {
-        "@apply text-green-800": {},
+        "@apply text-green-900": {},
     },
     '.alert .alert-btn-success': {
-        "@apply ring-offset-green-100": {},
+        "@apply font-semibold underline ring-offset-green-100": {},
     },
     
     

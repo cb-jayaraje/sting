@@ -36,8 +36,8 @@ export class ToggleService {
                 `
                 <div class="flex items-center justify-between">
         <span class="flex flex-grow flex-col">
-          <span class="text-sm font-medium text-gray-900" id="availability-label">Available to hire</span>
-          <span class="text-sm text-gray-500" id="availability-description">Nulla amet tempus sit accumsan. Aliquet
+          <span class="cb-text-copy-regular font-bold" id="availability-label">Available to hire</span>
+          <span class="cb-text-copy-regular" id="availability-description">Nulla amet tempus sit accumsan. Aliquet
             turpis sed sit lacinia.</span>
         </span>
        
@@ -96,8 +96,7 @@ export class ToggleService {
                  
         
                 <span class="ml-3" id="annual-billing-label">
-                  <span class="text-sm font-medium text-gray-900">Annual billing</span>
-                  <span class="text-sm text-gray-500">(Save 10%)</span>
+                  <span class="cb-text-copy-regular"><b>Annual billing</b> (Save 10%)</span>
                 </span>
               </div>
                 `

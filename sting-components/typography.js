@@ -1,9 +1,9 @@
 module.exports = Typography = (styles) => ({
     '.cb-text-header': {
-        "@apply font-semibold text-primary-500 max-w-4xl font-Sora": {},
+        "@apply font-semibold text-primary-800 max-w-4xl font-Sora": {},
          },
     '.cb-text-copy':{
-        "@apply font-Inter font-normal text-neutral-600 leading-snug": {},
+        "@apply font-Inter font-normal text-neutral-700 leading-snug": {},
     },
          '.cb-text-display': {
             "@apply cb-text-header text-display leading-snug font-bold": {}
@@ -24,7 +24,7 @@ module.exports = Typography = (styles) => ({
             "@apply cb-text-header text-h5 leading-snug": {}
         },
         '.cb-text-h6': {
-            "@apply cb-text-header text-h6 leading-snug text-neutral-600 font-Inter": {}
+            "@apply cb-text-header text-h6 leading-snug text-primary-800 font-Inter": {}
         },
         '.cb-text-copy-large':{
             "@apply cb-text-copy text-copy-large": {}
@@ -33,7 +33,7 @@ module.exports = Typography = (styles) => ({
             "@apply cb-text-copy text-copy-regular": {}
         },
         '.cb-text-copy-small':{
-            "@apply cb-text-copy text-copy-small text-neutral-400": {}
+            "@apply cb-text-copy text-copy-small text-neutral-700": {}
         },
         '.cb-text-copy-upper':{
             "@apply cb-text-copy text-copy-upper uppercase": {}

@@ -8,14 +8,14 @@ module.exports = Toggle = (styles) => ({
         '@apply pointer-events-none absolute mx-auto h-4 w-9 rounded-full transition-colors duration-200 ease-in-out':{}
     },
     '.toggle-btn__default.enabled': {
-        '@apply bg-primary-500':{}
+        '@apply bg-primary-600':{}
     },
     '.toggle-btn__default.not-enabled': {
-        '@apply bg-gray-200':{}
+        '@apply bg-neutral-300':{}
     },
 
     '.toggle-switch': {
-    '@apply pointer-events-none absolute left-0 inline-block h-5 w-5 transform rounded-full border border-gray-200 bg-white shadow ring-0 transition-transform duration-200 ease-in-out' : {}
+    '@apply pointer-events-none absolute left-0 inline-block h-5 w-5 transform rounded-full border border-neutral-400 bg-white shadow ring-0 transition-transform duration-200 ease-in-out' : {}
     },
 
     '.toggle-switch.enabled': {

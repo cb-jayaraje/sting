@@ -1,5 +1,5 @@
 .toggle.active .isActive{
-    @apply block
+    @apply flex
 }
 
 .toggle .isActive{
@@ -11,5 +11,5 @@
 }
 
 .toggle .inActive{
-    @apply block
+    @apply flex
 }

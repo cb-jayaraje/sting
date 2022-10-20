@@ -36,43 +36,43 @@ module.exports = Badge = (styles) => ({
       '@apply -ml-1 mr-1.5 h-2 w-2' : {}
       },
       '.badge-neutral':{
-        "@apply badge bg-neutral-200 text-neutral-800":{}
+        "@apply badge bg-neutral-100 text-neutral-700":{}
     },
       '.badge-neutral button':{
-        "@apply text-neutral-800 hover:bg-neutral-400 hover:text-neutral-100 focus:bg-neutral-700 focus:text-neutral-100 ml-1":{}
+        "@apply text-neutral-700 hover:bg-neutral-100 hover:text-neutral-200 focus:bg-neutral-700 focus:text-neutral-100 ml-1":{}
     },
     '.badge-primary':{
-      "@apply badge bg-primary-500 text-primary-50":{}
+      "@apply badge bg-primary-600 text-primary-50":{}
   },
     '.badge-primary button':{
       "@apply text-primary-50 hover:bg-primary-300 hover:text-primary-400 focus:bg-primary-50 focus:text-primary-400":{}
   },
 
   '.badge-minimal':{
-    "@apply badge border border-neutral-200  text-primary-500":{}
+    "@apply badge border border-neutral-300 text-primary-700":{}
 },
   '.badge-minimal button':{
     "@apply text-neutral-500 hover:bg-neutral-200 hover:text-neutral-800 focus:bg-neutral-500 focus:text-primary-50":{}
 },
 
 '.badge-red':{
-  "@apply badge text-red-800 bg-red-100":{}
+  "@apply badge text-red-900 bg-red-100":{}
 },
 '.badge-red button':{
-  "@apply text-red-800 hover:bg-red-200 hover:text-red-900 focus:bg-red-500 focus:text-red-50":{}
+  "@apply text-red-900 hover:bg-red-200 hover:text-red-900 focus:bg-red-200 focus:text-red-900":{}
 },
 '.badge-green':{
-  "@apply badge text-green-800 bg-green-100":{}
+  "@apply badge text-green-900 bg-green-100":{}
 },
 '.badge-green button':{
-  "@apply text-green-800 hover:bg-green-300 hover:text-green-800 focus:bg-green-600 focus:text-green-50":{}
+  "@apply text-green-900 hover:bg-green-200 hover:text-green-900 focus:bg-green-100 focus:text-green-900":{}
 },
 
 '.badge-orange':{
-  "@apply badge text-orange-900 bg-orange-200":{}
+  "@apply badge text-orange-900 bg-orange-100":{}
 },
 '.badge-orange button':{
-  "@apply text-orange-900 hover:bg-orange-500 hover:text-orange-900 focus:bg-orange-700 focus:text-orange-50":{}
+  "@apply text-orange-900 hover:bg-orange-200 hover:text-orange-900 focus:bg-orange-100 focus:text-orange-900":{}
 },
   
   });

@@ -1,6 +1,6 @@
 module.exports = ListGroupss = (styles) => ({
    '.list-group': {
-        "@apply divide-y divide-gray-200  w-full": {},
+        "@apply divide-y divide-neutral-200 w-full": {},
          },
 '.list-group--card': {
         "@apply px-4 py-4 flex items-center sm:px-6": {},
@@ -12,13 +12,13 @@ module.exports = ListGroupss = (styles) => ({
         "@apply font-medium text-neutral-800 truncate": {},
          },
 '.list-group__subtext': {
-        "@apply flex items-center text-sm text-gray-500": {},
+        "@apply flex items-center text-sm text-gray-700": {},
          },
 '.list-group--icon': {
         "@apply ml-5 flex-shrink-0": {},
          },
  '.stacked-list ul, .stacked-list__two___column ul': {
-         "@apply divide-y divide-[#D3D9DC]": {},
+         "@apply divide-y divide-neutral-200": {},
          },
          '.stacked-list li': {
                 "@apply flex py-4": {},
@@ -31,10 +31,10 @@ module.exports = ListGroupss = (styles) => ({
                 "@apply ml-3": {},
                 },
         '.stacked-list li .content, .stacked-list__two___column li .content': {
-                "@apply antialiased text-[14.22px] leading-snug font-medium text-[#3F4E54]": {}
+                "@apply antialiased text-[14.22px] leading-snug font-medium text-neutral-800": {}
         },
         '.stacked-list li .content-small, .stacked-list__two___column li .content-small': {
-                "@apply antialiased text-[14.22px] leading-snug font-normal text-[#617178]": {}
+                "@apply antialiased text-[14.22px] leading-snug font-normal text-neutral-700": {}
         },
         
         

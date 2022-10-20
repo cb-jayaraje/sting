@@ -48,11 +48,11 @@ select {
   @apply shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md;
 }
 .form-control .label {
-  @apply block text-sm font-medium text-gray-600;
+  @apply block text-sm font-medium text-neutral-600;
 }
 
 .form-control .help-text {
-  @apply mt-2 text-sm text-gray-500;
+  @apply mt-2 text-sm text-neutral-500;
 }
 .form-control .input-error {
   @apply block w-full pr-10 border-red-300 text-red-900 placeholder-red-300 focus:outline-none focus:ring-red-500 focus:border-red-500 sm:text-sm rounded-md;
@@ -61,7 +61,7 @@ select {
   @apply mt-2 text-sm text-red-600;
 }
 .form-control .hint-text {
-  @apply text-sm text-gray-500;
+  @apply text-sm text-neutral-500;
 }
 .form-control .select {
   @apply mt-1 block w-full pl-3 pr-10 py-2 text-base border-gray-300 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm rounded-md;
@@ -79,17 +79,17 @@ select {
 }
 
 .form-control .select-li {
-  @apply text-gray-900 cursor-default select-none relative py-2;
+  @apply text-neutral-900 cursor-default select-none relative py-2;
 }
 .form-control .select-li-icon {
   @apply text-indigo-600 absolute inset-y-0  flex items-center;
 }
 .form-control .select-secondary-text {
-  @apply truncate text-gray-500;
+  @apply truncate text-neutral-500;
 }
 
 .form-control .input-select {
-  @apply focus:ring-indigo-500 focus:border-indigo-500 h-full py-0 pl-3 pr-7 border-transparent bg-transparent text-gray-500 sm:text-sm rounded-md;
+  @apply focus:ring-indigo-500 focus:border-indigo-500 h-full py-0 pl-3 pr-7 border-transparent bg-transparent text-neutral-500 sm:text-sm rounded-md;
 }
 
 /* alert ---------------------------- */
@@ -125,7 +125,7 @@ select {
 }
 
 .dropdown-list__a {
-  @apply text-gray-700 block px-4 py-2 text-sm hover:bg-gray-100;
+  @apply text-neutral-700 block px-4 py-2 text-sm hover:bg-neutral-100;
 }
 
 /* button ---------------------------- */
@@ -180,11 +180,11 @@ select {
 	@apply shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md;
   }
   .form-control .label {
-	@apply block text-sm font-medium text-gray-600;
+	@apply block text-sm font-medium text-neutral-600;
   }
   
   .form-control .help-text {
-	@apply mt-2 text-sm text-gray-500;
+	@apply mt-2 text-sm text-neutral-500;
   }
   .form-control .input-error {
 	@apply block w-full pr-10 border-red-300 text-red-900 placeholder-red-300 focus:outline-none focus:ring-red-500 focus:border-red-500 sm:text-sm rounded-md;
@@ -193,7 +193,7 @@ select {
 	@apply mt-2 text-sm text-red-600;
   }
   .form-control .hint-text {
-	@apply text-sm text-gray-500;
+	@apply text-sm text-neutral-500;
   }
   .form-control .select {
 	@apply mt-1 block w-full pl-3 pr-10 py-2 text-base border-gray-300 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm rounded-md;
@@ -211,17 +211,17 @@ select {
   }
   
   .form-control .select-li {
-	@apply text-gray-900 cursor-default select-none relative py-2;
+	@apply text-neutral-900 cursor-default select-none relative py-2;
   }
   .form-control .select-li-icon {
 	@apply text-indigo-600 absolute inset-y-0  flex items-center;
   }
   .form-control .select-secondary-text {
-	@apply truncate text-gray-500;
+	@apply truncate text-neutral-500;
   }
   
   .form-control .input-select {
-	@apply focus:ring-indigo-500 focus:border-indigo-500 h-full py-0 pl-3 pr-7 border-transparent bg-transparent text-gray-500 sm:text-sm rounded-md;
+	@apply focus:ring-indigo-500 focus:border-indigo-500 h-full py-0 pl-3 pr-7 border-transparent bg-transparent text-neutral-500 sm:text-sm rounded-md;
   }
   
   /* alert ---------------------------- */
@@ -257,7 +257,7 @@ select {
   }
   
   .dropdown-list__a {
-	@apply text-gray-700 block px-4 py-2 text-sm hover:bg-gray-100;
+	@apply text-neutral-700 block px-4 py-2 text-sm hover:bg-neutral-100;
   }
   
   /* button ---------------------------- */
@@ -269,7 +269,7 @@ select {
   }
   
   .btn-outline {
-	@apply inline-flex justify-center rounded-md border border-gray-300 shadow-sm px-4 py-2 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-100 focus:ring-indigo-500;
+	@apply inline-flex justify-center rounded-md border border-gray-300 shadow-sm px-4 py-2 bg-white text-sm font-medium text-neutral-700 hover:bg-neutral-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-100 focus:ring-indigo-500;
   }
   
   .btn-solid {

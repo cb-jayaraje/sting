@@ -68,7 +68,7 @@ module.exports = RadioGroup = (styles) => ({
         '@apply text-primary-900': {}
     },
     '.radio-table__label': {
-        '@apply ml-2 opacity-100': {}
+        '@apply ml-2 opacity-100 cursor-pointer': {}
     },
     '.radio-table__description': {
         '@apply ml-6 pl-1 text-sm md:ml-0 md:pl-0 md:text-right': {}

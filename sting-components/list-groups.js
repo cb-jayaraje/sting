@@ -17,7 +17,7 @@ module.exports = ListGroupss = (styles) => ({
                        "@apply cb-text-h6": {}
                },
                '.stacked-list li .content-small, .stacked-list-two-column li .content-small': {
-                       "@apply cb-text-copy-regular text-neutral-500": {}
+                       "@apply cb-text-copy-regular text-neutral-400": {}
                },
                
                

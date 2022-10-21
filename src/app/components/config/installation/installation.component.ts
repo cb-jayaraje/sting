@@ -35,7 +35,7 @@ codePreview= '';
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Chargebee</title>
     <!--Sting CDN link -->
-    <link rel="stylesheet" href="https://cbproductdesign.devcb.in/sting-ui/cdn/sting.min.css">
+    <link rel="stylesheet" href="https://cbproductdesign.devcb.in/sting-ui/cdn/sting.min.1.1.0.css">
     <!--Tailwind CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!--Theme CDN -->

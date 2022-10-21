@@ -36,10 +36,12 @@ export class TableService {
                             <table class="min-w-full table-fixed divide-y divide-neutral-200">
                                 <thead class="bg-neutral-100">
                                     <tr>
-                                        <th scope="col" class="relative w-12 px-6 sm:w-16 sm:px-8">
+                                        <th scope="col" class="relative w-12 px-6 sm:w-16 sm:px-0 form-control">
                                             <input id="comments" aria-describedby="comments-description"
                                                 name="comments" type="checkbox"
+
                                                 class="checkbox rounded absolute left-4 top-1/2 -mt-2 sm:left-6">
+
                                         </th>
                                         <th scope="col"
                                             class="min-w-[12rem] py-3.5 pr-3 text-left cb-text-copy-regular">
@@ -58,12 +60,13 @@ export class TableService {
                                 <tbody class="divide-y divide-neutral-200 bg-white">
                                     <!-- Selected: "bg-neutral-100" -->
                                     <tr>
-                                        <td class="relative w-12 px-6 sm:w-16 sm:px-8">
+                                        <td class="relative w-12 px-6 sm:w-16 sm:px-0 form-control">
                                             <!-- Selected row marker, only show when row is selected. -->
                                             <div class="hidden absolute inset-y-0 left-0 w-0.5 bg-primary-500">
                                             </div>
                                             <input id="comments" aria-describedby="comments-description"
                                                 name="comments" type="checkbox"
+
                                                 class="checkbox absolute left-4 top-1/2 -mt-2 sm:left-6">
                                         </td>
                                         <!-- Selected: "text-indigo-600", Not Selected: "text-neutral-900" -->
@@ -267,6 +270,7 @@ export class TableService {
             <div class="-my-2 -mx-4 overflow-x-auto sm:-mx-6 lg:-mx-8">
               <div class="inline-block min-w-full py-2 align-middle md:px-6 lg:px-8">
                 <div class="relative overflow-hidden ring-1 ring-neutral-100 md:rounded-lg">
+
                   <table class="min-w-full table-fixed divide-y divide-neutral-200">
                     <thead class="bg-neutral-100">
                       <tr>
@@ -291,6 +295,7 @@ export class TableService {
                         <td class="whitespace-nowrap py-4 pr-3 cb-text-copy-regular">
                           <div class="flex items-center">
                             <div>
+
                               <div class="font-bold cursor-pointer">Tristique Senectus</div>
                               <div class="font-normal text-neutral-700">tristique@example.com</div>
                             </div>
@@ -369,6 +374,7 @@ export class TableService {
                         <td class="whitespace-nowrap px-3 py-4 cb-text-copy-regular">
                           <div class="flex items-center">
                             <div>
+
                               <div class="font-normal">Turpis Egestas</div>
                               <div class="font-normal text-neutral-700">Eget Aliquet</div>
                             </div>
@@ -377,6 +383,7 @@ export class TableService {
                         <td class="whitespace-nowrap px-3 py-4 text-sm text-neutral-700">
                           <span class="badge-minimal badge-small">Badge</span>
                         </td>
+
                         <td class="whitespace-nowrap px-3 py-4 cb-text-copy-regular text-neutral-700"> Netus</td>
                         <td class="whitespace-nowrap px-3 py-4 cb-text-copy-regular text-neutral-700"> Netus</td>
                         <td class="whitespace-nowrap py-4 pl-3 pr-4 sm:pr-6 flex justify-end">
@@ -458,6 +465,7 @@ export class TableService {
                         </td>
                       </tr>
                       <tr>
+>>>>>>> 8653bf2363bc52af5dac8c84a7a966d0517d75d5
                         <td class="relative w-12 px-6 sm:w-16 sm:px-8">
                           <!-- Selected row marker, only show when row is selected. -->
                           <div class="hidden absolute inset-y-0 left-0 w-0.5 bg-primary-500"></div>
@@ -474,6 +482,7 @@ export class TableService {
                         <td class="whitespace-nowrap px-3 py-4 cb-text-copy-regular">
                           <div class="flex items-center">
                             <div>
+
                               <div class="font-normal">Turpis Egestas</div>
                               <div class="font-normal text-neutral-700">Eget Aliquet</div>
                             </div>
@@ -482,6 +491,8 @@ export class TableService {
                         <td class="whitespace-nowrap px-3 py-4 text-sm text-neutral-700">
                           <span class="badge-red badge-small">Badge</span>
                         </td>
+
+
                         <td class="whitespace-nowrap px-3 py-4 cb-text-copy-regular text-neutral-700"> Netus</td>
                         <td class="whitespace-nowrap px-3 py-4 cb-text-copy-regular text-neutral-700"> Netus</td>
                         <td class="whitespace-nowrap py-4 pl-3 pr-4 sm:pr-6 flex justify-end">
@@ -492,6 +503,7 @@ export class TableService {
                           </button>
                         </td>
                       </tr>
+                      
                       <!-- More people... -->
                     </tbody>
                   </table>

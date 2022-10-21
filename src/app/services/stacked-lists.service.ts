@@ -62,7 +62,7 @@ export class StackedListsService {
             "id": "stacked_3",
             "title": "Two column",
             "code": ` 
-            <div class="stacked-list__two___column">
+            <div class="stacked-list-two-column">
             <ul role="list">
                 <li>
                     <div class="flex items-center">
@@ -121,7 +121,7 @@ export class StackedListsService {
             "id": "stacked_4",
             "title": "Two column with description",
             "code": ` 
-            <div class="stacked-list__two___column">
+            <div class="stacked-list-two-column">
             <ul role="list">
                 <li>
                     <div class="flex items-center">

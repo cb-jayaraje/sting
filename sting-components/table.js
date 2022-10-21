@@ -1,7 +1,10 @@
 module.exports = Table = (styles) => ({
 
-    '.tab-link': {
-        '@apply border-transparent whitespace-nowrap py-4 px-1 border-b-2 font-medium text-sm text-neutral-700 hover:text-neutral-800': {}
+    '.table': {
+        '@apply min-w-full table-fixed divide-y divide-neutral-100': {}
+    },
+    '.table-th': {
+        '@apply bg-neutral-50': {}
     },
 
 

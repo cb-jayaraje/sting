@@ -3,19 +3,23 @@ module.exports = Button = (styles) => ({
         "@apply antialiased px-3 py-2 rounded border border-transparent font-medium cb-text-copy-regular leading-4 focus:outline-none focus:ring-2 focus:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-30": {},
     },
     '.btn-small': {
-        "@apply px-2.5 py-1.5 cb-text-copy-small border border-transparent font-medium": {},
+        "@apply px-2.5 py-1.5 cb-text-copy-small border border-transparent font-medium rounded focus:outline-none focus:ring-2 focus:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-30": {},
     },
-
     '.btn-rounded': {
-        "@apply rounded-full p-1": {},
+        "@apply rounded p-2": {},
     },
-
+    '.btn-rounded-small': {
+        "@apply rounded p-1.5": {},
+    },
 
     '.btn-outline': {
         "@apply bg-transparent hover:bg-primary-50 text-primary-500 border-primary-400 focus:ring-primary-500": {},
     },
     '.btn-primary': {
         "@apply text-white border-0 !bg-primary-900 hover:!bg-primary-900 active:!bg-primary-600 focus:ring-primary-600 border-primary-500 text-white": {},
+    },
+    '.btn-primary-small': {
+        "@apply text-white border-0 !bg-primary-500 hover:!bg-primary-600 active:!bg-primary-600 focus:ring-primary-600 border-primary-500 text-white": {},
     },
     '.theme-sting .btn-primary': {
         "@apply text-white !bg-primary-800 hover:!bg-primary-900 active:!bg-primary-800 focus:ring-primary-500 border border-transparent hover:text-lime-500 focus:outline-none": {},
@@ -60,23 +64,23 @@ module.exports = Button = (styles) => ({
     },
 
 
-    '.btn-trailing-icon': {
+    '.btn-icon-trailing': {
         "@apply ml-2 -mr-0.5 h-4 w-4": {},
     },
 
-    '.btn-leading-icon': {
+    '.btn-icon-leading': {
         "@apply mr-2 -ml-0.5 h-4 w-4": {},
     },
 
-    '.btn-small .btn-trailing-icon': {
+    '.btn-small .btn-icon-trailing': {
         "@apply ml-1.5 -mr-0.5 h-3.5 w-3.5": {},
     },
 
-    '.btn-small .btn-leading-icon': {
+    '.btn-small .btn-icon-leading': {
         "@apply mr-1 -ml-0.5 h-3.5 w-3.5": {},
     },
 
-    '.btn-leading-icon': {
+    '.btn-icon-leading': {
         "@apply mr-2 -ml-0.5 h-4 w-4": {},
     },
 
@@ -87,10 +91,10 @@ module.exports = Button = (styles) => ({
     '.btn-link': {
         "@apply mx-1 antialiased !font-semibold !text-primary-800 underline underline-offset-2 focus:rounded-sm focus:outline-none focus:ring-1 focus:ring-offset-2 focus:ring-primary-500": {},
     },
-    '.btn-link--small': {
+    '.btn-link-small': {
         "@apply cb-text-copy-small p-0 leading-none w-max":{},
     },
-    '.btn-link--regular': {
+    '.btn-link-regular': {
         "@apply cb-text-copy-regular p-0 leading-4 w-max":{},
     }
 

@@ -20,7 +20,7 @@ export class BadgesService {
             </span>
 
             <!-- ------------badge-small with button------------ -->
-            <span class="badge-neutral badge-small__icon"> Small 
+            <span class="badge-neutral badge-icon-small"> Small 
             <button type="button" >
             <span class="sr-only">Remove small option</span>
             <svg class="h-2 w-2" stroke="currentColor" fill="none" viewBox="0 0 8 8">
@@ -36,7 +36,7 @@ export class BadgesService {
             </span>
 
             <!-- ------------badge-base with button------------ -->
-            <span class="badge-neutral badge-base__icon"> Regular
+            <span class="badge-neutral badge-icon-base"> Regular
             <button type="button" >
             <span class="sr-only">Remove large option</span>
             <svg class="h-2 w-2" stroke="currentColor" fill="none" viewBox="0 0 8 8">
@@ -64,7 +64,7 @@ export class BadgesService {
         </span>
 
         <!-- ------------badge-small with button------------ -->
-        <span class="badge-primary badge-small__icon"> Small 
+        <span class="badge-primary badge-icon-small"> Small 
         <button type="button" >
         <span class="sr-only">Remove small option</span>
         <svg class="h-2 w-2" stroke="currentColor" fill="none" viewBox="0 0 8 8">
@@ -80,7 +80,7 @@ export class BadgesService {
         </span>
 
         <!-- ------------badge-Regular with button------------ -->
-        <span class="badge-primary badge-base__icon"> Regular
+        <span class="badge-primary badge-icon-base"> Regular
         <button type="button" >
         <span class="sr-only">Remove small option</span>
         <svg class="h-2 w-2" stroke="currentColor" fill="none" viewBox="0 0 8 8">
@@ -110,7 +110,7 @@ export class BadgesService {
       </span>
 
       <!-- ------------badge-small with button------------ -->
-      <span class="badge-minimal badge-small__icon"> Small 
+      <span class="badge-minimal badge-icon-small"> Small 
       <button type="button" >
       <span class="sr-only">Remove small option</span>
       <svg class="h-2 w-2" stroke="currentColor" fill="none" viewBox="0 0 8 8">
@@ -126,7 +126,7 @@ export class BadgesService {
       </span>
 
       <!-- ------------badge-Regular with button------------ -->
-      <span class="badge-minimal badge-base__icon"> Regular
+      <span class="badge-minimal badge-icon-base"> Regular
       <button type="button" >
       <span class="sr-only">Remove small option</span>
       <svg class="h-2 w-2" stroke="currentColor" fill="none" viewBox="0 0 8 8">
@@ -156,7 +156,7 @@ export class BadgesService {
           </span>
 
           <!-- ------------badge-small with button------------ -->
-          <span class="badge-red badge-small__icon"> Small 
+          <span class="badge-red badge-icon-small"> Small 
           <button type="button" >
           <span class="sr-only">Remove small option</span>
           <svg class="h-2 w-2" stroke="currentColor" fill="none" viewBox="0 0 8 8">
@@ -172,7 +172,7 @@ export class BadgesService {
           </span>
 
           <!-- ------------badge-Regular with button------------ -->
-          <span class="badge-red badge-base__icon"> Regular
+          <span class="badge-red badge-icon-base"> Regular
           <button type="button" >
           <span class="sr-only">Remove small option</span>
           <svg class="h-2 w-2" stroke="currentColor" fill="none" viewBox="0 0 8 8">
@@ -200,7 +200,7 @@ export class BadgesService {
     </span>
     
     <!-- ------------badge-small with button------------ -->
-    <span class="badge-orange badge-small__icon"> Small 
+    <span class="badge-orange badge-icon-small"> Small 
     <button type="button" class="h-4 w-4" >
     <span class="sr-only">Remove small option</span>
     <svg class="h-2 w-2" stroke="currentColor" fill="none" viewBox="0 0 8 8">
@@ -216,7 +216,7 @@ export class BadgesService {
     </span>
     
     <!-- ------------badge-Regular with button------------ -->
-    <span class="badge-orange badge-base__icon"> Regular
+    <span class="badge-orange badge-icon-base"> Regular
     <button type="button" >
     <span class="sr-only">Remove small option</span>
     <svg class="h-2 w-2" stroke="currentColor" fill="none" viewBox="0 0 8 8">
@@ -243,7 +243,7 @@ export class BadgesService {
 </span>
 
 <!-- ------------badge-small with button------------ -->
-<span class="badge-green badge-small__icon"> Small 
+<span class="badge-green badge-icon-small"> Small 
 <button type="button" >
 <span class="sr-only">Remove small option</span>
 <svg class="h-2 w-2" stroke="currentColor" fill="none" viewBox="0 0 8 8">
@@ -259,7 +259,7 @@ export class BadgesService {
 </span>
 
 <!-- ------------badge-Regular with button------------ -->
-<span class="badge-green badge-base__icon"> Regular
+<span class="badge-green badge-icon-base"> Regular
 <button type="button" >
 <span class="sr-only">Remove small option</span>
 <svg class="h-2 w-2" stroke="currentColor" fill="none" viewBox="0 0 8 8">

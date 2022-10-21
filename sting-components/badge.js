@@ -14,27 +14,18 @@ module.exports = Badge = (styles) => ({
       ' .badge-small': {
       '@apply px-2 py-0.5 cb-text-copy-small rounded-full' : {}
       },     
-      '.badge-small__icon': {
+      '.badge-icon-small': {
         '@apply pr-0.5 pl-2  py-0.5 text-copy-small rounded-full':{}
       },
-      '.badge-base__icon': { 
+      '.badge-icon-base': { 
         '@apply px-0.5 pr-1 pl-2.5  py-0.5 text-copy-regular rounded-full':{}
       },
       '.badge-base': {
       '@apply px-3 py-0.5 cb-text-copy-regular' : {}
       },
-      '.badge-inverted': {
-      '@apply !bg-white' : {}
-      },
-      '.badge-dot--sm': {
-      '@apply inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium' : {}
-      },
-      '.badge-dot--lg': {
-      '@apply inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium' : {}
-      },
-      '.badge-icn': {
-      '@apply -ml-1 mr-1.5 h-2 w-2' : {}
-      },
+     
+     
+     
       '.badge-neutral':{
         "@apply badge bg-neutral-100 text-neutral-700 border border-neutral-200":{}
     },

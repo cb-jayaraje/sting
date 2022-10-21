@@ -12,6 +12,7 @@ export class RadioGroupService {
       <label class="label">Notifications</label>
       <p class="cb-text-copy-small">How do you prefer to receive notifications?</p>
 
+
       <fieldset class="mt-4">
         <legend class="sr-only">Notification method</legend>
         <div class="space-y-4">
@@ -43,6 +44,7 @@ export class RadioGroupService {
             
       <label class="label">Notifications</label>
       <p class="cb-text-copy-small">How do you prefer to receive notifications?</p>
+
       <fieldset class="mt-4">
         <legend class="sr-only">Notification method</legend>
         <div class="space-y-4 sm:flex sm:items-center sm:space-y-0 sm:space-x-10">
@@ -83,6 +85,7 @@ export class RadioGroupService {
               <div class="ml-3 text-sm">
                 <label for="small" class="ml-0 radio-label">Small</label>
                 <p id="small-description" class="cb-text-copy-small">4 GB RAM / 2 CPUS / 80 GB SSD Storage</p>
+
               </div>
             </div>
         
@@ -93,6 +96,7 @@ export class RadioGroupService {
               <div class="ml-3 text-sm">
                 <label for="medium" class="ml-0 radio-label">Medium</label>
                 <p id="medium-description" class="cb-text-copy-small">8 GB RAM / 4 CPUS / 160 GB SSD Storage</p>
+
               </div>
             </div>
         
@@ -103,6 +107,7 @@ export class RadioGroupService {
               <div class="ml-3 text-sm">
                 <label for="large" class="ml-0 radio-label">Large</label>
                 <p id="large-description" class="cb-text-copy-small">16 GB RAM / 8 CPUS / 320 GB SSD Storage</p>
+
               </div>
             </div>
 
@@ -129,6 +134,7 @@ export class RadioGroupService {
               <div class="ml-3 ">
                 <label for="small2" class="radio-inline-label">Small</label>
                 <span id="small-description" class="cb-text-copy-small">4 GB RAM / 2 CPUS / 80 GB SSD Storage</span>
+
               </div>
             </div>
         
@@ -139,6 +145,7 @@ export class RadioGroupService {
               <div class="ml-3">
                 <label for="medium2" class=" radio-inline-label">Medium</label>
                 <span id="medium-description" class="cb-text-copy-small">8 GB RAM / 4 CPUS / 160 GB SSD Storage</span>
+
               </div>
             </div>
         
@@ -149,6 +156,7 @@ export class RadioGroupService {
               <div class="ml-3">
                 <label for="large2" class="radio-inline-label">Large</label>
                 <span id="large-description" class="cb-text-copy-small">16 GB RAM / 8 CPUS / 320 GB SSD Storage</span>
+
               </div>
             </div>
           </div>
@@ -351,7 +359,7 @@ export class RadioGroupService {
   //     <div class="form-control">
             
   //     <fieldset>
-  //         <legend class="text-base font-medium text-gray-900">Select a mailing list</legend>
+  //         <legend class="cb-text-h6">Select a mailing list</legend>
         
   //         <div class="mt-4 grid grid-cols-1 gap-y-6 sm:grid-cols-3 sm:gap-x-4">
   //           <!--

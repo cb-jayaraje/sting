@@ -1,12 +1,12 @@
 module.exports = RadioGroup = (styles) => ({
     '.radio': {
-        '@apply focus:ring-primary-500 h-4 w-4 text-primary-500 border-neutral-200': {}
+        '@apply focus:ring-primary-500 h-4 w-4 text-primary-700 border-neutral-400': {}
     },
     '.radio-label': {
-        '@apply ml-3 block label': {}
+        '@apply ml-3 block text-sm font-medium text-neutral-700 hover:text-neutral-800 cursor-pointer': {}
     },
-    '.radio-inline-label': {
-        '@apply label': {}
+    '.radio-inline__label': {
+        '@apply font-medium text-neutral-700 hover:text-neutral-800 cursor-pointer': {}
     },
     '.radio-colorpicker': {
         '@apply -m-0.5 relative p-0.5 rounded-full flex items-center justify-center cursor-pointer focus:outline-none': {}
@@ -18,13 +18,13 @@ module.exports = RadioGroup = (styles) => ({
         '@apply relative bg-white border rounded-lg shadow-sm p-4 flex cursor-pointer focus:outline-none': {}
     },
     '.radio-card__header': {
-        '@apply block text-sm font-medium text-gray-900': {}
+        '@apply block text-sm font-medium text-neutral-800': {}
     },
     '.radio-card__subheader': {
-        '@apply mt-1 flex items-center text-sm text-gray-500': {}
+        '@apply mt-1 flex items-center text-sm text-neutral-700': {}
     },
     '.radio-card__footer': {
-        '@apply mt-6 text-sm font-medium text-gray-900': {}
+        '@apply mt-6 text-sm font-medium text-neutral-800': {}
     },
     '.radio-card__icon': {
         '@apply  h-5 w-5': {}
@@ -62,7 +62,7 @@ module.exports = RadioGroup = (styles) => ({
         '@apply bg-primary-50 border-primary-200': {}
     },
     '.radio-table__input': {
-        '@apply h-4 w-4 text-primary-600 border-gray-300 focus:ring-primary-500': {}
+        '@apply h-4 w-4 text-primary-600 border-neutral-300 focus:ring-primary-500': {}
     },
     '.radio-table__label--checked': {
         '@apply text-primary-900': {}

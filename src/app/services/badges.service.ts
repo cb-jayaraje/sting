@@ -7,7 +7,7 @@ export class BadgesService {
     badgeDatas= [
         {
             id: 'badge_1',
-            title: 'Secondary badges',
+            title: 'Neutral',
             code: `
             <div class="flex items-start flex-wrap gap-4">
 
@@ -31,7 +31,7 @@ export class BadgesService {
 
             <!-- ------------badge-base------------ -->
   
-            <span class="badge badge-base bg-neutral-200 text-neutral-800">
+            <span class="badge-neutral badge-base">
             Regular
             </span>
 
@@ -51,7 +51,7 @@ export class BadgesService {
         },
         {
           id: 'badge_2',
-          title: 'Primary badges',
+          title: 'Primary',
           code: `
           <div class="flex items-start flex-wrap gap-4">
 
@@ -98,7 +98,7 @@ export class BadgesService {
       },
       {
         id: 'badge_3',
-        title: 'Minimal badges',
+        title: 'Minimal',
         code: `
         <div class="flex items-center flex-wrap gap-4">
 
@@ -143,7 +143,7 @@ export class BadgesService {
     },
     {
       id: 'badge_4',
-      title: 'Danger badges',
+      title: 'Red',
       code: `
       <div class="flex items-start flex-wrap gap-4">
 
@@ -187,7 +187,7 @@ export class BadgesService {
   },
   {
     id: 'badge_5',
-    title: 'Orange badges',
+    title: 'Orange',
     code: `
     <div class="flex items-start flex-wrap gap-4">
     
@@ -232,7 +232,7 @@ export class BadgesService {
 },
 {
   id: 'badge_6',
-  title: 'Green badges',
+  title: 'Green',
   code: `
   <div class="flex items-start flex-wrap gap-4">
 

@@ -1,23 +1,23 @@
 module.exports = InputGroups = (styles) => ({
     
   '.form-control .input, .input': {
-                    "@apply shadow-sm focus:!ring-primary-500 focus:!border-primary-500 focus:outline-none block w-full sm:text-sm border-neutral-200 rounded text-neutral-600 placeholder-neutral-300 font-Inter placeholder:text-xs": {},
+                    "@apply shadow-sm focus:!ring-primary-500 focus:!border-primary-500 focus:outline-none block w-full sm:text-sm border-neutral-400 rounded text-neutral-700 placeholder-neutral-500 cb-text-copy-regular": {},
                      },
   '.form-control .label': {
-                   "@apply cb-text-copy-regular font-semibold": {},
+                   "@apply cb-text-copy-regular font-medium": {},
                        },
 
   '.form-control .help-text': {
                           "@apply mt-2 cb-text-copy-small": {},
                            },
   '.form-control .input-error': {
-                              "@apply block w-full pr-10 border-red-400 text-neutral-600 placeholder-neutral-300 focus:outline-none focus:ring-red-500 focus:border-red-500 sm:text-sm rounded-md": {},
+                              "@apply block w-full pr-10 border-red-500 text-neutral-700 focus:outline-none focus:ring-red-500 focus:border-red-500 sm:text-sm rounded-md": {},
                                },
   '.form-control .error-text': {
-                              "@apply mt-2 text-small text-red-500": {},
+                              "@apply mt-2 text-small text-red-800": {},
                                },
   '.form-control .hint-text': {
-                  "@apply text-sm text-neutral-300": {},
+                  "@apply text-sm text-neutral-600": {},
                    },
     '.form-control .input-select': {
                   "@apply focus:ring-primary-500 focus:border-primary-500 h-full py-0 pl-3 pr-7 border-transparent bg-transparent text-gray-500 sm:text-sm rounded-md": {},

@@ -33,13 +33,13 @@ export class TableService {
                 <div class="-my-2 -mx-4 overflow-x-auto sm:-mx-6 lg:-mx-8">
                     <div class="inline-block min-w-full py-2 align-middle md:px-6 lg:px-8">
                         <div class="relative overflow-hidden ring-1 ring-neutral-100 md:rounded-lg">
-                            <table class="min-w-full table-fixed divide-y divide-neutral-100">
-                                <thead class="bg-neutral-50">
+                            <table class="min-w-full table-fixed divide-y divide-neutral-200">
+                                <thead class="bg-neutral-100">
                                     <tr>
                                         <th scope="col" class="relative w-12 px-6 sm:w-16 sm:px-8">
                                             <input id="comments" aria-describedby="comments-description"
                                                 name="comments" type="checkbox"
-                                                class="focus:ring-primary-500 h-4 w-4 text-primary-500 border-neutral-200 rounded absolute left-4 top-1/2 -mt-2 sm:left-6">
+                                                class="checkbox rounded absolute left-4 top-1/2 -mt-2 sm:left-6">
                                         </th>
                                         <th scope="col"
                                             class="min-w-[12rem] py-3.5 pr-3 text-left cb-text-copy-regular">
@@ -55,8 +55,8 @@ export class TableService {
                                         </th>
                                     </tr>
                                 </thead>
-                                <tbody class="divide-y divide-neutral-100 bg-white">
-                                    <!-- Selected: "bg-gray-50" -->
+                                <tbody class="divide-y divide-neutral-200 bg-white">
+                                    <!-- Selected: "bg-neutral-100" -->
                                     <tr>
                                         <td class="relative w-12 px-6 sm:w-16 sm:px-8">
                                             <!-- Selected row marker, only show when row is selected. -->
@@ -64,24 +64,24 @@ export class TableService {
                                             </div>
                                             <input id="comments" aria-describedby="comments-description"
                                                 name="comments" type="checkbox"
-                                                class="focus:ring-primary-500 h-4 w-4 text-primary-500 border-neutral-200 rounded absolute left-4 top-1/2 -mt-2 sm:left-6">
+                                                class="checkbox absolute left-4 top-1/2 -mt-2 sm:left-6">
                                         </td>
-                                        <!-- Selected: "text-indigo-600", Not Selected: "text-gray-900" -->
+                                        <!-- Selected: "text-indigo-600", Not Selected: "text-neutral-900" -->
                                         <td
                                             class="whitespace-nowrap py-4 pr-3 cb-text-copy-regular font-semibold cursor-pointer">
                                             Tristique Senectus</td>
                                         <td
-                                            class="whitespace-nowrap px-3 py-4 cb-text-copy-regular text-neutral-400">
+                                            class="whitespace-nowrap px-3 py-4 cb-text-copy-regular text-neutral-700">
                                             Turpis Egestas</td>
                                         <td
-                                            class="whitespace-nowrap px-3 py-4 cb-text-copy-regular text-neutral-400">
+                                            class="whitespace-nowrap px-3 py-4 cb-text-copy-regular text-neutral-700">
                                             tristique@example.com</td>
                                         <td
-                                            class="whitespace-nowrap px-3 py-4 cb-text-copy-regular text-neutral-400">
+                                            class="whitespace-nowrap px-3 py-4 cb-text-copy-regular text-neutral-700">
                                             Netus</td>
                                         <td class="whitespace-nowrap pl-3 pr-4 sm:pr-6 py-2 flex justify-end">
                                             <button type="button"
-                                                class="inline-flex items-center p-2 border-none border-neutral-200 rounded bg-white text-primary-500 hover:bg-neutral-100 active:bg-white   hover:text-primary-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-500">
+                                                class="btn btn-neutral !border-white">
                                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none"
                                                     viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
                                                     class="w-5 h-5">
@@ -99,24 +99,24 @@ export class TableService {
                                             </div>
                                             <input id="comments" aria-describedby="comments-description"
                                                 name="comments" type="checkbox"
-                                                class="focus:ring-primary-500 h-4 w-4 text-primary-500 border-neutral-200 rounded absolute left-4 top-1/2 -mt-2 sm:left-6">
+                                                class="checkbox absolute left-4 top-1/2 -mt-2 sm:left-6">
                                         </td>
-                                        <!-- Selected: "text-indigo-600", Not Selected: "text-gray-900" -->
+                                        <!-- Selected: "text-indigo-600", Not Selected: "text-neutral-900" -->
                                         <td
                                             class="whitespace-nowrap py-4 pr-3 cb-text-copy-regular font-semibold cursor-pointer">
                                             Tristique Senectus</td>
                                         <td
-                                            class="whitespace-nowrap px-3 py-4 cb-text-copy-regular text-neutral-400">
+                                            class="whitespace-nowrap px-3 py-4 cb-text-copy-regular text-neutral-700">
                                             Turpis Egestas</td>
                                         <td
-                                            class="whitespace-nowrap px-3 py-4 cb-text-copy-regular text-neutral-400">
+                                            class="whitespace-nowrap px-3 py-4 cb-text-copy-regular text-neutral-700">
                                             tristique@example.com</td>
                                         <td
-                                            class="whitespace-nowrap px-3 py-4 cb-text-copy-regular text-neutral-400">
+                                            class="whitespace-nowrap px-3 py-4 cb-text-copy-regular text-neutral-700">
                                             Netus</td>
                                         <td class="whitespace-nowrap pl-3 pr-4 sm:pr-6 py-2 flex justify-end">
                                             <button type="button"
-                                                class="inline-flex items-center p-2 border-none border-neutral-200 rounded bg-white text-primary-500 hover:bg-neutral-100 active:bg-white   hover:text-primary-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-500">
+                                                class="btn btn-neutral !border-white">
                                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none"
                                                     viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
                                                     class="w-5 h-5">
@@ -134,24 +134,24 @@ export class TableService {
                                             </div>
                                             <input id="comments" aria-describedby="comments-description"
                                                 name="comments" type="checkbox"
-                                                class="focus:ring-primary-500 h-4 w-4 text-primary-500 border-neutral-200 rounded absolute left-4 top-1/2 -mt-2 sm:left-6">
+                                                class="checkbox absolute left-4 top-1/2 -mt-2 sm:left-6">
                                         </td>
-                                        <!-- Selected: "text-indigo-600", Not Selected: "text-gray-900" -->
+                                        <!-- Selected: "text-indigo-600", Not Selected: "text-neutral-900" -->
                                         <td
                                             class="whitespace-nowrap py-4 pr-3 cb-text-copy-regular font-semibold cursor-pointer">
                                             Tristique Senectus</td>
                                         <td
-                                            class="whitespace-nowrap px-3 py-4 cb-text-copy-regular text-neutral-400">
+                                            class="whitespace-nowrap px-3 py-4 cb-text-copy-regular text-neutral-700">
                                             Turpis Egestas</td>
                                         <td
-                                            class="whitespace-nowrap px-3 py-4 cb-text-copy-regular text-neutral-400">
+                                            class="whitespace-nowrap px-3 py-4 cb-text-copy-regular text-neutral-700">
                                             tristique@example.com</td>
                                         <td
-                                            class="whitespace-nowrap px-3 py-4 cb-text-copy-regular text-neutral-400">
+                                            class="whitespace-nowrap px-3 py-4 cb-text-copy-regular text-neutral-700">
                                             Netus</td>
                                         <td class="whitespace-nowrap pl-3 pr-4 sm:pr-6 py-2 flex justify-end">
                                             <button type="button"
-                                                class="inline-flex items-center p-2 border-none border-neutral-200 rounded bg-white text-primary-500 hover:bg-neutral-100 active:bg-white   hover:text-primary-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-500">
+                                                class="btn btn-neutral !border-white">
                                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none"
                                                     viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
                                                     class="w-5 h-5">
@@ -169,24 +169,24 @@ export class TableService {
                                             </div>
                                             <input id="comments" aria-describedby="comments-description"
                                                 name="comments" type="checkbox"
-                                                class="focus:ring-primary-500 h-4 w-4 text-primary-500 border-neutral-200 rounded absolute left-4 top-1/2 -mt-2 sm:left-6">
+                                                class="checkbox absolute left-4 top-1/2 -mt-2 sm:left-6">
                                         </td>
-                                        <!-- Selected: "text-indigo-600", Not Selected: "text-gray-900" -->
+                                        <!-- Selected: "text-indigo-600", Not Selected: "text-neutral-900" -->
                                         <td
                                             class="whitespace-nowrap py-4 pr-3 cb-text-copy-regular font-semibold cursor-pointer">
                                             Tristique Senectus</td>
                                         <td
-                                            class="whitespace-nowrap px-3 py-4 cb-text-copy-regular text-neutral-400">
+                                            class="whitespace-nowrap px-3 py-4 cb-text-copy-regular text-neutral-700">
                                             Turpis Egestas</td>
                                         <td
-                                            class="whitespace-nowrap px-3 py-4 cb-text-copy-regular text-neutral-400">
+                                            class="whitespace-nowrap px-3 py-4 cb-text-copy-regular text-neutral-700">
                                             tristique@example.com</td>
                                         <td
-                                            class="whitespace-nowrap px-3 py-4 cb-text-copy-regular text-neutral-400">
+                                            class="whitespace-nowrap px-3 py-4 cb-text-copy-regular text-neutral-700">
                                             Netus</td>
                                         <td class="whitespace-nowrap pl-3 pr-4 sm:pr-6 py-2 flex justify-end">
                                             <button type="button"
-                                                class="inline-flex items-center p-2 border-none border-neutral-200 rounded bg-white text-primary-500 hover:bg-neutral-100 active:bg-white   hover:text-primary-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-500">
+                                                class="btn btn-neutral !border-white">
                                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none"
                                                     viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
                                                     class="w-5 h-5">
@@ -204,24 +204,24 @@ export class TableService {
                                             </div>
                                             <input id="comments" aria-describedby="comments-description"
                                                 name="comments" type="checkbox"
-                                                class="focus:ring-primary-500 h-4 w-4 text-primary-500 border-neutral-200 rounded absolute left-4 top-1/2 -mt-2 sm:left-6">
+                                                class="checkbox absolute left-4 top-1/2 -mt-2 sm:left-6">
                                         </td>
-                                        <!-- Selected: "text-indigo-600", Not Selected: "text-gray-900" -->
+                                        <!-- Selected: "text-indigo-600", Not Selected: "text-neutral-900" -->
                                         <td
                                             class="whitespace-nowrap py-4 pr-3 cb-text-copy-regular font-semibold cursor-pointer">
                                             Tristique Senectus</td>
                                         <td
-                                            class="whitespace-nowrap px-3 py-4 cb-text-copy-regular text-neutral-400">
+                                            class="whitespace-nowrap px-3 py-4 cb-text-copy-regular text-neutral-700">
                                             Turpis Egestas</td>
                                         <td
-                                            class="whitespace-nowrap px-3 py-4 cb-text-copy-regular text-neutral-400">
+                                            class="whitespace-nowrap px-3 py-4 cb-text-copy-regular text-neutral-700">
                                             tristique@example.com</td>
                                         <td
-                                            class="whitespace-nowrap px-3 py-4 cb-text-copy-regular text-neutral-400">
+                                            class="whitespace-nowrap px-3 py-4 cb-text-copy-regular text-neutral-700">
                                             Netus</td>
                                         <td class="whitespace-nowrap pl-3 pr-4 sm:pr-6 py-2 flex justify-end">
                                             <button type="button"
-                                                class="inline-flex items-center p-2 border-none border-neutral-200 rounded bg-white text-primary-500 hover:bg-neutral-100 active:bg-white   hover:text-primary-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-500">
+                                                class="btn btn-neutral !border-white">
                                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none"
                                                     viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
                                                     class="w-5 h-5">
@@ -267,11 +267,11 @@ export class TableService {
             <div class="-my-2 -mx-4 overflow-x-auto sm:-mx-6 lg:-mx-8">
               <div class="inline-block min-w-full py-2 align-middle md:px-6 lg:px-8">
                 <div class="relative overflow-hidden ring-1 ring-neutral-100 md:rounded-lg">
-                  <table class="min-w-full table-fixed divide-y divide-neutral-100">
-                    <thead class="bg-neutral-50">
+                  <table class="min-w-full table-fixed divide-y divide-neutral-200">
+                    <thead class="bg-neutral-100">
                       <tr>
                         <th scope="col" class="relative w-12 px-6 sm:w-16 sm:px-8">
-                          <input id="comments" aria-describedby="comments-description" name="comments" type="checkbox" class="focus:ring-primary-500 h-4 w-4 text-primary-500 border-neutral-200 rounded absolute left-4 top-1/2 -mt-2 sm:left-6">
+                          <input id="comments" aria-describedby="comments-description" name="comments" type="checkbox" class="checkbox absolute left-4 top-1/2 -mt-2 sm:left-6">
                         </th>
                         <th scope="col" class="min-w-[12rem] py-3.5 pr-3 text-left cb-text-copy-regular"> Consectetur</th>
                         <th scope="col" class="px-3 py-3.5 text-left cb-text-copy-regular"> Consectetur</th>
@@ -281,18 +281,18 @@ export class TableService {
                         <th scope="col" class="relative py-3.5 pl-3 pr-4 sm:pr-6"></th>
                       </tr>
                     </thead>
-                    <tbody class="divide-y divide-neutral-100 bg-white">
+                    <tbody class="divide-y divide-neutral-200 bg-white">
                       <tr>
                         <td class="relative w-12 px-6 sm:w-16 sm:px-8">
                           <!-- Selected row marker, only show when row is selected. -->
                           <div class="hidden absolute inset-y-0 left-0 w-0.5 bg-primary-500"></div>
-                          <input id="comments" aria-describedby="comments-description" name="comments" type="checkbox" class="focus:ring-primary-500 h-4 w-4 text-primary-500 border-neutral-200 rounded absolute left-4 top-1/2 -mt-2 sm:left-6">
+                          <input id="comments" aria-describedby="comments-description" name="comments" type="checkbox" class="checkbox absolute left-4 top-1/2 -mt-2 sm:left-6">
                         </td>
                         <td class="whitespace-nowrap py-4 pr-3 cb-text-copy-regular">
                           <div class="flex items-center">
                             <div>
-                              <div class="font-semibold cursor-pointer">Tristique Senectus</div>
-                              <div class="font-normal text-neutral-400">tristique@example.com</div>
+                              <div class="font-bold cursor-pointer">Tristique Senectus</div>
+                              <div class="font-normal text-neutral-700">tristique@example.com</div>
                             </div>
                           </div>
                         </td>
@@ -300,17 +300,17 @@ export class TableService {
                           <div class="flex items-center">
                             <div>
                               <div class="font-normal">Turpis Egestas</div>
-                              <div class="font-normal text-neutral-400">Eget Aliquet</div>
+                              <div class="font-normal text-neutral-700">Eget Aliquet</div>
                             </div>
                           </div>
                         </td>
-                        <td class="whitespace-nowrap px-3 py-4 text-sm text-gray-500">
-                          <span class="inline-flex items-center px-2.5 py-0.5 rounded-full bg-green-100 inter antialiased text-[12.64px] font-normal leading-[16.43px] text-green-800">Badge</span>
+                        <td class="whitespace-nowrap px-3 py-4 text-sm text-neutral-700">
+                          <span class="badge-primary badge-small">Badge</span>
                         </td>
-                        <td class="whitespace-nowrap px-3 py-4 cb-text-copy-regular text-neutral-400"> Netus</td>
-                        <td class="whitespace-nowrap px-3 py-4 cb-text-copy-regular text-neutral-400"> Netus</td>
-                        <td class="whitespace-nowrap py-4 pl-3 pr-4 sm:pr-6 py-2 flex justify-end">
-                          <button type="button" class="inline-flex items-center p-2 border-none border-neutral-200 rounded bg-white text-primary-500 hover:bg-neutral-100 active:bg-white   hover:text-primary-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-500">
+                        <td class="whitespace-nowrap px-3 py-4 cb-text-copy-regular text-neutral-700"> Netus</td>
+                        <td class="whitespace-nowrap px-3 py-4 cb-text-copy-regular text-neutral-700"> Netus</td>
+                        <td class="whitespace-nowrap py-4 pl-3 pr-4 sm:pr-6 flex justify-end">
+                          <button type="button" class="btn btn-neutral !border-white">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-5 h-5">
                               <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 12.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 18.75a.75.75 0 110-1.5.75.75 0 010 1.5z"></path>
                             </svg>
@@ -321,13 +321,13 @@ export class TableService {
                         <td class="relative w-12 px-6 sm:w-16 sm:px-8">
                           <!-- Selected row marker, only show when row is selected. -->
                           <div class="hidden absolute inset-y-0 left-0 w-0.5 bg-primary-500"></div>
-                          <input id="comments" aria-describedby="comments-description" name="comments" type="checkbox" class="focus:ring-primary-500 h-4 w-4 text-primary-500 border-neutral-200 rounded absolute left-4 top-1/2 -mt-2 sm:left-6">
+                          <input id="comments" aria-describedby="comments-description" name="comments" type="checkbox" class="checkbox absolute left-4 top-1/2 -mt-2 sm:left-6">
                         </td>
                         <td class="whitespace-nowrap py-4 pr-3 cb-text-copy-regular">
                           <div class="flex items-center">
                             <div>
-                              <div class="font-semibold cursor-pointer">Tristique Senectus</div>
-                              <div class="font-normal text-neutral-400">tristique@example.com</div>
+                              <div class="font-bold cursor-pointer">Tristique Senectus</div>
+                              <div class="font-normal text-neutral-700">tristique@example.com</div>
                             </div>
                           </div>
                         </td>
@@ -335,17 +335,17 @@ export class TableService {
                           <div class="flex items-center">
                             <div>
                               <div class="font-normal">Turpis Egestas</div>
-                              <div class="font-normal text-neutral-400">Eget Aliquet</div>
+                              <div class="font-normal text-neutral-700">Eget Aliquet</div>
                             </div>
                           </div>
                         </td>
-                        <td class="whitespace-nowrap px-3 py-4 text-sm text-gray-500">
-                          <span class="inline-flex items-center px-2.5 py-0.5 rounded-full bg-green-100 inter antialiased text-[12.64px] font-normal leading-[16.43px] text-green-800">Badge</span>
+                        <td class="whitespace-nowrap px-3 py-4 text-sm text-neutral-700">
+                          <span class="badge-neutral badge-small">Badge</span>
                         </td>
-                        <td class="whitespace-nowrap px-3 py-4 cb-text-copy-regular text-neutral-400"> Netus</td>
-                        <td class="whitespace-nowrap px-3 py-4 cb-text-copy-regular text-neutral-400"> Netus</td>
-                        <td class="whitespace-nowrap py-4 pl-3 pr-4 sm:pr-6 py-2 flex justify-end">
-                          <button type="button" class="inline-flex items-center p-2 border-none border-neutral-200 rounded bg-white text-primary-500 hover:bg-neutral-100 active:bg-white   hover:text-primary-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-500">
+                        <td class="whitespace-nowrap px-3 py-4 cb-text-copy-regular text-neutral-700"> Netus</td>
+                        <td class="whitespace-nowrap px-3 py-4 cb-text-copy-regular text-neutral-700"> Netus</td>
+                        <td class="whitespace-nowrap py-4 pl-3 pr-4 sm:pr-6 flex justify-end">
+                          <button type="button" class="btn btn-neutral !border-white">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-5 h-5">
                               <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 12.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 18.75a.75.75 0 110-1.5.75.75 0 010 1.5z"></path>
                             </svg>
@@ -356,13 +356,13 @@ export class TableService {
                         <td class="relative w-12 px-6 sm:w-16 sm:px-8">
                           <!-- Selected row marker, only show when row is selected. -->
                           <div class="hidden absolute inset-y-0 left-0 w-0.5 bg-primary-500"></div>
-                          <input id="comments" aria-describedby="comments-description" name="comments" type="checkbox" class="focus:ring-primary-500 h-4 w-4 text-primary-500 border-neutral-200 rounded absolute left-4 top-1/2 -mt-2 sm:left-6">
+                          <input id="comments" aria-describedby="comments-description" name="comments" type="checkbox" class="checkbox absolute left-4 top-1/2 -mt-2 sm:left-6">
                         </td>
                         <td class="whitespace-nowrap py-4 pr-3 cb-text-copy-regular">
                           <div class="flex items-center">
                             <div>
-                              <div class="font-semibold cursor-pointer">Tristique Senectus</div>
-                              <div class="font-normal text-neutral-400">tristique@example.com</div>
+                              <div class="font-bold cursor-pointer">Tristique Senectus</div>
+                              <div class="font-normal text-neutral-700">tristique@example.com</div>
                             </div>
                           </div>
                         </td>
@@ -370,17 +370,17 @@ export class TableService {
                           <div class="flex items-center">
                             <div>
                               <div class="font-normal">Turpis Egestas</div>
-                              <div class="font-normal text-neutral-400">Eget Aliquet</div>
+                              <div class="font-normal text-neutral-700">Eget Aliquet</div>
                             </div>
                           </div>
                         </td>
-                        <td class="whitespace-nowrap px-3 py-4 text-sm text-gray-500">
-                          <span class="inline-flex items-center px-2.5 py-0.5 rounded-full bg-green-100 inter antialiased text-[12.64px] font-normal leading-[16.43px] text-green-800">Badge</span>
+                        <td class="whitespace-nowrap px-3 py-4 text-sm text-neutral-700">
+                          <span class="badge-minimal badge-small">Badge</span>
                         </td>
-                        <td class="whitespace-nowrap px-3 py-4 cb-text-copy-regular text-neutral-400"> Netus</td>
-                        <td class="whitespace-nowrap px-3 py-4 cb-text-copy-regular text-neutral-400"> Netus</td>
-                        <td class="whitespace-nowrap py-4 pl-3 pr-4 sm:pr-6 py-2 flex justify-end">
-                          <button type="button" class="inline-flex items-center p-2 border-none border-neutral-200 rounded bg-white text-primary-500 hover:bg-neutral-100 active:bg-white   hover:text-primary-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-500">
+                        <td class="whitespace-nowrap px-3 py-4 cb-text-copy-regular text-neutral-700"> Netus</td>
+                        <td class="whitespace-nowrap px-3 py-4 cb-text-copy-regular text-neutral-700"> Netus</td>
+                        <td class="whitespace-nowrap py-4 pl-3 pr-4 sm:pr-6 flex justify-end">
+                          <button type="button" class="btn btn-neutral !border-white">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-5 h-5">
                               <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 12.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 18.75a.75.75 0 110-1.5.75.75 0 010 1.5z"></path>
                             </svg>
@@ -391,13 +391,13 @@ export class TableService {
                         <td class="relative w-12 px-6 sm:w-16 sm:px-8">
                           <!-- Selected row marker, only show when row is selected. -->
                           <div class="hidden absolute inset-y-0 left-0 w-0.5 bg-primary-500"></div>
-                          <input id="comments" aria-describedby="comments-description" name="comments" type="checkbox" class="focus:ring-primary-500 h-4 w-4 text-primary-500 border-neutral-200 rounded absolute left-4 top-1/2 -mt-2 sm:left-6">
+                          <input id="comments" aria-describedby="comments-description" name="comments" type="checkbox" class="checkbox absolute left-4 top-1/2 -mt-2 sm:left-6">
                         </td>
                         <td class="whitespace-nowrap py-4 pr-3 cb-text-copy-regular">
                           <div class="flex items-center">
                             <div>
-                              <div class="font-semibold cursor-pointer">Tristique Senectus</div>
-                              <div class="font-normal text-neutral-400">tristique@example.com</div>
+                              <div class="font-bold cursor-pointer">Tristique Senectus</div>
+                              <div class="font-normal text-neutral-700">tristique@example.com</div>
                             </div>
                           </div>
                         </td>
@@ -405,17 +405,17 @@ export class TableService {
                           <div class="flex items-center">
                             <div>
                               <div class="font-normal">Turpis Egestas</div>
-                              <div class="font-normal text-neutral-400">Eget Aliquet</div>
+                              <div class="font-normal text-neutral-700">Eget Aliquet</div>
                             </div>
                           </div>
                         </td>
-                        <td class="whitespace-nowrap px-3 py-4 text-sm text-gray-500">
-                          <span class="inline-flex items-center px-2.5 py-0.5 rounded-full bg-green-100 inter antialiased text-[12.64px] font-normal leading-[16.43px] text-green-800">Badge</span>
+                        <td class="whitespace-nowrap px-3 py-4 text-sm text-neutral-700">
+                          <span class="badge-green badge-small">Badge</span>
                         </td>
-                        <td class="whitespace-nowrap px-3 py-4 cb-text-copy-regular text-neutral-400"> Netus</td>
-                        <td class="whitespace-nowrap px-3 py-4 cb-text-copy-regular text-neutral-400"> Netus</td>
-                        <td class="whitespace-nowrap py-4 pl-3 pr-4 sm:pr-6 py-2 flex justify-end">
-                          <button type="button" class="inline-flex items-center p-2 border-none border-neutral-200 rounded bg-white text-primary-500 hover:bg-neutral-100 active:bg-white   hover:text-primary-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-500">
+                        <td class="whitespace-nowrap px-3 py-4 cb-text-copy-regular text-neutral-700"> Netus</td>
+                        <td class="whitespace-nowrap px-3 py-4 cb-text-copy-regular text-neutral-700"> Netus</td>
+                        <td class="whitespace-nowrap py-4 pl-3 pr-4 sm:pr-6 flex justify-end">
+                          <button type="button" class="btn btn-neutral !border-white">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-5 h-5">
                               <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 12.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 18.75a.75.75 0 110-1.5.75.75 0 010 1.5z"></path>
                             </svg>
@@ -426,13 +426,13 @@ export class TableService {
                         <td class="relative w-12 px-6 sm:w-16 sm:px-8">
                           <!-- Selected row marker, only show when row is selected. -->
                           <div class="hidden absolute inset-y-0 left-0 w-0.5 bg-primary-500"></div>
-                          <input id="comments" aria-describedby="comments-description" name="comments" type="checkbox" class="focus:ring-primary-500 h-4 w-4 text-primary-500 border-neutral-200 rounded absolute left-4 top-1/2 -mt-2 sm:left-6">
+                          <input id="comments" aria-describedby="comments-description" name="comments" type="checkbox" class="checkbox absolute left-4 top-1/2 -mt-2 sm:left-6">
                         </td>
                         <td class="whitespace-nowrap py-4 pr-3 cb-text-copy-regular">
                           <div class="flex items-center">
                             <div>
-                              <div class="font-semibold cursor-pointer">Tristique Senectus</div>
-                              <div class="font-normal text-neutral-400">tristique@example.com</div>
+                              <div class="font-bold cursor-pointer">Tristique Senectus</div>
+                              <div class="font-normal text-neutral-700">tristique@example.com</div>
                             </div>
                           </div>
                         </td>
@@ -440,17 +440,17 @@ export class TableService {
                           <div class="flex items-center">
                             <div>
                               <div class="font-normal">Turpis Egestas</div>
-                              <div class="font-normal text-neutral-400">Eget Aliquet</div>
+                              <div class="font-normal text-neutral-700">Eget Aliquet</div>
                             </div>
                           </div>
                         </td>
-                        <td class="whitespace-nowrap px-3 py-4 text-sm text-gray-500">
-                          <span class="inline-flex items-center px-2.5 py-0.5 rounded-full bg-green-100 inter antialiased text-[12.64px] font-normal leading-[16.43px] text-green-800">Badge</span>
+                        <td class="whitespace-nowrap px-3 py-4 text-sm text-neutral-700">
+                          <span class="badge-orange badge-small">Badge</span>
                         </td>
-                        <td class="whitespace-nowrap px-3 py-4 cb-text-copy-regular text-neutral-400"> Netus</td>
-                        <td class="whitespace-nowrap px-3 py-4 cb-text-copy-regular text-neutral-400"> Netus</td>
-                        <td class="whitespace-nowrap py-4 pl-3 pr-4 sm:pr-6 py-2 flex justify-end">
-                          <button type="button" class="inline-flex items-center p-2 border-none border-neutral-200 rounded bg-white text-primary-500 hover:bg-neutral-100 active:bg-white   hover:text-primary-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-500">
+                        <td class="whitespace-nowrap px-3 py-4 cb-text-copy-regular text-neutral-700"> Netus</td>
+                        <td class="whitespace-nowrap px-3 py-4 cb-text-copy-regular text-neutral-700"> Netus</td>
+                        <td class="whitespace-nowrap py-4 pl-3 pr-4 sm:pr-6 flex justify-end">
+                          <button type="button" class="btn btn-neutral !border-white">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-5 h-5">
                               <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 12.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 18.75a.75.75 0 110-1.5.75.75 0 010 1.5z"></path>
                             </svg>
@@ -461,13 +461,13 @@ export class TableService {
                         <td class="relative w-12 px-6 sm:w-16 sm:px-8">
                           <!-- Selected row marker, only show when row is selected. -->
                           <div class="hidden absolute inset-y-0 left-0 w-0.5 bg-primary-500"></div>
-                          <input id="comments" aria-describedby="comments-description" name="comments" type="checkbox" class="focus:ring-primary-500 h-4 w-4 text-primary-500 border-neutral-200 rounded absolute left-4 top-1/2 -mt-2 sm:left-6">
+                          <input id="comments" aria-describedby="comments-description" name="comments" type="checkbox" class="checkbox absolute left-4 top-1/2 -mt-2 sm:left-6">
                         </td>
                         <td class="whitespace-nowrap py-4 pr-3 cb-text-copy-regular">
                           <div class="flex items-center">
                             <div>
-                              <div class="font-semibold cursor-pointer">Tristique Senectus</div>
-                              <div class="font-normal text-neutral-400">tristique@example.com</div>
+                              <div class="font-bold cursor-pointer">Tristique Senectus</div>
+                              <div class="font-normal text-neutral-700">tristique@example.com</div>
                             </div>
                           </div>
                         </td>
@@ -475,17 +475,17 @@ export class TableService {
                           <div class="flex items-center">
                             <div>
                               <div class="font-normal">Turpis Egestas</div>
-                              <div class="font-normal text-neutral-400">Eget Aliquet</div>
+                              <div class="font-normal text-neutral-700">Eget Aliquet</div>
                             </div>
                           </div>
                         </td>
-                        <td class="whitespace-nowrap px-3 py-4 text-sm text-gray-500">
-                          <span class="inline-flex items-center px-2.5 py-0.5 rounded-full bg-green-100 inter antialiased text-[12.64px] font-normal leading-[16.43px] text-green-800">Badge</span>
+                        <td class="whitespace-nowrap px-3 py-4 text-sm text-neutral-700">
+                          <span class="badge-red badge-small">Badge</span>
                         </td>
-                        <td class="whitespace-nowrap px-3 py-4 cb-text-copy-regular text-neutral-400"> Netus</td>
-                        <td class="whitespace-nowrap px-3 py-4 cb-text-copy-regular text-neutral-400"> Netus</td>
-                        <td class="whitespace-nowrap py-4 pl-3 pr-4 sm:pr-6 py-2 flex justify-end">
-                          <button type="button" class="inline-flex items-center p-2 border-none border-neutral-200 rounded bg-white text-primary-500 hover:bg-neutral-100 active:bg-white   hover:text-primary-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-500">
+                        <td class="whitespace-nowrap px-3 py-4 cb-text-copy-regular text-neutral-700"> Netus</td>
+                        <td class="whitespace-nowrap px-3 py-4 cb-text-copy-regular text-neutral-700"> Netus</td>
+                        <td class="whitespace-nowrap py-4 pl-3 pr-4 sm:pr-6 flex justify-end">
+                          <button type="button" class="btn btn-neutral !border-white">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-5 h-5">
                               <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 12.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 18.75a.75.75 0 110-1.5.75.75 0 010 1.5z"></path>
                             </svg>

@@ -9,8 +9,8 @@ export class RadioGroupService {
       code: `      
       <div class="form-control">
                 
-      <label class="text-base font-medium text-gray-900">Notifications</label>
-      <p class="text-sm leading-5 text-gray-500">How do you prefer to receive notifications?</p>
+      <label class="label">Notifications</label>
+      <p class="cb-text-copy-small">How do you prefer to receive notifications?</p>
 
       <fieldset class="mt-4">
         <legend class="sr-only">Notification method</legend>
@@ -41,24 +41,24 @@ export class RadioGroupService {
       code: `      
       <div class="form-control">
             
-      <label class="text-base font-medium text-gray-900">Notifications</label>
-      <p class="text-sm leading-5 text-gray-500">How do you prefer to receive notifications?</p>
+      <label class="label">Notifications</label>
+      <p class="cb-text-copy-small">How do you prefer to receive notifications?</p>
       <fieldset class="mt-4">
         <legend class="sr-only">Notification method</legend>
         <div class="space-y-4 sm:flex sm:items-center sm:space-y-0 sm:space-x-10">
           <div class="flex items-center">
             <input id="email2" name="notification-method" type="radio" checked class="radio">
-            <label for="email2" class="ml-3 block text-sm font-medium text-gray-700"> Email </label>
+            <label for="email2" class="radio-label"> Email </label>
           </div>
     
           <div class="flex items-center">
             <input id="sms2" name="notification-method" type="radio" class="radio">
-            <label for="sms2" class="ml-3 block text-sm font-medium text-gray-700"> Phone (SMS) </label>
+            <label for="sms2" class="radio-label"> Phone (SMS) </label>
           </div>
     
           <div class="flex items-center">
             <input id="push2" name="notification-method" type="radio" class="radio">
-            <label for="push2" class="ml-3 block text-sm font-medium text-gray-700"> Push notification </label>
+            <label for="push2" class="radio-label"> Push notification </label>
           </div>
         </div>
       </fieldset>
@@ -82,7 +82,7 @@ export class RadioGroupService {
               </div>
               <div class="ml-3 text-sm">
                 <label for="small" class="ml-0 radio-label">Small</label>
-                <p id="small-description" class="text-gray-500">4 GB RAM / 2 CPUS / 80 GB SSD Storage</p>
+                <p id="small-description" class="cb-text-copy-small">4 GB RAM / 2 CPUS / 80 GB SSD Storage</p>
               </div>
             </div>
         
@@ -92,7 +92,7 @@ export class RadioGroupService {
               </div>
               <div class="ml-3 text-sm">
                 <label for="medium" class="ml-0 radio-label">Medium</label>
-                <p id="medium-description" class="text-gray-500">8 GB RAM / 4 CPUS / 160 GB SSD Storage</p>
+                <p id="medium-description" class="cb-text-copy-small">8 GB RAM / 4 CPUS / 160 GB SSD Storage</p>
               </div>
             </div>
         
@@ -102,7 +102,7 @@ export class RadioGroupService {
               </div>
               <div class="ml-3 text-sm">
                 <label for="large" class="ml-0 radio-label">Large</label>
-                <p id="large-description" class="text-gray-500">16 GB RAM / 8 CPUS / 320 GB SSD Storage</p>
+                <p id="large-description" class="cb-text-copy-small">16 GB RAM / 8 CPUS / 320 GB SSD Storage</p>
               </div>
             </div>
 
@@ -126,9 +126,9 @@ export class RadioGroupService {
               <div class="flex items-center h-5">
                 <input id="small2" aria-describedby="small-description" name="plan" type="radio" checked class="radio">
               </div>
-              <div class="ml-3 text-sm">
-                <label for="small2" class="ml-0 radio-inline__label">Small</label>
-                <span id="small-description" class="text-gray-500">4 GB RAM / 2 CPUS / 80 GB SSD Storage</span>
+              <div class="ml-3 ">
+                <label for="small2" class="radio-inline-label">Small</label>
+                <span id="small-description" class="cb-text-copy-small">4 GB RAM / 2 CPUS / 80 GB SSD Storage</span>
               </div>
             </div>
         
@@ -136,9 +136,9 @@ export class RadioGroupService {
               <div class="flex items-center h-5">
                 <input id="medium2" aria-describedby="medium-description" name="plan" type="radio" class="radio">
               </div>
-              <div class="ml-3 text-sm">
-                <label for="medium2" class="ml-0 radio-inline__label">Medium</label>
-                <span id="medium-description" class="text-gray-500">8 GB RAM / 4 CPUS / 160 GB SSD Storage</span>
+              <div class="ml-3">
+                <label for="medium2" class=" radio-inline-label">Medium</label>
+                <span id="medium-description" class="cb-text-copy-small">8 GB RAM / 4 CPUS / 160 GB SSD Storage</span>
               </div>
             </div>
         
@@ -146,9 +146,9 @@ export class RadioGroupService {
               <div class="flex items-center h-5">
                 <input id="large2" aria-describedby="large-description" name="plan" type="radio" class="radio">
               </div>
-              <div class="ml-3 text-sm">
-                <label for="large2" class="ml-0 radio-inline__label">Large</label>
-                <span id="large-description" class="text-gray-500">16 GB RAM / 8 CPUS / 320 GB SSD Storage</span>
+              <div class="ml-3">
+                <label for="large2" class="radio-inline-label">Large</label>
+                <span id="large-description" class="cb-text-copy-small">16 GB RAM / 8 CPUS / 320 GB SSD Storage</span>
               </div>
             </div>
           </div>

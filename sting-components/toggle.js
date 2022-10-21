@@ -4,13 +4,13 @@ module.exports = Toggle = (styles) => ({
     '@apply relative inline-flex h-5 w-10 flex-shrink-0 cursor-pointer items-center justify-center rounded-full focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2' : {}
     },
 
-    '.toggle-btn__default': {
+    '.toggle-btn-default': {
         '@apply pointer-events-none absolute mx-auto h-4 w-9 rounded-full transition-colors duration-200 ease-in-out':{}
     },
-    '.toggle-btn__default.enabled': {
+    '.toggle-btn-default.enabled': {
         '@apply bg-primary-500':{}
     },
-    '.toggle-btn__default.not-enabled': {
+    '.toggle-btn-default.not-enabled': {
         '@apply bg-gray-200':{}
     },
 

@@ -3,10 +3,10 @@ module.exports = RadioGroup = (styles) => ({
         '@apply focus:ring-primary-500 h-4 w-4 text-primary-500 border-neutral-200': {}
     },
     '.radio-label': {
-        '@apply ml-3 block text-sm font-medium text-gray-700': {}
+        '@apply ml-3 block label': {}
     },
-    '.radio-inline__label': {
-        '@apply font-medium text-gray-700': {}
+    '.radio-inline-label': {
+        '@apply label': {}
     },
     '.radio-colorpicker': {
         '@apply -m-0.5 relative p-0.5 rounded-full flex items-center justify-center cursor-pointer focus:outline-none': {}

@@ -28,14 +28,14 @@ export class TabService {
                   <div class="hidden sm:block">
                     <div class="border-b border-neutral-200">
                       <nav class="-mb-px flex space-x-8" aria-label="Tabs">
-                        <!-- Current: "tab-link_active", Default: "border-transparent tab-link_inactive" -->
-                        <a href="#" class="tab-link tab-link_inactive"> My Account </a>
+                        <!-- Current: "tab-link-active", Default: "border-transparent tab-link-inactive" -->
+                        <a href="#" class="tab-link tab-link-inactive "> My Account </a>
                 
-                        <a href="#" class="tab-link tab-link_inactive"> Company </a>
+                        <a href="#" class="tab-link tab-link-inactive"> Company </a>
                 
-                        <a href="#" class="tab-link tab-link_active" aria-current="page"> Team Members </a>
+                        <a href="#" class="tab-link tab-link-active" aria-current="page"> Team Members </a>
                 
-                        <a href="#" class="tab-link tab-link_inactive"> Billing </a>
+                        <a href="#" class="tab-link tab-link-inactive"> Billing </a>
                       </nav>
                     </div>
                   </div>
@@ -65,14 +65,14 @@ export class TabService {
                   </div>
                   <div class="hidden sm:block">
                     <nav class="flex space-x-4" aria-label="Tabs">
-                      <!-- Current: "bg-gray-100 text-gray-700", Default: "tab-link_inactive" -->
-                      <a href="#" class="tab-link_inactive tab-pill"> My Account </a>
+                      <!-- Current: "bg-gray-100 text-gray-700", Default: "tab-link-inactive" -->
+                      <a href="#" class="tab-link-inactive tab-pill"> My Account </a>
                 
-                      <a href="#" class="tab-link_inactive tab-pill"> Company </a>
+                      <a href="#" class="tab-link-inactive tab-pill"> Company </a>
                 
-                      <a href="#" class="tab-pill tab-pill_active" aria-current="page"> Team Members </a>
+                      <a href="#" class="tab-pill tab-pill-active" aria-current="page"> Team Members </a>
                 
-                      <a href="#" class="tab-link_inactive tab-pill"> Billing </a>
+                      <a href="#" class="tab-link-inactive tab-pill"> Billing </a>
                     </nav>
                   </div>
                 </div>
@@ -104,29 +104,29 @@ export class TabService {
                <div class="hidden sm:block">
                  <div class="border-b border-gray-200">
                    <nav class="-mb-px flex space-x-8 " aria-label="Tabs">
-                     <!-- Current: "tab-link_active", Default: "border-transparent tab-link_inactive" -->
-                     <a href="#" class="border-transparent tab-link_inactive tab-link group">
+                     <!-- Current: "tab-link-active", Default: "border-transparent tab-link-inactive" -->
+                     <a href="#" class="border-transparent tab-link-inactive tab-link group">
                        Applied
 
-                       <!-- Current: "bg-indigo-100 tab-link_active", Default: "bg-gray-100 text-gray-900" -->
-                       <span class="bg-gray-100 text-gray-900 tab-link_badges group-hover:bg-primary-500 group-hover:text-white">52</span>
+                       <!-- Current: "bg-indigo-100 tab-link-active", Default: "bg-gray-100 text-gray-900" -->
+                       <span class="bg-gray-100 text-gray-900 tab-link-badges group-hover:bg-primary-500 group-hover:text-white">52</span>
                      </a>
 
-                     <a href="#" class="border-transparent tab-link_inactive tab-link group">
+                     <a href="#" class="border-transparent tab-link-inactive tab-link group">
                        Phone Screening
 
-                       <span class="bg-gray-100 text-gray-900 tab-link_badges group-hover:bg-primary-500 group-hover:text-white">6</span>
+                       <span class="bg-gray-100 text-gray-900 tab-link-badges group-hover:bg-primary-500 group-hover:text-white">6</span>
                      </a>
 
-                     <a href="#" class="tab-link_active tab-link" aria-current="page">
+                     <a href="#" class="tab-link-active tab-link" aria-current="page">
                        Interview
 
-                       <span class="bg-primary-500 text-white tab-link_active tab-link_badges">4</span>
+                       <span class="bg-primary-500 text-white tab-link-active tab-link-badges">4</span>
                      </a>
 
-                     <a href="#" class="border-transparent tab-link_inactive tab-link"> Offer </a>
+                     <a href="#" class="border-transparent tab-link-inactive tab-link"> Offer </a>
 
-                     <a href="#" class="border-transparent tab-link_inactive tab-link"> Disqualified </a>
+                     <a href="#" class="border-transparent tab-link-inactive tab-link"> Disqualified </a>
                    </nav>
                  </div>
                </div>

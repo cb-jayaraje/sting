@@ -23,7 +23,7 @@ export class CheckboxService {
                           </div>
     
                           <div class="ml-3 text-sm">
-                            <label for="comments" class="cb-text-h6 cursor-pointer">Comments</label>
+                            <label for="comments" class="label !font-semibold cursor-pointer">Comments</label>
                             <p id="comments-description" class="cb-text-copy-small">Get notified when someones posts a comment on a posting.</p>
 
                           </div>
@@ -35,7 +35,7 @@ export class CheckboxService {
                           </div>
     
                           <div class="ml-3 text-sm">
-                            <label for="candidates" class="cb-text-h6 cursor-pointer">Candidates</label>
+                            <label for="candidates" class="label !font-semibold cursor-pointer">Candidates</label>
                             <p id="candidates-description" class="cb-text-copy-small">Get notified when a candidate applies for a job.</p>
 
                           </div>
@@ -47,7 +47,7 @@ export class CheckboxService {
                           </div>
     
                           <div class="ml-3 text-sm">
-                            <label for="offers" class="cb-text-h6 cursor-pointer">Offers</label>
+                            <label for="offers" class="label !font-semibold cursor-pointer">Offers</label>
                             <p id="offers-description" class="cb-text-copy-small">Get notified when a candidate accepts or rejects an offer.</p>
 
                           </div>
@@ -75,7 +75,7 @@ export class CheckboxService {
                             <input id="comments2" aria-describedby="comments-description" name="comments" type="checkbox" class="checkbox">
                           </div>
                           <div class="ml-3 text-sm">
-                            <label for="comments2" class="cb-text-h6 cursor-pointer">New comments</label>
+                            <label for="comments2" class="label !font-semibold cursor-pointer">New comments</label>
                             <span id="comments-description" class="cb-text-copy-regular"><span class="sr-only">New comments </span>so you always know what's happening.</span>
 
                           </div>
@@ -86,7 +86,7 @@ export class CheckboxService {
                             <input id="candidates2" aria-describedby="candidates-description" name="candidates" type="checkbox" class="checkbox">
                           </div>
                           <div class="ml-3 text-sm">
-                            <label for="candidates2" class="cb-text-h6 cursor-pointer">New candidates</label>
+                            <label for="candidates2" class="label !font-semibold cursor-pointer">New candidates</label>
                             <span id="candidates-description" class="cb-text-copy-regular"><span class="sr-only">New candidates </span>who apply for any open postings.</span>
 
                           </div>
@@ -97,7 +97,7 @@ export class CheckboxService {
                             <input id="offers2" aria-describedby="offers-description" name="offers" type="checkbox" class="checkbox">
                           </div>
                           <div class="ml-3 text-sm">
-                            <label for="offers2" class="cb-text-h6 cursor-pointer">Offers</label>
+                            <label for="offers2" class="label !font-semibold cursor-pointer">Offers</label>
                             <span id="offers-description" class="cb-text-copy-regular"><span class="sr-only">Offers </span>when they are accepted or rejected by candidates.</span>
 
                           </div>
@@ -123,7 +123,7 @@ export class CheckboxService {
     
                           <div class="relative flex items-start py-4">
                             <div class="min-w-0 flex-1 text-sm">
-                              <label for="comments3" class="cb-text-h6 cursor-pointer">Comments</label>
+                              <label for="comments3" class="label !font-semibold cursor-pointer">Comments</label>
                               <p id="comments-description" class="cb-text-copy-small">Get notified when someones posts a comment on a posting.</p>
 
                             </div>
@@ -134,7 +134,7 @@ export class CheckboxService {
     
                           <div class="relative flex items-start py-4">
                             <div class="min-w-0 flex-1 text-sm">
-                              <label for="candidates3" class="cb-text-h6 cursor-pointer">Candidates</label>
+                              <label for="candidates3" class="label !font-semibold cursor-pointer">Candidates</label>
                               <p id="candidates-description" class="cb-text-copy-small">Get notified when a candidate applies for a job.</p>
 
                             </div>
@@ -145,7 +145,7 @@ export class CheckboxService {
     
                           <div class="relative flex items-start py-4">
                             <div class="min-w-0 flex-1 text-sm">
-                              <label for="offers3" class="cb-text-h6 cursor-pointer">Offers</label>
+                              <label for="offers3" class="label !font-semibold cursor-pointer">Offers</label>
                               <p id="offers-description" class="cb-text-copy-small">Get notified when a candidate accepts or rejects an offer.</p>
 
                             </div>

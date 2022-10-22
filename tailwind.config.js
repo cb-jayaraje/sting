@@ -16,7 +16,7 @@ module.exports = {
         Sora: ['Sora', 'sans-serif']
     },
     fontSize: {
-        display: '2.566rem', //41.05px
+        display: '2.281rem', //36.49px
         h1: '1.802rem', //28.83px
         h2: '1.602rem', //25.63px
         h3: '1.424rem', //20.25px

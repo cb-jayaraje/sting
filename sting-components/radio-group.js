@@ -1,6 +1,6 @@
 module.exports = RadioGroup = (styles) => ({
     '.radio': {
-        '@apply focus:ring-primary-500 h-4 w-4 text-primary-700 border-neutral-400': {}
+        '@apply focus:ring-primary-500 h-4 w-4 text-primary-500 border-neutral-400': {}
     },
     '.radio-label': {
         '@apply ml-3 block text-sm font-medium text-neutral-700 hover:text-neutral-800 cursor-pointer': {}
@@ -24,7 +24,7 @@ module.exports = RadioGroup = (styles) => ({
         '@apply mt-1 flex items-center text-sm text-neutral-700': {}
     },
     '.radio-card__footer': {
-        '@apply mt-6 text-sm font-medium text-neutral-800': {}
+        '@apply mt-6 text-sm font-medium text-neutral-700': {}
     },
     '.radio-card__icon': {
         '@apply  h-5 w-5': {}
@@ -65,7 +65,7 @@ module.exports = RadioGroup = (styles) => ({
         '@apply h-4 w-4 text-primary-600 border-neutral-300 focus:ring-primary-500': {}
     },
     '.radio-table__label--checked': {
-        '@apply text-primary-900': {}
+        '@apply text-primary-800': {}
     },
     '.radio-table__label': {
         '@apply ml-2 opacity-100 cursor-pointer': {}

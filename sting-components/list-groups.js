@@ -13,11 +13,14 @@ module.exports = ListGroupss = (styles) => ({
                 '.stacked-list li > div, .stacked-list-two-column > div': {
                        "@apply ml-3": {},
                        },
+               '.stacked-list li .content-title, .stacked-list-two-column li .content-title': {
+                       "@apply cb-text-copy-regular font-semibold": {}
+               },
                '.stacked-list li .content, .stacked-list-two-column li .content': {
-                       "@apply cb-text-h6": {}
+                       "@apply cb-text-copy-regular": {}
                },
                '.stacked-list li .content-small, .stacked-list-two-column li .content-small': {
-                       "@apply cb-text-copy-regular text-neutral-400": {}
+                       "@apply cb-text-copy-small": {}
                },
                
                

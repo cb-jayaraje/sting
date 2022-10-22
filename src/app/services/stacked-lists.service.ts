@@ -38,20 +38,20 @@ export class StackedListsService {
             <ul role="list">
                 <li>
                     <div>
-                        <p class="content">Tristique Senectus</p>
-                        <p class="content-small">tristique@example.com</p>
+                        <p class="content-title">Tristique Senectus</p>
+                        <p class="content">tristique@example.com</p>
                     </div>
                 </li>
                 <li>
                     <div>
-                        <p class="content">Tristique Senectus</p>
-                        <p class="content-small">tristique@example.com</p>
+                        <p class="content-title">Tristique Senectus</p>
+                        <p class="content">tristique@example.com</p>
                     </div>
                 </li>
                 <li>
                     <div>
-                        <p class="content">Tristique Senectus</p>
-                        <p class="content-small">tristique@example.com</p>
+                        <p class="content-title">Tristique Senectus</p>
+                        <p class="content">tristique@example.com</p>
                     </div>
                 </li>
             </ul>
@@ -128,12 +128,12 @@ export class StackedListsService {
                         <div class="flex min-w-0 flex-1 items-center">
                             <div class="min-w-0 flex-1 md:grid md:grid-cols-2 md:gap-4">
                                 <div class="ml-3">
-                                <p class="content">Tristique Senectus</p>
+                                <p class="content-title">Tristique Senectus</p>
                                 <p class="content-small">tristique@example.com</p>
                                 </div>
                                 <div class="hidden md:block">
                                     <div class="ml-3">
-                                        <p class="content">Turpis Egestas</p>
+                                        <p class="content-title">Turpis Egestas</p>
                                         <p class="content-small">tristique@example.com</p>
                                     </div>
                                 </div>
@@ -146,12 +146,12 @@ export class StackedListsService {
                         <div class="flex min-w-0 flex-1 items-center">
                             <div class="min-w-0 flex-1 md:grid md:grid-cols-2 md:gap-4">
                                 <div class="ml-3">
-                                <p class="content">Tristique Senectus</p>
+                                <p class="content-title">Tristique Senectus</p>
                                 <p class="content-small">tristique@example.com</p>
                                 </div>
                                 <div class="hidden md:block">
                                     <div class="ml-3">
-                                    <p class="content">Tristique Senectus</p>
+                                    <p class="content-title">Tristique Senectus</p>
                                     <p class="content-small">tristique@example.com</p>
                                     </div>
                                 </div>
@@ -164,12 +164,12 @@ export class StackedListsService {
                         <div class="flex min-w-0 flex-1 items-center">
                             <div class="min-w-0 flex-1 md:grid md:grid-cols-2 md:gap-4">
                                 <div class="ml-3">
-                                    <p class="content">Tristique Senectus</p>
+                                    <p class="content-title">Tristique Senectus</p>
                                     <p class="content-small">tristique@example.com</p>
                                 </div>
                                 <div class="hidden md:block">
                                     <div class="ml-3">
-                                        <p class="content">Turpis Egestas</p>
+                                        <p class="content-title">Turpis Egestas</p>
                                         <p class="content-small">tristique@example.com</p>
                                     </div>
                                 </div>

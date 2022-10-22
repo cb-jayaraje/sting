@@ -108,20 +108,19 @@ export class TabService {
                      <a href="#" class="border-transparent tab-link-inactive tab-link group">
                        Applied
 
-                       <!-- Current: "bg-indigo-100 tab-link-active", Default: "bg-gray-100 text-gray-900" -->
-                       <span class="bg-gray-100 text-gray-900 tab-link-badges group-hover:bg-primary-500 group-hover:text-white">52</span>
+                       <span class="badge-neutral badge-small ml-2">52</span>
                      </a>
 
                      <a href="#" class="border-transparent tab-link-inactive tab-link group">
                        Phone Screening
 
-                       <span class="bg-gray-100 text-gray-900 tab-link-badges group-hover:bg-primary-500 group-hover:text-white">6</span>
+                       <span class="badge-neutral badge-small ml-2">6</span>
                      </a>
 
                      <a href="#" class="tab-link-active tab-link" aria-current="page">
                        Interview
 
-                       <span class="bg-primary-500 text-white tab-link-active tab-link-badges">4</span>
+                       <span class="badge-primary badge-small ml-2">4</span>
                      </a>
 
                      <a href="#" class="border-transparent tab-link-inactive tab-link"> Offer </a>

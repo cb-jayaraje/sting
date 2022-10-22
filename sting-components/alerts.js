@@ -38,7 +38,7 @@ module.exports = Alert = (styles) => ({
         "@apply bg-orange-50": {},
     },
     '.alert-warning .content': {
-        "@apply text-orange-900":{}
+        "@apply text-neutral-800":{}
     },
     '.alert-warning svg': {
         "@apply text-orange-600": {},
@@ -47,7 +47,7 @@ module.exports = Alert = (styles) => ({
         "@apply text-copy font-bold text-orange-900": {},
     },
     '.alert-warning .description': {
-        "@apply text-orange-900": {},
+        "@apply text-neutral-800": {},
     },
 
     //danger
@@ -62,7 +62,7 @@ module.exports = Alert = (styles) => ({
         "@apply text-copy font-bold text-red-900": {},
     },
     '.alert-danger .description': {
-        "@apply text-red-900": {},
+        "@apply text-neutral-800": {},
     },
 
     //success
@@ -77,10 +77,10 @@ module.exports = Alert = (styles) => ({
         "@apply text-copy font-bold text-green-900": {},
     },
     '.alert-success .description': {
-        "@apply text-green-900": {},
+        "@apply text-neutral-800": {},
     },
     '.alert .alert-btn-success': {
-        "@apply font-semibold underline ring-offset-green-100": {},
+        "@apply font-medium underline ring-offset-green-100": {},
     },
     
     

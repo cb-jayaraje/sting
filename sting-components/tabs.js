@@ -1,22 +1,22 @@
 module.exports = Tabs = (styles) => ({
 
     '.tab-link': {
-        '@apply border-transparent whitespace-nowrap py-4 px-1 border-b-2 cb-text-copy-regular font-medium  text-neutral-400 hover:text-neutral-600': {}
+        '@apply border-transparent whitespace-nowrap py-4 px-1 border-b-2 cb-text-copy-regular font-medium hover:text-neutral-800': {}
     },
     '.tab-link-active': {
-        '@apply border-primary-500 font-semibold text-primary-600 border-solid': {}
+        '@apply text-primary-900 border-primary-900 border-solid': {}
     },
     '.tab-link-inactive': {
-        '@apply text-gray-500 hover:text-gray-700 hover:border-primary-500': {}
+        '@apply text-neutral-700 hover:text-neutral-800 hover:border-neutral-400': {}
     },
     '.tab-pill': {
-        '@apply px-3 py-2 cb-text-copy-regular font-medium rounded': {}
+        '@apply cb-text-copy-regular font-medium px-3 py-2 rounded hover:bg-neutral-100': {}
     },
     '.tab-pill-active': {
-        '@apply bg-primary-500 text-neutral-50': {}
+        '@apply bg-primary-500 hover:bg-primary-500 hover:text-white text-white': {}
     },
     '.tab-link-badges': {
-        '@apply hidden ml-3 py-0.5 px-2.5 rounded-full cb-text-copy-small font-medium md:inline-block hover:bg-primary-500 hover:text-white': {}
+        '@apply hidden ': {}
     },
 
 });

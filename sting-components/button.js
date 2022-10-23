@@ -1,6 +1,6 @@
 module.exports = Button = (styles) => ({
     ' .btn': {
-        "@apply antialiased px-3 py-2 rounded border border-transparent font-medium cb-text-copy-regular leading-4 focus:outline-none focus:ring-2 focus:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-30": {},
+        "@apply antialiased items-center rounded-md border border-transparent bg-white px-4 py-2 text-sm font-medium cb-text-copy-regular drop-shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-30 cursor-pointer": {},
     },
     '.btn-small': {
         "@apply px-2.5 py-1.5 cb-text-copy-small border border-transparent font-medium rounded focus:outline-none focus:ring-2 focus:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-30": {},
@@ -15,17 +15,21 @@ module.exports = Button = (styles) => ({
     '.btn-outline': {
         "@apply bg-transparent hover:bg-primary-50 text-primary-500 border-primary-400 focus:ring-primary-500": {},
     },
+    
     '.btn-primary': {
         "@apply text-white border-0 !bg-primary-900 hover:!bg-primary-900 active:!bg-primary-600 focus:ring-primary-600 border-primary-500 text-white": {},
     },
+
     '.btn-primary-small': {
         "@apply text-white border-0 !bg-primary-500 hover:!bg-primary-600 active:!bg-primary-600 focus:ring-primary-600 border-primary-500 text-white": {},
     },
+
     '.theme-sting .btn-primary': {
         "@apply text-white !bg-primary-800 hover:!bg-primary-900 active:!bg-primary-800 focus:ring-primary-500 border border-transparent hover:text-lime-500 focus:outline-none": {},
     },
+
     '.theme-sting .btn-secondary': {
-        "@apply  text-primary-800 !bg-primary-50 hover:!bg-primary-100 active:!bg-primary-50 focus:ring-primary-500 border border-transparent hover:text-primary-800 focus:outline-none": {},
+        "@apply text-primary-800 !bg-primary-50 hover:!bg-primary-100 active:!bg-primary-50 focus:ring-primary-500 border border-transparent hover:text-primary-800 focus:outline-none": {},
     },
 
     '.btn-brand': {
@@ -33,7 +37,11 @@ module.exports = Button = (styles) => ({
     },
 
     '.theme-sting .btn-neutral': {
-        "@apply bg-white hover:bg-neutral-50 text-primary-800 hover:text-primary-900 active:bg-neutral-100/50 border-primary-100 focus:ring-primary-500": {},
+        "@apply bg-white hover:bg-neutral-100 text-primary-800 hover:text-primary-900 active:bg-neutral-100/50 border-primary-100 focus:ring-primary-500": {},
+    },
+
+    '.theme-sting .btn-borderless': {
+        "@apply text-primary-800 hover:text-primary-900 hover:bg-neutral-100 border-transparent drop-shadow-none": {},
     },
 
 
@@ -89,13 +97,7 @@ module.exports = Button = (styles) => ({
         "@apply inline-flex items-center": {},
     },
     '.btn-link': {
-        "@apply mx-1 antialiased !font-medium !text-primary-800 underline underline-offset-2 focus:rounded-sm focus:outline-none focus:ring-1 focus:ring-offset-2 focus:ring-primary-500": {},
-    },
-    '.btn-link-small': {
-        "@apply cb-text-copy-small p-0 leading-none w-max":{},
-    },
-    '.btn-link-regular': {
-        "@apply cb-text-copy-regular p-0 leading-4 w-max":{},
+        "@apply px-0.5 antialiased font-medium text-primary-800 underline underline-offset-2 hover:text-primary-900 hover:bg-primary-50": {},
     }
 
 });

@@ -1,6 +1,6 @@
 module.exports = Badge = (styles) => ({
     '.badge': {
-        "@apply inline-flex items-center rounded-full leading-tight font-normal capitalize whitespace-nowrap": {},
+        "@apply inline-flex items-center rounded-full leading-tight font-medium capitalize whitespace-nowrap": {},
                    },
     
     '.badge button':{

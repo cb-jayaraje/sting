@@ -1,6 +1,6 @@
 module.exports = Button = (styles) => ({
     ' .btn': {
-        "@apply antialiased items-center rounded-md border border-transparent bg-white px-4 py-2 text-sm font-medium cb-text-copy-regular drop-shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-30 cursor-pointer": {},
+        "@apply antialiased items-center rounded-md border border-transparent bg-white px-4 py-2 text-sm font-medium cb-text-copy-regular drop-shadow-sm hover:bg-neutral-100 focus:outline-none focus:ring-2 focus:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-30 cursor-pointer": {},
     },
     '.btn-small': {
         "@apply px-2.5 py-1.5 cb-text-copy-small border border-transparent font-medium rounded focus:outline-none focus:ring-2 focus:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-30": {},

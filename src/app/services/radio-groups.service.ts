@@ -13,7 +13,7 @@ export class RadioGroupService {
       <p class="cb-text-copy-small">How do you prefer to receive notifications?</p>
 
 
-      <fieldset class="mt-4">
+      <fieldset class="pt-4">
         <legend class="sr-only">Notification method</legend>
         <div class="space-y-4">
           <div class="flex items-center">
@@ -45,7 +45,7 @@ export class RadioGroupService {
       <label class="cb-text-h6">Notifications</label>
       <p class="cb-text-copy-small">How do you prefer to receive notifications?</p>
 
-      <fieldset class="mt-4">
+      <fieldset class="pt-4">
         <legend class="sr-only">Notification method</legend>
         <div class="space-y-4 sm:flex sm:items-center sm:space-y-0 sm:space-x-10">
           <div class="flex items-center">
@@ -76,7 +76,7 @@ export class RadioGroupService {
             
       <fieldset>
           <legend class="sr-only">Plan</legend>
-          <div class="space-y-5">
+          <div class="space-y-4">
 
             <div class="relative flex items-start">
               <div class="flex items-center h-5">
@@ -126,38 +126,35 @@ export class RadioGroupService {
             
       <fieldset>
           <legend class="sr-only">Plan</legend>
-          <div class="space-y-5">
+          <div class="space-y-2">
 
-            <div class="relative flex items-start">
+            <div class="relative flex items-center">
               <div class="flex items-center h-5">
                 <input id="small2" aria-describedby="small-description" name="plan" type="radio" checked class="radio">
               </div>
               <div class="ml-3 space-x-1">
                 <label for="small2" class="radio-inline__label label !font-semibold cursor-pointer">Small</label>
                 <span id="small-description" class="cb-text-copy-small">4 GB RAM / 2 CPUS / 80 GB SSD Storage</span>
-
               </div>
             </div>
         
-            <div class="relative flex items-start">
+            <div class="relative flex items-center">
               <div class="flex items-center h-5">
                 <input id="medium2" aria-describedby="medium-description" name="plan" type="radio" class="radio">
               </div>
               <div class="ml-3 space-x-1">
                 <label for="medium2" class="radio-inline__label label !font-semibold cursor-pointer">Medium</label>
                 <span id="medium-description" class="cb-text-copy-small">8 GB RAM / 4 CPUS / 160 GB SSD Storage</span>
-
               </div>
             </div>
         
-            <div class="relative flex items-start">
+            <div class="relative flex items-center">
               <div class="flex items-center h-5">
                 <input id="large2" aria-describedby="large-description" name="plan" type="radio" class="radio">
               </div>
               <div class="ml-3 space-x-1">
                 <label for="large2" class="radio-inline__label label !font-semibold cursor-pointer">Large</label>
                 <span id="large-description" class="cb-text-copy-small">16 GB RAM / 8 CPUS / 320 GB SSD Storage</span>
-
               </div>
             </div>
           </div>

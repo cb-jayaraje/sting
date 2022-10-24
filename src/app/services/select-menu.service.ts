@@ -6,37 +6,38 @@ export class SelectMenuServices {
 
     selectMenuDatas = [
         {
-            "id": "select_1",
-            "title": "Simple native",
-            "code": `<div class="form-control">
-            <label for="location" class="label">Location</label>
-            <select id="location" name="location" class="select">
-              <option>United States</option>
-              <option selected>Canada</option>
-              <option>Mexico</option>
-            </select>
-          </div>`
+            id: "select_1",
+            title: "Simple native",
+            code: `
+            <div class="form-control">
+              <label for="location" class="label">Location</label>
+              <select id="location" name="location" class="select">
+                <option>United States</option>
+                <option selected>Canada</option>
+                <option>Mexico</option>
+              </select>
+            </div>
+          `
         },
    
 
         {
-          "id": "select_2_2",
-          "title": "Simple custom selected",
-          "code": `
+          id: "select_2",
+          title: "Simple custom selected",
+          code: `
           <div class="form-control">
             <label id="listbox-label" class="label"> Assigned to </label>
             <div class="mt-1 relative">
               <button class="select-button" aria-haspopup="listbox" aria-expanded="true" aria-labelledby="listbox-label">
                 <span class="block truncate"> Tom Cook </span>
                 <span class="select-button-icon-container">
-                  <svg class="h-5 w-5 " xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                    <path fill-rule="evenodd" d="M10 3a1 1 0 01.707.293l3 3a1 1 0 01-1.414 1.414L10 5.414 7.707 7.707a1 1 0 01-1.414-1.414l3-3A1 1 0 0110 3zm-3.707 9.293a1 1 0 011.414 0L10 14.586l2.293-2.293a1 1 0 011.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z" clip-rule="evenodd" />
-                  </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5">
+                <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd" />
+                </svg>
                 </span>
               </button>
 
               <ul tabindex="-1" class="select-ul" role="listbox" aria-labelledby="listbox-label" aria-activedescendant="listbox-option-3">
-                
                 <li class="select-li-selected group"  id="listbox-option-0" role="option">
                   <span class="font-normal block truncate"> Wade Cooper </span>
                   <span class="select-li-icon ">
@@ -45,17 +46,17 @@ export class SelectMenuServices {
                     </svg>
                   </span>
                 </li>
-          
               </ul>
+
             </div>
           </div>
           `
       },
        
         {
-            "id": "select_4",
-            "title": "Custom with status indicator",
-            "code": `
+            id: "select_3",
+            title: "Custom with status indicator",
+            code: `
             <div class="form-control">
               <label id="listbox-label" class="label"> Assigned to </label>
               <div class="mt-1 relative">

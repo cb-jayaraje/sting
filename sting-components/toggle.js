@@ -8,7 +8,7 @@ module.exports = Toggle = (styles) => ({
         '@apply pointer-events-none absolute mx-auto h-4 w-9 rounded-full transition-colors duration-200 ease-in-out':{}
     },
     '.toggle-btn-default.enabled': {
-        '@apply bg-primary-500':{}
+        '@apply bg-info-800':{}
     },
     '.toggle-btn-default.not-enabled': {
         '@apply bg-gray-200':{}

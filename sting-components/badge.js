@@ -46,6 +46,13 @@ module.exports = Badge = (styles) => ({
     "@apply text-neutral-700 hover:bg-neutral-200 focus:bg-neutral-50 focus:text-primary-700":{}
 },
 
+'.badge-info':{
+  "@apply badge text-info-900 bg-info-50 border border-info-100":{}
+},
+'.badge-info button':{
+  "@apply text-info-900 hover:bg-info-200 hover:text-info-900 focus:bg-info-200 focus:text-info-900":{}
+},
+
 '.badge-red':{
   "@apply badge text-red-900 bg-red-50 border border-red-100":{}
 },

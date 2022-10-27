@@ -142,7 +142,51 @@ export class BadgesService {
         `
     },
     {
-      id: 'badge_4',
+        id: 'badge_4',
+        title: 'Info',
+        code: `
+        <div class="flex items-start flex-wrap gap-4">
+
+     
+
+        <!-- ------------badge-small------------ -->
+
+        <span class="badge-info badge-small ">
+          Small
+        </span>
+
+        <!-- ------------badge-small with button------------ -->
+        <span class="badge-info badge-icon-small"> Small 
+        <button type="button" >
+        <span class="sr-only">Remove small option</span>
+        <svg class="h-2 w-2" stroke="currentColor" fill="none" viewBox="0 0 8 8">
+          <path stroke-linecap="round" stroke-width="1" d="M1 1l6 6m0-6L1 7" />
+        </svg>
+      </button>
+    </span>
+
+        <!-- ------------badge-base------------ -->
+
+        <span class="badge-info badge-base">
+        Regular
+        </span>
+
+        <!-- ------------badge-base with button------------ -->
+        <span class="badge-info badge-icon-base"> Regular
+        <button type="button" >
+        <span class="sr-only">Remove large option</span>
+        <svg class="h-2 w-2" stroke="currentColor" fill="none" viewBox="0 0 8 8">
+          <path stroke-linecap="round" stroke-width="1" d="M1 1l6 6m0-6L1 7" />
+        </svg>
+      </button>
+    </span>
+      
+
+      </div>
+        `
+    },
+    {
+      id: 'badge_5',
       title: 'Red',
       code: `
       <div class="flex items-start flex-wrap gap-4">
@@ -186,7 +230,7 @@ export class BadgesService {
       `
   },
   {
-    id: 'badge_5',
+    id: 'badge_6',
     title: 'Orange',
     code: `
     <div class="flex items-start flex-wrap gap-4">
@@ -231,7 +275,7 @@ export class BadgesService {
     `
 },
 {
-  id: 'badge_6',
+  id: 'badge_7',
   title: 'Green',
   code: `
   <div class="flex items-start flex-wrap gap-4">

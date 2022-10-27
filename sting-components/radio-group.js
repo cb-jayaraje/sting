@@ -1,6 +1,6 @@
 module.exports = RadioGroup = (styles) => ({
     '.radio': {
-        '@apply focus:ring-primary-500 h-4 w-4 text-primary-500 border-neutral-400': {}
+        '@apply focus:ring-info-800 h-4 w-4 text-info-800 border-neutral-400': {}
     },
     '.radio-label': {
         '@apply ml-3 block text-sm font-medium text-neutral-700 hover:text-neutral-800 cursor-pointer': {}

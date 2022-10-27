@@ -26,11 +26,11 @@ module.exports = SelectMenus = (styles) => ({
                "@apply text-neutral-700 hover:text-neutral-800 cursor-default select-none relative py-2 pl-3 pr-9 hover:bg-neutral-100": {},
                     },
                     '.form-control .select-li-selected': {
-                         "@apply text-white bg-primary-500 cursor-default select-none relative py-2 pl-3 pr-9  hover:bg-primary-500": {},
+                         "@apply text-info-800 bg-info-50 cursor-default select-none relative py-2 pl-3 pr-9 hover:bg-info-50": {},
                               },
 
         '.form-control .select-li-icon': {
-        "@apply !text-green-400  absolute inset-y-0 flex items-center right-0 pr-4": {},
+        "@apply !text-info-800 absolute inset-y-0 flex items-center right-0 pr-4": {},
              }, 
 
             

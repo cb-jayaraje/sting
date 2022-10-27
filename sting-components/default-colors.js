@@ -40,6 +40,19 @@ module.exports = {
      
     },
 
+    info: {
+      50: 'rgb(var(--color-info-50) / <alpha-value>)',
+      100: 'rgb(var(--color-info-100) / <alpha-value>)',
+      200: 'rgb(var(--color-info-200) / <alpha-value>)',
+      300: 'rgb(var(--color-info-300) / <alpha-value>)',
+      400: 'rgb(var(--color-info-400) / <alpha-value>)',
+      500: 'rgb(var(--color-info-500) / <alpha-value>)',
+      600: 'rgb(var(--color-info-600) / <alpha-value>)',
+      700: 'rgb(var(--color-info-700) / <alpha-value>)',
+      800: 'rgb(var(--color-info-800) / <alpha-value>)',
+      900: 'rgb(var(--color-info-900) / <alpha-value>)',
+    },
+
     red: {
       50: 'rgb(var(--color-red-50) / <alpha-value>)',
       100: 'rgb(var(--color-red-100) / <alpha-value>)',
@@ -90,17 +103,17 @@ module.exports = {
       700: 'rgb(var(--color-lime-700) / <alpha-value>)',
       800: 'rgb(var(--color-lime-800) / <alpha-value>)',
       900: 'rgb(var(--color-lime-900) / <alpha-value>)',
-    },
+    }, 
 
-    info: {
-      50: 'var(--color-info-50)',
-      75: 'var(--color-info-75)',
-      100: 'var(--color-info-100)',
-      200: "var(--color-info-200)",
-      300: "var(--color-info-300)",
-      400: "var(--color-info-400)",
-      500: "var(--color-info-500)",
-    },
+    // info: {
+    //   50: 'var(--color-info-50)',
+    //   75: 'var(--color-info-75)',
+    //   100: 'var(--color-info-100)',
+    //   200: "var(--color-info-200)",
+    //   300: "var(--color-info-300)",
+    //   400: "var(--color-info-400)",
+    //   500: "var(--color-info-500)",
+    // },
     warning: {
       50: 'var(--color-warning-50)',
       75: 'var(--color-warning-75)',

@@ -140,12 +140,12 @@ export class DropdownsService {
         } ,
         {
         id: 'dropdown_4',
-        title: 'with minimal button',
+        title: 'with borderless button',
         code: ` 
         <div class="form-control">
             <div class="relative inline-block text-left">
                 <div>
-                <button type="button" class="btn-rounded btn btn-neutral" id="menu-button" aria-expanded="true"
+                <button type="button" class="btn-rounded btn btn-borderless" id="menu-button" aria-expanded="true"
                 aria-haspopup="true">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
                   stroke="currentColor" class="w-5 h-5">

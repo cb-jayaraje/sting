@@ -41,7 +41,7 @@ module.exports = Button = (styles) => ({
     },
 
     '.theme-sting .btn-borderless': {
-        "@apply text-primary-800 hover:text-primary-900 hover:bg-neutral-100 border-transparent drop-shadow-none": {},
+        "@apply text-primary-800 hover:text-primary-900 hover:bg-neutral-100 border-transparent !drop-shadow-none": {},
     },
 
 
@@ -68,7 +68,7 @@ module.exports = Button = (styles) => ({
         "@apply text-green-700 !bg-green-50 hover:!bg-green-100 focus:ring-green-500 active:!bg-green-100": {},
     },
     '.btn-danger': {
-        "@apply !bg-red-50 hover:!bg-red-100 active:!bg-red-100 focus:ring-red-400  text-red-600": {},
+        "@apply !bg-red-50 hover:!bg-red-100 active:!bg-red-100 focus:ring-red-400 text-red-600": {},
     },
 
 

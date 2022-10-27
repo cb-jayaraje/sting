@@ -44,43 +44,43 @@ module.exports = Alert = (styles) => ({
         "@apply text-orange-600": {},
     },
     '.alert-warning .title': {
-        "@apply text-copy font-bold text-orange-900": {},
+        "@apply text-copy font-bold text-neutral-800": {},
     },
     '.alert-warning .description': {
-        "@apply text-neutral-800": {},
+        "@apply text-neutral-700": {},
     },
 
     //danger
 
     '.alert-danger': {
-        "@apply bg-red-100 text-red-900": {},
+        "@apply bg-red-100 text-neutral-700": {},
     },
     '.alert-danger svg': {
         "@apply text-red-600": {},
     },
     '.alert-danger .title': {
-        "@apply text-copy font-bold text-red-900": {},
+        "@apply text-copy font-bold text-neutral-800": {},
     },
     '.alert-danger .description': {
-        "@apply text-neutral-800": {},
+        "@apply text-neutral-700": {},
     },
 
     //success
 
     '.alert-success': {
-        "@apply bg-green-50 text-green-900": {},
+        "@apply bg-green-50 text-neutral-700": {},
     },
     '.alert-success svg': {
         "@apply text-green-600": {},
     },
     '.alert-success .title': {
-        "@apply text-copy font-bold text-green-900": {},
+        "@apply text-copy font-bold text-neutral-800": {},
     },
     '.alert-success .description': {
-        "@apply text-neutral-800": {},
+        "@apply text-neutral-700": {},
     },
     '.alert .alert-btn-success': {
-        "@apply font-medium underline ring-offset-green-100": {},
+        "@apply font-medium underline text-green-900 ring-offset-green-100": {},
     },
     
     

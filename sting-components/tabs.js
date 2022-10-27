@@ -4,7 +4,7 @@ module.exports = Tabs = (styles) => ({
         '@apply border-transparent whitespace-nowrap py-4 px-1 border-b-2 cb-text-copy-regular font-medium hover:text-neutral-800': {}
     },
     '.tab-link-active': {
-        '@apply text-info-900 border-info-700 border-solid': {}
+        '@apply text-info-900 border-info-700 border-solid hover:text-info-900': {}
     },
     '.tab-link-inactive': {
         '@apply text-neutral-700 hover:text-neutral-800 hover:border-neutral-400': {}

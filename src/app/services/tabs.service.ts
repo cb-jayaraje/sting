@@ -44,7 +44,7 @@ export class TabService {
         },
       
         {
-            id: "tab_3",
+            id: "tab_2",
             title: "Tabs with pills",
             code: 
                 `
@@ -80,7 +80,7 @@ export class TabService {
         },
       
         {
-            id: "tab_5",
+            id: "tab_3",
             title: "Tabs with underline and badges",
             code: 
                 `

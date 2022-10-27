@@ -120,7 +120,7 @@ export class TabService {
                      <a href="#" class="tab-link-active tab-link" aria-current="page">
                        Interview
 
-                       <span class="badge-primary badge-small ml-2">4</span>
+                       <span class="badge-info badge-small ml-2">4</span>
                      </a>
 
                      <a href="#" class="border-transparent tab-link-inactive tab-link"> Offer </a>

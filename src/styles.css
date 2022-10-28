@@ -58,6 +58,17 @@
     --color-neutral-800: 32 39 42;
     --color-neutral-900: 16 19 21;
 
+    --color-info-50: 231 240 246;
+    --color-info-100: 207 225 236;
+    --color-info-200: 183 210 227;
+    --color-info-300: 159 195 218;
+    --color-info-400: 135 180 209;
+    --color-info-500: 110 164 199;
+    --color-info-600: 86 149 190;
+    --color-info-700: 62 134 181;
+    --color-info-800: 38 119 171;
+    --color-info-900: 14 104 162;
+
     --color-green-50: 236 249 235;
     --color-green-100: 216 243 215;
     --color-green-200: 178 231 175;
@@ -120,17 +131,6 @@
       --color-primary-900: 2 19 33;
         
     
-        --color-neutral-50: 241 242 243;
-        --color-neutral-100: 217 221 223;
-        --color-neutral-200: 180 187 190;
-        --color-neutral-300: 142 152 158;
-        --color-neutral-400: 105 118 125;
-        --color-neutral-500: 67 84 93;
-        --color-neutral-600: 54 67 74;
-        --color-neutral-700: 40 50 56;
-        --color-neutral-800: 27 34 37;
-        --color-neutral-900: 13 17 19;
-
         --color-neutral-50: 241 242 243;
         --color-neutral-100: 217 221 223;
         --color-neutral-200: 180 187 190;

@@ -23,7 +23,7 @@ export class SelectMenuServices {
 
         {
           id: "select_2",
-          title: "Simple custom selected",
+          title: "Custom",
           code: `
           <div class="form-control">
             <label id="listbox-label" class="label"> Assigned to </label>

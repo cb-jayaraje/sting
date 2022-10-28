@@ -1,86 +1,78 @@
 module.exports = Alert = (styles) => ({
     
     '.alert': {
-        "@apply rounded-md  p-4": {},
+        "@apply rounded-md p-4 border cb-text-copy-regular": {},
+    }, 
+    '.alert div:first-child': {
+        "@apply flex items-start gap-3": {},
     },
-
-    '.alert .title': {
-        "@apply text-sm font-medium": {},
+    '.alert div:nth-child(2)': {
+        "@apply space-y-1.5 pb-0.5": {},
     },
-    '.alert .description': {
-        "@apply mt-2 text-sm": {},
+    '.alert h3': {
+        "@apply cb-text-h6": {},
     },
-    '.alert .description-only': {
-        "@apply text-sm": {},
-    },
-
-    '.alert .alert-ul': {
+    '.alert ul': {
         "@apply list-disc pl-5 space-y-1": {},
     },
-
-    '.alert .alert-btn': {
-        "@apply inline-flex px-2 py-1.5 rounded-md text-sm font-medium focus:outline-none focus:ring-2 focus:ring-offset-2": {},
+    '.alert svg': {
+        "@apply flex-shrink-0 w-5 h-5": {},
     },
-    
-
-    '.alert .alert-a': {
-        "@apply whitespace-nowrap font-medium": {},
+    '.alert .actions': {
+        "@apply flex gap-4 pt-2": {},
+    },
+    '.alert button.link, .alert a': {
+        "@apply underline font-medium": {},
     },
 
-    '.accent-border': {
-        "@apply border-l-4": {},
+
+    //info
+
+    '.alert-info': {
+        "@apply bg-info-50 border-info-200": {},
+    },
+    '.alert-info svg': {
+        "@apply text-info-600": {},
+    },
+    '.alert-info .link, .alert-info a': {
+        "@apply text-info-900": {},
     },
 
 
     //warning
 
     '.alert-warning': {
-        "@apply bg-orange-50": {},
-    },
-    '.alert-warning .content': {
-        "@apply text-neutral-800":{}
+        "@apply bg-orange-50 border-orange-200": {},
     },
     '.alert-warning svg': {
         "@apply text-orange-600": {},
     },
-    '.alert-warning .title': {
-        "@apply text-copy font-bold text-neutral-800": {},
-    },
-    '.alert-warning .description': {
-        "@apply text-neutral-700": {},
+    '.alert-warning .link': {
+        "@apply text-orange-900": {},
     },
 
     //danger
 
     '.alert-danger': {
-        "@apply bg-red-100 text-neutral-700": {},
+        "@apply bg-red-100 border-red-200": {},
     },
     '.alert-danger svg': {
         "@apply text-red-600": {},
     },
-    '.alert-danger .title': {
-        "@apply text-copy font-bold text-neutral-800": {},
-    },
-    '.alert-danger .description': {
-        "@apply text-neutral-700": {},
+    '.alert-danger .link': {
+        "@apply text-red-900": {},
     },
 
     //success
 
     '.alert-success': {
-        "@apply bg-green-50 text-neutral-700": {},
+        "@apply bg-green-50 border-green-200": {},
     },
     '.alert-success svg': {
         "@apply text-green-600": {},
     },
-    '.alert-success .title': {
-        "@apply text-copy font-bold text-neutral-800": {},
-    },
-    '.alert-success .description': {
-        "@apply text-neutral-700": {},
-    },
-    '.alert .alert-btn-success': {
-        "@apply font-medium underline text-green-900 ring-offset-green-100": {},
+    '.alert-success .link': {
+        "@apply text-green-900": {},
     },
     
     

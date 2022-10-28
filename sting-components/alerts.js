@@ -12,6 +12,9 @@ module.exports = Alert = (styles) => ({
     '.alert h3': {
         "@apply cb-text-h6": {},
     },
+    '.alert p': {
+        "@apply max-w-xl": {},
+    },
     '.alert ul': {
         "@apply list-disc pl-5 space-y-1": {},
     },

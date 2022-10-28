@@ -26,6 +26,10 @@ module.exports = Button = (styles) => ({
         '@apply text-white border-0 !bg-primary-900 hover:!bg-primary-900 active:!bg-primary-600 focus:ring-primary-600 border-primary-500 text-white': {},
     },
 
+    '.theme-leap .btn-primary': {
+        "@apply text-white border-0  !bg-primary-400 hover:shadow active:!bg-primary-600 focus:ring-primary-600 border-primary-500 text-white": {},
+    },
+
     '.btn-primary-small': {
         '@apply text-white border-0 !bg-primary-500 hover:!bg-primary-600 active:!bg-primary-600 focus:ring-primary-600 border-primary-500 text-white': {},
     },
@@ -36,6 +40,9 @@ module.exports = Button = (styles) => ({
 
     '.theme-sting .btn-secondary': {
         '@apply text-primary-800 !bg-primary-50 hover:!bg-primary-100 active:!bg-primary-50 focus:ring-primary-500 border border-transparent hover:text-primary-800 focus:outline-none': {},
+    },
+    '.theme-leap .btn-secondary': {
+        "@apply text-neutral-900 bg-gradient-to-b from-white to-neutral-100  hover:shadow active:!bg-primary-50 focus:ring-primary-500 border border-neutral-400 hover:text-primary-800 focus:outline-none": {},
     },
 
     '.btn-brand': {

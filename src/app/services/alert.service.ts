@@ -69,7 +69,7 @@ export class AlertService {
             `
          },
          {
-            "id": "alert_5",
+            "id": "alert_4",
              "title": "With inline link",
              "code": `
              <div class="alert alert-info">
@@ -85,7 +85,7 @@ export class AlertService {
           `
          },
          {
-            "id": "alert_6",
+            "id": "alert_5",
              "title": "With dismiss button",
              "code": `
              <div class="alert alert-success">

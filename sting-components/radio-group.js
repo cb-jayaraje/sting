@@ -15,7 +15,7 @@ module.exports = RadioGroup = (styles) => ({
         '@apply focus:ring-info-800 h-4 w-4 text-info-800 border-neutral-400': {}
     },
     '.radio-label': {
-        '@apply ml-3 block text-sm font-medium text-neutral-700 hover:text-neutral-800 cursor-pointer leading-tight': {}
+        '@apply ml-3 block cb-text-copy-regular font-medium hover:text-neutral-800 cursor-pointer leading-tight': {}
     },
     '.radio-label.with-info span:first-of-type, .radio-label.with-info-inline span:first-of-type': {
         '@apply font-semibold': {}

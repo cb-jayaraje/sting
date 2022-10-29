@@ -7,27 +7,25 @@ export class RadioGroupService {
       id: 'radio_1',
       title: 'Simple list',
       code: `      
-      <div class="form-control">
+      <div class="form-control radio-group">
                 
-      <label class="cb-text-h6">Notifications</label>
-      <p class="cb-text-copy-small">How do you prefer to receive notifications?</p>
+      <h3 class="cb-text-h6">Notifications</h3>
+      <p>How do you prefer to receive notifications?</p>
 
 
       <fieldset class="pt-4">
         <legend class="sr-only">Notification method</legend>
-        <div class="space-y-4">
-          <div class="flex items-center">
-            <input id="email"  name="notification-method" type="radio" checked class="radio">
+        <div class="radio-list">
+          <div>
+            <input id="email"  name="notification-method" type="radio" checked class="radio-input">
             <label for="email" class="radio-label"> Email </label>
           </div>
-    
-          <div class="flex items-center">
-            <input id="sms" name="notification-method" type="radio" class="radio">
+          <div>
+            <input id="sms" name="notification-method" type="radio" class="radio-input">
             <label for="sms" class="radio-label"> Phone (SMS) </label>
           </div>
-    
-          <div class="flex items-center">
-            <input id="push" name="notification-method" type="radio" class="radio">
+          <div>
+            <input id="push" name="notification-method" type="radio" class="radio-input">
             <label for="push" class="radio-label"> Push notification </label>
           </div>
         </div>
@@ -40,26 +38,24 @@ export class RadioGroupService {
       id: 'radio_2',
       title: 'Simple inline list',
       code: `      
-      <div class="form-control">
+      <div class="form-control radio-group">
             
-      <label class="cb-text-h6">Notifications</label>
-      <p class="cb-text-copy-small">How do you prefer to receive notifications?</p>
+      <h3 class="cb-text-h6">Notifications</h3>
+      <p>How do you prefer to receive notifications?</p>
 
       <fieldset class="pt-4">
         <legend class="sr-only">Notification method</legend>
-        <div class="space-y-4 sm:flex sm:items-center sm:space-y-0 sm:space-x-10">
-          <div class="flex items-center">
-            <input id="email2" name="notification-method" type="radio" checked class="radio">
+        <div class="radio-list-inline">
+          <div>
+            <input id="email2" name="notification-method" type="radio" checked class="radio-input">
             <label for="email2" class="radio-label"> Email </label>
           </div>
-    
-          <div class="flex items-center">
-            <input id="sms2" name="notification-method" type="radio" class="radio">
+          <div>
+            <input id="sms2" name="notification-method" type="radio" class="radio-input">
             <label for="sms2" class="radio-label"> Phone (SMS) </label>
           </div>
-    
-          <div class="flex items-center">
-            <input id="push2" name="notification-method" type="radio" class="radio">
+          <div>
+            <input id="push2" name="notification-method" type="radio" class="radio-input">
             <label for="push2" class="radio-label"> Push notification </label>
           </div>
         </div>
@@ -72,43 +68,40 @@ export class RadioGroupService {
       id: 'radio_3',
       title: 'List with description',
       code: `      
-      <div class="form-control">
+      <div class="form-control radio-group">
             
       <fieldset>
           <legend class="sr-only">Plan</legend>
-          <div class="space-y-4">
+          <div class="radio-list">
 
-            <div class="relative flex items-start">
-              <div class="flex items-center h-5">
-                <input id="small" aria-describedby="small-description" name="plan" type="radio" checked class="radio">
-              </div>
-              <div class="ml-3 text-sm">
-                <label for="small" class="ml-0 radio-label !font-semibold">Small</label>
-                <p id="small-description" class="cb-text-copy-small">4 GB RAM / 2 CPUS / 80 GB SSD Storage</p>
-
-              </div>
+            <div>
+                <input id="small" aria-describedby="small-description" name="plan" type="radio" checked class="radio-input">
+                <div>
+                  <label for="small" class="radio-label with-info">
+                    <span>Small</span> 
+                    <span>4 GB RAM / 2 CPUS / 80 GB SSD Storage</span>
+                  </label>
+                </div>
             </div>
         
-            <div class="relative flex items-start">
-              <div class="flex items-center h-5">
-                <input id="medium" aria-describedby="medium-description" name="plan" type="radio" class="radio">
-              </div>
-              <div class="ml-3 text-sm">
-                <label for="medium" class="ml-0 radio-label !font-semibold">Medium</label>
-                <p id="medium-description" class="cb-text-copy-small">8 GB RAM / 4 CPUS / 160 GB SSD Storage</p>
-
-              </div>
+            <div>
+                <input id="medium" aria-describedby="medium-description" name="plan" type="radio" class="radio-input">
+                <div>
+                  <label for="medium" class="radio-label with-info">
+                    <span>Medium</span> 
+                    <span>8 GB RAM / 4 CPUS / 160 GB SSD Storage</span>
+                  </label>
+                </div>
             </div>
         
-            <div class="relative flex items-start">
-              <div class="flex items-center h-5">
-                <input id="large" aria-describedby="large-description" name="plan" type="radio" class="radio">
-              </div>
-              <div class="ml-3 text-sm">
-                <label for="large" class="ml-0 radio-label !font-semibold">Large</label>
-                <p id="large-description" class="cb-text-copy-small">16 GB RAM / 8 CPUS / 320 GB SSD Storage</p>
-
-              </div>
+            <div>
+                <input id="large" aria-describedby="large-description" name="plan" type="radio" class="radio-input">
+                <div>
+                  <label for="large" class="radio-label with-info">
+                    <span>Large</span> 
+                    <span>16 GB RAM / 8 CPUS / 320 GB SSD Storage</span>
+                  </label>
+                </div>
             </div>
 
           </div>
@@ -122,41 +115,42 @@ export class RadioGroupService {
       id: 'radio_4',
       title: 'List with inline description',
       code: `      
-      <div class="form-control">
+      <div class="form-control radio-group">
             
       <fieldset>
           <legend class="sr-only">Plan</legend>
-          <div class="space-y-2">
+          <div class="radio-list">
 
-            <div class="relative flex items-center">
-              <div class="flex items-center h-5">
-                <input id="small2" aria-describedby="small-description" name="plan" type="radio" checked class="radio">
-              </div>
-              <div class="ml-3 space-x-1">
-                <label for="small2" class="radio-inline__label label !font-semibold cursor-pointer">Small</label>
-                <span id="small-description" class="cb-text-copy-small">4 GB RAM / 2 CPUS / 80 GB SSD Storage</span>
-              </div>
+            <div>
+                <input id="small02" name="plan02" type="radio" checked class="radio-input">
+                <div>
+                  <label for="small02" class="radio-label with-info-inline">
+                    <span>Small</span> 
+                    <span>4 GB RAM / 2 CPUS / 80 GB SSD Storage</span>
+                  </label>
+                </div>
             </div>
         
-            <div class="relative flex items-center">
-              <div class="flex items-center h-5">
-                <input id="medium2" aria-describedby="medium-description" name="plan" type="radio" class="radio">
-              </div>
-              <div class="ml-3 space-x-1">
-                <label for="medium2" class="radio-inline__label label !font-semibold cursor-pointer">Medium</label>
-                <span id="medium-description" class="cb-text-copy-small">8 GB RAM / 4 CPUS / 160 GB SSD Storage</span>
-              </div>
+            <div>
+                <input id="medium02" name="plan02" type="radio" class="radio-input">
+                <div>
+                  <label for="medium02" class="radio-label with-info-inline">
+                    <span>Medium</span> 
+                    <span>8 GB RAM / 4 CPUS / 160 GB SSD Storage</span>
+                  </label>
+                </div>
             </div>
         
-            <div class="relative flex items-center">
-              <div class="flex items-center h-5">
-                <input id="large2" aria-describedby="large-description" name="plan" type="radio" class="radio">
-              </div>
-              <div class="ml-3 space-x-1">
-                <label for="large2" class="radio-inline__label label !font-semibold cursor-pointer">Large</label>
-                <span id="large-description" class="cb-text-copy-small">16 GB RAM / 8 CPUS / 320 GB SSD Storage</span>
-              </div>
+            <div>
+                <input id="large02" name="plan02" type="radio" class="radio-input">
+                <div>
+                  <label for="large02" class="radio-label with-info-inline">
+                    <span>Large</span> 
+                    <span>16 GB RAM / 8 CPUS / 320 GB SSD Storage</span>
+                  </label>
+                </div>
             </div>
+
           </div>
         </fieldset>
 
@@ -173,38 +167,38 @@ export class RadioGroupService {
   //     <div class="form-control">
           
   //         <h2 class="text-lg leading-6 font-medium text-gray-900">Transfer funds</h2>
-  //         <p class="mt-1 text-sm text-gray-500">Transfer your balance to your bank account.</p>
+  //         <p class="mt-1 text-gray-500">Transfer your balance to your bank account.</p>
   //         <fieldset class="mt-2">
   //           <legend class="sr-only">Bank account</legend>
   //           <div class=" divide-y divide-gray-200">
                 
   //             <div class="relative flex items-start py-4">
-  //               <div class="min-w-0 flex-1 text-sm">
+  //               <div class="min-w-0 flex-1">
   //                 <label for="account-checking" class="ml-0 radio-label">Checking</label>
   //                 <p id="account-checking-description" class="text-gray-500">CIBC ••••6610</p>
   //               </div>
   //               <div class="ml-3 flex items-center h-5">
-  //                 <input id="account-checking" aria-describedby="account-checking-description" name="account" type="radio" checked class="radio">
+  //                 <input id="account-checking" aria-describedby="account-checking-description" name="account" type="radio" checked class="radio-input">
   //               </div>
   //             </div>
         
   //             <div class="relative flex items-start py-4">
-  //               <div class="min-w-0 flex-1 text-sm">
+  //               <div class="min-w-0 flex-1">
   //                 <label for="account-savings" class="ml-0 radio-label">Savings</label>
   //                 <p id="account-savings-description" class="text-gray-500">Bank of America ••••0149</p>
   //               </div>
   //               <div class="ml-3 flex items-center h-5">
-  //                 <input id="account-savings" aria-describedby="account-savings-description" name="account" type="radio" class="radio">
+  //                 <input id="account-savings" aria-describedby="account-savings-description" name="account" type="radio" class="radio-input">
   //               </div>
   //             </div>
         
   //             <div class="relative flex items-start py-4">
-  //               <div class="min-w-0 flex-1 text-sm">
+  //               <div class="min-w-0 flex-1">
   //                 <label for="account-mastercard" class="ml-0 radio-label">Mastercard</label>
   //                 <p id="account-mastercard-description" class="text-gray-500">Capital One ••••7877</p>
   //               </div>
   //               <div class="ml-3 flex items-center h-5">
-  //                 <input id="account-mastercard" aria-describedby="account-mastercard-description" name="account" type="radio" class="radio">
+  //                 <input id="account-mastercard" aria-describedby="account-mastercard-description" name="account" type="radio" class="radio-input">
   //               </div>
   //             </div>
   //           </div>
@@ -226,56 +220,56 @@ export class RadioGroupService {
   //             <legend class="text-lg font-medium text-gray-900">Side</legend>
   //             <div class="mt-4 border-t border-b border-gray-200 divide-y divide-gray-200">
   //               <div class="relative flex items-start py-4">
-  //                 <div class="min-w-0 flex-1 text-sm">
+  //                 <div class="min-w-0 flex-1">
   //                   <label for="side-null" class="ml-0 radio-label">None</label>
   //                 </div>
   //                 <div class="ml-3 flex items-center h-5">
-  //                   <input id="side-null" name="plan" type="radio" checked class="radio">
+  //                   <input id="side-null" name="plan" type="radio" checked class="radio-input">
   //                 </div>
   //               </div>
             
   //               <div class="relative flex items-start py-4">
-  //                 <div class="min-w-0 flex-1 text-sm">
+  //                 <div class="min-w-0 flex-1">
   //                   <label for="side-1" class="ml-0 radio-label">Baked beans</label>
   //                 </div>
   //                 <div class="ml-3 flex items-center h-5">
-  //                   <input id="side-1" name="plan" type="radio" class="radio">
+  //                   <input id="side-1" name="plan" type="radio" class="radio-input">
   //                 </div>
   //               </div>
             
   //               <div class="relative flex items-start py-4">
-  //                 <div class="min-w-0 flex-1 text-sm">
+  //                 <div class="min-w-0 flex-1">
   //                   <label for="side-2" class="ml-0 radio-label">Coleslaw</label>
   //                 </div>
   //                 <div class="ml-3 flex items-center h-5">
-  //                   <input id="side-2" name="plan" type="radio" class="radio">
+  //                   <input id="side-2" name="plan" type="radio" class="radio-input">
   //                 </div>
   //               </div>
             
   //               <div class="relative flex items-start py-4">
-  //                 <div class="min-w-0 flex-1 text-sm">
+  //                 <div class="min-w-0 flex-1">
   //                   <label for="side-3" class="ml-0 radio-label">French fries</label>
   //                 </div>
   //                 <div class="ml-3 flex items-center h-5">
-  //                   <input id="side-3" name="plan" type="radio" class="radio">
+  //                   <input id="side-3" name="plan" type="radio" class="radio-input">
   //                 </div>
   //               </div>
             
   //               <div class="relative flex items-start py-4">
-  //                 <div class="min-w-0 flex-1 text-sm">
+  //                 <div class="min-w-0 flex-1">
   //                   <label for="side-4" class="ml-0 radio-label">Garden salad</label>
   //                 </div>
   //                 <div class="ml-3 flex items-center h-5">
-  //                   <input id="side-4" name="plan" type="radio" class="radio">y
+  //                   <input id="side-4" name="plan" type="radio" class="radio-input">y
   //                 </div>
   //               </div>
             
   //               <div class="relative flex items-start py-4">
-  //                 <div class="min-w-0 flex-1 text-sm">
+  //                 <div class="min-w-0 flex-1">
   //                   <label for="side-5" class="ml-0 radio-label">Mashed potatoes</label>
   //                 </div>
   //                 <div class="ml-3 flex items-center h-5">
-  //                   <input id="side-5" name="plan" type="radio" class="radio">
+  //                   <input id="side-5" name="plan" type="radio" class="radio-input">
   //                 </div>
   //               </div>
   //             </div>
@@ -292,7 +286,7 @@ export class RadioGroupService {
   //     <div class="form-control">
             
   //     <fieldset>
-  //         <legend class="block text-sm font-medium text-gray-700">Choose a label color</legend>
+  //         <legend class="block font-medium text-gray-700">Choose a label color</legend>
   //         <div class="mt-4 flex items-center space-x-3">
   //           <!--
   //             Active and Checked: "ring ring-offset-1"
@@ -662,9 +656,9 @@ export class RadioGroupService {
   //                 <input type="radio" name="privacy-setting" value="Public access" class="h-4 w-4 mt-0.5 cursor-pointer shrink-0 text-primary-600 border-gray-300 focus:ring-primary-500" aria-labelledby="privacy-setting-0-label" aria-describedby="privacy-setting-0-description">
   //                 <span class="ml-3 flex flex-col">
   //                   <!-- Checked: "text-primary-900", Not Checked: "text-gray-900" -->
-  //                   <span id="privacy-setting-0-label" class="block text-sm font-medium radio-table__label--checked"> Public access </span>
+  //                   <span id="privacy-setting-0-label" class="block font-medium radio-table__label--checked"> Public access </span>
   //                   <!-- Checked: "text-primary-700", Not Checked: "text-gray-500" -->
-  //                   <span id="privacy-setting-0-description" class="block text-sm radio-table__label--checked"> This project would be available to anyone who has the link </span>
+  //                   <span id="privacy-setting-0-description" class="block radio-table__label--checked"> This project would be available to anyone who has the link </span>
   //                 </span>
   //               </label>
             
@@ -673,9 +667,9 @@ export class RadioGroupService {
   //                 <input type="radio" name="privacy-setting" value="Private to Project Members" class="h-4 w-4 mt-0.5 cursor-pointer shrink-0 text-primary-600 border-gray-300 focus:ring-primary-500" aria-labelledby="privacy-setting-1-label" aria-describedby="privacy-setting-1-description">
   //                 <span class="ml-3 flex flex-col">
   //                   <!-- Checked: "text-primary-900", Not Checked: "text-gray-900" -->
-  //                   <span id="privacy-setting-1-label" class="block text-sm font-medium"> Private to Project Members </span>
+  //                   <span id="privacy-setting-1-label" class="block font-medium"> Private to Project Members </span>
   //                   <!-- Checked: "text-primary-700", Not Checked: "text-gray-500" -->
-  //                   <span id="privacy-setting-1-description" class="block text-sm"> Only members of this project would be able to access </span>
+  //                   <span id="privacy-setting-1-description" class="block"> Only members of this project would be able to access </span>
   //                 </span>
   //               </label>
             
@@ -684,9 +678,9 @@ export class RadioGroupService {
   //                 <input type="radio" name="privacy-setting" value="Private to you" class="h-4 w-4 mt-0.5 cursor-pointer shrink-0 text-primary-600 border-gray-300 focus:ring-primary-500" aria-labelledby="privacy-setting-2-label" aria-describedby="privacy-setting-2-description">
   //                 <span class="ml-3 flex flex-col">
   //                   <!-- Checked: "text-primary-900", Not Checked: "text-gray-900" -->
-  //                   <span id="privacy-setting-2-label" class="block text-sm font-medium"> Private to you </span>
+  //                   <span id="privacy-setting-2-label" class="block font-medium"> Private to you </span>
   //                   <!-- Checked: "text-primary-700", Not Checked: "text-gray-500" -->
-  //                   <span id="privacy-setting-2-description" class="block text-sm"> You are the only one able to access this project </span>
+  //                   <span id="privacy-setting-2-description" class="block"> You are the only one able to access this project </span>
   //                 </span>
   //               </label>
   //             </div>
@@ -709,7 +703,7 @@ export class RadioGroupService {
   //             <div class="relative bg-white rounded-md -space-y-px">
   //               <!-- Checked: "bg-primary-50 border-primary-200 z-10", Not Checked: "border-gray-200" -->
   //               <label class="rounded-tl-md rounded-tr-md radio-table radio-table--checked">
-  //                 <span class="flex items-center text-sm">
+  //                 <span class="flex items-center">
   //                   <input type="radio" name="pricing-plan" value="Startup" class="radio-table__input" aria-labelledby="pricing-plans-0-label" aria-describedby="pricing-plans-0-description-0 pricing-plans-0-description-1">
   //                   <!-- Checked: "text-primary-900", Not Checked: "text-gray-900" -->
   //                   <span id="pricing-plans-0-label" class="radio-table__label radio-table__label--checked">Startup</span>
@@ -726,7 +720,7 @@ export class RadioGroupService {
             
   //               <!-- Checked: "bg-primary-50 border-primary-200 z-10", Not Checked: "border-gray-200" -->
   //               <label class="radio-table">
-  //                 <span class="flex items-center text-sm">
+  //                 <span class="flex items-center">
   //                   <input type="radio" name="pricing-plan" value="Business" class="radio-table__input" aria-labelledby="pricing-plans-1-label" aria-describedby="pricing-plans-1-description-0 pricing-plans-1-description-1">
   //                   <!-- Checked: "text-primary-900", Not Checked: "text-gray-900" -->
   //                   <span id="pricing-plans-1-label" class="radio-table__label">Business</span>
@@ -743,7 +737,7 @@ export class RadioGroupService {
             
   //               <!-- Checked: "bg-primary-50 border-primary-200 z-10", Not Checked: "border-gray-200" -->
   //               <label class="rounded-bl-md rounded-br-md radio-table">
-  //                 <span class="flex items-center text-sm">
+  //                 <span class="flex items-center">
   //                   <input type="radio" name="pricing-plan" value="Enterprise" class="radio-table__input" aria-labelledby="pricing-plans-2-label" aria-describedby="pricing-plans-2-description-0 pricing-plans-2-description-1">
   //                   <!-- Checked: "text-primary-900", Not Checked: "text-gray-900" -->
   //                   <span id="pricing-plans-2-label" class="radio-table__label">Enterprise</span>

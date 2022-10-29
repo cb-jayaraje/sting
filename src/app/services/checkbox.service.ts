@@ -12,26 +12,31 @@ export class CheckboxService {
             `
             <!-- Checkbox list with description -->
 
-            <div class="form-control">
+            <div class="form-control checkbox-group">
                 
-                <fieldset class="space-y-4">
+                <fieldset>
                     <legend class="sr-only">Notifications</legend>
+                    <div class="checkbox-list">
 
-                      <div class="flex items-center gap-3">
-                        <input id="ckb01" aria-describedby="comments-description" name="comments" checked type="checkbox" class="checkbox">
-                        <label for="ckb01" class="label cursor-pointer">Get notified when someones posts a comment on a posting.</label>
+                      <div>
+                        <input id="ckb01" name="comments" checked type="checkbox" class="checkbox">
+                        <label for="ckb01" class="checkbox-label">
+                          Get notified when someones posts a comment on a posting.</label>
                       </div>
 
-                      <div class="flex items-center gap-3">
-                        <input id="ckb02" aria-describedby="comments-description" name="comments" type="checkbox" class="checkbox">
-                        <label for="ckb02" class="label cursor-pointer">Get notified when a candidate applies for a job.</label>
+                      <div>
+                        <input id="ckb02" name="comments" type="checkbox" class="checkbox">
+                        <label for="ckb02" class="checkbox-label">
+                          Get notified when a candidate applies for a job.</label>
                       </div>
                       
-                      <div class="flex items-center gap-3 opacity-30">
-                        <input id="ckb03" aria-describedby="comments-description" name="comments" type="checkbox" class="checkbox" disabled>
-                        <label for="ckb03" class="label cursor-not-allowed">Get notified when a candidate accepts or rejects an offer.</label>
+                      <div class="opacity-30">
+                        <input id="ckb03" name="comments" type="checkbox" class="checkbox" disabled>
+                        <label for="ckb03" class="checkbox-label cursor-not-allowed">
+                          Get notified when a candidate accepts or rejects an offer.</label>
                       </div>
 
+                    </div>
                   </fieldset>
 
             </div>
@@ -44,35 +49,43 @@ export class CheckboxService {
                 `
                 <!-- Checkbox list with description -->
 
-                <div class="form-control">
+                <div class="form-control checkbox-group">
                     
-                    <fieldset class="space-y-4">
-                        <legend class="sr-only">Notifications</legend>
+                    <fieldset>
+                      <legend class="sr-only">Notifications</legend>
+                      <div class="checkbox-list">
     
-                        <div class="relative flex items-start gap-3">
-                            <input id="comments" aria-describedby="comments-description" name="comments" checked type="checkbox" class="checkbox">
-                            <div class="-mt-1">
-                              <label for="comments" class="label !font-semibold cursor-pointer">Comments</label>
-                              <p id="comments-description" class="cb-text-copy-small">Get notified when someones posts a comment on a posting.</p>
+                        <div>
+                            <input id="comments" name="comments" checked type="checkbox" class="checkbox">
+                            <div>
+                              <label for="comments" class="checkbox-label with-info">
+                                <span>Comments</span> 
+                                <span>Get notified when someones posts a comment on a posting.</span>
+                              </label>
                             </div>
                         </div>
     
-                        <div class="relative flex items-start gap-3">
-                            <input id="candidates" aria-describedby="candidates-description" name="candidates" type="checkbox" class="checkbox">
-                            <div class="-mt-1">
-                              <label for="candidates" class="label !font-semibold cursor-pointer">Candidates</label>
-                              <p id="candidates-description" class="cb-text-copy-small">Get notified when a candidate applies for a job.</p>
+                        <div>
+                            <input id="candidates" name="candidates" type="checkbox" class="checkbox">
+                            <div>
+                              <label for="candidates" class="checkbox-label with-info">
+                                <span>Candidates</span> 
+                                <span>Get notified when a candidate applies for a job.</span>
+                              </label>
                             </div>
                         </div>
     
-                        <div class="relative flex items-start gap-3">
-                            <input id="offers" aria-describedby="offers-description" name="offers" type="checkbox" class="checkbox">
-                            <div class="-mt-1">
-                              <label for="offers" class="label !font-semibold cursor-pointer">Offers</label>
-                              <p id="offers-description" class="cb-text-copy-small">Get notified when a candidate accepts or rejects an offer.</p>
+                        <div>
+                            <input id="offers" name="offers" type="checkbox" class="checkbox">
+                            <div>
+                              <label for="offers" class="checkbox-label with-info">
+                                <span>Offers</span>
+                                <span>Get notified when a candidate accepts or rejects an offer.</span>
+                              </label>
                             </div>
                         </div>
     
+                      </div>
                       </fieldset>
     
                 </div>
@@ -85,29 +98,37 @@ export class CheckboxService {
                 `
                 <!-- Checkbox list with inline description -->
 
-                <div class="form-control">
+                <div class="form-control checkbox-group">
                     
-                    <fieldset class="space-y-4">
-                        <legend class="sr-only">Notifications</legend>
+                  <fieldset>
+                  <legend class="sr-only">Notifications</legend>
+                  <div class="checkbox-list">
                         
-                        <div class="flex items-center gap-3">
-                            <input id="comments2" aria-describedby="comments-description" name="comments" type="checkbox" class="checkbox">
-                            <label for="comments2" class="label !font-semibold cursor-pointer">New comments
-                            <span class="cb-text-copy-regular">so you always know what's happening.</span></label>
+                        <div>
+                            <input id="comments2" name="comments" type="checkbox" class="checkbox">
+                            <label for="comments2" class="checkbox-label with-info-inline">
+                              <span>New comments</span>
+                              <span>so you always know what's happening.</span>
+                            </label>
                         </div>
     
-                        <div class="flex items-center gap-3">
-                            <input id="candidates2" aria-describedby="candidates-description" name="candidates" type="checkbox" class="checkbox">
-                            <label for="candidates2" class="label !font-semibold cursor-pointer">New candidates
-                            <span class="cb-text-copy-regular">who apply for any open postings.</span></label>
+                        <div>
+                            <input id="candidates2" name="candidates" type="checkbox" class="checkbox">
+                            <label for="candidates2" class="checkbox-label with-info-inline">
+                              <span>New candidates</span>
+                              <span>who apply for any open postings.</span>
+                            </label>
                         </div>
     
-                        <div class="flex items-center gap-3">
-                            <input id="offers2" aria-describedby="offers-description" name="offers" type="checkbox" class="checkbox">
-                            <label for="offers2" class="label !font-semibold cursor-pointer">Offers
-                            <span class="cb-text-copy-regular">when they are accepted or rejected by candidates.</span></label>
+                        <div>
+                            <input id="offers2" name="offers" type="checkbox" class="checkbox">
+                            <label for="offers2" class="checkbox-label with-info-inline">
+                              <span>Offers</span>
+                              <span>when they are accepted or rejected by candidates.</span>
+                            </label>
                         </div>
     
+                      </div>
                       </fieldset>
     
                 </div>
@@ -120,43 +141,34 @@ export class CheckboxService {
                 `
                 <!-- List with checkbox on right -->
 
-                <div class="form-control max-w-lg">
+                <div class="form-control checkbox-group max-w-lg">
                     
-                    <fieldset class="border-t border-b border-neutral-200">
+                    <fieldset>
                         <legend class="sr-only">Notifications</legend>
-                        <div class="divide-y divide-neutral-200">
+                        <div class="checkbox-list boxed right">
     
-                          <div class="relative flex items-start py-4">
-                            <div class="min-w-0 flex-1 text-sm">
-                              <label for="comments3" class="label !font-semibold cursor-pointer">Comments</label>
-                              <p id="comments-description" class="cb-text-copy-small">Get notified when someones posts a comment on a posting.</p>
-
-                            </div>
-                            <div class="ml-3 flex items-center h-5">
-                              <input id="comments3" aria-describedby="comments-description" name="comments" type="checkbox" class="checkbox">
-                            </div>
+                          <div>
+                              <label for="comments3" class="checkbox-label with-info">
+                                <span>Comments</span>
+                                <span>Get notified when someones posts a comment on a posting.</span>
+                              </label>
+                              <input id="comments3" name="comments" type="checkbox" class="checkbox">
                           </div>
     
-                          <div class="relative flex items-start py-4">
-                            <div class="min-w-0 flex-1 text-sm">
-                              <label for="candidates3" class="label !font-semibold cursor-pointer">Candidates</label>
-                              <p id="candidates-description" class="cb-text-copy-small">Get notified when a candidate applies for a job.</p>
-
-                            </div>
-                            <div class="ml-3 flex items-center h-5">
-                              <input id="candidates3" aria-describedby="candidates-description" name="candidates" type="checkbox" class="checkbox">
-                            </div>
+                          <div>
+                              <label for="candidates3" class="checkbox-label with-info">
+                                <span>Candidates</span>
+                                <span>Get notified when a candidate applies for a job.</span>
+                              </label>
+                              <input id="candidates3" name="candidates" type="checkbox" class="checkbox">
                           </div>
     
-                          <div class="relative flex items-start py-4">
-                            <div class="min-w-0 flex-1 text-sm">
-                              <label for="offers3" class="label !font-semibold cursor-pointer">Offers</label>
-                              <p id="offers-description" class="cb-text-copy-small">Get notified when a candidate accepts or rejects an offer.</p>
-
-                            </div>
-                            <div class="ml-3 flex items-center h-5">
-                              <input id="offers3" aria-describedby="offers-description" name="offers" type="checkbox" class="checkbox">
-                            </div>
+                          <div>
+                              <label for="offers3" class="checkbox-label with-info">
+                                <span>Offers</span>
+                                <span>Get notified when a candidate accepts or rejects an offer.</span>
+                              </label>
+                              <input id="offers3" name="offers" type="checkbox" class="checkbox">
                           </div>
     
                         </div>
@@ -172,28 +184,28 @@ export class CheckboxService {
                 `
                 <!-- Checkbox list with inline description -->
     
-                <div class="form-control max-w-lg">
+                <div class="form-control checkbox-group max-w-lg">
                     
                     <fieldset>
-                        <legend class="cb-text-h5 ">Members</legend>
-                        <div class="mt-4 border-t border-b border-gray-200 divide-y divide-gray-200">
+                        <legend class="cb-text-h5 mb-4">Members</legend>
+                        <div class="checkbox-list boxed right">
     
-                          <div class="relative flex items-center justify-between py-4">
+                          <div>
                               <label for="person-1" class="label select-none cursor-pointer">Annette Black</label>
                               <input id="person-1" name="person-1" type="checkbox" class="checkbox">
                           </div>
                       
-                          <div class="relative flex items-center justify-between py-4">
+                          <div>
                               <label for="person-2" class="label select-none cursor-pointer">Cody Fisher</label>
                               <input id="person-2" name="person-2" type="checkbox" class="checkbox">
                           </div>
                       
-                          <div class="relative flex items-center justify-between py-4">
+                          <div>
                               <label for="person-3" class="label select-none cursor-pointer">Courtney Henry</label>
                               <input id="person-3" name="person-3" type="checkbox" class="checkbox">
                           </div>
                       
-                          <div class="relative flex items-center justify-between py-4">
+                          <div>
                               <label for="person-4" class="label select-none cursor-pointer">Kathryn Murphy</label>
                               <input id="person-4" name="person-4" type="checkbox" class="checkbox">
                           </div>

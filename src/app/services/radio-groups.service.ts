@@ -9,30 +9,29 @@ export class RadioGroupService {
       code: `      
       <div class="form-control radio-group">
                 
-      <h3 class="cb-text-h6">Notifications</h3>
-      <p>How do you prefer to receive notifications?</p>
+        <h3 class="cb-text-h6">Notifications</h3>
+        <p>How do you prefer to receive notifications?</p>
 
+        <fieldset class="pt-4">
+          <legend class="sr-only">Notification method</legend>
+          <div class="radio-list">
+            <div>
+              <input id="email"  name="notification-method" type="radio" checked class="radio-input">
+              <label for="email" class="radio-label"> Email </label>
+            </div>
+            <div>
+              <input id="sms" name="notification-method" type="radio" class="radio-input">
+              <label for="sms" class="radio-label"> Phone (SMS) </label>
+            </div>
+            <div>
+              <input id="push" name="notification-method" type="radio" class="radio-input">
+              <label for="push" class="radio-label"> Push notification </label>
+            </div>
+          </div>
+        </fieldset>
 
-      <fieldset class="pt-4">
-        <legend class="sr-only">Notification method</legend>
-        <div class="radio-list">
-          <div>
-            <input id="email"  name="notification-method" type="radio" checked class="radio-input">
-            <label for="email" class="radio-label"> Email </label>
-          </div>
-          <div>
-            <input id="sms" name="notification-method" type="radio" class="radio-input">
-            <label for="sms" class="radio-label"> Phone (SMS) </label>
-          </div>
-          <div>
-            <input id="push" name="notification-method" type="radio" class="radio-input">
-            <label for="push" class="radio-label"> Push notification </label>
-          </div>
-        </div>
-      </fieldset>
-
-  </div>
-        `,
+      </div>
+      `,
     },
     {
       id: 'radio_2',
@@ -75,7 +74,7 @@ export class RadioGroupService {
           <div class="radio-list">
 
             <div>
-                <input id="small" aria-describedby="small-description" name="plan" type="radio" checked class="radio-input">
+                <input id="small" name="plan" type="radio" checked class="radio-input">
                 <div>
                   <label for="small" class="radio-label with-info">
                     <span>Small</span> 
@@ -85,7 +84,7 @@ export class RadioGroupService {
             </div>
         
             <div>
-                <input id="medium" aria-describedby="medium-description" name="plan" type="radio" class="radio-input">
+                <input id="medium" name="plan" type="radio" class="radio-input">
                 <div>
                   <label for="medium" class="radio-label with-info">
                     <span>Medium</span> 
@@ -95,7 +94,7 @@ export class RadioGroupService {
             </div>
         
             <div>
-                <input id="large" aria-describedby="large-description" name="plan" type="radio" class="radio-input">
+                <input id="large" name="plan" type="radio" class="radio-input">
                 <div>
                   <label for="large" class="radio-label with-info">
                     <span>Large</span> 

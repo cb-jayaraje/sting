@@ -10,17 +10,17 @@
 
 
 <app-common mainTitle="select_menus" [activeTab]="'preview'" [codePreview]="convertedDatas[1].code"
-  [codeHtml]="convertedDatas[1].code" [title]="convertedDatas[2].title" [PreviewHeight]="'h-96 m-h-full'">
+  [codeHtml]="convertedDatas[1].code" [title]="convertedDatas[1].title" [PreviewHeight]="'h-96 m-h-full'">
   <div class="preview-box !h-96">
     <div class="w-full max-w-xs mx-auto ">
 
       <div class="form-control dropDown" appToggleDropdown>
         <label id="listbox-label" class="label"> Assigned to </label>
-        <div class="mt-1 relative">
+        <div class="relative">
           <button class="select-button" aria-haspopup="listbox" aria-expanded="true" aria-labelledby="listbox-label">
-            <span class="block truncate"> Tom Cook </span>
+            <span> Tom Cook </span>
             <span class="select-button-icon-container">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
                 <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd" />
               </svg>              
             </span>
@@ -29,8 +29,8 @@
           <ul tabindex="-1" class="select-ul" role="listbox" aria-labelledby="listbox-label"
             aria-activedescendant="listbox-option-3">
 
-            <li class="group select-li" id="listbox-option-0" role="option" *ngFor="let data of optionData">
-              <span class="font-normal block truncate"> {{data}} </span>
+            <li id="listbox-option-0" role="option" *ngFor="let data of optionData">
+              <span> {{data}} </span>
             </li>
 
           </ul>
@@ -50,11 +50,11 @@
 
       <div class="form-control dropDown" appToggleDropdown>
         <label id="listbox-label" class="label"> Assigned to </label>
-        <div class="mt-1 relative">
+        <div class="relative">
           <button class="select-button" aria-haspopup="listbox" aria-expanded="true" aria-labelledby="listbox-label">
-            <span class="block truncate"> Tom Cook </span>
-            <span class="select-button-icon-container">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5">
+            <span> Tom Cook </span>
+            <span>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
                 <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd" />
               </svg>              
             </span>
@@ -63,11 +63,11 @@
           <ul tabindex="-1" class="select-ul" role="listbox" aria-labelledby="listbox-label"
             aria-activedescendant="listbox-option-3">
 
-            <li class="group" [ngClass]="data ==='Tom Cook'? 'select-li-selected ': 'select-li'" id="listbox-option-0"
+            <li [ngClass]="data ==='Tom Cook'? 'select-li-selected ': ''" id="listbox-option-0"
               role="option" *ngFor="let data of optionData">
-              <span class="font-normal block truncate"> {{data}} </span>
-              <span class="select-li-icon ">
-                <svg class="h-5 w-5" [ngClass]="data ==='Tom Cook'? 'block': 'hidden'"
+              <span> {{data}} </span>
+              <span>
+                <svg [ngClass]="data ==='Tom Cook'? 'block': 'hidden'"
                   xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
                   <path fill-rule="evenodd"
                     d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"

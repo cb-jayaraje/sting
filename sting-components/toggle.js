@@ -1,27 +1,30 @@
 module.exports = Toggle = (styles) => ({ 
 
-    '.toggle-group': {
-        '@apply w-full max-w-xl' : {}
+    '.form-control': {
+        '@apply w-full max-w-2xl' : {}
     },
-    '.toggle-group.reverse div:only-child': {
-        '@apply flex-row-reverse' : {}
+    '.toggle-group': {
+        '@apply w-full divide-y divide-neutral-200' : {}
     },
     '.toggle-group div.toggle': {
-        '@apply w-min' : {}
+        '@apply w-min -mt-1' : {}
     },
-    '.toggle-group div:only-child': {
-        '@apply flex items-center justify-between gap-6' : {}
+    '.toggle-group div.toggle-item': {
+        '@apply flex items-center justify-between gap-6 py-4' : {}
     },
-    '.toggle-group div:only-child div': {
+    '.toggle-group.reverse div.toggle-item': {
+        '@apply flex-row-reverse' : {}
+    },
+    '.toggle-group div.toggle-item div': {
         '@apply flex flex-grow flex-col cb-text-copy-regular' : {}
     },
-    '.toggle-group.inline div:only-child div': {
+    '.toggle-group.inline div.toggle-item div': {
         '@apply flex flex-grow flex-row gap-1 cb-text-copy-regular' : {}
     },
-    '.toggle-group div:only-child div:first-of-type': {
+    '.toggle-group div.toggle-item div:first-of-type': {
         '@apply w-full' : {}
     },
-    '.toggle-group div:only-child div span:first-of-type': {
+    '.toggle-group div.toggle-item div span:first-of-type': {
         '@apply font-semibold' : {}
     },
     '.toggle-btn': {

@@ -2,37 +2,28 @@
   [title]="convertedDatas[0].title">
 
   <div class="preview-box !justify-start">
-    <div class="w-full max-w-5xl ">
 
+    <div class="w-full max-w-xl">
       <div class="flex gap-3 toggle" appToggle>
-
         <div class="isActive">
-
-          <button type="button" class="toggle-btn " role="switch" aria-checked="false">
+          <button type="button" class="toggle-btn" role="switch" aria-checked="false">
             <span class="sr-only">Use setting</span>
-            <span aria-hidden="true" class="pointer-events-none absolute h-full w-full rounded-md bg-white"></span>
+            <span aria-hidden="true" class="toggle-shape"></span>
             <span aria-hidden="true" class="toggle-btn-default enabled"></span>
             <span aria-hidden="true" class="toggle-switch enabled"></span>
           </button>
         </div>
-
         <div class="inActive">
-
           <button type="button" class="toggle-btn" role="switch" aria-checked="false">
             <span class="sr-only">Use setting</span>
-            <span aria-hidden="true" class="pointer-events-none absolute h-full w-full rounded-md bg-white"></span>
+            <span aria-hidden="true" class="toggle-shape"></span>
             <span aria-hidden="true" class="toggle-btn-default not-enabled"></span>
             <span aria-hidden="true" class="toggle-switch not-enabled"></span>
           </button>
-
         </div>
-
-
-
-
-
       </div>
     </div>
+
   </div>
 
 
@@ -44,97 +35,106 @@
   [title]="convertedDatas[1].title">
 
   <div class="preview-box !justify-start">
-    <div class="w-full max-w-2xl form-control">
 
-
-      <div class="flex items-center justify-between">
-        <span class="flex flex-grow flex-col">
-          <span class="label" id="availability-label">Available to hire</span>
-          <span class="cb-text-copy-small" id="availability-description">Nulla amet tempus sit
-            accumsan. Aliquet
-            turpis sed sit lacinia.</span>
-        </span>
-        <div class="flex gap-3 toggle" appToggle>
-
+    <div class="form-control toggle-group">
+      <div>
+        <div>
+          <span>Available to hire</span>
+          <span>Nulla amet tempus sit accumsan. Aliquet turpis sed sit lacinia.</span>
+        </div>
+        <div class="toggle" appToggle>
           <div class="isActive">
-
-            <button type="button" class="toggle-btn " role="switch" aria-checked="false">
+            <button type="button" class="toggle-btn" role="switch" aria-checked="false">
               <span class="sr-only">Use setting</span>
-              <span aria-hidden="true" class="pointer-events-none absolute h-full w-full rounded-md bg-white"></span>
+              <span aria-hidden="true" class="toggle-shape"></span>
               <span aria-hidden="true" class="toggle-btn-default enabled"></span>
               <span aria-hidden="true" class="toggle-switch enabled"></span>
             </button>
           </div>
-
           <div class="inActive">
-
             <button type="button" class="toggle-btn" role="switch" aria-checked="false">
               <span class="sr-only">Use setting</span>
-              <span aria-hidden="true" class="pointer-events-none absolute h-full w-full rounded-md bg-white"></span>
+              <span aria-hidden="true" class="toggle-shape"></span>
               <span aria-hidden="true" class="toggle-btn-default not-enabled"></span>
               <span aria-hidden="true" class="toggle-switch not-enabled"></span>
             </button>
-
           </div>
-
-
-
-
-
         </div>
       </div>
-
-
     </div>
+
   </div>
 </app-common>
-
 
 
 <app-common [activeTab]="'preview'" [codePreview]="convertedDatas[2].code" [codeHtml]="convertedDatas[2].code"
   [title]="convertedDatas[2].title">
 
   <div class="preview-box !justify-start">
-    <div class="w-full max-w-2xl ">
 
-
-      <div class="flex items-center form-control">
-        <div class="flex gap-3 toggle " appToggle>
-
+    <div class="form-control toggle-group reverse">
+      <div>
+        <div>
+          <span>Available to hire</span>
+          <span>Nulla amet tempus sit accumsan. Aliquet turpis sed sit lacinia.</span>
+        </div>
+        <div class="toggle" appToggle>
           <div class="isActive">
-
-            <button type="button" class="toggle-btn " role="switch" aria-checked="false">
+            <button type="button" class="toggle-btn" role="switch" aria-checked="false">
               <span class="sr-only">Use setting</span>
-              <span aria-hidden="true" class="pointer-events-none absolute h-full w-full rounded-md bg-white"></span>
+              <span aria-hidden="true" class="toggle-shape"></span>
               <span aria-hidden="true" class="toggle-btn-default enabled"></span>
               <span aria-hidden="true" class="toggle-switch enabled"></span>
             </button>
           </div>
-
           <div class="inActive">
-
             <button type="button" class="toggle-btn" role="switch" aria-checked="false">
               <span class="sr-only">Use setting</span>
-              <span aria-hidden="true" class="pointer-events-none absolute h-full w-full rounded-md bg-white"></span>
+              <span aria-hidden="true" class="toggle-shape"></span>
               <span aria-hidden="true" class="toggle-btn-default not-enabled"></span>
               <span aria-hidden="true" class="toggle-switch not-enabled"></span>
             </button>
-
           </div>
-
-
-
-
-
         </div>
-
-        <span class="ml-3" id="annual-billing-label">
-          <span class=" label">Annual billing</span>
-          <span class="cb-text-copy-small">(Save 10%)</span>
-        </span>
       </div>
-
-
     </div>
+
+  </div>
+</app-common>
+
+
+
+<app-common [activeTab]="'preview'" [codePreview]="convertedDatas[3].code" [codeHtml]="convertedDatas[3].code"
+  [title]="convertedDatas[3].title">
+
+  <div class="preview-box !justify-start">
+
+    <div class="form-control toggle-group inline reverse">
+      <div>
+        <div>
+          <span>Annual billing</span>
+          <span>(Save 10%)</span>
+        </div>
+        <div class="toggle" appToggle>
+          <div class="isActive">
+            <button type="button" class="toggle-btn" role="switch" aria-checked="false">
+              <span class="sr-only">Use setting</span>
+              <span aria-hidden="true" class="toggle-shape"></span>
+              <span aria-hidden="true" class="toggle-btn-default enabled"></span>
+              <span aria-hidden="true" class="toggle-switch enabled"></span>
+            </button>
+          </div>
+          <div class="inActive">
+            <button type="button" class="toggle-btn" role="switch" aria-checked="false">
+              <span class="sr-only">Use setting</span>
+              <span aria-hidden="true" class="toggle-shape"></span>
+              <span aria-hidden="true" class="toggle-btn-default not-enabled"></span>
+              <span aria-hidden="true" class="toggle-switch not-enabled"></span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
   </div>
 </app-common>

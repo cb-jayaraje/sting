@@ -12,7 +12,7 @@ module.exports = RadioGroup = (styles) => ({
         '@apply flex items-start': {}
     },
     '.radio-input': {
-        '@apply focus:ring-info-800 h-4 w-4 text-info-800 border-neutral-400': {}
+        '@apply focus:ring-info-800 h-4 w-4 text-info-800 border-neutral-300': {}
     },
     '.radio-label': {
         '@apply ml-3 block cb-text-copy-regular font-medium hover:text-neutral-800 cursor-pointer leading-tight': {}
@@ -26,71 +26,114 @@ module.exports = RadioGroup = (styles) => ({
     '.radio-label.with-info-inline span:nth-of-type(2)': {
         '@apply pl-2 font-normal': {}
     },
-    '.radio-card': {
-        '@apply relative bg-white border rounded-lg shadow-sm p-4 flex cursor-pointer focus:outline-none': {}
+
+    // Radio card
+
+    '.radio-cards label': {
+        '@apply relative bg-white h-full flex p-4 w-full rounded ring-1 ring-neutral-400 hover:ring-neutral-500 cursor-pointer': {}
+    },
+    '.radio-cards label.selected': {
+        '@apply ring-info-400 bg-info-50 bg-opacity-50 hover:cursor-default': {}
+    },
+    '.radio-cards label span': {
+        '@apply cb-text-copy-regular': {}
+    },
+    '.radio-cards label h3': {
+        '@apply cb-text-copy-regular font-semibold': {}
+    },
+    '.radio-cards label svg': {
+        '@apply w-5 h-5 invisible': {}
+    },
+    '.radio-cards label.selected h3': {
+        '@apply text-info-800': {}
+    },
+    '.radio-cards label.selected svg': {
+        '@apply text-info-800 visible': {}
+    },
+    '.radio-cards.simple label h3': {
+        '@apply font-medium text-center mx-auto': {}
     },
 
+    // Radio compact
 
-    // '.radio-card__header': {
-    //     '@apply block text-sm font-medium text-neutral-800': {}
-    // },
-    // '.radio-card__subheader': {
-    //     '@apply mt-1 flex items-center text-sm text-neutral-700': {}
-    // },
-    // '.radio-card__footer': {
-    //     '@apply mt-6 text-sm font-medium text-neutral-700': {}
-    // },
-    // '.radio-card__icon': {
-    //     '@apply  h-5 w-5': {}
-    // },
-    // '.radio-card__checked .radio-card__icon': {
-    //     '@apply  text-primary-600 !visible': {}
-    // },
-    // '.radio-card__checked': {
-    //     '@apply border-transparent border-primary-500 ring-2 ring-primary-500': {}
-    // },
-    // '.radio-card__sm': {
-    //     '@apply border rounded-md py-3 px-3 flex items-center justify-center text-sm font-medium uppercase sm:flex-1 cursor-pointer focus:outline-none': {}
-    // },
-    // '.radio-card__sm--checked': {
-    //     '@apply bg-primary-600 border-transparent text-white hover:bg-primary-700 ring-2 ring-offset-2 ring-primary-500 cursor-pointer': {}
-    // },
-    // '.radio-card__sm--inactive': {
-    //     '@apply border rounded-md py-3 px-3 flex items-center justify-center text-sm font-medium uppercase sm:flex-1 opacity-25 cursor-not-allowed': {}
-    // },
-    // '.radio-card__stacked': {
-    //     '@apply relative block bg-white border rounded-lg shadow-sm px-6 py-4 cursor-pointer sm:flex sm:justify-between focus:outline-none': {}
-    // },
-    // '.radio-card__stacked--checked': {
-    //     '@apply border-transparent border-primary-500 ring-2 ring-primary-500': {}
-    // },
+    '.radio-compact': {
+        '@apply border border-neutral-300 bg-white divide-x divide-neutral-400 rounded': {}
+    },
+    '.radio-compact label': {
+        '@apply py-2 px-3 flex flex-1 items-center justify-center cb-text-copy-regular cursor-pointer focus:outline-none hover:bg-neutral-50 hover:text-neutral-800': {}
+    },
+    '.radio-compact label:first-of-type': {
+        '@apply rounded-l': {}
+    },
+    '.radio-compact label:last-of-type': {
+        '@apply rounded-r': {}
+    },
+    '.radio-compact label.selected': {
+        '@apply bg-info-50 text-info-800': {}
+    },
 
-    // '.radio-card__stacked___labelwrapper': {
-    //     '@apply mt-2 flex text-sm sm:mt-0 sm:flex-col sm:ml-4 sm:text-right': {}
-    // },
+    // Radio stacked
 
-    // '.radio-table': {
-    //     '@apply relative border p-4 flex flex-col cursor-pointer md:pl-4 md:pr-6 md:grid md:grid-cols-3 focus:outline-none': {}
-    // },
-    // '.radio-table--checked': {
-    //     '@apply bg-primary-50 border-primary-200': {}
-    // },
-    // '.radio-table__input': {
-    //     '@apply h-4 w-4 text-primary-600 border-neutral-300 focus:ring-primary-500': {}
-    // },
-    // '.radio-table__label--checked': {
-    //     '@apply text-primary-800': {}
-    // },
-    // '.radio-table__label': {
-    //     '@apply ml-2 opacity-100 cursor-pointer': {}
-    // },
-    // '.radio-table__description': {
-    //     '@apply ml-6 pl-1 text-sm md:ml-0 md:pl-0 md:text-right': {}
-    // },
-    // '.radio-table__panel': {
-    //     '@apply relative border p-4 flex cursor-pointer focus:outline-none': {}
-    // },
+    '.radio-cards.stacked': {
+        '@apply space-y-4': {}
+    },
+    '.radio-cards.stacked label': {
+        '@apply sm:justify-between': {}
+    },
+    '.radio-cards label .right-info': {
+        '@apply mt-2 flex text-sm sm:mt-0 sm:ml-4 sm:flex-col sm:text-right cb-text-copy-regular': {}
+    },
+    '.radio-cards label .right-info .strong': {
+        '@apply !font-semibold': {}
+    },
+    '.radio-cards label .right-info .light': {
+        '@apply !text-neutral-600': {}
+    },
 
+    // Radio tabular
+
+    '.radio-cards.tabular': {
+        '@apply relative -space-y-px': {}
+    },
+    '.radio-cards.tabular label.selected': {
+        '@apply z-20 ring-0 border-info-400': {}
+    },
+    '.radio-cards.tabular label': {
+        '@apply relative ring-0 border border-neutral-300 hover:border-neutral-400 p-4 flex cursor-pointer md:pl-4 md:pr-6 md:grid md:grid-cols-3 focus:outline-none rounded-none hover:z-10': {}
+    },
+    '.radio-cards.tabular label:first-child': {
+        '@apply rounded-t': {}
+    },
+    '.radio-cards.tabular label:last-child': {
+        '@apply rounded-b': {}
+    },
+    '.radio-cards.tabular label span': {
+        '@apply flex gap-1': {}
+    },
+    '.radio-cards.tabular label span:first-child': {
+        '@apply gap-3': {}
+    },
+    '.radio-cards.tabular label span:last-child': {
+        '@apply md:ml-0 md:pl-0 md:text-right': {}
+    },
+
+    // Radio panels
+
+    '.radio-cards.panels': {
+        '@apply -space-y-px rounded-md bg-white ring-0': {}
+    },
+    '.radio-cards.panels label': {
+        '@apply relative border border-neutral-300 hover:border-neutral-400 p-4 flex gap-3 cursor-pointer focus:outline-none rounded-none ring-0 hover:z-10': {}
+    },
+    '.radio-cards.panels label:first-child': {
+        '@apply rounded-t': {}
+    },
+    '.radio-cards.panels label:last-child': {
+        '@apply rounded-b': {}
+    },
+    '.radio-cards.panels label.selected': {
+        '@apply z-20 ring-0 border-info-400': {}
+    },
 
 
 

@@ -156,606 +156,351 @@ export class RadioGroupService {
   </div>
         `,
     },
+    {
+      id: 'radio_5',
+      title: 'Radio Cards',
+      code: `      
+      <div class="form-control !max-w-none">
 
-  //   {
-  //     id: 'radio_5',
-  //     title: 'List with radio on right',
-  //     code: `      
-  //     <!-- List with radio on right -->
+      <h2 class="cb-text-h6">Select a mailing list</h2>
+            
+        <fieldset>
+          <legend class="sr-only">Select a mailing list</legend>
 
-  //     <div class="form-control">
+          <div class="radio-cards mt-4 grid grid-cols-1 gap-4 sm:grid-cols-3">
           
-  //         <h2 class="text-lg leading-6 font-medium text-gray-900">Transfer funds</h2>
-  //         <p class="mt-1 text-gray-500">Transfer your balance to your bank account.</p>
-  //         <fieldset class="mt-2">
-  //           <legend class="sr-only">Bank account</legend>
-  //           <div class=" divide-y divide-gray-200">
+            <label class="selected">
+              <input type="radio" name="project-type" value="Newsletter" class="sr-only">
+              <span class="flex flex-1">
+                <span class="flex flex-col">
+                  <h3>Newsletter</h3>
+                  <span class="mt-1 flex items-center cb-text-copy-regular">Last message sent an hour ago</span>
+                  <span class="mt-6 cb-text-copy-regular strong">621 users</span>
+                </span>
+              </span>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clip-rule="evenodd" />
+              </svg>
+              <span class="pointer-events-none absolute -inset-px" aria-hidden="true"></span>
+            </label>
+
+            <label>
+              <input type="radio" name="project-type" value="Existing Customers" class="sr-only"" aria-describedby="project-type-1-description-0 project-type-1-description-1">
+              <span class="flex flex-1">
+                <span class="flex flex-col">
+                  <h3>Existing Customers</h3>
+                  <span class="mt-1 flex items-center cb-text-copy-regular">Last message sent 2 weeks ago</span>
+                  <span class="mt-6 cb-text-copy-regular strong">1200 users</span>
+                </span>
+              </span>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clip-rule="evenodd" />
+              </svg>
+              <span class="pointer-events-none absolute -inset-px" aria-hidden="true"></span>
+            </label>
+
+            <label>
+              <input type="radio" name="project-type" value="Trial Users" class="sr-only"" aria-describedby="project-type-2-description-0 project-type-2-description-1">
+              <span class="flex flex-1">
+                <span class="flex flex-col">
+                  <h3>Trial Users</h3>
+                  <span class="mt-1 flex items-center cb-text-copy-regular">Last message sent 4 days ago</span>
+                  <span class="mt-6 cb-text-copy-regular strong">2740 users</span>
+                </span>
+              </span>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clip-rule="evenodd" />
+              </svg>
+              <span class="pointer-events-none absolute -inset-px" aria-hidden="true"></span>
+            </label>
+          </div>
+        </fieldset>
+
+      </div>
+        `,
+    },
+    {
+      id: 'radio_6',
+      title: 'Radio small cards',
+      code: `      
+      <!-- Radio small cards -->
+
+      <div class="form-control w-full max-w-none">
+          
+          <div class="flex items-center justify-between">
+              <h2 class="cb-text-h6">Timeframe</h2>
+              <a href="#" class="cb-text-copy-regular btn-link">Link placeholder</a>
+            </div>
+          
+            <fieldset>
+              <legend class="sr-only">Choose a timeframe</legend>
+              <div class="radio-cards simple grid grid-cols-3 gap-4 sm:grid-cols-5 mt-4">
+
+                <label class="selected">
+                  <input type="radio" name="timeframe-option" value="daily" class="sr-only">
+                  <h3> Daily </h3>
+                </label>
                 
-  //             <div class="relative flex items-start py-4">
-  //               <div class="min-w-0 flex-1">
-  //                 <label for="account-checking" class="ml-0 radio-label">Checking</label>
-  //                 <p id="account-checking-description" class="text-gray-500">CIBC ••••6610</p>
-  //               </div>
-  //               <div class="ml-3 flex items-center h-5">
-  //                 <input id="account-checking" aria-describedby="account-checking-description" name="account" type="radio" checked class="radio-input">
-  //               </div>
-  //             </div>
-        
-  //             <div class="relative flex items-start py-4">
-  //               <div class="min-w-0 flex-1">
-  //                 <label for="account-savings" class="ml-0 radio-label">Savings</label>
-  //                 <p id="account-savings-description" class="text-gray-500">Bank of America ••••0149</p>
-  //               </div>
-  //               <div class="ml-3 flex items-center h-5">
-  //                 <input id="account-savings" aria-describedby="account-savings-description" name="account" type="radio" class="radio-input">
-  //               </div>
-  //             </div>
-        
-  //             <div class="relative flex items-start py-4">
-  //               <div class="min-w-0 flex-1">
-  //                 <label for="account-mastercard" class="ml-0 radio-label">Mastercard</label>
-  //                 <p id="account-mastercard-description" class="text-gray-500">Capital One ••••7877</p>
-  //               </div>
-  //               <div class="ml-3 flex items-center h-5">
-  //                 <input id="account-mastercard" aria-describedby="account-mastercard-description" name="account" type="radio" class="radio-input">
-  //               </div>
-  //             </div>
-  //           </div>
-  //         </fieldset>
+                <label>
+                  <input type="radio" name="timeframe-option" value="1M" class="sr-only">
+                  <h3> 1 months </h3>
+                </label>
+                
+                <label>
+                  <input type="radio" name="timeframe-option" value="3M" class="sr-only">
+                  <h3> 3 months </h3>
+                </label>
+                
+                <label>
+                  <input type="radio" name="timeframe-option" value="6M" class="sr-only">
+                  <h3> 6 months </h3>
+                </label>
+                
+                <label>
+                  <input type="radio" name="timeframe-option" value="12M" disabled class="sr-only">
+                  <h3> 12 months </h3>
+                </label>
 
-  //     </div>
-  //       `,
-  //   },
+              </div>
+            </fieldset>
+      </div>
+        `,
+    },
 
-  //   {
-  //     id: 'radio_6',
-  //     title: 'Simple list with radio on right',
-  //     code: `      
-  //     <!-- Simple list with radio on right -->
+    {
+      id: 'radio_7',
+      title: 'Radio compact selectors',
+      code: `      
+      <!-- Radio small cards -->
 
-  //     <div class="form-control">
+      <div class="form-control">
           
-  //         <fieldset>
-  //             <legend class="text-lg font-medium text-gray-900">Side</legend>
-  //             <div class="mt-4 border-t border-b border-gray-200 divide-y divide-gray-200">
-  //               <div class="relative flex items-start py-4">
-  //                 <div class="min-w-0 flex-1">
-  //                   <label for="side-null" class="ml-0 radio-label">None</label>
-  //                 </div>
-  //                 <div class="ml-3 flex items-center h-5">
-  //                   <input id="side-null" name="plan" type="radio" checked class="radio-input">
-  //                 </div>
-  //               </div>
-            
-  //               <div class="relative flex items-start py-4">
-  //                 <div class="min-w-0 flex-1">
-  //                   <label for="side-1" class="ml-0 radio-label">Baked beans</label>
-  //                 </div>
-  //                 <div class="ml-3 flex items-center h-5">
-  //                   <input id="side-1" name="plan" type="radio" class="radio-input">
-  //                 </div>
-  //               </div>
-            
-  //               <div class="relative flex items-start py-4">
-  //                 <div class="min-w-0 flex-1">
-  //                   <label for="side-2" class="ml-0 radio-label">Coleslaw</label>
-  //                 </div>
-  //                 <div class="ml-3 flex items-center h-5">
-  //                   <input id="side-2" name="plan" type="radio" class="radio-input">
-  //                 </div>
-  //               </div>
-            
-  //               <div class="relative flex items-start py-4">
-  //                 <div class="min-w-0 flex-1">
-  //                   <label for="side-3" class="ml-0 radio-label">French fries</label>
-  //                 </div>
-  //                 <div class="ml-3 flex items-center h-5">
-  //                   <input id="side-3" name="plan" type="radio" class="radio-input">
-  //                 </div>
-  //               </div>
-            
-  //               <div class="relative flex items-start py-4">
-  //                 <div class="min-w-0 flex-1">
-  //                   <label for="side-4" class="ml-0 radio-label">Garden salad</label>
-  //                 </div>
-  //                 <div class="ml-3 flex items-center h-5">
-  //                   <input id="side-4" name="plan" type="radio" class="radio-input">y
-  //                 </div>
-  //               </div>
-            
-  //               <div class="relative flex items-start py-4">
-  //                 <div class="min-w-0 flex-1">
-  //                   <label for="side-5" class="ml-0 radio-label">Mashed potatoes</label>
-  //                 </div>
-  //                 <div class="ml-3 flex items-center h-5">
-  //                   <input id="side-5" name="plan" type="radio" class="radio-input">
-  //                 </div>
-  //               </div>
-  //             </div>
-  //           </fieldset>
+            <fieldset>
+              <legend class="sr-only">Choose a timeframe</legend>
+              <div class="radio-compact grid grid-cols-5">
 
-  //     </div>
-  //       `,
-  //   },
+                <label class="selected">
+                  <input type="radio" name="timeframe-option" value="daily" class="sr-only">
+                  <h3> Daily </h3>
+                </label>
+                
+                <label>
+                  <input type="radio" name="timeframe-option" value="1M" class="sr-only">
+                  <h3> 1M </h3>
+                </label>
+                
+                <label>
+                  <input type="radio" name="timeframe-option" value="3M" class="sr-only">
+                  <h3> 3M </h3>
+                </label>
+                
+                <label>
+                  <input type="radio" name="timeframe-option" value="6M" class="sr-only">
+                  <h3> 6M </h3>
+                </label>
+                
+                <label>
+                  <input type="radio" name="timeframe-option" value="12M" disabled class="sr-only">
+                  <h3> 12M </h3>
+                </label>
 
-  //   {
-  //     id: 'radio_7',
-  //     title: 'Color picker',
-  //     code: `      
-  //     <div class="form-control">
-            
-  //     <fieldset>
-  //         <legend class="block font-medium text-gray-700">Choose a label color</legend>
-  //         <div class="mt-4 flex items-center space-x-3">
-  //           <!--
-  //             Active and Checked: "ring ring-offset-1"
-  //             Not Active and Checked: "ring-2"
-  //           -->
-  //           <label class="radio-colorpicker ring-pink-500 ring ring-offset-1">
-  //             <input type="radio" name="color-choice" value="Pink" class="sr-only" aria-labelledby="color-choice-0-label">
-  //             <span id="color-choice-0-label" class="sr-only">Pink</span>
-  //             <span aria-hidden="true" class="bg-pink-500 radio-colorpicker__fill"></span>
-  //           </label>
-        
-  //           <!--
-  //             Active and Checked: "ring ring-offset-1"
-  //             Not Active and Checked: "ring-2"
-  //           -->
-  //           <label class="radio-colorpicker ring-purple-500">
-  //             <input type="radio" name="color-choice" value="Purple" class="sr-only" aria-labelledby="color-choice-1-label">
-  //             <span id="color-choice-1-label" class="sr-only">Purple</span>
-  //             <span aria-hidden="true" class="bg-purple-500 radio-colorpicker__fill"></span>
-  //           </label>
-        
-  //           <!--
-  //             Active and Checked: "ring ring-offset-1"
-  //             Not Active and Checked: "ring-2"
-  //           -->
-  //           <label class="radio-colorpicker ring-blue-500">
-  //             <input type="radio" name="color-choice" value="Blue" class="sr-only" aria-labelledby="color-choice-2-label">
-  //             <span id="color-choice-2-label" class="sr-only">Blue</span>
-  //             <span aria-hidden="true" class="bg-blue-500 radio-colorpicker__fill"></span>
-  //           </label>
-        
-  //           <!--
-  //             Active and Checked: "ring ring-offset-1"
-  //             Not Active and Checked: "ring-2"
-  //           -->
-  //           <label class="radio-colorpicker ring-green-500">
-  //             <input type="radio" name="color-choice" value="Green" class="sr-only" aria-labelledby="color-choice-3-label">
-  //             <span id="color-choice-3-label" class="sr-only">Green</span>
-  //             <span aria-hidden="true" class="bg-green-500 radio-colorpicker__fill"></span>
-  //           </label>
-        
-  //           <!--
-  //             Active and Checked: "ring ring-offset-1"
-  //             Not Active and Checked: "ring-2"
-  //           -->
-  //           <label class="radio-colorpicker ring-yellow-500">
-  //             <input type="radio" name="color-choice" value="Yellow" class="sr-only" aria-labelledby="color-choice-4-label">
-  //             <span id="color-choice-4-label" class="sr-only">Yellow</span>
-  //             <span aria-hidden="true" class="bg-yellow-500 radio-colorpicker__fill"></span>
-  //           </label>
-  //         </div>
-  //       </fieldset>
+              </div>
+            </fieldset>
+      </div>
+        `,
+    },
 
-  // </div>
-  //       `,
-  //   },
+    {
+      id: 'radio_8',
+      title: 'Stacked radio cards',
+      code: `      
+      <!-- Stacked radio cards -->
 
-  //   {
-  //     id: 'radio_8',
-  //     title: 'Radio Cards',
-  //     code: `      
-  //     <div class="form-control">
-            
-  //     <fieldset>
-  //         <legend class="cb-text-h6">Select a mailing list</legend>
-        
-  //         <div class="mt-4 grid grid-cols-1 gap-y-6 sm:grid-cols-3 sm:gap-x-4">
-  //           <!--
-  //             Checked: "border-transparent", Not Checked: "border-gray-300"
-  //             Active: "border-primary-500 ring-2 ring-primary-500"
-  //           -->
-  //           <label class="radio-card radio-card__checked">
-  //                 <input type="radio" name="project-type" value="Newsletter" class="sr-only" aria-labelledby="project-type-0-label" aria-describedby="project-type-0-description-0 project-type-0-description-1">
-  //                 <span class="flex-1 flex">
-  //                 <span class="flex flex-col">
-  //                     <span id="project-type-0-label" class="radio-card__header"> Newsletter </span>
-  //                     <span id="project-type-0-description-0" class="radio-card__subheader"> Last message sent an hour ago </span>
-  //                     <span id="project-type-0-description-1" class="radio-card__footer"> 621 users </span>
-  //                 </span>
-  //                 </span>
-  //                 <!--
-  //                 Not Checked: "invisible"
+      <div class="form-control">
           
-  //                 Heroicon name: solid/check-circle
-  //                 -->
-  //                 <svg class="invisible radio-card__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-  //                 <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
-  //                 </svg>
-  //                 <!--
-  //                 Active: "border", Not Active: "border-2"
-  //                 Checked: "border-primary-500", Not Checked: "border-transparent"
-  //                 -->
-  //                 <span class="absolute -inset-px rounded-lg border-2 pointer-events-none" aria-hidden="true"></span>
-  //           </label>
+        <fieldset>
+        <legend class="sr-only">Server size</legend>
+        <div class="radio-cards stacked">
+
+          <label class="selected">
+            <input type="radio" name="server-size" value="Hobby" class="sr-only">
+            <span class="flex items-center">
+              <span class="flex flex-col text-sm">
+                <h3>Hobby</h3>
+                <span>
+                  <span class="block sm:inline">8GB / 4 CPUs</span>
+                  <span class="hidden sm:mx-1 sm:inline" aria-hidden="true">&middot;</span>
+                  <span class="block sm:inline">160 GB SSD disk</span>
+                </span>
+              </span>
+            </span>
+            <span class="right-info">
+              <span class="!font-semibold">$40</span>
+              <span class="!text-neutral-600">/mo</span>
+            </span>
+            <span class="pointer-events-none absolute -inset-px" aria-hidden="true"></span>
+          </label>
+      
+          <label>
+            <input type="radio" name="server-size" value="Startup" class="sr-only">
+            <span class="flex items-center">
+              <span class="flex flex-col text-sm">
+                <h3>Startup</h3>
+                <span>
+                  <span class="block sm:inline">12GB / 6 CPUs</span>
+                  <span class="hidden sm:mx-1 sm:inline" aria-hidden="true">&middot;</span>
+                  <span class="block sm:inline">256 GB SSD disk</span>
+                </span>
+              </span>
+            </span>
+            <span class="right-info">
+              <span class="!font-semibold">$80</span>
+              <span class="!text-neutral-600">/mo</span>
+            </span>
+            <span class="pointer-events-none absolute -inset-px" aria-hidden="true"></span>
+          </label>
+      
+          <label>
+            <input type="radio" name="server-size" value="Business" class="sr-only">
+            <span class="flex items-center">
+              <span class="flex flex-col text-sm">
+                <h3>Business</h3>
+                <span>
+                  <span class="block sm:inline">16GB / 8 CPUs</span>
+                  <span class="hidden sm:mx-1 sm:inline" aria-hidden="true">&middot;</span>
+                  <span class="block sm:inline">512 GB SSD disk</span>
+                </span>
+              </span>
+            </span>
+            <span class="right-info">
+              <span class="!font-semibold">$160</span>
+              <span class="!text-neutral-600">/mo</span>
+            </span>
+            <span class="pointer-events-none absolute -inset-px" aria-hidden="true"></span>
+          </label>
+      
+          <label>
+            <input type="radio" name="server-size" value="Enterprise" class="sr-only">
+            <span class="flex items-center">
+              <span class="flex flex-col text-sm">
+                <h3>Enterprise</h3>
+                <span>
+                  <span class="block sm:inline">32GB / 12 CPUs</span>
+                  <span class="hidden sm:mx-1 sm:inline" aria-hidden="true">&middot;</span>
+                  <span class="block sm:inline">1024 GB SSD disk</span>
+                </span>
+              </span>
+            </span>
+            <span class="right-info">
+              <span class="!font-semibold">$240</span>
+              <span class="!text-neutral-600">/mo</span>
+            </span>
+            <span class="pointer-events-none absolute -inset-px" aria-hidden="true"></span>
+          </label>
+        </div>
+      </fieldset>
+
+      </div>
+        `,
+    },
+    {
+      id: 'radio_9',
+      title: 'Simple radio tabular',
+      code: `
+      <!-- Radios tabular -->
+
+      <div class="form-control">
+
+        <fieldset>
+        <legend class="sr-only">Pricing plans</legend>
+
+          <div class="radio-cards tabular">
+          
+            <label class="selected">
+              <span>
+                <input type="radio" name="pricing-plan" value="Startup" class="radio-input" checked>
+                <h3>Startup</h3>
+              </span>
+              <span>
+                <span class="!font-semibold">$29 / mo</span>
+                <span class="!text-neutral-600">($290 / yr)</span>
+              </span>
+              <span>Up to 5 active job postings</span>
+            </label>
         
-  //           <!--
-  //             Checked: "border-transparent", Not Checked: "border-gray-300"
-  //             Active: "border-primary-500 ring-2 ring-primary-500"
-  //           -->
-  //           <label class="radio-card">
-  //             <input type="radio" name="project-type" value="Existing Customers" class="sr-only" aria-labelledby="project-type-1-label" aria-describedby="project-type-1-description-0 project-type-1-description-1">
-  //             <span class="flex-1 flex">
-  //               <span class="flex flex-col">
-  //                 <span id="project-type-1-label" class="radio-card__header"> Existing Customers </span>
-  //                 <span id="project-type-1-description-0" class="radio-card__subheader"> Last message sent 2 weeks ago </span>
-  //                 <span id="project-type-1-description-1" class="radio-card__footer"> 1200 users </span>
-  //               </span>
-  //             </span>
-  //             <!--
-  //               Not Checked: "invisible"
+            <label>
+              <span>
+                <input type="radio" name="pricing-plan" value="Business" class="radio-input">
+                <h3>Business</h3>
+              </span>
+              <span>
+                <span class="!font-semibold">$99 / mo</span>
+                <span class="!text-neutral-600">($99 / yr)</span>
+              </span>
+              <span>Up to 25 active job postings</span>
+            </label>
         
-  //               Heroicon name: solid/check-circle
-  //             -->
-  //             <svg class=" invisible radio-card__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-  //               <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
-  //             </svg>
-  //             <!--
-  //               Active: "border", Not Active: "border-2"
-  //               Checked: "border-primary-500", Not Checked: "border-transparent"
-  //             -->
-  //             <span class="absolute -inset-px rounded-lg border-2 pointer-events-none" aria-hidden="true"></span>
-  //           </label>
+            <label>
+              <span>
+                <input type="radio" name="pricing-plan" value="Enterprise" class="radio-input">
+                <h3>Enterprise</h3>
+              </span>
+              <span>
+                <span class="!font-semibold">$249 / mo</span>
+                <span class="!text-neutral-600">($2490 / yr)</span>
+              </span>
+              <span>Unlimited active job postings</span>
+            </label>
+            
+          </div>
+        </fieldset>
+
+      </div>
+      `,
+    },
+
+    {
+      id: 'radio_10',
+      title: 'List with descriptions in panel',
+      code: `
+      <!-- List with descriptions in panel -->
+
+      <div class="form-control">
+
+        <fieldset>
+        <legend class="sr-only">Privacy setting</legend>
+        <div class="radio-cards panels">
         
-  //           <!--
-  //             Checked: "border-transparent", Not Checked: "border-gray-300"
-  //             Active: "border-primary-500 ring-2 ring-primary-500"
-  //           -->
-  //           <label class="radio-card ">
-  //             <input type="radio" name="project-type" value="Trial Users" class="sr-only" aria-labelledby="project-type-2-label" aria-describedby="project-type-2-description-0 project-type-2-description-1">
-  //             <span class="flex-1 flex">
-  //               <span class="flex flex-col">
-  //                 <span id="project-type-2-label" class="radio-card__header"> Trial Users </span>
-  //                 <span id="project-type-2-description-0" class="radio-card__subheader"> Last message sent 4 days ago </span>
-  //                 <span id="project-type-2-description-1" class="radio-card__footer"> 2740 users </span>
-  //               </span>
-  //             </span>
-  //             <!--
-  //               Not Checked: "invisible"
-        
-  //               Heroicon name: solid/check-circle
-  //             -->
-  //             <svg class="invisible radio-card__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-  //               <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
-  //             </svg>
-  //             <!--
-  //               Active: "border", Not Active: "border-2"
-  //               Checked: "border-primary-500", Not Checked: "border-transparent"
-  //             -->
-  //             <span class="absolute -inset-px rounded-lg border-2 pointer-events-none" aria-hidden="true"></span>
-  //           </label>
-  //         </div>
-  //       </fieldset>
+          <label class="selected">
+            <input type="radio" name="privacy-setting" value="Public access" class="radio-input" checked>
+            <span>
+              <h3>Public access</h3>
+              <span>This project would be available to anyone who has the link</span>
+            </span>
+          </label>
+      
+          <label>
+            <input type="radio" name="privacy-setting" value="Private to Project Members" class="radio-input">
+            <span>
+              <h3>Private to Project Members</h3>
+              <span>Only members of this project would be able to access</span>
+            </span>
+          </label>
+      
+          <label>
+            <input type="radio" name="privacy-setting" value="Private to you" class="radio-input">
+            <span>
+              <h3>Private to you</h3>
+              <span>You are the only one able to access this project</span>
+            </span>
+          </label>
 
-  // </div>
-  //       `,
-  //   },
+        </div>
+      </fieldset>
 
-  //   {
-  //     id: 'radio_9',
-  //     title: 'Radio small cards',
-  //     code: `      
-  //     <!-- Radio small cards -->
-
-  //     <div class="form-control">
-          
-  //         <div class="flex items-center justify-between">
-  //             <h2 class="text-sm font-medium text-gray-900">RAM</h2>
-  //             <a href="#" class="text-sm font-medium text-primary-600 hover:text-primary-500">See performance specs</a>
-  //           </div>
-          
-  //           <fieldset class="mt-2">
-  //             <legend class="sr-only">Choose a memory option</legend>
-  //             <div class="grid grid-cols-3 gap-3 sm:grid-cols-6">
-  //               <!--
-  //                 In Stock: "cursor-pointer", Out of Stock: "opacity-25 cursor-not-allowed"
-  //                 Active: "ring-2 ring-offset-2 ring-primary-500"
-  //                 Checked: "bg-primary-600 border-transparent text-white hover:bg-primary-700", Not Checked: "bg-white border-gray-200 text-gray-900 hover:bg-gray-50"
-  //               -->
-  //               <label class="radio-card__sm radio-card__sm--checked">
-  //                 <input type="radio" name="memory-option" value="4 GB" class="sr-only" aria-labelledby="memory-option-0-label">
-  //                 <span id="memory-option-0-label"> 4 GB </span>
-  //               </label>
-          
-  //               <!--
-  //                 In Stock: "cursor-pointer", Out of Stock: "opacity-25 cursor-not-allowed"
-  //                 Active: "ring-2 ring-offset-2 ring-primary-500"
-  //                 Checked: "bg-primary-600 border-transparent text-white hover:bg-primary-700", Not Checked: "bg-white border-gray-200 text-gray-900 hover:bg-gray-50"
-  //               -->
-  //               <label class="radio-card__sm">
-  //                 <input type="radio" name="memory-option" value="64 GB" class="sr-only" aria-labelledby="memory-option-4-label">
-  //                 <span id="memory-option-4-label"> 16 GB </span>
-  //               </label>
-
-  //                                 <!--
-  //                 In Stock: "cursor-pointer", Out of Stock: "opacity-25 cursor-not-allowed"
-  //                 Active: "ring-2 ring-offset-2 ring-primary-500"
-  //                 Checked: "bg-primary-600 border-transparent text-white hover:bg-primary-700", Not Checked: "bg-white border-gray-200 text-gray-900 hover:bg-gray-50"
-  //               -->
-  //               <label class="radio-card__sm">
-  //                 <input type="radio" name="memory-option" value="64 GB" class="sr-only" aria-labelledby="memory-option-4-label">
-  //                 <span id="memory-option-4-label"> 32 GB </span>
-  //               </label>
-
-  //                                 <!--
-  //                 In Stock: "cursor-pointer", Out of Stock: "opacity-25 cursor-not-allowed"
-  //                 Active: "ring-2 ring-offset-2 ring-primary-500"
-  //                 Checked: "bg-primary-600 border-transparent text-white hover:bg-primary-700", Not Checked: "bg-white border-gray-200 text-gray-900 hover:bg-gray-50"
-  //               -->
-  //               <label class="radio-card__sm radio-card__sm">
-  //                 <input type="radio" name="memory-option" value="64 GB" class="sr-only" aria-labelledby="memory-option-4-label">
-  //                 <span id="memory-option-4-label"> 64 GB </span>
-  //               </label>
-          
-  //               <!--
-  //                 In Stock: "cursor-pointer", Out of Stock: "opacity-25 cursor-not-allowed"
-  //                 Active: "ring-2 ring-offset-2 ring-primary-500"
-  //                 Checked: "bg-primary-600 border-transparent text-white hover:bg-primary-700", Not Checked: "bg-white border-gray-200 text-gray-900 hover:bg-gray-50"
-  //               -->
-  //               <label class="radio-card__sm radio-card__sm--inactive">
-  //                 <input type="radio" name="memory-option" value="128 GB" disabled class="sr-only" aria-labelledby="memory-option-5-label">
-  //                 <span id="memory-option-5-label"> 128 GB </span>
-  //               </label>
-  //             </div>
-  //           </fieldset>
-  //     </div>
-  //       `,
-  //   },
-
-  //   {
-  //     id: 'radio_10',
-  //     title: 'Stacked radio cards',
-  //     code: `      
-  //     <!-- Stacked radio cards -->
-
-  //     <div class="form-control">
-          
-  //         <fieldset>
-  //             <legend class="sr-only">Server size</legend>
-  //             <div class="space-y-4">
-  //               <!--
-  //                 Checked: "border-transparent", Not Checked: "border-gray-300"
-  //                 Active: "border-primary-500 ring-2 ring-primary-500"
-  //               -->
-  //               <label class="radio-card__stacked radio-card__stacked--checked">
-  //                 <input type="radio" name="server-size" value="Hobby" class="sr-only" aria-labelledby="server-size-0-label" aria-describedby="server-size-0-description-0 server-size-0-description-1">
-  //                 <span class="flex items-center">
-  //                   <span class="text-sm flex flex-col">
-  //                     <span id="server-size-0-label" class="font-medium text-gray-900"> Hobby </span>
-  //                     <span id="server-size-0-description-0" class="text-gray-500">
-  //                       <span class="block sm:inline">8GB / 4 CPUs</span>
-  //                       <span class="hidden sm:inline sm:mx-1" aria-hidden="true">&middot;</span>
-  //                       <span class="block sm:inline">160 GB SSD disk</span>
-  //                     </span>
-  //                   </span>
-  //                 </span>
-  //                 <span id="server-size-0-description-1" class="radio-card__stacked___labelwrapper">
-  //                   <span class="font-medium text-gray-900">$40</span>
-  //                   <span class="ml-1 text-gray-500 sm:ml-0">/mo</span>
-  //                 </span>
-  //                 <!--
-  //                   Active: "border", Not Active: "border-2"
-  //                   Checked: "border-primary-500", Not Checked: "border-transparent"
-  //                 -->
-  //                 <span class="absolute -inset-px rounded-lg border-2 pointer-events-none" aria-hidden="true"></span>
-  //               </label>
-            
-  //               <!--
-  //                 Checked: "border-transparent", Not Checked: "border-gray-300"
-  //                 Active: "border-primary-500 ring-2 ring-primary-500"
-  //               -->
-  //               <label class="radio-card__stacked">
-  //                 <input type="radio" name="server-size" value="Startup" class="sr-only" aria-labelledby="server-size-1-label" aria-describedby="server-size-1-description-0 server-size-1-description-1">
-  //                 <span class="flex items-center">
-  //                   <span class="text-sm flex flex-col">
-  //                     <span id="server-size-1-label" class="font-medium text-gray-900"> Startup </span>
-  //                     <span id="server-size-1-description-0" class="text-gray-500">
-  //                       <span class="block sm:inline">12GB / 6 CPUs</span>
-  //                       <span class="hidden sm:inline sm:mx-1" aria-hidden="true">&middot;</span>
-  //                       <span class="block sm:inline">256 GB SSD disk</span>
-  //                     </span>
-  //                   </span>
-  //                 </span>
-  //                 <span id="server-size-1-description-1" class="radio-card__stacked___labelwrapper">
-  //                   <span class="font-medium text-gray-900">$80</span>
-  //                   <span class="ml-1 text-gray-500 sm:ml-0">/mo</span>
-  //                 </span>
-  //                 <!--
-  //                   Active: "border", Not Active: "border-2"
-  //                   Checked: "border-primary-500", Not Checked: "border-transparent"
-  //                 -->
-  //                 <span class="absolute -inset-px rounded-lg border-2 pointer-events-none" aria-hidden="true"></span>
-  //               </label>
-            
-  //               <!--
-  //                 Checked: "border-transparent", Not Checked: "border-gray-300"
-  //                 Active: "border-primary-500 ring-2 ring-primary-500"
-  //               -->
-  //               <label class="radio-card__stacked">
-  //                 <input type="radio" name="server-size" value="Business" class="sr-only" aria-labelledby="server-size-2-label" aria-describedby="server-size-2-description-0 server-size-2-description-1">
-  //                 <span class="flex items-center">
-  //                   <span class="text-sm flex flex-col">
-  //                     <span id="server-size-2-label" class="font-medium text-gray-900"> Business </span>
-  //                     <span id="server-size-2-description-0" class="text-gray-500">
-  //                       <span class="block sm:inline">16GB / 8 CPUs</span>
-  //                       <span class="hidden sm:inline sm:mx-1" aria-hidden="true">&middot;</span>
-  //                       <span class="block sm:inline">512 GB SSD disk</span>
-  //                     </span>
-  //                   </span>
-  //                 </span>
-  //                 <span id="server-size-2-description-1" class="radio-card__stacked___labelwrapper">
-  //                   <span class="font-medium text-gray-900">$160</span>
-  //                   <span class="ml-1 text-gray-500 sm:ml-0">/mo</span>
-  //                 </span>
-  //                 <!--
-  //                   Active: "border", Not Active: "border-2"
-  //                   Checked: "border-primary-500", Not Checked: "border-transparent"
-  //                 -->
-  //                 <span class="absolute -inset-px rounded-lg border-2 pointer-events-none" aria-hidden="true"></span>
-  //               </label>
-            
-  //               <!--
-  //                 Checked: "border-transparent", Not Checked: "border-gray-300"
-  //                 Active: "border-primary-500 ring-2 ring-primary-500"
-  //               -->
-  //               <label class="radio-card__stacked">
-  //                 <input type="radio" name="server-size" value="Enterprise" class="sr-only" aria-labelledby="server-size-3-label" aria-describedby="server-size-3-description-0 server-size-3-description-1">
-  //                 <span class="flex items-center">
-  //                   <span class="text-sm flex flex-col">
-  //                     <span id="server-size-3-label" class="font-medium text-gray-900"> Enterprise </span>
-  //                     <span id="server-size-3-description-0" class="text-gray-500">
-  //                       <span class="block sm:inline">32GB / 12 CPUs</span>
-  //                       <span class="hidden sm:inline sm:mx-1" aria-hidden="true">&middot;</span>
-  //                       <span class="block sm:inline">1024 GB SSD disk</span>
-  //                     </span>
-  //                   </span>
-  //                 </span>
-  //                 <span id="server-size-3-description-1" class="radio-card__stacked___labelwrapper">
-  //                   <span class="font-medium text-gray-900">$240</span>
-  //                   <span class="ml-1 text-gray-500 sm:ml-0">/mo</span>
-  //                 </span>
-  //                 <!--
-  //                   Active: "border", Not Active: "border-2"
-  //                   Checked: "border-primary-500", Not Checked: "border-transparent"
-  //                 -->
-  //                 <span class="absolute -inset-px rounded-lg border-2 pointer-events-none" aria-hidden="true"></span>
-  //               </label>
-  //             </div>
-  //           </fieldset>
-
-  //     </div>
-  //       `,
-  //   },
-
-  //   {
-  //     id: 'radio_11',
-  //     title: 'List with descriptions in panel',
-  //     code: `
-  //     <!-- List with descriptions in panel -->
-
-  //     <div class="form-control">
-
-  //         <fieldset>
-  //             <legend class="sr-only">Privacy setting</legend>
-  //             <div class="bg-white rounded-md -space-y-px">
-  //               <!-- Checked: "bg-primary-50 border-primary-200 z-10", Not Checked: "border-gray-200" -->
-  //               <label class="rounded-tl-md rounded-tr-md radio-table__panel  radio-table--checked">
-  //                 <input type="radio" name="privacy-setting" value="Public access" class="h-4 w-4 mt-0.5 cursor-pointer shrink-0 text-primary-600 border-gray-300 focus:ring-primary-500" aria-labelledby="privacy-setting-0-label" aria-describedby="privacy-setting-0-description">
-  //                 <span class="ml-3 flex flex-col">
-  //                   <!-- Checked: "text-primary-900", Not Checked: "text-gray-900" -->
-  //                   <span id="privacy-setting-0-label" class="block font-medium radio-table__label--checked"> Public access </span>
-  //                   <!-- Checked: "text-primary-700", Not Checked: "text-gray-500" -->
-  //                   <span id="privacy-setting-0-description" class="block radio-table__label--checked"> This project would be available to anyone who has the link </span>
-  //                 </span>
-  //               </label>
-            
-  //               <!-- Checked: "bg-primary-50 border-primary-200 z-10", Not Checked: "border-gray-200" -->
-  //               <label class="radio-table__panel">
-  //                 <input type="radio" name="privacy-setting" value="Private to Project Members" class="h-4 w-4 mt-0.5 cursor-pointer shrink-0 text-primary-600 border-gray-300 focus:ring-primary-500" aria-labelledby="privacy-setting-1-label" aria-describedby="privacy-setting-1-description">
-  //                 <span class="ml-3 flex flex-col">
-  //                   <!-- Checked: "text-primary-900", Not Checked: "text-gray-900" -->
-  //                   <span id="privacy-setting-1-label" class="block font-medium"> Private to Project Members </span>
-  //                   <!-- Checked: "text-primary-700", Not Checked: "text-gray-500" -->
-  //                   <span id="privacy-setting-1-description" class="block"> Only members of this project would be able to access </span>
-  //                 </span>
-  //               </label>
-            
-  //               <!-- Checked: "bg-primary-50 border-primary-200 z-10", Not Checked: "border-gray-200" -->
-  //               <label class="rounded-bl-md rounded-br-md radio-table__panel">
-  //                 <input type="radio" name="privacy-setting" value="Private to you" class="h-4 w-4 mt-0.5 cursor-pointer shrink-0 text-primary-600 border-gray-300 focus:ring-primary-500" aria-labelledby="privacy-setting-2-label" aria-describedby="privacy-setting-2-description">
-  //                 <span class="ml-3 flex flex-col">
-  //                   <!-- Checked: "text-primary-900", Not Checked: "text-gray-900" -->
-  //                   <span id="privacy-setting-2-label" class="block font-medium"> Private to you </span>
-  //                   <!-- Checked: "text-primary-700", Not Checked: "text-gray-500" -->
-  //                   <span id="privacy-setting-2-description" class="block"> You are the only one able to access this project </span>
-  //                 </span>
-  //               </label>
-  //             </div>
-  //           </fieldset>
-
-  //     </div>
-  //     `,
-  //   },
-
-  //   {
-  //     id: 'radio_11',
-  //     title: 'Simple radio table',
-  //     code: `
-  //     <!-- Simple radio table -->
-
-  //     <div class="form-control">
-
-  //         <fieldset>
-  //             <legend class="sr-only">Pricing plans</legend>
-  //             <div class="relative bg-white rounded-md -space-y-px">
-  //               <!-- Checked: "bg-primary-50 border-primary-200 z-10", Not Checked: "border-gray-200" -->
-  //               <label class="rounded-tl-md rounded-tr-md radio-table radio-table--checked">
-  //                 <span class="flex items-center">
-  //                   <input type="radio" name="pricing-plan" value="Startup" class="radio-table__input" aria-labelledby="pricing-plans-0-label" aria-describedby="pricing-plans-0-description-0 pricing-plans-0-description-1">
-  //                   <!-- Checked: "text-primary-900", Not Checked: "text-gray-900" -->
-  //                   <span id="pricing-plans-0-label" class="radio-table__label radio-table__label--checked">Startup</span>
-  //                 </span>
-  //                 <span id="pricing-plans-0-description-0" class="radio-table__description md:text-center">
-  //                   <!-- Checked: "text-primary-900", Not Checked: "text-gray-900" -->
-  //                   <span class="font-medium radio-table__label--checked">$29 / mo</span>
-  //                   <!-- Checked: "text-primary-700", Not Checked: "text-gray-500" -->
-  //                   <span class="radio-table__label--checked">($290 / yr)</span>
-  //                 </span>
-  //                 <!-- Checked: "text-primary-700", Not Checked: "text-gray-500" -->
-  //                 <span id="pricing-plans-0-description-1" class="radio-table__description radio-table__label--checked">Up to 5 active job postings</span>
-  //               </label>
-            
-  //               <!-- Checked: "bg-primary-50 border-primary-200 z-10", Not Checked: "border-gray-200" -->
-  //               <label class="radio-table">
-  //                 <span class="flex items-center">
-  //                   <input type="radio" name="pricing-plan" value="Business" class="radio-table__input" aria-labelledby="pricing-plans-1-label" aria-describedby="pricing-plans-1-description-0 pricing-plans-1-description-1">
-  //                   <!-- Checked: "text-primary-900", Not Checked: "text-gray-900" -->
-  //                   <span id="pricing-plans-1-label" class="radio-table__label">Business</span>
-  //                 </span>
-  //                 <span id="pricing-plans-1-description-0" class="radio-table__description md:text-center">
-  //                   <!-- Checked: "text-primary-900", Not Checked: "text-gray-900" -->
-  //                   <span class="font-medium">$99 / mo</span>
-  //                   <!-- Checked: "text-primary-700", Not Checked: "text-gray-500" -->
-  //                   <span>($990 / yr)</span>
-  //                 </span>
-  //                 <!-- Checked: "text-primary-700", Not Checked: "text-gray-500" -->
-  //                 <span id="pricing-plans-1-description-1" class="radio-table__description">Up to 25 active job postings</span>
-  //               </label>
-            
-  //               <!-- Checked: "bg-primary-50 border-primary-200 z-10", Not Checked: "border-gray-200" -->
-  //               <label class="rounded-bl-md rounded-br-md radio-table">
-  //                 <span class="flex items-center">
-  //                   <input type="radio" name="pricing-plan" value="Enterprise" class="radio-table__input" aria-labelledby="pricing-plans-2-label" aria-describedby="pricing-plans-2-description-0 pricing-plans-2-description-1">
-  //                   <!-- Checked: "text-primary-900", Not Checked: "text-gray-900" -->
-  //                   <span id="pricing-plans-2-label" class="radio-table__label">Enterprise</span>
-  //                 </span>
-  //                 <span id="pricing-plans-2-description-0" class="radio-table__description md:text-center">
-  //                   <!-- Checked: "text-primary-900", Not Checked: "text-gray-900" -->
-  //                   <span class="font-medium">$249 / mo</span>
-  //                   <!-- Checked: "text-primary-700", Not Checked: "text-gray-500" -->
-  //                   <span>($2490 / yr)</span>
-  //                 </span>
-  //                 <!-- Checked: "text-primary-700", Not Checked: "text-gray-500" -->
-  //                 <span id="pricing-plans-2-description-1" class="radio-table__description">Unlimited active job postings</span>
-  //               </label>
-  //             </div>
-  //           </fieldset>
-
-  //     </div>
-  //     `,
-  //   },
+      </div>
+      `,
+    },
 
     
 

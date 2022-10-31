@@ -20,6 +20,12 @@ export class RadioGroupsComponent implements OnInit {
   radioGroups: any;
   convertedDatas: any = [];
   html: SafeHtml = '';
+  radioCards='item1';
+  radioTimeFrame = 'item1';
+  radioCompact = 'item1';
+  radioStacked = "item1";
+  pricingPlan= 'Business';
+  listPanel = 'Public access';
 
   constructor(
     public commonService: CommonService,
@@ -53,9 +59,41 @@ export class RadioGroupsComponent implements OnInit {
       })
     )
      .subscribe(dataRes => {
-       this.convertedDatas.push(dataRes)
-       // console.log(this.convertedDatas)
+
+    //  if(dataRes.id !== "radio_5" && dataRes.id !== "radio_6") {
+    //   this.convertedDatas.push(dataRes)
+    //  }
+
+     
+    this.convertedDatas.push(dataRes)
+      
+        // console.log(this.convertedDatas)
      })
+     
   }
 
+  onClick(item = 'item1') {
+    this.radioCards = item
+    
+  }
+
+  onClickTimeFrame(item = 'item1') {
+    this.radioTimeFrame = item
+  }
+
+  onClickCompact(item = 'item1') {
+    this.radioCompact = item
+  }
+
+
+  onClickStacked(item = 'item1') {
+    this.radioStacked = item
+  }
+
+  choosePricing(event = '') {
+    console.log(event)
+    this.pricingPlan = event;
+  }
+
+  
 }

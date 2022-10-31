@@ -1,9 +1,462 @@
-<app-common *ngFor="let convertedData of convertedDatas" [activeTab]="'preview'" [codePreview]="convertedData.code"
-  [codeHtml]="convertedData.code" [title]="convertedData.title">
+<app-common [activeTab]="'preview'" [codePreview]="convertedDatas[0].code" [codeHtml]="convertedDatas[0].code"
+  [title]="convertedDatas[0].title">
   <div class="preview-box !justify-start">
     <div class="w-full max-w-5xl ">
 
-      <div [innerHTML]="convertedData.code | safeHtml"></div>
+      <div [innerHTML]="convertedDatas[0].code | safeHtml"></div>
+
+    </div>
+  </div>
+</app-common>
+
+<app-common [activeTab]="'preview'" [codePreview]="convertedDatas[1].code" [codeHtml]="convertedDatas[1].code"
+  [title]="convertedDatas[1].title">
+  <div class="preview-box !justify-start">
+    <div class="w-full max-w-5xl ">
+
+      <div [innerHTML]="convertedDatas[1].code | safeHtml"></div>
+
+    </div>
+  </div>
+</app-common>
+
+<app-common [activeTab]="'preview'" [codePreview]="convertedDatas[2].code" [codeHtml]="convertedDatas[2].code"
+  [title]="convertedDatas[2].title">
+  <div class="preview-box !justify-start">
+    <div class="w-full max-w-5xl ">
+
+      <div [innerHTML]="convertedDatas[2].code | safeHtml"></div>
+
+    </div>
+  </div>
+</app-common>
+
+<app-common [activeTab]="'preview'" [codePreview]="convertedDatas[3].code" [codeHtml]="convertedDatas[3].code"
+  [title]="convertedDatas[3].title">
+  <div class="preview-box !justify-start">
+    <div class="w-full max-w-5xl ">
+
+      <div [innerHTML]="convertedDatas[3].code | safeHtml"></div>
+
+    </div>
+  </div>
+</app-common>
+
+
+<app-common [activeTab]="'preview'" [codePreview]="convertedDatas[4].code" [codeHtml]="convertedDatas[4].code"
+  [title]="convertedDatas[4].title">
+  <div class="preview-box !justify-start">
+    <div class="w-full max-w-5xl ">
+      <div class="form-control !max-w-none">
+
+        <h2 class="cb-text-h6">Select a mailing list</h2>
+
+        <fieldset>
+          <legend class="sr-only">Select a mailing list</legend>
+
+          <div class="radio-cards mt-4 grid grid-cols-1 gap-4 sm:grid-cols-3">
+
+            <label [ngClass]="radioCards === 'item1' ? 'selected' : ''" (click)="onClick('item1')">
+              <input type="radio" name="project-type" value="Newsletter" class="sr-only">
+              <span class="flex flex-1">
+                <span class="flex flex-col">
+                  <h3>Newsletter</h3>
+                  <span class="mt-1 flex items-center cb-text-copy-regular">Last message sent an hour ago</span>
+                  <span class="mt-6 cb-text-copy-regular strong">621 users</span>
+                </span>
+              </span>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                <path fill-rule="evenodd"
+                  d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+                  clip-rule="evenodd" />
+              </svg>
+              <span class="pointer-events-none absolute -inset-px" aria-hidden="true"></span>
+            </label>
+
+            <label [ngClass]="radioCards === 'item2' ? 'selected' : ''" (click)="onClick('item2')">
+              <input type="radio" name="project-type" value="Existing Customers" class="sr-only"
+                aria-describedby="project-type-1-description-0 project-type-1-description-1">
+              <span class="flex flex-1">
+                <span class="flex flex-col">
+                  <h3>Existing Customers</h3>
+                  <span class="mt-1 flex items-center cb-text-copy-regular">Last message sent 2 weeks ago</span>
+                  <span class="mt-6 cb-text-copy-regular strong">1200 users</span>
+                </span>
+              </span>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                <path fill-rule="evenodd"
+                  d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+                  clip-rule="evenodd" />
+              </svg>
+              <span class="pointer-events-none absolute -inset-px" aria-hidden="true"></span>
+            </label>
+
+            <label [ngClass]="radioCards === 'item3' ? 'selected' : ''" (click)="onClick('item3')">
+              <input type="radio" name="project-type" value="Trial Users" class="sr-only"
+                aria-describedby="project-type-2-description-0 project-type-2-description-1">
+              <span class="flex flex-1">
+                <span class="flex flex-col">
+                  <h3>Trial Users</h3>
+                  <span class="mt-1 flex items-center cb-text-copy-regular">Last message sent 4 days ago</span>
+                  <span class="mt-6 cb-text-copy-regular strong">2740 users</span>
+                </span>
+              </span>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                <path fill-rule="evenodd"
+                  d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+                  clip-rule="evenodd" />
+              </svg>
+              <span class="pointer-events-none absolute -inset-px" aria-hidden="true"></span>
+            </label>
+          </div>
+        </fieldset>
+
+      </div>
+
+    </div>
+  </div>
+</app-common>
+
+<app-common [activeTab]="'preview'" [codePreview]="convertedDatas[5].code" [codeHtml]="convertedDatas[5].code"
+  [title]="convertedDatas[5].title">
+  <div class="preview-box !justify-start">
+    <div class="w-full max-w-5xl ">
+
+      <div class="form-control w-full max-w-none">
+
+        <div class="flex items-center justify-between">
+          <h2 class="cb-text-h6">Timeframe</h2>
+          <a href="#" class="cb-text-copy-regular btn-link">Link placeholder</a>
+        </div>
+
+        <fieldset>
+          <legend class="sr-only">Choose a timeframe</legend>
+          <div class="radio-cards simple grid grid-cols-3 gap-4 sm:grid-cols-5 mt-4">
+
+            <label [ngClass]="radioTimeFrame === 'item1' ? 'selected' : ''" (click)="onClickTimeFrame('item1')">
+              <input type="radio" name="timeframe-option" value="daily" class="sr-only">
+              <h3> Daily </h3>
+            </label>
+
+            <label [ngClass]="radioTimeFrame === 'item2' ? 'selected' : ''" (click)="onClickTimeFrame('item2')">
+              <input type="radio" name="timeframe-option" value="1M" class="sr-only">
+              <h3> 1 months </h3>
+            </label>
+
+            <label [ngClass]="radioTimeFrame === 'item3' ? 'selected' : ''" (click)="onClickTimeFrame('item3')">
+              <input type="radio" name="timeframe-option" value="3M" class="sr-only">
+              <h3> 3 months </h3>
+            </label>
+
+            <label [ngClass]="radioTimeFrame === 'item4' ? 'selected' : ''" (click)="onClickTimeFrame('item4')">
+              <input type="radio" name="timeframe-option" value="6M" class="sr-only">
+              <h3> 6 months </h3>
+            </label>
+
+            <label [ngClass]="radioTimeFrame === 'item5' ? 'selected' : ''" (click)="onClickTimeFrame('item5')">
+              <input type="radio" name="timeframe-option" value="12M" disabled class="sr-only">
+              <h3> 12 months </h3>
+            </label>
+
+          </div>
+        </fieldset>
+      </div>
+
+    </div>
+  </div>
+</app-common>
+
+<app-common [activeTab]="'preview'" [codePreview]="convertedDatas[6].code" [codeHtml]="convertedDatas[6].code"
+  [title]="convertedDatas[6].title">
+  <div class="preview-box !justify-start">
+    <div class="w-full max-w-5xl ">
+
+
+
+      <!-- Radio small cards -->
+
+      <div class="form-control">
+
+        <fieldset>
+          <legend class="sr-only">Choose a timeframe</legend>
+          <div class="radio-compact grid grid-cols-5">
+
+            <label [ngClass]="radioCompact === 'item1' ? 'selected' : ''" (click)="onClickCompact('item1')">
+              <input type="radio" name="timeframe-option" value="daily" class="sr-only">
+              <h3> Daily </h3>
+            </label>
+
+            <label [ngClass]="radioCompact === 'item2' ? 'selected' : ''" (click)="onClickCompact('item2')">
+              <input type="radio" name="timeframe-option" value="1M" class="sr-only">
+              <h3> 1M </h3>
+            </label>
+
+            <label [ngClass]="radioCompact === 'item3' ? 'selected' : ''" (click)="onClickCompact('item3')">
+              <input type="radio" name="timeframe-option" value="3M" class="sr-only">
+              <h3> 3M </h3>
+            </label>
+
+            <label [ngClass]="radioCompact === 'item4' ? 'selected' : ''" (click)="onClickCompact('item4')">
+              <input type="radio" name="timeframe-option" value="6M" class="sr-only">
+              <h3> 6M </h3>
+            </label>
+
+            <label [ngClass]="radioCompact === 'item5' ? 'selected' : ''" (click)="onClickCompact('item5')">
+              <input type="radio" name="timeframe-option" value="12M" disabled class="sr-only">
+              <h3> 12M </h3>
+            </label>
+
+          </div>
+        </fieldset>
+      </div>
+
+
+
+    </div>
+  </div>
+</app-common>
+
+
+<app-common [activeTab]="'preview'" [codePreview]="convertedDatas[7].code" [codeHtml]="convertedDatas[7].code"
+  [title]="convertedDatas[7].title">
+  <div class="preview-box !justify-start">
+    <div class="w-full max-w-5xl ">
+
+
+
+
+
+      <!-- Stacked radio cards -->
+
+      <div class="form-control">
+
+        <fieldset>
+          <legend class="sr-only">Server size</legend>
+          <div class="radio-cards stacked">
+
+            <label [ngClass]="radioStacked === 'item1' ? 'selected' : ''" (click)="onClickStacked('item1')">
+              <input type="radio" name="timeframe-option" value="daily" class="sr-only">
+              <input type="radio" name="server-size" value="Hobby" class="sr-only">
+              <span class="flex items-center">
+                <span class="flex flex-col text-sm">
+                  <h3>Hobby</h3>
+                  <span>
+                    <span class="block sm:inline">8GB / 4 CPUs</span>
+                    <span class="hidden sm:mx-1 sm:inline" aria-hidden="true">&middot;</span>
+                    <span class="block sm:inline">160 GB SSD disk</span>
+                  </span>
+                </span>
+              </span>
+              <span class="right-info">
+                <span class="!font-semibold">$40</span>
+                <span class="!text-neutral-600">/mo</span>
+              </span>
+              <span class="pointer-events-none absolute -inset-px" aria-hidden="true"></span>
+            </label>
+
+            <label [ngClass]="radioStacked === 'item2' ? 'selected' : ''" (click)="onClickStacked('item2')">
+              <input type="radio" name="server-size" value="Startup" class="sr-only">
+              <span class="flex items-center">
+                <span class="flex flex-col text-sm">
+                  <h3>Startup</h3>
+                  <span>
+                    <span class="block sm:inline">12GB / 6 CPUs</span>
+                    <span class="hidden sm:mx-1 sm:inline" aria-hidden="true">&middot;</span>
+                    <span class="block sm:inline">256 GB SSD disk</span>
+                  </span>
+                </span>
+              </span>
+              <span class="right-info">
+                <span class="!font-semibold">$80</span>
+                <span class="!text-neutral-600">/mo</span>
+              </span>
+              <span class="pointer-events-none absolute -inset-px" aria-hidden="true"></span>
+            </label>
+
+            <label [ngClass]="radioStacked === 'item3' ? 'selected' : ''" (click)="onClickStacked('item3')">
+              <input type="radio" name="server-size" value="Business" class="sr-only">
+              <span class="flex items-center">
+                <span class="flex flex-col text-sm">
+                  <h3>Business</h3>
+                  <span>
+                    <span class="block sm:inline">16GB / 8 CPUs</span>
+                    <span class="hidden sm:mx-1 sm:inline" aria-hidden="true">&middot;</span>
+                    <span class="block sm:inline">512 GB SSD disk</span>
+                  </span>
+                </span>
+              </span>
+              <span class="right-info">
+                <span class="!font-semibold">$160</span>
+                <span class="!text-neutral-600">/mo</span>
+              </span>
+              <span class="pointer-events-none absolute -inset-px" aria-hidden="true"></span>
+            </label>
+
+            <label [ngClass]="radioStacked === 'item4' ? 'selected' : ''" (click)="onClickStacked('item4')">
+              <input type="radio" name="server-size" value="Enterprise" class="sr-only">
+              <span class="flex items-center">
+                <span class="flex flex-col text-sm">
+                  <h3>Enterprise</h3>
+                  <span>
+                    <span class="block sm:inline">32GB / 12 CPUs</span>
+                    <span class="hidden sm:mx-1 sm:inline" aria-hidden="true">&middot;</span>
+                    <span class="block sm:inline">1024 GB SSD disk</span>
+                  </span>
+                </span>
+              </span>
+              <span class="right-info">
+                <span class="!font-semibold">$240</span>
+                <span class="!text-neutral-600">/mo</span>
+              </span>
+              <span class="pointer-events-none absolute -inset-px" aria-hidden="true"></span>
+            </label>
+          </div>
+        </fieldset>
+
+      </div>
+
+
+
+
+    </div>
+  </div>
+</app-common>
+
+
+<app-common [activeTab]="'preview'" [codePreview]="convertedDatas[8].code" [codeHtml]="convertedDatas[8].code"
+  [title]="convertedDatas[8].title">
+  <div class="preview-box !justify-start">
+    <div class="w-full max-w-5xl ">
+
+
+
+
+
+      <!-- Stacked radio cards -->
+
+
+
+      <!-- Radios tabular -->
+
+      <div class="form-control">
+
+        <fieldset>
+          <legend class="sr-only">Pricing plans</legend>
+
+          <div class="radio-cards tabular">
+
+            <label [ngClass]="pricingPlan === 'Startup' ? 'selected' : ''">
+              <span>
+                <input type="radio" name="pricing-plan" value="Startup" class="radio-input" checked
+                  [(ngModel)]="pricingPlan" (ngModelChange)="choosePricing($event)">
+                <h3>Startup</h3>
+              </span>
+              <span>
+                <span class="!font-semibold">$29 / mo</span>
+                <span class="!text-neutral-600">($290 / yr)</span>
+              </span>
+              <span>Up to 5 active job postings</span>
+            </label>
+
+            <label [ngClass]="pricingPlan === 'Business' ? 'selected' : ''">
+              <span>
+                <input type="radio" name="pricing-plan" value="Business" class="radio-input" [(ngModel)]="pricingPlan"
+                  (ngModelChange)="choosePricing($event)">
+                <h3>Business</h3>
+              </span>
+              <span>
+                <span class="!font-semibold">$99 / mo</span>
+                <span class="!text-neutral-600">($99 / yr)</span>
+              </span>
+              <span>Up to 25 active job postings</span>
+            </label>
+
+            <label [ngClass]="pricingPlan === 'Enterprise' ? 'selected' : ''">
+              <span>
+                <input type="radio" name="pricing-plan" value="Enterprise" class="radio-input" [(ngModel)]="pricingPlan"
+                  (ngModelChange)="choosePricing($event)">
+                <h3>Enterprise</h3>
+              </span>
+              <span>
+                <span class="!font-semibold">$249 / mo</span>
+                <span class="!text-neutral-600">($2490 / yr)</span>
+              </span>
+              <span>Unlimited active job postings</span>
+            </label>
+
+          </div>
+        </fieldset>
+
+      </div>
+
+
+
+
+
+
+    </div>
+  </div>
+</app-common>
+
+
+
+<app-common [activeTab]="'preview'" [codePreview]="convertedDatas[9].code" [codeHtml]="convertedDatas[9].code"
+  [title]="convertedDatas[9].title">
+  <div class="preview-box !justify-start">
+    <div class="w-full max-w-5xl ">
+
+
+
+
+
+
+
+      <!-- List with descriptions in panel -->
+
+      <div class="form-control">
+
+        <fieldset>
+          <legend class="sr-only">Privacy setting</legend>
+          <div class="radio-cards panels">
+
+            <label [ngClass]="listPanel === 'Public access' ? 'selected' : ''">
+              <input type="radio" name="privacy-setting" value="Public access" class="radio-input"
+                [(ngModel)]="listPanel" (ngModelChange)="choosePricing($event)">
+              <span>
+                <h3>Public access</h3>
+                <span>This project would be available to anyone who has the link</span>
+              </span>
+            </label>
+
+            <label [ngClass]="listPanel === 'Private to Project Members' ? 'selected' : ''">
+              <input type="radio" name="privacy-setting" value="Private to Project Members" class="radio-input"
+                [(ngModel)]="listPanel" (ngModelChange)="choosePricing($event)">
+              <span>
+                <h3>Private to Project Members</h3>
+                <span>Only members of this project would be able to access</span>
+              </span>
+            </label>
+
+            <label [ngClass]="listPanel === 'Private to you' ? 'selected' : ''">
+              <input type="radio" name="privacy-setting" value="Private to you" class="radio-input"
+                [(ngModel)]="listPanel" (ngModelChange)="choosePricing($event)">
+              <span>
+                <h3>Private to you</h3>
+                <span>You are the only one able to access this project</span>
+              </span>
+            </label>
+
+          </div>
+        </fieldset>
+
+      </div>
+
+
+
+
+
+
+
 
     </div>
   </div>

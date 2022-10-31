@@ -8,3 +8,88 @@
     </div>
   </div>
 </app-common>
+
+<app-common [activeTab]="'preview'" [codePreview]="convertedDatas[4].code" [codeHtml]="convertedDatas[4].code"
+  [title]="convertedDatas[4].title">
+  <div class="preview-box !justify-start">
+    <div class="w-full max-w-5xl ">
+      <div class="form-control !max-w-none">
+
+        <h2 class="cb-text-h6">Select a mailing list</h2>
+
+        <fieldset>
+          <legend class="sr-only">Select a mailing list</legend>
+
+          <div class="radio-cards mt-4 grid grid-cols-1 gap-4 sm:grid-cols-3">
+
+            <label class="selected">
+              <input type="radio" name="project-type" value="Newsletter" class="sr-only">
+              <span class="flex flex-1">
+                <span class="flex flex-col">
+                  <h3>Newsletter</h3>
+                  <span class="mt-1 flex items-center cb-text-copy-regular">Last message sent an hour ago</span>
+                  <span class="mt-6 cb-text-copy-regular strong">621 users</span>
+                </span>
+              </span>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                <path fill-rule="evenodd"
+                  d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+                  clip-rule="evenodd" />
+              </svg>
+              <span class="pointer-events-none absolute -inset-px" aria-hidden="true"></span>
+            </label>
+
+            <label>
+              <input type="radio" name="project-type" value="Existing Customers" class="sr-only"
+                aria-describedby="project-type-1-description-0 project-type-1-description-1">
+              <span class="flex flex-1">
+                <span class="flex flex-col">
+                  <h3>Existing Customers</h3>
+                  <span class="mt-1 flex items-center cb-text-copy-regular">Last message sent 2 weeks ago</span>
+                  <span class="mt-6 cb-text-copy-regular strong">1200 users</span>
+                </span>
+              </span>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                <path fill-rule="evenodd"
+                  d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+                  clip-rule="evenodd" />
+              </svg>
+              <span class="pointer-events-none absolute -inset-px" aria-hidden="true"></span>
+            </label>
+
+            <label>
+              <input type="radio" name="project-type" value="Trial Users" class="sr-only"
+                aria-describedby="project-type-2-description-0 project-type-2-description-1">
+              <span class="flex flex-1">
+                <span class="flex flex-col">
+                  <h3>Trial Users</h3>
+                  <span class="mt-1 flex items-center cb-text-copy-regular">Last message sent 4 days ago</span>
+                  <span class="mt-6 cb-text-copy-regular strong">2740 users</span>
+                </span>
+              </span>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                <path fill-rule="evenodd"
+                  d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+                  clip-rule="evenodd" />
+              </svg>
+              <span class="pointer-events-none absolute -inset-px" aria-hidden="true"></span>
+            </label>
+          </div>
+        </fieldset>
+
+      </div>
+
+    </div>
+  </div>
+</app-common>
+
+<app-common [activeTab]="'preview'" [codePreview]="convertedDatas[5].code" [codeHtml]="convertedDatas[5].code"
+  [title]="convertedDatas[5].title">
+  <div class="preview-box !justify-start">
+    <div class="w-full max-w-5xl ">
+
+      <div [innerHTML]="convertedDatas[5].code | safeHtml"></div>
+
+    </div>
+  </div>
+</app-common>

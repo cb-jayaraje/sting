@@ -53,9 +53,17 @@ export class RadioGroupsComponent implements OnInit {
       })
     )
      .subscribe(dataRes => {
-       this.convertedDatas.push(dataRes)
-       // console.log(this.convertedDatas)
+
+     if(dataRes.id !== "radio_5" && dataRes.id !== "radio_6") {
+      this.convertedDatas.push(dataRes)
+     }
+
+     
+
+      
+        console.log(this.convertedDatas)
      })
+     
   }
 
 }

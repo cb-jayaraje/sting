@@ -60,7 +60,7 @@ module.exports = RadioGroup = (styles) => ({
         '@apply border border-neutral-300 bg-white divide-x divide-neutral-400 rounded': {}
     },
     '.radio-compact label': {
-        '@apply py-2 px-3 flex flex-1 items-center justify-center cb-text-copy-regular cursor-pointer focus:outline-none hover:bg-neutral-50 hover:text-neutral-800': {}
+        '@apply py-2 px-6 flex flex-1 items-center justify-center cb-text-copy-regular whitespace-nowrap cursor-pointer focus:outline-none hover:bg-neutral-50 hover:text-neutral-800': {}
     },
     '.radio-compact label:first-of-type': {
         '@apply rounded-l': {}

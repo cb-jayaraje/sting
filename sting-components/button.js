@@ -1,6 +1,6 @@
 module.exports = Button = (styles) => ({
     ' .btn': {
-        '@apply antialiased items-center rounded border border-transparent bg-white px-4 py-2 text-sm font-medium cb-text-copy-regular drop-shadow-sm hover:bg-neutral-100 focus:outline-none focus:ring-2 focus:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-30 cursor-pointer': {},
+        '@apply antialiased whitespace-nowrap items-center rounded border border-transparent bg-white px-4 py-2 text-sm font-medium cb-text-copy-regular drop-shadow-sm hover:bg-neutral-100 focus:outline-none focus:ring-2 focus:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-30 cursor-pointer': {},
     },
     '.btn-small': {
         '@apply px-2.5 py-1.5 cb-text-copy-small border border-transparent font-medium rounded focus:outline-none focus:ring-2 focus:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-30': {},
@@ -110,7 +110,7 @@ module.exports = Button = (styles) => ({
         '@apply inline-flex items-center': {},
     },
     '.btn-link': {
-        '@apply px-0.5 antialiased font-medium text-primary-800 underline underline-offset-2 hover:text-primary-900 hover:bg-primary-50': {},
+        '@apply px-0.5 antialiased font-medium text-primary-800 underline underline-offset-2 hover:text-primary-900': {},
     }
 
 });

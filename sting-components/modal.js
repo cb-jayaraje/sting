@@ -1,6 +1,22 @@
 module.exports = Modal = (styles) => ({
     '.modal': {
-        "@apply relative inline-block align-bottom bg-white rounded-lg px-4 pt-5 pb-4 text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle sm:max-w-sm sm:w-full sm:p-6": {},
-                   },
+        "@apply relative transform overflow-hidden rounded-md bg-white p-4 text-left shadow-xl transition-all  sm:p-6": {},
+    },
+
+    
+
+    '.modal-small': {
+        "@apply modal sm:w-full sm:max-w-sm": {},
+    },
+
+    '.modal-regular': {
+        "@apply modal sm:w-full sm:max-w-md": {},
+    },
+
+    '.modal-title': {
+        "@apply cb-text-h5 text-primary-800": {},
+    },
+
+    
   
   });

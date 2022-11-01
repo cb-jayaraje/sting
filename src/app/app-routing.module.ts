@@ -20,6 +20,7 @@ import { RadioGroupsComponent } from './components/page/radio-groups/radio-group
 import { SelectMenusComponent } from './components/page/select-menus/select-menus.component';
 import { SignInFormsComponent } from './components/page/sign-in-forms/sign-in-forms.component';
 import { StackedListsComponent } from './components/page/stacked-lists/stacked-lists.component';
+import { StepsComponent } from './components/page/steps/steps.component';
 import { TableComponent } from './components/page/table/table.component';
 import { TabsComponent } from './components/page/tabs/tabs.component';
 import { ToggleComponent } from './components/page/toggle/toggle.component';
@@ -52,7 +53,8 @@ const routes: Routes = [
       {path: 'radio-groups', component: RadioGroupsComponent},
       {path: 'toggles', component: ToggleComponent},
       {path: 'tabs', component: TabsComponent},
-      {path: 'checkbox', component: CheckboxComponent}
+      {path: 'checkbox', component: CheckboxComponent},
+      {path: 'steps', component: StepsComponent}
     ]}
   ]}
  

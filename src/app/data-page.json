@@ -86,7 +86,8 @@
             {
                 "title": "Navigation",
                 "subMenu": [
-                    {"title":"Tabs", "link": "tabs" }
+                    {"title":"Tabs", "link": "tabs" },
+                    {"title":"Steps", "link": "steps" }
                     
                     
                 ]

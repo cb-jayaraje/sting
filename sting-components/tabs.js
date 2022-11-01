@@ -16,7 +16,7 @@ module.exports = Tabs = (styles) => ({
         '@apply bg-info-50 hover:bg-info-50 text-info-900 hover:text-info-900': {}
     },
     '.tab-link-badges': {
-        '@apply hidden ': {}
+        '@apply hidden': {}
     },
 
 });

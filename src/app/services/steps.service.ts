@@ -15,14 +15,14 @@ export class StepsService {
                   <!-- Completed Step -->
                   <a
                     href="#"
-                    class="group pl-4 py-2 flex flex-col border-l-4 border-primary-800 md:pl-0 md:pt-4 md:pb-0 md:border-l-0 md:border-t-4"
+                    class="group pl-4 py-2 flex flex-col border-l-4 border-info-800 md:pl-0 md:pt-4 md:pb-0 md:border-l-0 md:border-t-4"
                   >
                     <span
-                      class="cb-text-copy-small text-neutral-600 group-hover:text-primary-900"
+                      class="cb-text-copy-small text-neutral-600 group-hover:text-info-900"
                       >Step 1</span
                     >
                     <span
-                      class="cb-text-copy-regular font-semibold text-neutral-700 group-hover:text-primary-900"
+                      class="cb-text-copy-regular font-semibold text-neutral-700 group-hover:text-info-900"
                       >Feature</span
                     >
                   </a>
@@ -31,14 +31,14 @@ export class StepsService {
                   <!-- Completed Step -->
                   <a
                     href="#"
-                    class="group pl-4 py-2 flex flex-col border-l-4 border-primary-800 md:pl-0 md:pt-4 md:pb-0 md:border-l-0 md:border-t-4"
+                    class="group pl-4 py-2 flex flex-col border-l-4 border-info-800 md:pl-0 md:pt-4 md:pb-0 md:border-l-0 md:border-t-4"
                   >
                     <span
-                      class="cb-text-copy-small text-neutral-600 group-hover:text-primary-900"
+                      class="cb-text-copy-small text-neutral-600 group-hover:text-info-900"
                       >Step 2</span
                     >
                     <span
-                      class="cb-text-copy-regular font-semibold text-neutral-700 group-hover:text-primary-900"
+                      class="cb-text-copy-regular font-semibold text-neutral-700 group-hover:text-info-900"
                       >Feature</span
                     >
                   </a>
@@ -47,11 +47,11 @@ export class StepsService {
                   <!-- Current Step -->
                   <a
                     href="#"
-                    class="cursor-default pl-4 py-2 flex flex-col border-l-4 border-primary-800 md:pl-0 md:pt-4 md:pb-0 md:border-l-0 md:border-t-4"
+                    class="cursor-default pl-4 py-2 flex flex-col border-l-4 border-info-800 md:pl-0 md:pt-4 md:pb-0 md:border-l-0 md:border-t-4"
                     aria-current="step"
                   >
-                    <span class="cb-text-copy-small text-primary-800">Step 3</span>
-                    <span class="cb-text-copy-regular font-semibold text-primary-800"
+                    <span class="cb-text-copy-small text-info-800">Step 3</span>
+                    <span class="cb-text-copy-regular font-semibold text-info-800"
                       >Feature</span
                     >
                   </a>
@@ -60,14 +60,14 @@ export class StepsService {
                   <!-- Upcoming Step -->
                   <a
                     href="#"
-                    class="group pl-4 py-2 flex flex-col border-l-4 border-neutral-400 hover:border-primary-800 md:pl-0 md:pt-4 md:pb-0 md:border-l-0 md:border-t-4"
+                    class="group pl-4 py-2 flex flex-col border-l-4 border-neutral-400 hover:border-info-800 md:pl-0 md:pt-4 md:pb-0 md:border-l-0 md:border-t-4"
                   >
                     <span
-                      class="cb-text-copy-small text-neutral-600 group-hover:text-primary-900"
+                      class="cb-text-copy-small text-neutral-600 group-hover:text-info-900"
                       >Step 4</span
                     >
                     <span
-                      class="cb-text-copy-regular font-semibold text-neutral-700 group-hover:text-primary-900"
+                      class="cb-text-copy-regular font-semibold text-neutral-700 group-hover:text-info-900"
                       >Feature</span
                     >
                   </a>
@@ -76,14 +76,14 @@ export class StepsService {
                   <!-- Upcoming Step -->
                   <a
                     href="#"
-                    class="group pl-4 py-2 flex flex-col border-l-4 border-neutral-400 hover:border-primary-800 md:pl-0 md:pt-4 md:pb-0 md:border-l-0 md:border-t-4"
+                    class="group pl-4 py-2 flex flex-col border-l-4 border-neutral-400 hover:border-info-800 md:pl-0 md:pt-4 md:pb-0 md:border-l-0 md:border-t-4"
                   >
                     <span
-                      class="cb-text-copy-small text-neutral-600 group-hover:text-primary-900"
+                      class="cb-text-copy-small text-neutral-600 group-hover:text-info-900"
                       >Step 5</span
                     >
                     <span
-                      class="cb-text-copy-regular font-semibold text-neutral-700 group-hover:text-primary-900"
+                      class="cb-text-copy-regular font-semibold text-neutral-700 group-hover:text-info-900"
                       >Feature</span
                     >
                   </a>
@@ -107,7 +107,7 @@ export class StepsService {
                       class="flex-shrink-0 relative h-5 w-5 flex items-center justify-center"
                     >
                       <svg
-                        class="h-full w-full text-primary-800"
+                        class="h-full w-full text-info-800"
                         xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 20 20"
                         fill="currentColor"
@@ -121,7 +121,7 @@ export class StepsService {
                       </svg>
                     </span>
                     <span
-                      class="ml-3 cb-text-copy-regular font-semibold text-neutral-700 group-hover:text-primary-900"
+                      class="ml-3 cb-text-copy-regular font-semibold text-neutral-700 group-hover:text-info-900"
                       >Feature</span
                     >
                   </span>
@@ -142,11 +142,11 @@ export class StepsService {
                       class="absolute h-4 w-4 rounded-full bg-neutral-400"
                     ></span>
                     <span
-                      class="relative block w-2 h-2 bg-primary-800 rounded-full"
+                      class="relative block w-2 h-2 bg-info-800 rounded-full"
                     ></span>
                   </span>
                   <span
-                    class="ml-3 cb-text-copy-regular text-primary-800 font-semibold"
+                    class="ml-3 cb-text-copy-regular text-info-800 font-semibold"
                     >Feature</span
                   >
                 </a>
@@ -160,11 +160,11 @@ export class StepsService {
                       aria-hidden="true"
                     >
                       <div
-                        class="h-2 w-2 bg-neutral-400 rounded-full group-hover:bg-primary-900"
+                        class="h-2 w-2 bg-neutral-400 rounded-full group-hover:bg-info-900"
                       ></div>
                     </div>
                     <p
-                      class="ml-3 cb-text-copy-regular font-semibold text-neutral-700 group-hover:text-primary-900"
+                      class="ml-3 cb-text-copy-regular font-semibold text-neutral-700 group-hover:text-info-900"
                     >
                       Feature
                     </p>
@@ -180,11 +180,11 @@ export class StepsService {
                       aria-hidden="true"
                     >
                       <div
-                        class="h-2 w-2 bg-neutral-400 rounded-full group-hover:bg-primary-900"
+                        class="h-2 w-2 bg-neutral-400 rounded-full group-hover:bg-info-900"
                       ></div>
                     </div>
                     <p
-                      class="ml-3 cb-text-copy-regular font-semibold text-neutral-700 group-hover:text-primary-900"
+                      class="ml-3 cb-text-copy-regular font-semibold text-neutral-700 group-hover:text-info-900"
                     >
                       Feature
                     </p>
@@ -201,13 +201,13 @@ export class StepsService {
             title: 'Bullets',
             code: ` 
             <nav class="flex items-center" aria-label="Progress">
-        <p class="cb-text-copy-small text-primary-800">Step 2 of 4</p>
+        <p class="cb-text-copy-small text-neutral-800">Step 2 of 4</p>
         <ol role="list" class="ml-6 flex items-center space-x-3">
           <li>
             <!-- Completed Step -->
             <span
             
-              class="block h-3 w-5 rounded-full bg-primary-800"
+              class="block h-3 w-5 rounded-full bg-info-800"
             >
               <span class="sr-only">Step 1</span>
           </span>
@@ -224,7 +224,7 @@ export class StepsService {
                 <span class="h-full w-full rounded-full bg-neutral-400"></span>
               </span>
               <span
-                class="relative block h-3 w-9 rounded-full bg-primary-800"
+                class="relative block h-3 w-9 rounded-full bg-info-800"
                 aria-hidden="true"
               ></span>
               <span class="sr-only">Step 2</span>
@@ -266,7 +266,7 @@ export class StepsService {
           <div class="mt-3" aria-hidden="true">
             <div class="bg-neutral-400 rounded-full overflow-hidden">
               <div
-                class="h-1 bg-primary-800 rounded-full"
+                class="h-1 bg-info-800 rounded-full"
                 style="width: 37.5%"
               ></div>
             </div>

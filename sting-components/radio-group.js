@@ -12,7 +12,7 @@ module.exports = RadioGroup = (styles) => ({
         '@apply flex items-start': {}
     },
     '.radio-input': {
-        '@apply focus:ring-info-800 h-4 w-4 text-info-800 border-neutral-300': {}
+        '@apply focus:ring-info-800 h-4 w-4 text-info-800 border-neutral-400': {}
     },
     '.radio-label': {
         '@apply ml-3 block cb-text-copy-regular font-medium hover:text-neutral-800 cursor-pointer leading-tight': {}

@@ -1,5 +1,6 @@
 import { Injectable } from "@angular/core";
-import { BehaviorSubject, Observable } from "rxjs";
+import { SafeHtml } from "@angular/platform-browser";
+import { BehaviorSubject, from, map, Observable } from "rxjs";
 
 @Injectable({providedIn: 'root'})
 
@@ -13,6 +14,8 @@ export class CommonService {
 
     private _pageTitle = new BehaviorSubject<string>('');
     private _pageTitle$ = this._pageTitle.asObservable();
+
+    private _componentData = new BehaviorSubject<any>([]);
 
     constructor(){}
 
@@ -30,6 +33,34 @@ export class CommonService {
     }
     getPageTitle(): Observable<string> {
         return this._pageTitle$
+    }
+
+    getComponentDatas(){
+        return this._componentData
+    }
+
+    componentDatas(data: any) {
+
+
+        let pushData:any = [];
+        data.map((datas:any) => {
+            let html: SafeHtml = datas.code;
+           
+                       const dataa = {
+                id: datas.id,
+                title: datas.title,
+                code:html
+                }
+                console.log(dataa)
+
+                pushData.push(dataa)
+        })
+
+        this._componentData.next(pushData)
+       
+       
+
+            
     }
     
 

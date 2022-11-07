@@ -16,7 +16,6 @@ export class StepsComponent implements OnInit {
 
   htmlPre = '';
   compUnescape='';
-  
   steps: any;
   convertedDatas: any = [];
   html: SafeHtml = '';

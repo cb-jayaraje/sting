@@ -96,7 +96,8 @@
             {
                 "title": "Layouts",
                 "subMenu": [
-                    {"title":"Modals", "link": "modals" }
+                    {"title":"Modals", "link": "modals" },
+                    {"title":"Cards", "link": "cards" }
                     
 
                 ]

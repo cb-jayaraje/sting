@@ -512,6 +512,66 @@ export class TableService {
       </div>
           <!-- Tables ends -->
           `
+      },
+      {
+        id: 'table_2',
+        title: 'Basic Table',
+        code: ` 
+
+        <!-- Tables starts -->
+        <div class="w-full">
+
+            <div class="mt-8 flex flex-col">
+                <div class="-my-2 -mx-4 overflow-x-auto sm:-mx-6 lg:-mx-8">
+                    <div class="inline-block min-w-full py-2 align-middle md:px-6 lg:px-8">
+                        <div class="relative overflow-hidden ring-1 ring-neutral-100 md:rounded-lg">
+                            <table class="min-w-full table-fixed divide-y divide-neutral-200">
+                                <thead class="bg-neutral-100">
+                                    <tr>
+
+                                        <th scope="col" class="min-w-[12rem] table-th border pl-4">
+                                            Consectetur</th>
+                                        <th scope="col" class="table-th">
+                                            Consectetur</th>
+                                        <th scope="col" class="table-th">
+                                            Consectetur</th>
+                                        <th scope="col" class="table-th">
+                                            Consectetur</th>
+
+                                    </tr>
+                                </thead>
+                                <tbody class="divide-y divide-neutral-200 bg-white">
+                                    <!-- Selected: "bg-neutral-100" -->
+                                    <tr>
+
+                                        <!-- Selected: "text-indigo-600", Not Selected: "text-neutral-900" -->
+                                        <td
+                                            class="whitespace-nowrap pl-4 py-4 cb-text-copy-regular font-semibold cursor-pointer">
+                                            Tristique Senectus</td>
+                                        <td
+                                            class="whitespace-nowrap pr-4 py-4 cb-text-copy-regular text-neutral-700">
+                                            Turpis Egestas</td>
+                                        <td
+                                            class="whitespace-nowrap pr-4 py-4 cb-text-copy-regular text-neutral-700">
+                                            tristique@example.com</td>
+                                        <td
+                                            class="whitespace-nowrap pr-4 py-4 cb-text-copy-regular text-neutral-700">
+                                            Netus</td>
+
+                                    </tr>
+
+
+                                    <!-- More people... -->
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Tables ends -->
+
+        `
       }
     ]
 }

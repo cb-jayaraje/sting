@@ -20,6 +20,7 @@ const RadioGroup = require('./sting-components/radio-group');
 const Tabs = require('./sting-components/tabs');
 const Checkbox = require('./sting-components/checkbox');
 const Typography = require('./sting-components/typography');
+const Card = require('./sting-components/card');
 
 
 module.exports = plugin.withOptions(
@@ -39,7 +40,7 @@ module.exports = plugin.withOptions(
         addComponents(Alerts());
         addComponents(SelectMenus());
         addComponents(Table());
-        // addComponents(Card());
+         addComponents(Card());
         // addComponents(Dialog());
         // addComponents(Drawer());
          addComponents(Dropdown());

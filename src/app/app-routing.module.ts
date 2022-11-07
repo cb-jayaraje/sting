@@ -9,6 +9,7 @@ import { LayoutComponent } from './components/layout/layout.component';
 import { AlertsComponent } from './components/page/alerts/alerts.component';
 import { BadgesComponent } from './components/page/badges/badges.component';
 import { ButtonsComponent } from './components/page/buttons/buttons.component';
+import { CardsComponent } from './components/page/cards/cards.component';
 import { CheckboxComponent } from './components/page/checkbox/checkbox.component';
 import { GelatoComponent } from './components/page/checkout/gelato/gelato.component';
 import { DropdownsComponent } from './components/page/dropdowns/dropdowns.component';
@@ -54,7 +55,8 @@ const routes: Routes = [
       {path: 'toggles', component: ToggleComponent},
       {path: 'tabs', component: TabsComponent},
       {path: 'checkbox', component: CheckboxComponent},
-      {path: 'steps', component: StepsComponent}
+      {path: 'steps', component: StepsComponent},
+      {path: 'cards', component: CardsComponent}
     ]}
   ]}
  

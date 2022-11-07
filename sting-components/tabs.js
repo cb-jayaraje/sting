@@ -15,6 +15,9 @@ module.exports = Tabs = (styles) => ({
     '.tab-pill-active': {
         '@apply bg-info-50 hover:bg-info-50 text-info-900 hover:text-info-900': {}
     },
+    '.tab-pill-inactive': {
+        '@apply text-neutral-700 hover:text-neutral-800 hover:border-transparent': {}
+    },
     '.tab-link-badges': {
         '@apply hidden': {}
     },

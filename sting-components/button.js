@@ -93,7 +93,7 @@ module.exports = Button = (styles) => ({
         '@apply bg-transparent hover:bg-neutral-100 text-neutral-800 hover:text-neutral-900 active:bg-neutral-100/50 border-neutral-300 focus:ring-primary-500': {},
     },
     '.theme-sting .btn-borderless': {
-        '@apply text-primary-800 hover:text-primary-900 hover:bg-neutral-100 border-transparent': {},
+        '@apply !bg-transparent text-primary-800 hover:text-primary-900 hover:bg-neutral-100 border-transparent': {},
     },
     '.theme-sting .btn-danger': {
         '@apply text-white !bg-red-800 hover:!bg-red-900 active:!bg-red-800 focus:ring-red-400 border-red-900 text-white': {},

@@ -27,6 +27,10 @@ import { HighlightDirective } from './shared/highlight.directive';
 import { TypographyModule } from './components/config/typography/typography.module';
 import { SharedModule } from './shared/shared.module';
 import { commonComponentModule } from './components/page/common/commonComponent.module';
+import { SearchComponent } from './search/search.component';
+import { FilterPipe } from './pipes/filter.pipe';
+import { ClickedOutsideDirective } from './shared/click-outside/clicked-outside.directive';
+// import { Ng2SearchPipeModule } from 'ng2-search-filter';
 
 @NgModule({
   declarations: [
@@ -49,13 +53,17 @@ import { commonComponentModule } from './components/page/common/commonComponent.
     InstallationComponent,
     TypographyComponent,
     HighlightDirective,
+    SearchComponent,
+    FilterPipe,
+    ClickedOutsideDirective
     
   ],
   imports: [
     BrowserModule,
     FormsModule,
     AppRoutingModule,
-    commonComponentModule
+    commonComponentModule,
+    // Ng2SearchPipeModule
     
   ],
   providers: [{provide: LocationStrategy, useClass: HashLocationStrategy}],

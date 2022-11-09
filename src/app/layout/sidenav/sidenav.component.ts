@@ -1,7 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, HostListener, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { debounceTime, distinctUntilChanged, Subject, switchMap } from 'rxjs';
 import { CommonService } from 'src/app/services/common.service';
+import { SearchService } from 'src/app/services/search.service';
 
 
 import * as data from './../../data-page.json'
@@ -16,6 +17,10 @@ export class SidenavComponent implements OnInit {
   leftNav = data;
   path = '/components/page/';
   search = '';
+  searchText = '';
+  searchDatas:any = [];
+  searchDisabled = false;
+  searchModal = false;
 
   private searchSubject = new Subject<string>();
 
@@ -28,14 +33,25 @@ export class SidenavComponent implements OnInit {
     })
   )
 
+  @HostListener('window:keydown.meta.k', ['$event'])
+  handleKeyDown(event: KeyboardEvent) {
+    console.log(event)
+    this.onKeydown(event)
+  }
 
 
-  constructor( private router: Router, private route: ActivatedRoute, public commonService: CommonService) { }
+
+  constructor( private router: Router, private route: ActivatedRoute, 
+    public commonService: CommonService, public searchService: SearchService) { }
 
   ngOnInit(): void {
     // console.log(this.route.snapshot.url);
 
-    console.log(this.leftNav.leftNav)
+    console.log(this.searchService.getList())
+
+    this.searchDatas = this.searchService.getList();
+
+    // console.log(this.leftNav.leftNav)
   }
 
   searchPosts(event: any){
@@ -45,6 +61,24 @@ export class SidenavComponent implements OnInit {
 
   selectTitle(title: string){
     this.commonService.setPageTitle(title)
+  }
+
+  onKeydown($event: Event){
+    console.log("log event")
+    this.searchDisabled = true;
+    this.searchModal = true;
+    const val = ($event.target as HTMLInputElement).value
+
+    
+  }
+
+
+
+  closeModal(event: string = ''){
+    // console.log(event)
+    this.searchModal = false;
+    this.searchDisabled = false;
+
   }
 
 }

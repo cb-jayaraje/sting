@@ -3,7 +3,49 @@
         <a routerLink="/" class=" cursor-pointer"> <img class="h-8 w-auto" src="assets/images/sting-logo.svg"
                 alt="Your Company"></a>
     </div>
-    <div class="h-10"></div>
+    <div class="h-5"></div>
+    <div class=" relative px-4">
+
+        <div class="form-control">
+            <label for="search" class="sr-only">Search</label>
+            <div class="flex">
+                <div class="relative flex flex-grow items-stretch focus-within:z-10">
+                    <div class="input-icon-leading">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                            class="input-icon">
+                            <path fill-rule="evenodd"
+                                d="M9 3.5a5.5 5.5 0 100 11 5.5 5.5 0 000-11zM2 9a7 7 0 1112.452 4.391l3.328 3.329a.75.75 0 11-1.06 1.06l-3.329-3.328A7 7 0 012 9z"
+                                clip-rule="evenodd" />
+                        </svg>
+                    </div>
+                    <input type="text" name="search" id="search" class="input !rounded-r-none pl-10" autocomplete="off"
+                        [disabled]="searchDisabled" placeholder="Search..." (click)="onKeydown($event)">
+                    <div class="input-icon-trailing">
+                        <!-- Heroicon name: solid/question-mark-circle -->
+                        <kbd
+                            class="inline-flex items-center rounded border border-gray-200 px-2 font-sans text-sm font-medium text-gray-400">⌘K</kbd>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="search-hero hidden">
+            <input class="form-control" type="text" name="search" [(ngModel)]="searchText" autocomplete="off"
+                placeholder="&#61442;  Start searching for a hero by id or name or country">
+        </div>
+
+        <div class=" absolute hidden">
+            <ul>
+                <li *ngFor="let searchData of searchDatas | filter : searchText"><a [routerLink]="searchData.link"></a>
+                </li>
+            </ul>
+
+        </div>
+    </div>
+
+    <div class="h-5"></div>
+
     <nav class="flex-1 space-y-8 bg-white px-5" aria-label="Sidebar">
         <ul *ngFor="let nav of leftNav.leftNav">
             <li class="block">
@@ -21,3 +63,5 @@
 
     </nav>
 </div>
+
+<app-search (colseSearchModal)="closeModal($event)" *ngIf="searchModal"></app-search>

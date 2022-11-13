@@ -1,7 +1,7 @@
 module.exports = Alert = (styles) => ({
     
     '.alert': {
-        "@apply rounded-md p-4 border cb-text-copy-regular": {},
+        "@apply rounded-md p-3 border cb-text-copy-regular": {},
     }, 
     '.alert div:first-child': {
         "@apply flex items-start gap-3": {},

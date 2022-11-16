@@ -1,7 +1,7 @@
 module.exports = Alert = (styles) => ({
     
     '.alert': {
-        "@apply rounded-md p-3 border cb-text-copy-regular": {},
+        "@apply rounded-md p-3 border cb-text-copy-regular text-neutral-800": {},
     }, 
     '.alert div:first-child': {
         "@apply flex items-start gap-3": {},
@@ -16,10 +16,13 @@ module.exports = Alert = (styles) => ({
         "@apply max-w-xl": {},
     },
     '.alert ul': {
-        "@apply list-disc pl-5 space-y-1": {},
+        "@apply list-disc pl-5 space-y-0": {},
     },
     '.alert svg': {
         "@apply flex-shrink-0 w-5 h-5": {},
+    },
+    '.alert button svg': {
+        "@apply w-4 h-4": {},
     },
     '.alert .actions': {
         "@apply flex gap-4 pt-2": {},

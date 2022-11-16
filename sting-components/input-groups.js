@@ -4,7 +4,7 @@ module.exports = InputGroups = (styles) => ({
     "@apply space-y-1": {},
   },
     '.form-control .input, .input': {
-    "@apply block w-full cb-text-copy-regular rounded border-neutral-400 shadow-sm focus:border-primary-500 focus:ring-primary-500 placeholder-neutral-500": {},
+    "@apply block w-full cb-text-copy-regular rounded border-neutral-400 shadow-sm focus:border-info-800 focus:ring-info-800 placeholder-neutral-500": {},
   },
   '.form-control .label': {
       "@apply cb-text-copy-regular font-medium": {},
@@ -22,7 +22,7 @@ module.exports = InputGroups = (styles) => ({
       "@apply cb-text-copy-regular text-neutral-600": {},
   },
     '.form-control .input-select': {
-        "@apply focus:ring-primary-500 focus:border-primary-500 h-full py-0 pl-3 pr-7 border-transparent bg-transparent text-neutral-500 sm:cb-text-copy-regular rounded-md": {},
+        "@apply focus:ring-info-800 focus:border-info-800 h-full py-0 pl-3 pr-7 border-transparent bg-transparent text-neutral-500 sm:cb-text-copy-regular rounded-md": {},
     },
   '.form-control .dropdown-div': {
       "@apply origin-top-right absolute right-0 mt-2 w-auto rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none z-20": {},

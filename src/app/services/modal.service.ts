@@ -50,7 +50,7 @@ export class ModalService {
         <div class="sm:flex sm:items-start">
           <div class="w-full mt-0 sm:mt-0 sm:ml-0 sm:text-left">
             <div class="w-full flex items-center justify-between">
-              <h5 class="modal-title"  id="modal-title">
+              <h5 class="modal-title" id="modal-title">
                 Update PO number
               </h5>
               <button class="btn-rounded-small btn btn-borderless">
@@ -74,7 +74,7 @@ export class ModalService {
           </div>
         </div>
         <div class="mt-6 sm:flex sm:flex-row-reverse gap-4">
-          <button class="btn btn-primary">Proceed</button>
+          <button class="btn btn-info">Proceed</button>
           <button class="btn btn-neutral">Cancel</button>
         </div>
       </div>
@@ -218,9 +218,9 @@ export class ModalService {
                 </svg>
               </button>
             </div>
-            <div class="mt-6 space-y-6">
+            <div class="mt-4 space-y-4">
               <div class="form-control radio-group">
-                <h6 class="cb-text-h6 font-medium text-neutral-700">
+                <h6 class="cb-text-h6 font-medium text-neutral-700 hidden">
                   Choose a method
                 </h6>
 
@@ -276,7 +276,7 @@ export class ModalService {
           </div>
         </div>
         <div class="mt-6 sm:flex sm:flex-row-reverse gap-4">
-          <button class="btn btn-primary">Save</button>
+          <button class="btn btn-info">Save</button>
           <button class="btn btn-neutral">Cancel</button>
         </div>
       </div>
@@ -303,7 +303,7 @@ export class ModalService {
                 </svg>
               </button>
             </div>
-            <div class="mt-6 space-y-6">
+            <div class="mt-4 space-y-4">
               <div class="form-control">
                 <label for="email" class="label">API Secret Key</label>
                 <input
@@ -327,8 +327,8 @@ export class ModalService {
             </div>
           </div>
         </div>
-        <div class="mt-12  sm:flex sm:flex-row-reverse gap-4">
-          <button class="btn btn-primary">Connect</button>
+        <div class="mt-6 sm:flex sm:flex-row-reverse gap-4">
+          <button class="btn btn-info">Connect</button>
           <button class="btn btn-neutral">Cancel</button>
         </div>
         </div>

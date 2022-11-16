@@ -33,10 +33,10 @@ module.exports = Badge = (styles) => ({
         "@apply text-neutral-700 hover:bg-neutral-400 focus:bg-neutral-100 focus:text-neutral-700 ml-1":{}
     },
     '.badge-primary':{
-      "@apply badge bg-primary-600 text-primary-50 border border-primary-600":{}
+      "@apply badge bg-primary-800 text-white border border-primary-800":{}
   },
     '.badge-primary button':{
-      "@apply text-primary-50 hover:bg-primary-800 focus:bg-primary-600 focus:text-primary-50":{}
+      "@apply text-white hover:bg-primary-900 focus:bg-primary-800":{}
   },
 
   '.badge-minimal':{

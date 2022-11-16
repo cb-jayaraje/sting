@@ -1,9 +1,9 @@
 module.exports = SelectMenus = (styles) => ({ 
      '.form-control .select': {
-          "@apply block w-full pl-3 pr-10 py-2 cb-text-copy-regular border border-neutral-400 focus:outline-none focus:!ring-primary-500 focus:!border-primary-500 sm:text-sm rounded shadow-sm": {},
+          "@apply block w-full pl-3 pr-10 py-2 cb-text-copy-regular border border-neutral-400 focus:outline-none focus:ring-info-800 focus:border-info-800 sm:text-sm rounded shadow-sm": {},
      },
      '.form-control .select-button': {
-          "@apply bg-white relative w-full cb-text-copy-regular border border-neutral-400 rounded shadow-sm pl-3 pr-10 py-2 text-left cursor-default focus:outline-none focus:ring-1 focus:!ring-primary-500 focus:!border-primary-500 sm:text-sm": {},
+          "@apply bg-white relative w-full cb-text-copy-regular border border-neutral-400 rounded shadow-sm pl-3 pr-10 py-2 text-left cursor-default focus:outline-none focus:ring-1 focus:ring-info-800 focus:border-info-800 sm:text-sm": {},
      },
      '.form-control .select-button span:first-child': {
           "@apply truncate": {},

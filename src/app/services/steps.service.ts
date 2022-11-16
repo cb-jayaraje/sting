@@ -15,7 +15,7 @@ export class StepsService {
                   <!-- Completed Step -->
                   <a
                     href="#"
-                    class="group pl-4 py-2 flex flex-col border-l-4 border-info-800 md:pl-0 md:pt-4 md:pb-0 md:border-l-0 md:border-t-4"
+                    class="group pl-4 py-2 flex flex-col border-l-4 border-info-800 md:pl-0 md:pt-4 md:pb-0 md:border-l-0 md:border-t-2"
                   >
                     <span
                       class="cb-text-copy-small text-neutral-600 group-hover:text-info-900"
@@ -31,7 +31,7 @@ export class StepsService {
                   <!-- Completed Step -->
                   <a
                     href="#"
-                    class="group pl-4 py-2 flex flex-col border-l-4 border-info-800 md:pl-0 md:pt-4 md:pb-0 md:border-l-0 md:border-t-4"
+                    class="group pl-4 py-2 flex flex-col border-l-4 border-info-800 md:pl-0 md:pt-4 md:pb-0 md:border-l-0 md:border-t-2"
                   >
                     <span
                       class="cb-text-copy-small text-neutral-600 group-hover:text-info-900"
@@ -47,7 +47,7 @@ export class StepsService {
                   <!-- Current Step -->
                   <a
                     href="#"
-                    class="cursor-default pl-4 py-2 flex flex-col border-l-4 border-info-800 md:pl-0 md:pt-4 md:pb-0 md:border-l-0 md:border-t-4"
+                    class="cursor-default pl-4 py-2 flex flex-col border-l-4 border-info-800 md:pl-0 md:pt-4 md:pb-0 md:border-l-0 md:border-t-2"
                     aria-current="step"
                   >
                     <span class="cb-text-copy-small text-info-800">Step 3</span>
@@ -60,7 +60,7 @@ export class StepsService {
                   <!-- Upcoming Step -->
                   <a
                     href="#"
-                    class="group pl-4 py-2 flex flex-col border-l-4 border-neutral-400 hover:border-info-800 md:pl-0 md:pt-4 md:pb-0 md:border-l-0 md:border-t-4"
+                    class="group pl-4 py-2 flex flex-col border-l-4 border-neutral-400 hover:border-info-800 md:pl-0 md:pt-4 md:pb-0 md:border-l-0 md:border-t-2"
                   >
                     <span
                       class="cb-text-copy-small text-neutral-600 group-hover:text-info-900"
@@ -76,7 +76,7 @@ export class StepsService {
                   <!-- Upcoming Step -->
                   <a
                     href="#"
-                    class="group pl-4 py-2 flex flex-col border-l-4 border-neutral-400 hover:border-info-800 md:pl-0 md:pt-4 md:pb-0 md:border-l-0 md:border-t-4"
+                    class="group pl-4 py-2 flex flex-col border-l-4 border-neutral-400 hover:border-info-800 md:pl-0 md:pt-4 md:pb-0 md:border-l-0 md:border-t-2"
                   >
                     <span
                       class="cb-text-copy-small text-neutral-600 group-hover:text-info-900"

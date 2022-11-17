@@ -12,9 +12,6 @@ module.exports = Toggle = (styles) => ({
     '.toggle-group div.toggle-item': {
         '@apply flex items-center justify-between gap-6 py-4' : {}
     },
-    '.toggle-group.reverse div.toggle-item': {
-        '@apply flex-row-reverse' : {}
-    },
     '.toggle-group div.toggle-item div': {
         '@apply flex flex-grow flex-col cb-text-copy-regular' : {}
     },

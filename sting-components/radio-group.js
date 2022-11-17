@@ -12,7 +12,7 @@ module.exports = RadioGroup = (styles) => ({
         '@apply flex items-start': {}
     },
     '.radio-input': {
-        '@apply focus:ring-info-800 h-4 w-4 text-info-800 border-neutral-400': {}
+        '@apply focus:ring-info-200 h-4 w-4 text-info-800 border-neutral-400': {}
     },
     '.radio-label': {
         '@apply ml-3 block cb-text-copy-regular font-medium hover:text-neutral-800 cursor-pointer leading-tight': {}
@@ -33,7 +33,7 @@ module.exports = RadioGroup = (styles) => ({
         '@apply relative bg-white h-full flex p-4 w-full rounded ring-1 ring-neutral-400 hover:ring-neutral-500 cursor-pointer': {}
     },
     '.radio-cards label.selected': {
-        '@apply ring-info-400 bg-info-50 bg-opacity-50 hover:cursor-default': {}
+        '@apply ring-info-200 bg-info-50 bg-opacity-50 hover:cursor-default': {}
     },
     '.radio-cards label span': {
         '@apply cb-text-copy-regular': {}
@@ -45,7 +45,7 @@ module.exports = RadioGroup = (styles) => ({
         '@apply w-5 h-5 invisible': {}
     },
     '.radio-cards label.selected h3': {
-        '@apply text-info-800': {}
+        '@apply text-neutral-700': {}
     },
     '.radio-cards label.selected svg': {
         '@apply text-info-800 visible': {}
@@ -60,7 +60,7 @@ module.exports = RadioGroup = (styles) => ({
         '@apply border border-neutral-300 bg-white divide-x divide-neutral-400 rounded': {}
     },
     '.radio-compact label': {
-        '@apply py-2 px-6 flex flex-1 items-center justify-center cb-text-copy-regular whitespace-nowrap cursor-pointer focus:outline-none hover:bg-neutral-50 hover:text-neutral-800': {}
+        '@apply py-2 px-6 flex flex-1 items-center justify-center cb-text-copy-regular font-medium whitespace-nowrap cursor-pointer focus:outline-none hover:bg-neutral-50': {}
     },
     '.radio-compact label:first-of-type': {
         '@apply rounded-l': {}
@@ -69,7 +69,7 @@ module.exports = RadioGroup = (styles) => ({
         '@apply rounded-r': {}
     },
     '.radio-compact label.selected': {
-        '@apply bg-info-50 text-info-800': {}
+        '@apply bg-info-50': {}
     },
 
     // Radio stacked
@@ -96,7 +96,7 @@ module.exports = RadioGroup = (styles) => ({
         '@apply relative -space-y-px': {}
     },
     '.radio-cards.tabular label.selected': {
-        '@apply z-20 ring-0 border-info-400': {}
+        '@apply z-20 ring-0 border-info-200': {}
     },
     '.radio-cards.tabular label': {
         '@apply relative ring-0 border border-neutral-300 hover:border-neutral-400 p-4 flex cursor-pointer md:pl-4 md:pr-6 md:grid md:grid-cols-3 focus:outline-none rounded-none hover:z-10': {}
@@ -132,7 +132,7 @@ module.exports = RadioGroup = (styles) => ({
         '@apply rounded-b': {}
     },
     '.radio-cards.panels label.selected': {
-        '@apply z-20 ring-0 border-info-400': {}
+        '@apply z-20 ring-0 border-info-200': {}
     },
 
 

@@ -77,9 +77,8 @@ export class ListContainerService {
                       <div class="mt-2 flex">
                         <div class="list-group__subtext">
                       
-                          <p >
+                          <p>
                             okta-idp
-                            
                           </p>
                         </div>
                       </div>

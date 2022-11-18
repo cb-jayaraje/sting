@@ -45,8 +45,7 @@ export class ToggleService {
           
                   <div class="toggle-item">
                     <div>
-                      <span>Available to hire</span>
-                      <span>Nulla amet tempus sit accumsan. Aliquet turpis sed sit lacinia.</span>
+                      <span class="!font-medium">Annual billing</span>
                     </div>
                     <div class="toggle" appToggle>
                       <div class="isActive">
@@ -86,8 +85,8 @@ export class ToggleService {
           
                   <div class="toggle-item">
                     <div>
-                      <span>Available to hire</span>
-                      <span>Nulla amet tempus sit accumsan. Aliquet turpis sed sit lacinia.</span>
+                      <span>Annual billing</span>
+                      <span>(Save 10%)</span>
                     </div>
                     <div class="toggle" appToggle>
                       <div class="isActive">
@@ -111,8 +110,8 @@ export class ToggleService {
           
                   <div class="toggle-item">
                     <div>
-                      <span>Available to hire</span>
-                      <span>Nulla amet tempus sit accumsan. Aliquet turpis sed sit lacinia.</span>
+                      <span>Monthly billing</span>
+                      <span>(Save 5%)</span>
                     </div>
                     <div class="toggle" appToggle>
                       <div class="isActive">
@@ -177,8 +176,8 @@ export class ToggleService {
         
                 <div class="toggle-item">
                   <div>
-                    <span>Annual billing</span>
-                    <span>(Save 10%)</span>
+                    <span>Monthly billing</span>
+                    <span>(Save 5%)</span>
                   </div>
                   <div class="toggle" appToggle>
                     <div class="isActive">

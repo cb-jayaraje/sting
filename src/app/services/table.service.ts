@@ -19,14 +19,14 @@ export class TableService {
                     </p>
                 </div>
                 <div class="mt-4 sm:mt-0 sm:ml-16 flex space-x-3">
-                    <button type="button" class="btn btn-secondary whitespace-nowrap">Secondary action</button>
-                    <button type="button" class="btn btn-primary btn-icon whitespace-nowrap">
+                    <button type="button" class="btn btn-neutral">Action</button>
+                    <button type="button" class="btn btn-secondary btn-icon">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-2 -ml-0.5" viewBox="0 0 20 20"
                             fill="currentColor">
                             <path
                                 d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
                             </path>
-                        </svg>Primary action </button>
+                        </svg>Action</button>
                 </div>
             </div>
             <div class="mt-8 flex flex-col">
@@ -83,7 +83,7 @@ export class TableService {
                                             Netus</td>
                                         <td class="whitespace-nowrap pr-4 sm:pr-6 py-2 flex justify-end">
                                             <button type="button"
-                                                class="btn btn-neutral btn-borderless">
+                                                class="btn btn-borderless">
                                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none"
                                                     viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
                                                     class="w-5 h-5">
@@ -118,7 +118,7 @@ export class TableService {
                                             Netus</td>
                                         <td class="whitespace-nowrap pl-3 pr-4 sm:pr-6 py-2 flex justify-end">
                                             <button type="button"
-                                                class="btn btn-neutral btn-borderless">
+                                                class="btn btn-borderless">
                                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none"
                                                     viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
                                                     class="w-5 h-5">
@@ -153,7 +153,7 @@ export class TableService {
                                             Netus</td>
                                         <td class="whitespace-nowrap pl-3 pr-4 sm:pr-6 py-2 flex justify-end">
                                             <button type="button"
-                                                class="btn btn-neutral btn-borderless">
+                                                class="btn btn-borderless">
                                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none"
                                                     viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
                                                     class="w-5 h-5">
@@ -188,7 +188,7 @@ export class TableService {
                                             Netus</td>
                                         <td class="whitespace-nowrap pl-3 pr-4 sm:pr-6 py-2 flex justify-end">
                                             <button type="button"
-                                                class="btn btn-neutral btn-borderless">
+                                                class="btn btn-borderless">
                                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none"
                                                     viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
                                                     class="w-5 h-5">
@@ -223,7 +223,7 @@ export class TableService {
                                             Netus</td>
                                         <td class="whitespace-nowrap pl-3 pr-4 sm:pr-6 py-2 flex justify-end">
                                             <button type="button"
-                                                class="btn btn-neutral btn-borderless">
+                                                class="btn btn-borderless">
                                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none"
                                                     viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
                                                     class="w-5 h-5">
@@ -258,11 +258,11 @@ export class TableService {
               <p class="cb-text-copy-regular"> Tristique senectus et netus et malesuada fames ac turpis egestas integer eget aliquet nibh praesent tristique.</p>
             </div>
             <div class="mt-4 sm:mt-0 sm:ml-16 flex space-x-3">
-              <button type="button" class="btn btn-secondary whitespace-nowrap">Secondary action</button>
-              <button type="button" class="btn btn-primary btn-icon whitespace-nowrap">
+            <button type="button" class="btn btn-neutral">Action</button>
+            <button type="button" class="btn btn-secondary btn-icon">
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-2 -ml-0.5" viewBox="0 0 20 20" fill="currentColor">
                   <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
-                </svg>Primary action </button>
+                </svg>Action</button>
             </div>
           </div>
           <div class="mt-8 flex flex-col">
@@ -314,7 +314,7 @@ export class TableService {
                         <td class="whitespace-nowrap pr-4 py-4 cb-text-copy-regular text-neutral-700"> Netus</td>
                         <td class="whitespace-nowrap pr-4 py-4 cb-text-copy-regular text-neutral-700"> Netus</td>
                         <td class="whitespace-nowrap py-4 pl-3 pr-4 sm:pr-6 flex justify-end">
-                          <button type="button" class="btn btn-neutral btn-borderless">
+                          <button type="button" class="btn btn-borderless">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-5 h-5">
                               <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 12.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 18.75a.75.75 0 110-1.5.75.75 0 010 1.5z"></path>
                             </svg>
@@ -349,7 +349,7 @@ export class TableService {
                         <td class="whitespace-nowrap pr-4 py-4 cb-text-copy-regular text-neutral-700"> Netus</td>
                         <td class="whitespace-nowrap pr-4 py-4 cb-text-copy-regular text-neutral-700"> Netus</td>
                         <td class="whitespace-nowrap py-4 pl-3 pr-4 sm:pr-6 flex justify-end">
-                          <button type="button" class="btn btn-neutral btn-borderless">
+                          <button type="button" class="btn btn-borderless">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-5 h-5">
                               <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 12.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 18.75a.75.75 0 110-1.5.75.75 0 010 1.5z"></path>
                             </svg>
@@ -386,7 +386,7 @@ export class TableService {
                         <td class="whitespace-nowrap pr-4 py-4 cb-text-copy-regular text-neutral-700"> Netus</td>
                         <td class="whitespace-nowrap pr-4 py-4 cb-text-copy-regular text-neutral-700"> Netus</td>
                         <td class="whitespace-nowrap py-4 pl-3 pr-4 sm:pr-6 flex justify-end">
-                          <button type="button" class="btn btn-neutral btn-borderless">
+                          <button type="button" class="btn btn-borderless">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-5 h-5">
                               <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 12.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 18.75a.75.75 0 110-1.5.75.75 0 010 1.5z"></path>
                             </svg>
@@ -421,7 +421,7 @@ export class TableService {
                         <td class="whitespace-nowrap pr-4 py-4 cb-text-copy-regular text-neutral-700"> Netus</td>
                         <td class="whitespace-nowrap pr-4 py-4 cb-text-copy-regular text-neutral-700"> Netus</td>
                         <td class="whitespace-nowrap py-4 pl-3 pr-4 sm:pr-6 flex justify-end">
-                          <button type="button" class="btn btn-neutral btn-borderless">
+                          <button type="button" class="btn btn-borderless">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-5 h-5">
                               <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 12.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 18.75a.75.75 0 110-1.5.75.75 0 010 1.5z"></path>
                             </svg>
@@ -456,7 +456,7 @@ export class TableService {
                         <td class="whitespace-nowrap pr-4 py-4 cb-text-copy-regular text-neutral-700"> Netus</td>
                         <td class="whitespace-nowrap pr-4 py-4 cb-text-copy-regular text-neutral-700"> Netus</td>
                         <td class="whitespace-nowrap py-4 pl-3 pr-4 sm:pr-6 flex justify-end">
-                          <button type="button" class="btn btn-neutral btn-borderless">
+                          <button type="button" class="btn btn-borderless">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-5 h-5">
                               <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 12.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 18.75a.75.75 0 110-1.5.75.75 0 010 1.5z"></path>
                             </svg>
@@ -494,7 +494,7 @@ export class TableService {
                         <td class="whitespace-nowrap pr-4 py-4 cb-text-copy-regular text-neutral-700"> Netus</td>
                         <td class="whitespace-nowrap pr-4 py-4 cb-text-copy-regular text-neutral-700"> Netus</td>
                         <td class="whitespace-nowrap py-4 pl-3 pr-4 sm:pr-6 flex justify-end">
-                          <button type="button" class="btn btn-neutral btn-borderless">
+                          <button type="button" class="btn btn-borderless">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-5 h-5">
                               <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 12.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 18.75a.75.75 0 110-1.5.75.75 0 010 1.5z"></path>
                             </svg>

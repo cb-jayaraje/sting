@@ -1,6 +1,6 @@
 module.exports = Button = (styles) => ({
     ' .btn': {
-        '@apply antialiased whitespace-nowrap items-center rounded border border-transparent bg-white px-4 py-2 font-medium cb-text-copy-regular hover:bg-neutral-100 focus:outline-none focus:ring-2 focus:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-30 cursor-pointer items-start': {},
+        '@apply antialiased whitespace-nowrap items-center rounded border border-transparent bg-white px-4 py-2 font-medium cb-text-copy-regular hover:bg-neutral-100 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-info-800 disabled:cursor-not-allowed disabled:opacity-30 cursor-pointer items-start whitespace-nowrap': {},
     },
     '.btn-small': {
         '@apply px-2.5 py-1.5 cb-text-copy-small border border-transparent font-medium rounded focus:outline-none focus:ring-2 focus:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-30': {},
@@ -17,30 +17,6 @@ module.exports = Button = (styles) => ({
     '.btn-rounded-small svg': {
         '@apply h-4 w-4': {},
     },
-    // '.btn-outline': {
-    //     '@apply bg-transparent hover:bg-primary-50 text-primary-500 border-primary-400 focus:ring-primary-500': {},
-    // },
-    // '.btn-primary': {
-    //     '@apply text-white border-0 !bg-primary-800 hover:!bg-primary-800 active:!bg-primary-800 focus:ring-primary-800 text-white border border-transparent': {},
-    // },
-    // '.btn-red': {
-    //     '@apply text-white !bg-red-50 hover:!bg-red-100 active:!bg-red-100 focus:ring-red-500 border-red-50 text-white border border-transparent': {},
-    // },
-    // '.btn-green': {
-    //     '@apply text-green-700 !bg-green-50 hover:!bg-green-100 focus:ring-green-500 active:!bg-green-100 border border-transparent': {},
-    // },
-    // '.btn-info': {
-    //     '@apply text-white !bg-info-300 hover:!bg-info-100 focus:ring-info-300 active:!bg-info-400 border border-transparent': {},
-    // },
-    // '.btn-warning': {
-    //     '@apply !bg-orange-50 hover:!bg-orange-100 text-orange-700 border-orange-50 focus:ring-orange-500 border border-transparent': {},
-    // },
-    // '.btn-success': {
-    //     '@apply text-green-700 !bg-green-50 hover:!bg-green-100 focus:ring-green-500 active:!bg-green-100 border border-transparent': {},
-    // },
-    // '.btn-danger': {
-    //     '@apply !bg-red-50 hover:!bg-red-100 active:!bg-red-100 focus:ring-red-400 text-red-600 border border-transparent': {},
-    // },
     '.btn-icon-trailing': {
         '@apply ml-2 -mr-0.5 h-4 w-4': {},
     },
@@ -66,34 +42,34 @@ module.exports = Button = (styles) => ({
 
     // Sting theme
     '.theme-sting .btn-primary': {
-        '@apply text-white bg-primary-800 hover:bg-primary-900 active:bg-primary-800 focus:ring-primary-800 focus:outline-none border border-transparent border-b-primary-900': {},
+        '@apply text-white bg-primary-800 hover:bg-primary-900 active:bg-primary-800 focus:outline-none border border-transparent border-b-primary-900': {},
     },
     '.theme-sting .btn-secondary': {
-        '@apply text-primary-800 bg-neutral-300 hover:bg-neutral-400 active:bg-neutral-200 focus:ring-primary-800 focus:outline-none border border-transparent border-b-neutral-400': {},
+        '@apply text-primary-800 bg-neutral-200 hover:bg-neutral-300 active:bg-neutral-200 focus:outline-none border border-transparent border-b-neutral-300': {},
     },
     '.theme-sting .btn-info': {
-        '@apply text-white bg-info-800 hover:bg-info-900 active:bg-info-800 focus:ring-info-800 hover:text-white focus:outline-none border border-transparent border-b-info-900': {},
+        '@apply text-white bg-info-800 hover:bg-info-900 active:bg-info-800 hover:text-white focus:outline-none border border-transparent border-b-info-900': {},
     },
     '.theme-sting .btn-neutral': {
-        '@apply bg-transparent hover:bg-neutral-100 text-primary-800 hover:text-neutral-900 active:bg-neutral-100/50 border border-neutral-400 focus:ring-primary-500': {},
+        '@apply bg-transparent hover:bg-neutral-100 text-primary-800 hover:text-neutral-900 active:bg-neutral-100/50 border border-neutral-400': {},
     },
     '.theme-sting .btn-borderless': {
         '@apply bg-transparent text-primary-800 hover:bg-neutral-100': {},
     },
     '.theme-sting .btn-danger': {
-        '@apply text-white !bg-red-800 hover:!bg-red-900 active:!bg-red-800 focus:ring-red-400 text-white border !border-transparent !border-b-red-900': {},
+        '@apply text-white !bg-red-800 hover:!bg-red-900 active:!bg-red-800 text-white border !border-transparent !border-b-red-900': {},
     },
 
 
     // Leap theme
     '.theme-leap .btn-primary': {
-        "@apply text-white border-0 !bg-primary-400 active:!bg-primary-600 focus:ring-primary-600 border-primary-500 text-white": {},
+        "@apply text-white border-0 !bg-primary-400 active:!bg-primary-600 border-primary-500 text-white": {},
     },
     '.btn-primary-small': {
-        '@apply text-white border-0 !bg-primary-500 hover:!bg-primary-600 active:!bg-primary-600 focus:ring-primary-600 border-primary-500 text-white': {},
+        '@apply text-white border-0 !bg-primary-500 hover:!bg-primary-600 active:!bg-primary-600 border-primary-500 text-white': {},
     },
     '.theme-leap .btn-secondary': {
-        "@apply text-neutral-900 bg-gradient-to-b from-white to-neutral-100 active:!bg-primary-50 focus:ring-primary-500 border border-neutral-400 hover:text-primary-800 focus:outline-none": {},
+        "@apply text-neutral-900 bg-gradient-to-b from-white to-neutral-100 active:!bg-primary-50 border border-neutral-400 hover:text-primary-800 focus:outline-none": {},
     },
 
 

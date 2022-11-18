@@ -136,10 +136,10 @@ export class CheckboxService {
         },
         {
             id: "checkbox_4",
-            title: "List with checkbox on right",
+            title: "List with checkbox with separators",
             code: 
                 `
-                <!-- List with checkbox on right -->
+                <!-- List with checkbox with separators -->
 
                 <div class="form-control checkbox-group max-w-lg">
                     
@@ -148,27 +148,27 @@ export class CheckboxService {
                         <div class="checkbox-list boxed right">
     
                           <div>
-                              <label for="comments3" class="checkbox-label with-info">
+                          <input id="comments3" name="comments" type="checkbox" class="checkbox">
+                                <label for="comments3" class="checkbox-label with-info">
                                 <span>Comments</span>
                                 <span>Get notified when someones posts a comment on a posting.</span>
                               </label>
-                              <input id="comments3" name="comments" type="checkbox" class="checkbox">
                           </div>
     
                           <div>
+                              <input id="candidates3" name="candidates" type="checkbox" class="checkbox">
                               <label for="candidates3" class="checkbox-label with-info">
                                 <span>Candidates</span>
                                 <span>Get notified when a candidate applies for a job.</span>
                               </label>
-                              <input id="candidates3" name="candidates" type="checkbox" class="checkbox">
                           </div>
     
                           <div>
+                              <input id="offers3" name="offers" type="checkbox" class="checkbox">
                               <label for="offers3" class="checkbox-label with-info">
                                 <span>Offers</span>
                                 <span>Get notified when a candidate accepts or rejects an offer.</span>
                               </label>
-                              <input id="offers3" name="offers" type="checkbox" class="checkbox">
                           </div>
     
                         </div>
@@ -177,45 +177,45 @@ export class CheckboxService {
                 </div>
                 `
         },
-        {
-            id: "checkout_5",
-            title: "Checkbox list with inline description",
-            code: 
-                `
-                <!-- Checkbox list with inline description -->
+        // {
+        //     id: "checkout_5",
+        //     title: "Checkbox list with inline description",
+        //     code: 
+        //         `
+        //         <!-- Checkbox list with inline description -->
     
-                <div class="form-control checkbox-group max-w-lg">
+        //         <div class="form-control checkbox-group max-w-lg">
                     
-                    <fieldset>
-                        <legend class="cb-text-h5 mb-4">Members</legend>
-                        <div class="checkbox-list boxed right">
+        //             <fieldset>
+        //                 <legend class="cb-text-h5 mb-4">Members</legend>
+        //                 <div class="checkbox-list boxed right">
     
-                          <div>
-                              <label for="person-1" class="label select-none cursor-pointer">Annette Black</label>
-                              <input id="person-1" name="person-1" type="checkbox" class="checkbox">
-                          </div>
+        //                   <div>
+        //                       <label for="person-1" class="label select-none cursor-pointer">Annette Black</label>
+        //                       <input id="person-1" name="person-1" type="checkbox" class="checkbox">
+        //                   </div>
                       
-                          <div>
-                              <label for="person-2" class="label select-none cursor-pointer">Cody Fisher</label>
-                              <input id="person-2" name="person-2" type="checkbox" class="checkbox">
-                          </div>
+        //                   <div>
+        //                       <label for="person-2" class="label select-none cursor-pointer">Cody Fisher</label>
+        //                       <input id="person-2" name="person-2" type="checkbox" class="checkbox">
+        //                   </div>
                       
-                          <div>
-                              <label for="person-3" class="label select-none cursor-pointer">Courtney Henry</label>
-                              <input id="person-3" name="person-3" type="checkbox" class="checkbox">
-                          </div>
+        //                   <div>
+        //                       <label for="person-3" class="label select-none cursor-pointer">Courtney Henry</label>
+        //                       <input id="person-3" name="person-3" type="checkbox" class="checkbox">
+        //                   </div>
                       
-                          <div>
-                              <label for="person-4" class="label select-none cursor-pointer">Kathryn Murphy</label>
-                              <input id="person-4" name="person-4" type="checkbox" class="checkbox">
-                          </div>
+        //                   <div>
+        //                       <label for="person-4" class="label select-none cursor-pointer">Kathryn Murphy</label>
+        //                       <input id="person-4" name="person-4" type="checkbox" class="checkbox">
+        //                   </div>
                           
-                        </div>
-                      </fieldset>
+        //                 </div>
+        //               </fieldset>
     
-                </div>
-                `
-        },
+        //         </div>
+        //         `
+        // },
 
     ];
 

@@ -12,6 +12,7 @@ import { ButtonsComponent } from './components/page/buttons/buttons.component';
 import { CardsComponent } from './components/page/cards/cards.component';
 import { CheckboxComponent } from './components/page/checkbox/checkbox.component';
 import { GelatoComponent } from './components/page/checkout/gelato/gelato.component';
+import { ContainersComponent } from './components/page/containers/containers.component';
 import { DropdownsComponent } from './components/page/dropdowns/dropdowns.component';
 import { InputGroupsComponent } from './components/page/input-groups/input-groups.component';
 import { ListContainersComponent } from './components/page/list-containers/list-containers.component';
@@ -56,7 +57,8 @@ const routes: Routes = [
       {path: 'tabs', component: TabsComponent},
       {path: 'checkbox', component: CheckboxComponent},
       {path: 'steps', component: StepsComponent},
-      {path: 'cards', component: CardsComponent}
+      {path: 'cards', component: CardsComponent},
+      {path: 'containers', component: ContainersComponent}
     ]}
   ]}
  

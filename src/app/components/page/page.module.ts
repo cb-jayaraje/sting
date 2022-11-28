@@ -28,6 +28,7 @@ import { StackedListsComponent } from './stacked-lists/stacked-lists.component';
 import { commonComponentModule } from "./common/commonComponent.module";
 import { StepsComponent } from './steps/steps.component';
 import { CardsComponent } from './cards/cards.component';
+import { ContainersComponent } from './containers/containers.component';
 
 @NgModule({
     declarations: [
@@ -55,7 +56,8 @@ import { CardsComponent } from './cards/cards.component';
         ToggleDirective,
         StackedListsComponent,
         StepsComponent,
-        CardsComponent
+        CardsComponent,
+        ContainersComponent
         
   ],
     imports: [

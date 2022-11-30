@@ -8,6 +8,7 @@ import { TypographyComponent } from './components/config/typography/typography.c
 import { LayoutComponent } from './components/layout/layout.component';
 import { AlertsComponent } from './components/page/alerts/alerts.component';
 import { BadgesComponent } from './components/page/badges/badges.component';
+import { BreadcrumbsComponent } from './components/page/breadcrumbs/breadcrumbs.component';
 import { ButtonsComponent } from './components/page/buttons/buttons.component';
 import { CardsComponent } from './components/page/cards/cards.component';
 import { CheckboxComponent } from './components/page/checkbox/checkbox.component';
@@ -17,11 +18,15 @@ import { DropdownsComponent } from './components/page/dropdowns/dropdowns.compon
 import { InputGroupsComponent } from './components/page/input-groups/input-groups.component';
 import { ListContainersComponent } from './components/page/list-containers/list-containers.component';
 import { ModalsComponent } from './components/page/modals/modals.component';
+import { NotificationsComponent } from './components/page/notifications/notifications.component';
+import { PageHeadingComponent } from './components/page/page-heading/page-heading.component';
 import { PageComponent } from './components/page/page.component';
+import { PaginationComponent } from './components/page/pagination/pagination.component';
 import { RadioGroupsComponent } from './components/page/radio-groups/radio-groups.component';
 import { SelectMenusComponent } from './components/page/select-menus/select-menus.component';
 import { SignInFormsComponent } from './components/page/sign-in-forms/sign-in-forms.component';
 import { StackedListsComponent } from './components/page/stacked-lists/stacked-lists.component';
+import { StatsComponent } from './components/page/stats/stats.component';
 import { StepsComponent } from './components/page/steps/steps.component';
 import { TableComponent } from './components/page/table/table.component';
 import { TabsComponent } from './components/page/tabs/tabs.component';
@@ -58,7 +63,14 @@ const routes: Routes = [
       {path: 'checkbox', component: CheckboxComponent},
       {path: 'steps', component: StepsComponent},
       {path: 'cards', component: CardsComponent},
-      {path: 'containers', component: ContainersComponent}
+      {path: 'containers', component: ContainersComponent},
+      {path: 'pagination', component: PaginationComponent},
+      {path: 'page-headings', component: PageHeadingComponent},
+      {path: 'breadcrumbs', component: BreadcrumbsComponent},
+      {path: 'stats', component: StatsComponent},
+      {path: 'notifications', component: NotificationsComponent},
+      
+
     ]}
   ]}
  

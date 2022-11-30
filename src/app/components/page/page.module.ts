@@ -29,6 +29,11 @@ import { commonComponentModule } from "./common/commonComponent.module";
 import { StepsComponent } from './steps/steps.component';
 import { CardsComponent } from './cards/cards.component';
 import { ContainersComponent } from './containers/containers.component';
+import { PaginationComponent } from './pagination/pagination.component';
+import { PageHeadingComponent } from './page-heading/page-heading.component';
+import { BreadcrumbsComponent } from './breadcrumbs/breadcrumbs.component';
+import { StatsComponent } from './stats/stats.component';
+import { NotificationsComponent } from './notifications/notifications.component';
 
 @NgModule({
     declarations: [
@@ -57,7 +62,12 @@ import { ContainersComponent } from './containers/containers.component';
         StackedListsComponent,
         StepsComponent,
         CardsComponent,
-        ContainersComponent
+        ContainersComponent,
+        PaginationComponent,
+        PageHeadingComponent,
+        BreadcrumbsComponent,
+        StatsComponent,
+        NotificationsComponent
         
   ],
     imports: [

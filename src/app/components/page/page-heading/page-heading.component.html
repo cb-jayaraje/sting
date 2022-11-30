@@ -1,0 +1,12 @@
+<app-common *ngFor="let convertedData of convertedDatas" [activeTab]="'preview'" mainTitle="pageheadings"
+    [codePreview]="convertedData.code" [codeHtml]="convertedData.code" [title]="convertedData.title">
+
+    <div class="preview-box-2">
+
+
+        <div [innerHTML]="convertedData.code | safeHtml"></div>
+
+
+    </div>
+
+</app-common>

@@ -1,118 +1,138 @@
+{
+  "forms": [
+    {
+      "title": "Input Groups",
+      "noOfComponents": 6,
+      "image": "input-groups.png",
+      "link": "input-groups"
+    },
+    {
+      "title": "Select Menus",
+      "noOfComponents": 7,
+      "image": "select-menus.png",
+      "link": "select-menus"
+    },
+    {
+      "title": "Sign-in and Registration",
+      "noOfComponents": 2,
+      "image": "sign-in-forms.png",
+      "link": "sign-in-forms"
+    }
+  ],
+  "elements": [
+    {
+      "title": "Badges",
+      "noOfComponents": 2,
+      "image": "badges.png",
+      "link": "badges"
+    },
+    {
+      "title": "Dropdowns",
+      "noOfComponents": 2,
+      "image": "dropdowns.png",
+      "link": "dropdowns"
+    },
+    {
+      "title": "Buttons",
+      "noOfComponents": 1,
+      "image": "buttons.png",
+      "link": "buttons"
+    }
+  ],
+  "layout": [
+    {
+      "title": "List Containers",
+      "noOfComponents": 7,
+      "image": "list-containers.png",
+      "link": "list-containers"
+    }
+  ],
+  "feedBack": [
+    {
+      "title": "Alerts",
+      "noOfComponents": 6,
+      "image": "alerts.png",
+      "link": "alerts"
+    }
+  ],
+  "overlays": [
+    {
+      "title": "Modals",
+      "noOfComponents": 6,
+      "image": "modals.png",
+      "link": "modals"
+    }
+  ],
 
+  "leftNav": [
+    {
+      "title": "Getting Started",
+      "subMenu": [{ "title": "Installation", "link": "installation" }]
+    },
+    {
+      "title": "Brand",
+      "subMenu": [
+        { "title": "Colors", "link": "colors" },
+        { "title": "Typography", "link": "typography" }
+      ]
+    },
+    {
+      "title": "Elements",
+      "subMenu": [
+        { "title": "Buttons", "link": "buttons" },
+        { "title": "Badges", "link": "badges" },
+        { "title": "Dropdowns", "link": "dropdowns" },
+        { "title": "Page Headings", "link": "page-headings" },
+        { "title": "Stats", "link": "stats" }
+      ]
+    },
 
     {
-        "forms": [
-            {"title": "Input Groups", "noOfComponents": 6, "image":  "input-groups.png", "link": "input-groups"},
-            {"title": "Select Menus", "noOfComponents": 7, "image": "select-menus.png", "link": "select-menus"},
-            {"title": "Sign-in and Registration", "noOfComponents": 2, "image": "sign-in-forms.png", "link": "sign-in-forms"}
-        ],
-        "elements": [
-            {"title": "Badges", "noOfComponents": 2, "image": "badges.png", "link": "badges"},
-            {"title": "Dropdowns", "noOfComponents": 2, "image": "dropdowns.png", "link": "dropdowns"},
-            {"title": "Buttons", "noOfComponents": 1, "image": "buttons.png", "link": "buttons"}
-        ],
-        "layout": [
-            {"title": "List Containers", "noOfComponents": 7, "image": "list-containers.png", "link": "list-containers"}
-          
-        ],
-        "feedBack": [
-            {"title": "Alerts", "noOfComponents": 6, "image": "alerts.png", "link": "alerts"}
-          
-        ],
-        "overlays": [
-            {"title": "Modals", "noOfComponents": 6, "image": "modals.png", "link": "modals"}
-        ],
-        
-        "leftNav": [
+      "title": "Forms",
+      "subMenu": [
+        { "title": "Input Groups", "link": "input-groups" },
+        { "title": "Select Menus", "link": "select-menus" },
+        { "title": "Toggles", "link": "toggles" },
+        { "title": "Checkbox", "link": "checkbox" },
+        { "title": "Radio Groups", "link": "radio-groups" }
+      ]
+    },
+    {
+      "title": "Lists",
+      "subMenu": [
+        { "title": "Stacked Lists", "link": "stacked-lists" },
+        { "title": "Tables", "link": "table" }
+      ]
+    },
+    {
+      "title": "Feedback",
+      "subMenu": [
+        { "title": "Alerts", "link": "alerts" },
+        { "title": "Notifications", "link": "notifications" }
+      ]
+    },
+    {
+      "title": "Navigation",
+      "subMenu": [
+        { "title": "Tabs", "link": "tabs" },
+        { "title": "Steps", "link": "steps" },
+        { "title": "Paginations", "link": "pagination" },
+        { "title": "Breadcrumbs", "link": "breadcrumbs" }
+      ]
+    },
 
-            {
-                "title": "Getting Started",
-                "subMenu": [
-                    {"title": "Installation", "link":"installation"}
-                    
-                ]
-            },
-            {
-                "title": "Brand",
-                "subMenu": [
-                 
-                    {"title": "Colors", "link":"colors"},
-                    {"title": "Typography", "link":"typography"}
-                    
-                ]
-            },
-            {
-                "title": "Elements",
-                "subMenu": [
-                    {"title":"Buttons", "link": "buttons" },
-                    {"title":"Badges", "link": "badges" },
-                    {"title":"Dropdowns", "link": "dropdowns" }
-
-                    
-                    
-                ]
-            },
-            
-            {
-                "title": "Forms",
-                "subMenu": [
-                    {"title":"Input Groups", "link": "input-groups" },
-                    {"title":"Select Menus", "link": "select-menus" },
-                    {"title":"Toggles", "link": "toggles" },
-                    {"title":"Checkbox", "link": "checkbox" },
-                    {"title":"Radio Groups", "link": "radio-groups" }
-                    
-                ]
-            },
-            {
-                "title": "Lists",
-                "subMenu": [
-                  
-                    {"title": "Stacked Lists", "link":"stacked-lists"},
-                    {"title": "Tables", "link":"table"}
-                   
-               
-                    
-                ]
-            },
-            {
-                "title": "Feedback",
-                "subMenu": [
-                    {"title":"Alerts", "link": "alerts" }
-                    
-                    
-                ]
-            },
-            {
-                "title": "Navigation",
-                "subMenu": [
-                    {"title":"Tabs", "link": "tabs" },
-                    {"title":"Steps", "link": "steps" }
-                    
-                    
-                ]
-            },
-           
-            {
-                "title": "Overlays",
-                "subMenu": [
-                    {"title":"Containers", "link": "containers" },
-                    {"title":"Modals", "link": "modals" },
-                    {"title":"Cards", "link": "cards" }
-                    
-                    
-
-                ]
-            }
-            
-            
-        ],
-        "templates": [
-            {"title":"Sign-in and Registration", "link": "sign-in-forms" },
-            {"title":"List Containers", "link": "list-containers" },
-            {"title":"Checkout", "link": "checkout" }
-        ]
+    {
+      "title": "Overlays",
+      "subMenu": [
+        { "title": "Containers", "link": "containers" },
+        { "title": "Modals", "link": "modals" },
+        { "title": "Cards", "link": "cards" }
+      ]
     }
-  
-
-
+  ],
+  "templates": [
+    { "title": "Sign-in and Registration", "link": "sign-in-forms" },
+    { "title": "List Containers", "link": "list-containers" },
+    { "title": "Checkout", "link": "checkout" }
+  ]
+}

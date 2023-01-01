@@ -1,4 +1,25 @@
-<app-common mainTitle="select_menus" *ngFor="let convertedData of convertedDatas" [activeTab]="'preview'"
+<div class="cb-intro-copy">
+  
+    <p>Stacked lists are a common design pattern used to display a list of items in a vertical, stacked layout. Here are some guidelines for designing stacked list elements within a design system:</p>
+    
+    <ul>
+      <li><strong>Use clear, descriptive labels:</strong> The labels for the list items should clearly describe the purpose of each item and the type of content expected</li>
+      
+      <li><strong>Use appropriate visual hierarchy:</strong> Make it easy for users to identify the different items in the list and the relationships between them. This can be achieved through the use of visual hierarchy, such as using larger or bolder text for the primary items and smaller, lighter text for secondary items.</li>
+      
+      <li><strong>Consider mobile-friendliness:</strong> When designing for small screens, consider how the list items will be displayed. It may be necessary to use a different layout or truncate the labels to ensure that the list is easy to use on a smaller screen.</li>
+      
+      <li><strong>Use appropriate spacing and alignment:</strong> Proper spacing and alignment can help to make the list more legible and easier to read. Use consistent spacing between elements and align elements according to the overall layout of the page.</li>
+      
+      <li><strong>Provide clear actions or next steps:</strong> If applicable, the list items should clearly communicate any necessary actions or next steps for the user. Make it easy for users to understand what they need to do and how to do it.</li>
+      
+    </ul>
+      
+      <p>By following these guidelines, you can help to create a stacked list experience that is clear, intuitive, and easy to use for your users.</p>
+    
+    </div>
+    
+    <app-common mainTitle="select_menus" *ngFor="let convertedData of convertedDatas" [activeTab]="'preview'"
     [codePreview]="convertedData.code" [codeHtml]="convertedData.code" [title]="convertedData.title">
     <div class="preview-box !justify-start">
         <div class="w-full max-w-xl mx-auto ">

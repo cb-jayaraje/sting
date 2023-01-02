@@ -132,7 +132,7 @@ export class ButtonService {
 
           <!--outline button with trailing icon-->
           <div>
-            <butto class="btn btn-secondary btn-icon">
+            <button class="btn btn-secondary btn-icon">
             Button
               <svg class="btn-icon-trailing" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
                 fill="currentColor" aria-hidden="true">
@@ -634,9 +634,7 @@ export class ButtonService {
       </div>
 
     
-      `
-    }
-    
-
+      `,
+    },
   ];
 }

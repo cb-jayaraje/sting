@@ -6,19 +6,14 @@ export class BreadcrumbService {
     {
       id: 'breadcrumb_!',
       title: 'Breadcrumb',
-      code: `     <nav class="flex" aria-label="Breadcrumb">
-      <ol role="list" class="flex items-center space-x-3">
+      code: `     <nav class="breadcrumb" aria-label="Breadcrumb">
+      <ol role="list">
         <li>
-          <div class="flex items-center">
-            <a href="#" class="cb-text-copy-small hover:text-neutral-800"
-              >Page</a
-            >
-          </div>
+            <a  class="breadcrumb-text">Page</a>
         </li>
         <li>
-          <div class="flex items-center">
-            <svg
-              class="flex-shrink-0 h-5 w-5 text-neutral-400"
+            <svg 
+              class="breadcrumb-icon"
               xmlns="http://www.w3.org/2000/svg"
               fill="currentColor"
               viewBox="0 0 20 20"
@@ -26,15 +21,11 @@ export class BreadcrumbService {
             >
               <path d="M5.555 17.776l8-16 .894.448-8 16-.894-.448z"></path>
             </svg>
-            <a href="#" class="ml-3 cb-text-copy-small hover:text-neutral-800"
-              >Page</a
-            >
-          </div>
+            <a  class="ml-3 breadcrumb-text">Page</a>
         </li>
         <li>
-          <div class="flex items-center">
             <svg
-              class="flex-shrink-0 h-5 w-5 text-neutral-400"
+            class="breadcrumb-icon"
               xmlns="http://www.w3.org/2000/svg"
               fill="currentColor"
               viewBox="0 0 20 20"
@@ -42,13 +33,7 @@ export class BreadcrumbService {
             >
               <path d="M5.555 17.776l8-16 .894.448-8 16-.894-.448z"></path>
             </svg>
-            <a
-              href="#"
-              class="ml-3 cb-text-copy-small hover:text-neutral-800"
-              aria-current="page"
-              >Page</a
-            >
-          </div>
+            <a  class="ml-3 breadcrumb-text">Page</a>
         </li>
       </ol>
     </nav>`,

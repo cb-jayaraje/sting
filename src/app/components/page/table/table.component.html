@@ -1,9 +1,715 @@
-<app-common *ngFor="let convertedData of convertedDatas" [activeTab]="'preview'" [codePreview]="convertedData.code"
+<!-- <app-common *ngFor="let convertedData of convertedDatas" [activeTab]="'preview'" [codePreview]="convertedData.code"
     [codeHtml]="convertedData.code" [title]="convertedData.title">
     <div class="preview-box">
         <div class="w-full mx-auto ">
 
             <div [innerHTML]="convertedData.code | safeHtml"></div>
+
+        </div>
+    </div>
+
+</app-common> -->
+
+<app-common [activeTab]="'preview'" [codePreview]="convertedDatas[0].code" [codeHtml]="convertedDatas[0].code"
+    [title]="convertedDatas[0].title">
+    <div class="preview-box">
+        <div class="w-full mx-auto ">
+
+            <!-- Tables starts -->
+
+            <table class="min-w-full divide-y divide-neutral-200">
+                <thead class="bg-neutral-50">
+                    <tr class="divide-x-2">
+                        <th scope="col" class="table-th bg-neutral-50 py-2 pl-6 sm:pl-6">
+                            <a class="group inline-flex">
+                                Name
+                                <!-- Active: "bg-gray-200 text-gray-900 group-hover:bg-gray-300", Not Active: "invisible text-gray-400 group-hover:visible group-focus:visible" -->
+                                <span
+                                    class="invisible ml-2 flex-none rounded text-gray-400 group-hover:visible group-focus:visible">
+                                    <!-- Heroicon name: mini/chevron-down -->
+                                    <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
+                                        fill="currentColor" aria-hidden="true">
+                                        <path fill-rule="evenodd"
+                                            d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                                            clip-rule="evenodd" />
+                                    </svg>
+                                </span>
+                            </a>
+                        </th>
+                        <th scope="col" class="table-th bg-neutral-50  py-3.5 pl-6">
+                            <div class="group inline-flex justify-between items-center w-full">
+
+                                <a class="group inline-flex">
+                                    Email
+                                    <!-- Active: "bg-gray-200 text-gray-900 group-hover:bg-gray-300", Not Active: "invisible text-gray-400 group-hover:visible group-focus:visible" -->
+                                    <span class=" rounded text-gray-400 group-focus:visible">
+                                        <svg class=" ml-2 h-5 w-5 flex-none rounded text-gray-400 " width="20"
+                                            height="20" viewBox="0 0 20 20" fill="currentColor"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M12.324 9H7.67601C7.11301 9 6.79801 8.397 7.14601 7.986L9.46901 5.24C9.53545 5.16466 9.61716 5.10433 9.70871 5.063C9.80026 5.02167 9.89956 5.0003 10 5.0003C10.1005 5.0003 10.1998 5.02167 10.2913 5.063C10.3829 5.10433 10.4646 5.16466 10.531 5.24L12.854 7.986C13.203 8.397 12.887 9 12.324 9Z"
+                                                fill="#D3D9DC" />
+                                            <path
+                                                d="M7.676 11H12.324C12.887 11 13.203 11.603 12.854 12.014L10.531 14.76C10.4646 14.8353 10.3829 14.8957 10.2913 14.937C10.1997 14.9783 10.1004 14.9997 10 14.9997C9.89955 14.9997 9.80026 14.9783 9.7087 14.937C9.61715 14.8957 9.53544 14.8353 9.469 14.76L7.145 12.014C6.798 11.603 7.113 11 7.676 11Z"
+                                                fill="#3F4E54" />
+                                        </svg>
+
+                                    </span>
+                                </a>
+
+                                <div class="relative flex text-left h-min">
+                                    <button type="button" class="btn-borderless btn btn-small hover:!bg-white p-0"
+                                        id="menu-button" aria-expanded="true" aria-haspopup="true">
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M5.29289 7.29289C5.68342 6.90237 6.31658 6.90237 6.70711 7.29289L10 10.5858L13.2929 7.29289C13.6834 6.90237 14.3166 6.90237 14.7071 7.29289C15.0976 7.68342 15.0976 8.31658 14.7071 8.70711L10.7071 12.7071C10.3166 13.0976 9.68342 13.0976 9.29289 12.7071L5.29289 8.70711C4.90237 8.31658 4.90237 7.68342 5.29289 7.29289Z"
+                                                fill="#92A1A8" />
+                                        </svg>
+                                    </button>
+
+                                    <div class=" hidden dropdown mt-6 !w-56 divide-y-[1px] py-0" role="menu">
+
+
+                                        <div class="form-control">
+
+                                            <div class="toggle-group">
+
+                                                <div class="toggle-item !py-3 border-none">
+                                                    <div>
+                                                        <span class="!font-medium">Lock this column</span>
+                                                    </div>
+                                                    <div class="toggle" appToggle>
+                                                        <div class="isActive">
+                                                            <button type="button" class="toggle-btn" role="switch"
+                                                                aria-checked="false">
+                                                                <span class="sr-only">Lock this column</span>
+                                                                <span aria-hidden="true" class="toggle-shape"></span>
+                                                                <span aria-hidden="true"
+                                                                    class="toggle-btn-default enabled"></span>
+                                                                <span aria-hidden="true"
+                                                                    class="toggle-switch enabled"></span>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <!-- item -->
+
+                                            </div>
+
+                                        </div>
+
+                                        <div class="form-control">
+
+                                            <div class="toggle-group">
+
+                                                <div class="toggle-item !py-3 border-none">
+                                                    <div>
+                                                        <span class="!font-medium">Hide this column</span>
+                                                    </div>
+                                                    <div class="toggle" appToggle>
+                                                        <div class="inActive">
+                                                            <button type="button" class="toggle-btn" role="switch"
+                                                                aria-checked="false">
+                                                                <span class="sr-only">Hide this column</span>
+                                                                <span aria-hidden="true" class="toggle-shape"></span>
+                                                                <span aria-hidden="true"
+                                                                    class="toggle-btn-default not-enabled"></span>
+                                                                <span aria-hidden="true"
+                                                                    class="toggle-switch not-enabled"></span>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <!-- item -->
+
+                                            </div>
+
+                                        </div>
+
+
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </th>
+                        <th scope="col" class="table-th bg-neutral-50  py-3.5 pl-6">
+                            <div class="group inline-flex justify-between items-center w-full">
+
+                                <a class="group inline-flex">
+                                    Date & Time
+                                </a>
+
+                                <div class="relative flex text-left h-min">
+                                    <button type="button" class="btn-borderless btn btn-small hover:!bg-white p-0"
+                                        id="menu-button" aria-expanded="true" aria-haspopup="true">
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M5.29289 7.29289C5.68342 6.90237 6.31658 6.90237 6.70711 7.29289L10 10.5858L13.2929 7.29289C13.6834 6.90237 14.3166 6.90237 14.7071 7.29289C15.0976 7.68342 15.0976 8.31658 14.7071 8.70711L10.7071 12.7071C10.3166 13.0976 9.68342 13.0976 9.29289 12.7071L5.29289 8.70711C4.90237 8.31658 4.90237 7.68342 5.29289 7.29289Z"
+                                                fill="#92A1A8" />
+                                        </svg>
+                                    </button>
+
+                                    <div class=" hidden dropdown mt-6 !w-56 divide-y-[1px] py-0" role="menu">
+
+
+                                        <div class="form-control">
+
+                                            <div class="toggle-group">
+
+                                                <div class="toggle-item !py-3 border-none">
+                                                    <div>
+                                                        <span class="!font-medium">Lock this column</span>
+                                                    </div>
+                                                    <div class="toggle" appToggle>
+                                                        <div class="isActive">
+                                                            <button type="button" class="toggle-btn" role="switch"
+                                                                aria-checked="false">
+                                                                <span class="sr-only">Lock this column</span>
+                                                                <span aria-hidden="true" class="toggle-shape"></span>
+                                                                <span aria-hidden="true"
+                                                                    class="toggle-btn-default enabled"></span>
+                                                                <span aria-hidden="true"
+                                                                    class="toggle-switch enabled"></span>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <!-- item -->
+
+                                            </div>
+
+                                        </div>
+
+                                        <div class="form-control">
+
+                                            <div class="toggle-group">
+
+                                                <div class="toggle-item !py-3 border-none">
+                                                    <div>
+                                                        <span class="!font-medium">Hide this column</span>
+                                                    </div>
+                                                    <div class="toggle" appToggle>
+                                                        <div class="inActive">
+                                                            <button type="button" class="toggle-btn" role="switch"
+                                                                aria-checked="false">
+                                                                <span class="sr-only">Hide this column</span>
+                                                                <span aria-hidden="true" class="toggle-shape"></span>
+                                                                <span aria-hidden="true"
+                                                                    class="toggle-btn-default not-enabled"></span>
+                                                                <span aria-hidden="true"
+                                                                    class="toggle-switch not-enabled"></span>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <!-- item -->
+
+                                            </div>
+
+                                        </div>
+
+
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </th>
+                        <th scope="col" class="table-th bg-neutral-50  py-3.5 pl-6">
+                            <div class="group inline-flex justify-between items-center w-full">
+
+                                <a class="group inline-flex">
+                                    Phone Number
+                                </a>
+
+                                <div class="relative flex text-left h-min">
+                                    <button type="button" class="btn-borderless btn btn-small hover:!bg-white p-0"
+                                        id="menu-button" aria-expanded="true" aria-haspopup="true">
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M5.29289 7.29289C5.68342 6.90237 6.31658 6.90237 6.70711 7.29289L10 10.5858L13.2929 7.29289C13.6834 6.90237 14.3166 6.90237 14.7071 7.29289C15.0976 7.68342 15.0976 8.31658 14.7071 8.70711L10.7071 12.7071C10.3166 13.0976 9.68342 13.0976 9.29289 12.7071L5.29289 8.70711C4.90237 8.31658 4.90237 7.68342 5.29289 7.29289Z"
+                                                fill="#92A1A8" />
+                                        </svg>
+                                    </button>
+
+                                    <div class=" hidden dropdown mt-6 !w-56 divide-y-[1px] py-0" role="menu">
+
+
+                                        <div class="form-control">
+
+                                            <div class="toggle-group">
+
+                                                <div class="toggle-item !py-3 border-none">
+                                                    <div>
+                                                        <span class="!font-medium">Lock this column</span>
+                                                    </div>
+                                                    <div class="toggle" appToggle>
+                                                        <div class="isActive">
+                                                            <button type="button" class="toggle-btn" role="switch"
+                                                                aria-checked="false">
+                                                                <span class="sr-only">Lock this column</span>
+                                                                <span aria-hidden="true" class="toggle-shape"></span>
+                                                                <span aria-hidden="true"
+                                                                    class="toggle-btn-default enabled"></span>
+                                                                <span aria-hidden="true"
+                                                                    class="toggle-switch enabled"></span>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <!-- item -->
+
+                                            </div>
+
+                                        </div>
+
+                                        <div class="form-control">
+
+                                            <div class="toggle-group">
+
+                                                <div class="toggle-item !py-3 border-none">
+                                                    <div>
+                                                        <span class="!font-medium">Hide this column</span>
+                                                    </div>
+                                                    <div class="toggle" appToggle>
+                                                        <div class="inActive">
+                                                            <button type="button" class="toggle-btn" role="switch"
+                                                                aria-checked="false">
+                                                                <span class="sr-only">Hide this column</span>
+                                                                <span aria-hidden="true" class="toggle-shape"></span>
+                                                                <span aria-hidden="true"
+                                                                    class="toggle-btn-default not-enabled"></span>
+                                                                <span aria-hidden="true"
+                                                                    class="toggle-switch not-enabled"></span>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <!-- item -->
+
+                                            </div>
+
+                                        </div>
+
+
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </th>
+                        <th scope="col" class="table-th bg-neutral-50  py-3.5 pl-6">
+                            <div class="group inline-flex flex-row-reverse justify-between items-center w-full">
+
+                                <a class="group inline-flex">
+                                    Amount
+                                </a>
+
+                                <div class="relative flex text-left h-min">
+                                    <button type="button" class="btn-borderless btn btn-small hover:!bg-white p-0"
+                                        id="menu-button" aria-expanded="true" aria-haspopup="true">
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M5.29289 7.29289C5.68342 6.90237 6.31658 6.90237 6.70711 7.29289L10 10.5858L13.2929 7.29289C13.6834 6.90237 14.3166 6.90237 14.7071 7.29289C15.0976 7.68342 15.0976 8.31658 14.7071 8.70711L10.7071 12.7071C10.3166 13.0976 9.68342 13.0976 9.29289 12.7071L5.29289 8.70711C4.90237 8.31658 4.90237 7.68342 5.29289 7.29289Z"
+                                                fill="#92A1A8" />
+                                        </svg>
+                                    </button>
+
+                                    <div class=" hidden dropdown mt-6 !w-56 divide-y-[1px] py-0" role="menu">
+
+
+                                        <div class="form-control">
+
+                                            <div class="toggle-group">
+
+                                                <div class="toggle-item !py-3 border-none">
+                                                    <div>
+                                                        <span class="!font-medium">Lock this column</span>
+                                                    </div>
+                                                    <div class="toggle" appToggle>
+                                                        <div class="isActive">
+                                                            <button type="button" class="toggle-btn" role="switch"
+                                                                aria-checked="false">
+                                                                <span class="sr-only">Lock this column</span>
+                                                                <span aria-hidden="true" class="toggle-shape"></span>
+                                                                <span aria-hidden="true"
+                                                                    class="toggle-btn-default enabled"></span>
+                                                                <span aria-hidden="true"
+                                                                    class="toggle-switch enabled"></span>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <!-- item -->
+
+                                            </div>
+
+                                        </div>
+
+                                        <div class="form-control">
+
+                                            <div class="toggle-group">
+
+                                                <div class="toggle-item !py-3 border-none">
+                                                    <div>
+                                                        <span class="!font-medium">Hide this column</span>
+                                                    </div>
+                                                    <div class="toggle" appToggle>
+                                                        <div class="inActive">
+                                                            <button type="button" class="toggle-btn" role="switch"
+                                                                aria-checked="false">
+                                                                <span class="sr-only">Hide this column</span>
+                                                                <span aria-hidden="true" class="toggle-shape"></span>
+                                                                <span aria-hidden="true"
+                                                                    class="toggle-btn-default not-enabled"></span>
+                                                                <span aria-hidden="true"
+                                                                    class="toggle-switch not-enabled"></span>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <!-- item -->
+
+                                            </div>
+
+                                        </div>
+
+
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </th>
+                        <th scope="col" class="table-th bg-neutral-50 py-2 px-0 w-0">
+                            <div class=" text-right w-full flex justify-center">
+                                <button class="btn-rounded-small btn btn-borderless">
+                                    <svg class="w-4 h-4 opacity-60 hover:opacity-100 " viewBox="0 0 17 16" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M7.38309 2.87821C7.66735 1.70726 9.33265 1.70726 9.61692 2.87821C9.80055 3.63462 10.6672 3.99358 11.3319 3.58857C12.3609 2.96159 13.5384 4.13914 12.9114 5.16812C12.5064 5.83284 12.8654 6.69945 13.6218 6.88308C14.7927 7.16735 14.7927 8.83265 13.6218 9.11692C12.8654 9.30055 12.5064 10.1672 12.9114 10.8319C13.5384 11.8609 12.3609 13.0384 11.3319 12.4114C10.6672 12.0064 9.80055 12.3654 9.61692 13.1218C9.33265 14.2927 7.66735 14.2927 7.38309 13.1218C7.19945 12.3654 6.33284 12.0064 5.66812 12.4114C4.63914 13.0384 3.46159 11.8609 4.08857 10.8319C4.49358 10.1672 4.13462 9.30055 3.37821 9.11692C2.20726 8.83265 2.20726 7.16735 3.37821 6.88308C4.13462 6.69945 4.49358 5.83284 4.08857 5.16812C3.46159 4.13914 4.63914 2.96159 5.66812 3.58857C6.33284 3.99358 7.19945 3.63462 7.38309 2.87821Z"
+                                            stroke="currentColor" stroke-width="1.33333" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path
+                                            d="M10.5 8C10.5 9.10457 9.60457 10 8.5 10C7.39543 10 6.5 9.10457 6.5 8C6.5 6.89543 7.39543 6 8.5 6C9.60457 6 10.5 6.89543 10.5 8Z"
+                                            stroke="currentColor" stroke-width="1.33333" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+                                </button>
+                            </div>
+
+                            <div class="hidden dropdown right-3 mt-2 w-64 flex flex-col gap-2" role="menu">
+
+                                <div class="form-control">
+                                    <div class="relative">
+                                        <div class="input-icon-leading !m-0">
+                                            <svg class="input-icon !m-0" viewBox="0 0 16 16" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M14 14L10 10M11.3333 6.66667C11.3333 9.244 9.244 11.3333 6.66667 11.3333C4.08934 11.3333 2 9.244 2 6.66667C2 4.08934 4.08934 2 6.66667 2C9.244 2 11.3333 4.08934 11.3333 6.66667Z"
+                                                    stroke="#D3D9DC" stroke-width="1.6" stroke-linecap="round"
+                                                    stroke-linejoin="round" />
+                                            </svg>
+                                        </div>
+                                        <input type="email" name="email" id="email" class="input pl-10"
+                                            placeholder="Search columns">
+                                    </div>
+                                </div>
+
+                                <div class="form-control">
+
+                                    <div class="toggle-group flex justify-between items-center">
+
+                                        <div class="flex gap-1">
+                                            <svg class="!m-0" width="16" height="17" viewBox="0 0 16 17" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <circle cx="5.99999" cy="5.16668" r="0.833333" fill="#345560" />
+                                                <circle cx="5.99999" cy="8.49999" r="0.833333" fill="#345560" />
+                                                <circle cx="5.99999" cy="11.8333" r="0.833333" fill="#345560" />
+                                                <circle cx="9.99999" cy="5.16668" r="0.833333" fill="#345560" />
+                                                <circle cx="9.99999" cy="8.49999" r="0.833333" fill="#345560" />
+                                                <circle cx="9.99999" cy="11.8333" r="0.833333" fill="#345560" />
+                                            </svg>
+
+                                            <p class="!font-medium">Subscription Info</p>
+
+                                        </div>
+                                        <div class="toggle-item !py-3 border-none">
+                                            <div class="toggle" appToggle>
+                                                <div class="inActive">
+                                                    <button type="button" class="toggle-btn" role="switch"
+                                                        aria-checked="false">
+                                                        <span class="sr-only">Subscription Info</span>
+                                                        <span aria-hidden="true" class="toggle-shape"></span>
+                                                        <span aria-hidden="true"
+                                                            class="toggle-btn-default not-enabled"></span>
+                                                        <span aria-hidden="true"
+                                                            class="toggle-switch not-enabled"></span>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- item -->
+
+                                    </div>
+
+                                </div>
+
+                                <div class="form-control">
+
+                                    <div class="toggle-group flex justify-between items-center">
+
+                                        <div class="flex gap-1">
+                                            <svg class="!m-0" width="16" height="17" viewBox="0 0 16 17" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <circle cx="5.99999" cy="5.16668" r="0.833333" fill="#345560" />
+                                                <circle cx="5.99999" cy="8.49999" r="0.833333" fill="#345560" />
+                                                <circle cx="5.99999" cy="11.8333" r="0.833333" fill="#345560" />
+                                                <circle cx="9.99999" cy="5.16668" r="0.833333" fill="#345560" />
+                                                <circle cx="9.99999" cy="8.49999" r="0.833333" fill="#345560" />
+                                                <circle cx="9.99999" cy="11.8333" r="0.833333" fill="#345560" />
+                                            </svg>
+
+                                            <p class="!font-medium">Customer Name</p>
+
+                                        </div>
+                                        <div class="toggle-item !py-3 border-none">
+                                            <div class="toggle" appToggle>
+                                                <div class="isActive">
+                                                    <button type="button" class="toggle-btn" role="switch"
+                                                        aria-checked="false">
+                                                        <span class="sr-only">Customer Name</span>
+                                                        <span aria-hidden="true" class="toggle-shape"></span>
+                                                        <span aria-hidden="true"
+                                                            class="toggle-btn-default enabled"></span>
+                                                        <span aria-hidden="true" class="toggle-switch enabled"></span>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- item -->
+
+                                    </div>
+
+                                </div>
+
+                                <div class="form-control">
+
+                                    <div class="toggle-group flex justify-between items-center">
+
+                                        <div class="flex gap-1">
+                                            <svg class="!m-0" width="16" height="17" viewBox="0 0 16 17" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <circle cx="5.99999" cy="5.16668" r="0.833333" fill="#345560" />
+                                                <circle cx="5.99999" cy="8.49999" r="0.833333" fill="#345560" />
+                                                <circle cx="5.99999" cy="11.8333" r="0.833333" fill="#345560" />
+                                                <circle cx="9.99999" cy="5.16668" r="0.833333" fill="#345560" />
+                                                <circle cx="9.99999" cy="8.49999" r="0.833333" fill="#345560" />
+                                                <circle cx="9.99999" cy="11.8333" r="0.833333" fill="#345560" />
+                                            </svg>
+
+                                            <p class="!font-medium">Email</p>
+
+                                        </div>
+                                        <div class="toggle-item !py-3 border-none">
+                                            <div class="toggle" appToggle>
+                                                <div class="isActive">
+                                                    <button type="button" class="toggle-btn" role="switch"
+                                                        aria-checked="false">
+                                                        <span class="sr-only">Email</span>
+                                                        <span aria-hidden="true" class="toggle-shape"></span>
+                                                        <span aria-hidden="true"
+                                                            class="toggle-btn-default enabled"></span>
+                                                        <span aria-hidden="true" class="toggle-switch enabled"></span>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- item -->
+
+                                    </div>
+
+                                </div>
+
+                                <div class="flex justify-center border-t-2">
+                                    <a class="btn-link">Reset to defaults</a>
+                                </div>
+
+                            </div>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody class="divide-y-2 divide-neutral-50 bg-white">
+                    <tr>
+                        <td class="whitespace-nowrap py-4 pl-4 pr-6 text-sm font-medium text-gray-900 sm:pl-6">
+                            Alfred Jones
+                        </td>
+                        <td class="whitespace-nowrap px-6 py-4 text-sm text-gray-500">
+                            abc@example.com
+                        </td>
+                        <td class="whitespace-nowrap px-6 py-4 text-sm text-gray-500">
+                            02 Jan 2022 05:45 PM
+                        </td>
+                        <td class="whitespace-nowrap px-6 py-4 text-sm text-gray-500">
+                            +1(555)555-1234
+                        </td>
+                        <td class="whitespace-nowrap px-4 py-4 text-sm text-gray-500">
+                            <span class="w-full flex justify-end">
+                                $45.02482424 USD
+                            </span>
+                        </td>
+                        <td class="whitespace-nowrap text-sm text-gray-500">
+                            <div class="w-full flex justify-center">
+
+                                <button type="button" class="btn btn-borderless">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                        stroke-width="2" stroke="currentColor" class="w-5 h-5">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M12 6.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 12.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 18.75a.75.75 0 110-1.5.75.75 0 010 1.5z">
+                                        </path>
+                                    </svg>
+                                </button>
+
+                                <div class="hidden dropdown right-16 mt-6 !w-56 dropdown-divider" role="menu">
+                                    <div role="none">
+                                        <a role="menuitem" tabindex="-1" id="menu-item-0">View details</a>
+                                        <a role="menuitem" tabindex="-1" id="menu-item-1">Edit</a>
+                                        <a class=" !text-red-700 " role="menuitem" tabindex="-1"
+                                            id="menu-item-1">Delete</a>
+                                    </div>
+
+                                    <div role="none">
+                                        <a class=" opacity-60 pointer-events-none " role="menuitem" tabindex="-1"
+                                            id="menu-item-0">Go to</a>
+                                        <a role="menuitem" tabindex="-1" id="menu-item-1">Customer</a>
+                                        <a role="menuitem" tabindex="-1" id="menu-item-1">Subscriptions</a>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td class="whitespace-nowrap py-4 pl-4 pr-6 text-sm font-medium text-gray-900 sm:pl-6">
+                            Alfred Jones
+                        </td>
+                        <td class="whitespace-nowrap px-6 py-4 text-sm text-gray-500">
+                            abc@example.com
+                        </td>
+                        <td class="whitespace-nowrap px-6 py-4 text-sm text-gray-500">
+                            02 Jan 2022 05:45 PM
+                        </td>
+                        <td class="whitespace-nowrap px-6 py-4 text-sm text-gray-500">
+                            +1(555)555-1234
+                        </td>
+                        <td class="whitespace-nowrap px-4 py-4 text-sm text-gray-500">
+                            <span class="w-full flex justify-end">
+                                $45.02482424 USD
+                            </span>
+                        </td>
+                        <td class="whitespace-nowrap text-sm text-gray-500">
+                            <div class="w-full flex justify-center">
+
+                                <button type="button" class="btn btn-borderless">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                        stroke-width="2" stroke="currentColor" class="w-5 h-5">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M12 6.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 12.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 18.75a.75.75 0 110-1.5.75.75 0 010 1.5z">
+                                        </path>
+                                    </svg>
+                                </button>
+
+                                <div class="hidden dropdown right-16 mt-6 !w-56 dropdown-divider" role="menu">
+                                    <div role="none">
+                                        <a role="menuitem" tabindex="-1" id="menu-item-0">View details</a>
+                                        <a role="menuitem" tabindex="-1" id="menu-item-1">Edit</a>
+                                        <a class=" !text-red-700 " role="menuitem" tabindex="-1"
+                                            id="menu-item-1">Delete</a>
+                                    </div>
+
+                                    <div role="none">
+                                        <a class=" opacity-60 pointer-events-none " role="menuitem" tabindex="-1"
+                                            id="menu-item-0">Go to</a>
+                                        <a role="menuitem" tabindex="-1" id="menu-item-1">Customer</a>
+                                        <a role="menuitem" tabindex="-1" id="menu-item-1">Subscriptions</a>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td class="whitespace-nowrap py-4 pl-4 pr-6 text-sm font-medium text-gray-900 sm:pl-6">
+                            Alfred Jones
+                        </td>
+                        <td class="whitespace-nowrap px-6 py-4 text-sm text-gray-500">
+                            abc@example.com
+                        </td>
+                        <td class="whitespace-nowrap px-6 py-4 text-sm text-gray-500">
+                            02 Jan 2022 05:45 PM
+                        </td>
+                        <td class="whitespace-nowrap px-6 py-4 text-sm text-gray-500">
+                            +1(555)555-1234
+                        </td>
+                        <td class="whitespace-nowrap px-4 py-4 text-sm text-gray-500">
+                            <span class="w-full flex justify-end">
+                                $45.02482424 USD
+                            </span>
+                        </td>
+                        <td class="whitespace-nowrap text-sm text-gray-500">
+                            <div class="w-full flex justify-center">
+
+                                <button type="button" class="btn btn-borderless">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                        stroke-width="2" stroke="currentColor" class="w-5 h-5">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M12 6.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 12.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 18.75a.75.75 0 110-1.5.75.75 0 010 1.5z">
+                                        </path>
+                                    </svg>
+                                </button>
+
+                                <div class="hidden dropdown right-16 mt-6 !w-56 dropdown-divider" role="menu">
+                                    <div role="none">
+                                        <a role="menuitem" tabindex="-1" id="menu-item-0">View details</a>
+                                        <a role="menuitem" tabindex="-1" id="menu-item-1">Edit</a>
+                                        <a class=" !text-red-700 " role="menuitem" tabindex="-1"
+                                            id="menu-item-1">Delete</a>
+                                    </div>
+
+                                    <div role="none">
+                                        <a class=" opacity-60 pointer-events-none " role="menuitem" tabindex="-1"
+                                            id="menu-item-0">Go to</a>
+                                        <a role="menuitem" tabindex="-1" id="menu-item-1">Customer</a>
+                                        <a role="menuitem" tabindex="-1" id="menu-item-1">Subscriptions</a>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
 
         </div>
     </div>

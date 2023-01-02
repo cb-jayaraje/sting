@@ -1,15 +1,12 @@
-import { Injectable } from "@angular/core";
+import { Injectable } from '@angular/core';
 
-@Injectable({providedIn: 'root'})
-
-
+@Injectable({ providedIn: 'root' })
 export class ContainerService {
-
-    checkoutDatas: any = [
-        {
-        id: 'contianer_1',
-            title: 'Full width container with left navigation',
-            code: ` 
+  checkoutDatas: any = [
+    {
+      id: 'contianer_1',
+      title: 'Full width container with left navigation',
+      code: ` 
             <div class="flex bg-gray-50">
     <!-- Sidenav starts -->
     <div
@@ -64,12 +61,12 @@ export class ContainerService {
     </div>
     <!-- Body ends -->
 </div>
-            `
+            `,
     },
     {
-        id: 'contianer_2',
-            title: 'Two column container with left navigation',
-            code: ` 
+      id: 'contianer_2',
+      title: 'Two column container with left navigation',
+      code: ` 
             <div class="flex bg-gray-50">
     <!-- Sidenav starts -->
     <div
@@ -139,12 +136,12 @@ export class ContainerService {
     </div>
     <!-- Body ends -->
 </div>
-            `
+            `,
     },
     {
-        id: 'contianer_3',
-            title: 'Center align container with header section',
-            code: ` 
+      id: 'contianer_3',
+      title: 'Center align container with header section',
+      code: ` 
           
       <div class="relative bg-white">
                 <!-- Header starts -->
@@ -197,12 +194,12 @@ export class ContainerService {
                 <!-- Body ends -->
             </div>
     
-            `
+            `,
     },
     {
-        id: 'contianer_4',
-            title: 'Center align two column container with header section',
-            code: ` 
+      id: 'contianer_4',
+      title: 'Center align two column container with header section',
+      code: ` 
            
 
 
@@ -286,12 +283,12 @@ export class ContainerService {
           </div>
     
        
-            `
+            `,
     },
     {
-        id: 'contianer_5',
-            title: 'Center align three column container with header section',
-            code: ` 
+      id: 'contianer_5',
+      title: 'Center align three column container with header section',
+      code: ` 
            
 
 
@@ -393,9 +390,7 @@ export class ContainerService {
             <!-- Body ends -->
           </div>
        
-            `
-    }
-    
-]
-
+            `,
+    },
+  ];
 }

@@ -1,4 +1,25 @@
-<app-common *ngFor="let convertedData of convertedDatas" [activeTab]="'preview'" mainTitle="pageheadings"
+<div class="cb-intro-copy">
+  
+    <p>Stats are a design pattern used to display numerical data or metrics in a clear and concise manner. Here are some guidelines for designing stats elements within a design system:</p>
+    
+    <ul>
+      <li><strong>Use clear, concise language:</strong> Stats should convey brief information in a clear, concise manner. Avoid using jargon or technical language, and keep the message brief and to the point.</li>
+      
+      <li><strong>Use appropriate visual hierarchy:</strong> Use visual hierarchy to draw attention to the stat and convey the level of importance. For example, you might use a larger or bolder font size for the most important stat, and a smaller or lighter font size for less important stats.</li>
+      
+      <li><strong>Consider mobile-friendliness:</strong> When designing for small screens, consider how the stat will be displayed. It may be necessary to use a different layout or truncate the message to ensure that the stat is easy to read and understand on a smaller screen.</li>
+      
+      <li><strong>Use appropriate spacing and alignment:</strong> Proper spacing and alignment can help to make the stat more legible and easier to read. Use consistent spacing between elements and align elements according to the overall layout of the page.</li>
+      
+      <li><strong>Provide clear actions or next steps:</strong> If applicable, the stat should clearly communicate any necessary actions or next steps for the user. Make it easy for users to understand what they need to do and how to do it.</li>
+      
+    </ul>
+      
+      <p>By following these guidelines, you can help to create a stat experience that is clear, concise, and easy to understand for your users.</p>
+    
+    </div>
+    
+    <app-common *ngFor="let convertedData of convertedDatas" [activeTab]="'preview'" mainTitle="pageheadings"
     [codePreview]="convertedData.code" [codeHtml]="convertedData.code" [title]="convertedData.title">
 
     <div class="preview-box-2">

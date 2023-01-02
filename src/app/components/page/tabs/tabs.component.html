@@ -1,3 +1,27 @@
+<div class="cb-intro-copy">
+  
+<p>Tabs are a common element in user interfaces and serve as a way to divide content into separate, navigable sections. When designing tabs for a design system, it's important to consider the following guidelines:</p>
+
+<ul>
+  <li><strong>Use tabs to organize related content:</strong> Tabs should be used to divide content into related sections, rather than as a way to navigate to completely separate pages.</li>
+  
+  <li><strong>Keep the number of tabs limited:</strong> Too many tabs can be overwhelming for users and make it difficult for them to find what they're looking for. It's generally best to keep the number of tabs to a minimum, usually no more than 7.</li>
+  
+  <li><strong>Use clear and descriptive labels:</strong> The labels for each tab should clearly and accurately describe the content that can be found within that tab. Avoid using ambiguous or vague labels.</li>
+  
+  <li><strong>Use a consistent tab style:</strong> The style of the tabs should be consistent throughout the design system. This includes the font, color, and overall layout of the tabs.</li>
+  
+  <li><strong>Make it easy to navigate between tabs:</strong> The process of switching between tabs should be intuitive and straightforward for users. This can be achieved through the use of clear visual indicators and responsive design techniques.</li>
+  
+  <li><strong>Use active and inactive states:</strong> It should be clear to users which tab is currently selected, and which tabs are inactive. This can be achieved through the use of visual indicators and/or color.</li>
+  
+  <li><strong>Consider the use of dropdown menus:</strong> In cases where there are too many tabs to display in a single row, consider using a dropdown menu to allow users to access additional tabs.</li>
+</ul>
+  
+  <p>By following these guidelines, you can create a clear and intuitive tab interface that helps users easily navigate and find the content they're looking for.</p>
+
+</div>
+
 <app-common *ngFor="let convertedData of convertedDatas" [activeTab]="'preview'" [codePreview]="convertedData.code"
   [codeHtml]="convertedData.code" [title]="convertedData.title">
   <div class="preview-box">

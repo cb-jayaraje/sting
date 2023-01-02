@@ -321,5 +321,16 @@ div.code-toolbar > .toolbar > .toolbar-item > button {
   @apply p-8 bg-gradient-to-b from-white to-gray-50 h-auto;
 }
 
-
+.cb-intro-copy {
+@apply my-8 p-8 bg-neutral-100;
+}
+.cb-intro-copy p {
+@apply max-w-2xl cb-text-copy-regular;
+}
+.cb-intro-copy ul {
+@apply flex flex-wrap gap-6 my-8 cb-text-copy-regular;
+}
+.cb-intro-copy ul li {
+@apply w-1/4 p-6 bg-neutral-50 rounded-md;
+}
 

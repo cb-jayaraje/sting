@@ -1,4 +1,25 @@
-<app-common *ngFor="let convertedData of convertedDatas" [activeTab]="'preview'" mainTitle="pageheadings"
+<div class="cb-intro-copy">
+  
+    <p>Page headings are an important element of any design system, as they help to establish a clear hierarchy and organization for the content on a page. Here are some guidelines for designing page headings within a design system:</p>
+    
+    <ul>
+      <li><strong>Use clear, descriptive headings:</strong> The headings should clearly describe the content of the section and the relationships between different sections.</li>
+      
+      <li><strong>Use appropriate visual hierarchy:</strong> Use visual hierarchy to indicate the importance of different sections and create a clear hierarchy for the content on the page. This can be achieved through the use of different font sizes, weights, and colors for different headings.</li>
+      
+      <li><strong>Consider mobile-friendliness:</strong> When designing for small screens, consider how the headings will be displayed. It may be necessary to use a different layout or truncate the headings to ensure that they are easy to read on a smaller screen.</li>
+      
+      <li><strong>Use appropriate spacing and alignment:</strong> Proper spacing and alignment can help to make the headings more legible and easier to read. Use consistent spacing between elements and align elements according to the overall layout of the page.</li>
+      
+      <li><strong>Use headings to create a cohesive visual identity:</strong> Use the same font styles and colors consistently for headings throughout the design system to create a cohesive visual identity.</li>
+      
+    </ul>
+      
+      <p>By following these guidelines, you can create page headings that are clear, legible, and effective in establishing a hierarchy and organization for the content on a page.</p>
+    
+    </div>
+    
+    <app-common *ngFor="let convertedData of convertedDatas" [activeTab]="'preview'" mainTitle="pageheadings"
     [codePreview]="convertedData.code" [codeHtml]="convertedData.code" [title]="convertedData.title">
 
     <div class="preview-box-2">

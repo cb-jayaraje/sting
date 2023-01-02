@@ -77,6 +77,10 @@
       ]
     },
     {
+      "title": "Patterns",
+      "subMenu": [{ "title": "Design Patterns", "link": "design-patterns" }]
+    },
+    {
       "title": "Elements",
       "subMenu": [
         { "title": "Buttons", "link": "buttons" },

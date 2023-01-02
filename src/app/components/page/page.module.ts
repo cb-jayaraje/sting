@@ -34,6 +34,7 @@ import { PageHeadingComponent } from './page-heading/page-heading.component';
 import { BreadcrumbsComponent } from './breadcrumbs/breadcrumbs.component';
 import { StatsComponent } from './stats/stats.component';
 import { NotificationsComponent } from './notifications/notifications.component';
+import { DesignPatternsComponent } from './design-patterns/design-patterns.component';
 
 @NgModule({
     declarations: [
@@ -67,7 +68,8 @@ import { NotificationsComponent } from './notifications/notifications.component'
         PageHeadingComponent,
         BreadcrumbsComponent,
         StatsComponent,
-        NotificationsComponent
+        NotificationsComponent,
+        DesignPatternsComponent
         
   ],
     imports: [

@@ -324,13 +324,25 @@ div.code-toolbar > .toolbar > .toolbar-item > button {
 .cb-intro-copy {
 @apply my-8 p-8 bg-neutral-100;
 }
+.cb-intro-copy h2 {
+@apply mb-4 max-w-2xl cb-text-h2;
+}
+.cb-intro-copy h3 {
+@apply mb-4 max-w-2xl cb-text-h4;
+}
 .cb-intro-copy p {
-@apply max-w-2xl cb-text-copy-regular;
+@apply max-w-3xl cb-text-copy-regular;
 }
 .cb-intro-copy ul {
 @apply flex flex-wrap gap-6 my-8 cb-text-copy-regular;
 }
 .cb-intro-copy ul li {
 @apply w-1/4 p-6 bg-neutral-50 rounded-md;
+}
+.cb-intro-copy ul.basic-list {
+@apply inline-flex my-8 max-w-lg;
+}
+.cb-intro-copy ul.basic-list li {
+@apply w-auto bg-transparent m-0 p-0;
 }
 

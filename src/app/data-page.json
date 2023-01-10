@@ -78,7 +78,7 @@
     },
     {
       "title": "Patterns",
-      "subMenu": [{ "title": "Design Patterns", "link": "design-patterns" }]
+      "subMenu": [{ "title": "Design Principles", "link": "design-principles" }]
     },
     {
       "title": "Elements",

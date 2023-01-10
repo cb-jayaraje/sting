@@ -75,7 +75,7 @@ const routes: Routes = [
           { path: 'breadcrumbs', component: BreadcrumbsComponent },
           { path: 'stats', component: StatsComponent },
           { path: 'notifications', component: NotificationsComponent },
-          { path: 'design-patterns', component: DesignPatternsComponent },
+          { path: 'design-principles', component: DesignPatternsComponent },
         ],
       },
     ],

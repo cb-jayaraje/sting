@@ -3,7 +3,7 @@ module.exports = Typography = (styles) => ({
         "@apply font-semibold tracking-tight text-neutral-800 max-w-4xl font-Sora antialiased": {},
          },
     '.cb-text-copy':{
-        "@apply font-Inter font-normal text-neutral-700 leading-snug antialiased": {},
+        "@apply font-Inter font-normal text-neutral-600 leading-snug antialiased": {},
     },
          '.cb-text-display': {
             "@apply cb-text-header text-display leading-tight font-light": {}

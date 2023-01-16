@@ -16,10 +16,10 @@ export class PageHeadingService {
         </div>
         <div class="mt-4 flex md:mt-0 space-x-4">
           <div>
-            <button class="btn btn-borderless">Tertiary</button>
+            <button class="btn btn-neutral-borderless">Borderless</button>
           </div>
           <div>
-            <button class="btn btn-secondary">Secondary</button>
+            <button class="btn btn-neutral">Neutral</button>
           </div>
           <div>
             <button class="btn btn-primary">Primary</button>
@@ -118,10 +118,10 @@ export class PageHeadingService {
               </div>
               <div class="mt-4 flex flex-shrink-0 md:mt-0 space-x-4">
                 <div>
-                  <button class="btn btn-borderless">Tertiary</button>
+                  <button class="btn btn-neutral-borderless">Borderless</button>
                 </div>
                 <div>
-                  <button class="btn btn-secondary">Secondary</button>
+                  <button class="btn btn-neutral">Neutral</button>
                 </div>
                 <div>
                   <button class="btn btn-primary">Primary</button>
@@ -221,10 +221,10 @@ export class PageHeadingService {
             </div>
             <div class="mt-6 flex flex-shrink-0 lg:mt-0 space-x-4">
               <div>
-                <button class="btn btn-borderless">Tertiary</button>
+                <button class="btn btn-neutral-borderless">Borderless</button>
               </div>
               <div>
-                <button class="btn btn-secondary">Secondary</button>
+                <button class="btn btn-neutral">Neutral</button>
               </div>
               <div>
                 <button class="btn btn-primary">Primary</button>

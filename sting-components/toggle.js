@@ -4,7 +4,7 @@ module.exports = Toggle = (styles) => ({
         '@apply w-full max-w-2xl' : {}
     },
     '.toggle-group': {
-        '@apply w-full divide-y divide-neutral-200' : {}
+        '@apply w-full divide-y divide-neutral-100' : {}
     },
     '.toggle-group div.toggle': {
         '@apply w-min -mt-1' : {}
@@ -25,16 +25,16 @@ module.exports = Toggle = (styles) => ({
         '@apply font-semibold' : {}
     },
     '.toggle-btn': {
-        '@apply relative inline-flex h-5 w-10 flex-shrink-0 cursor-pointer items-center justify-center rounded-full focus:outline-none focus:ring-2 focus:ring-info-500 focus:ring-offset-2' : {}
+        '@apply relative inline-flex h-5 w-10 flex-shrink-0 cursor-pointer items-center justify-center rounded-full focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2' : {}
     },
     '.toggle-btn-default': {
         '@apply pointer-events-none absolute mx-auto h-4 w-9 rounded-full transition-colors duration-200 ease-in-out':{}
     },
     '.toggle-btn-default.enabled': {
-        '@apply bg-info-800':{}
+        '@apply bg-primary-500':{}
     },
     '.toggle-btn-default.not-enabled': {
-        '@apply bg-neutral-400':{}
+        '@apply bg-neutral-300':{}
     },
     '.toggle-switch': {
         '@apply pointer-events-none absolute left-0 inline-block h-5 w-5 transform rounded-full border border-neutral-400 bg-white shadow ring-0 transition-transform duration-200 ease-in-out' : {}

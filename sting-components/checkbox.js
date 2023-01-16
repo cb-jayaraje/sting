@@ -1,7 +1,7 @@
 module.exports = Checkbox = (styles) => ({ 
 
     '.checkbox': {
-        '@apply focus:ring-info-800 h-4 w-4 text-info-800 border-neutral-400 rounded' : {}
+        '@apply focus:ring-primary-500 h-4 w-4 text-primary-500 border-neutral-400 rounded' : {}
     },
     '.checkbox-group p': {
         '@apply cb-text-copy-regular': {}
@@ -27,13 +27,13 @@ module.exports = Checkbox = (styles) => ({
     '.checkbox-label': {
         '@apply block cb-text-copy-regular font-medium hover:text-neutral-800 cursor-pointer leading-tight': {}
     },
-    '.checkbox-label.with-info span:first-of-type, .checkbox-label.with-info-inline span:first-of-type': {
+    '.checkbox-label.with-info span:first-of-type, .checkbox-label.with-primary-inline span:first-of-type': {
         '@apply font-semibold': {}
     },
     '.checkbox-label.with-info span:nth-of-type(2)': {
         '@apply block mt-0.5 font-normal': {}
     },
-    '.checkbox-label.with-info-inline span:nth-of-type(2)': {
+    '.checkbox-label.with-primary-inline span:nth-of-type(2)': {
         '@apply pl-2 font-normal': {}
     },
     '.checkbox-card': {

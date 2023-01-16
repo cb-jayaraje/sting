@@ -13,6 +13,33 @@ module.exports = {
       800: "rgb(var(--color-brand-800) / <alpha-value>)",
       900: "rgb(var(--color-brand-900) / <alpha-value>)",
     },
+    
+    brandaction: {
+      50: 'rgb(var(--color-brandaction-50) / <alpha-value>)',
+      100: 'rgb(var(--color-brandaction-100) / <alpha-value>)',
+      200: "rgb(var(--color-brandaction-200) / <alpha-value>)",
+      300: "rgb(var(--color-brandaction-300) / <alpha-value>)",
+      400: "rgb(var(--color-brandaction-400) / <alpha-value>)",
+      500: "rgb(var(--color-brandaction-500) / <alpha-value>)",
+      600: "rgb(var(--color-brandaction-600) / <alpha-value>)",
+      700: "rgb(var(--color-brandaction-700) / <alpha-value>)",
+      800: "rgb(var(--color-brandaction-800) / <alpha-value>)",
+      900: "rgb(var(--color-brandaction-900) / <alpha-value>)",
+    },
+
+    brandaccent: {
+      50: 'rgb(var(--color-brandaccent-50) / <alpha-value>)',
+      100: 'rgb(var(--color-brandaccent-100) / <alpha-value>)',
+      200: "rgb(var(--color-brandaccent-200) / <alpha-value>)",
+      300: "rgb(var(--color-brandaccent-300) / <alpha-value>)",
+      400: "rgb(var(--color-brandaccent-400) / <alpha-value>)",
+      500: "rgb(var(--color-brandaccent-500) / <alpha-value>)",
+      600: "rgb(var(--color-brandaccent-600) / <alpha-value>)",
+      700: "rgb(var(--color-brandaccent-700) / <alpha-value>)",
+      800: "rgb(var(--color-brandaccent-800) / <alpha-value>)",
+      900: "rgb(var(--color-brandaccent-900) / <alpha-value>)",
+    },
+
     primary: {
       50: 'rgb(var(--color-primary-50) / <alpha-value>)',
       100: 'rgb(var(--color-primary-100) / <alpha-value>)',

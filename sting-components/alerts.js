@@ -35,50 +35,50 @@ module.exports = Alert = (styles) => ({
     //info
 
     '.alert-info': {
-        "@apply bg-info-50 border-info-200": {},
+        "@apply bg-info-50 border-info-100": {},
     },
     '.alert-info svg': {
-        "@apply text-info-600": {},
+        "@apply text-info-500": {},
     },
     '.alert-info .link, .alert-info a': {
-        "@apply text-info-900": {},
+        "@apply text-info-700": {},
     },
 
 
     //warning
 
     '.alert-warning': {
-        "@apply bg-orange-50 border-orange-200": {},
+        "@apply bg-orange-50 border-orange-100": {},
     },
     '.alert-warning svg': {
-        "@apply text-orange-600": {},
+        "@apply text-orange-500": {},
     },
     '.alert-warning .link': {
-        "@apply text-orange-900": {},
+        "@apply text-orange-600": {},
     },
 
     //danger
 
     '.alert-danger': {
-        "@apply bg-red-100 border-red-200": {},
+        "@apply bg-red-50 border-red-100": {},
     },
     '.alert-danger svg': {
-        "@apply text-red-600": {},
+        "@apply text-red-500": {},
     },
     '.alert-danger .link': {
-        "@apply text-red-900": {},
+        "@apply text-red-600": {},
     },
 
     //success
 
     '.alert-success': {
-        "@apply bg-green-50 border-green-200": {},
+        "@apply bg-green-50 border-green-100": {},
     },
     '.alert-success svg': {
-        "@apply text-green-600": {},
+        "@apply text-green-500": {},
     },
     '.alert-success .link': {
-        "@apply text-green-900": {},
+        "@apply text-green-600": {},
     },
     
     

@@ -14,5 +14,5 @@
     @apply text-neutral-700 font-mono lowercase dark:text-neutral-300 text-copy-small
 }
 .color-box__value {
-    @apply w-6 font-bold text-neutral-800 2xl:w-full text-copy-small
+    @apply w-6 font-bold text-neutral-600 2xl:w-full text-copy-small
 }

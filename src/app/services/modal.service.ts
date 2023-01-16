@@ -74,7 +74,7 @@ export class ModalService {
           </div>
         </div>
         <div class="mt-6 sm:flex sm:flex-row-reverse gap-4">
-          <button class="btn btn-info">Proceed</button>
+          <button class="btn btn-primary">Proceed</button>
           <button class="btn btn-neutral">Cancel</button>
         </div>
       </div>
@@ -276,8 +276,8 @@ export class ModalService {
           </div>
         </div>
         <div class="mt-6 sm:flex sm:flex-row-reverse gap-4">
-          <button class="btn btn-info">Save</button>
-          <button class="btn btn-borderless">Cancel</button>
+          <button class="btn btn-primary">Save</button>
+          <button class="btn btn-neutral-borderless">Cancel</button>
         </div>
       </div>
 `,
@@ -328,8 +328,8 @@ export class ModalService {
           </div>
         </div>
         <div class="mt-6 sm:flex sm:flex-row-reverse gap-4">
-          <button class="btn btn-info">Connect</button>
-          <button class="btn btn-borderless">Cancel</button>
+          <button class="btn btn-primary">Connect</button>
+          <button class="btn btn-neutral-borderless">Cancel</button>
         </div>
         </div>
         <div

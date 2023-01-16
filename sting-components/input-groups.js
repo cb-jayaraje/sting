@@ -37,7 +37,7 @@ module.exports = InputGroups = (styles) => ({
       "@apply pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3":{}
   },
   '.form-control .input-icon': {
-      "@apply h-5 w-5 text-neutral-500":{}
+      "@apply h-5 w-5 text-neutral-300":{}
   },
   '.form-control .input-icon-error': {
       "@apply h-5 w-5 text-red-500":{}

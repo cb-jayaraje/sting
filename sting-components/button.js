@@ -36,28 +36,34 @@ module.exports = Button = (styles) => ({
         '@apply inline-flex items-center': {},
     },
     '.btn-link': {
-        '@apply px-0.5 antialiased font-medium text-primary-800 underline underline-offset-2 hover:text-primary-800': {},
+        '@apply px-0.5 antialiased font-medium text-primary-600 underline underline-offset-2 hover:text-primary-700': {},
     },
 
 
     // Sting theme
     '.theme-sting .btn-primary': {
-        '@apply text-white bg-primary-800 hover:bg-primary-900 active:bg-primary-800 focus:outline-none border border-transparent border-b-primary-900': {},
+        '@apply text-primary-50 bg-primary-800 hover:bg-primary-900 active:bg-primary-800 focus:outline-none border border-transparent': {},
     },
     '.theme-sting .btn-secondary': {
-        '@apply text-primary-800 bg-neutral-200 hover:bg-neutral-300 active:bg-neutral-200 focus:outline-none border border-transparent border-b-neutral-300': {},
+        '@apply text-primary-600 hover:text-primary-700 bg-primary-50 hover:bg-primary-100 active:bg-primary-600 focus:outline-none border border-primary-100 hover:border-primary-200': {}, 
     },
-    '.theme-sting .btn-info': {
-        '@apply text-white bg-info-800 hover:bg-info-900 active:bg-info-800 hover:text-white focus:outline-none border border-transparent border-b-info-900': {},
-    },
-    '.theme-sting .btn-neutral': {
-        '@apply bg-transparent hover:bg-neutral-100 text-primary-800 hover:text-neutral-900 active:bg-neutral-100/50 border border-neutral-400': {},
+    '.theme-sting .btn-outline': {
+        '@apply text-primary-600 hover:text-primary-700 bg-transparent hover:bg-primary-50 active:bg-transparent focus:outline-none border border-primary-500': {}, 
     },
     '.theme-sting .btn-borderless': {
-        '@apply bg-transparent text-primary-800 hover:bg-neutral-100': {},
+        '@apply bg-transparent text-primary-600 hover:bg-primary-50': {},
+    },
+    // '.theme-sting .btn-info': {
+    //     '@apply text-white bg-info-800 hover:bg-info-900 active:bg-info-800 hover:text-white focus:outline-none border border-transparent border-b-info-900': {},
+    // },
+    '.theme-sting .btn-neutral': {
+        '@apply bg-transparent hover:bg-neutral-50 text-neutral-600 hover:text-neutral-700 active:bg-neutral-50 border border-neutral-200 hover:border-neutral-300': {},
+    },
+    '.theme-sting .btn-neutral-borderless': {
+        '@apply bg-transparent text-neutral-600 hover:bg-neutral-50': {},
     },
     '.theme-sting .btn-danger': {
-        '@apply text-white !bg-red-800 hover:!bg-red-900 active:!bg-red-800 text-white border !border-transparent !border-b-red-900': {},
+        '@apply text-red-600 bg-transparent hover:bg-red-50 border border-red-200 hover:border-red-300': {},
     },
 
 

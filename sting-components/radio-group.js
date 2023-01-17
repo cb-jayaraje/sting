@@ -12,28 +12,28 @@ module.exports = RadioGroup = (styles) => ({
         '@apply flex items-start': {}
     },
     '.radio-input': {
-        '@apply focus:ring-info-200 h-4 w-4 text-info-800 border-neutral-400': {}
+        '@apply focus:ring-primary-500 h-4 w-4 text-primary-500 border-neutral-400': {}
     },
     '.radio-label': {
-        '@apply ml-3 block cb-text-copy-regular font-medium hover:text-neutral-800 cursor-pointer leading-tight': {}
+        '@apply ml-3 block cb-text-copy-regular font-medium hover:text-neutral-700 cursor-pointer leading-tight': {}
     },
-    '.radio-label.with-info span:first-of-type, .radio-label.with-info-inline span:first-of-type': {
+    '.radio-label.with-info span:first-of-type, .radio-label.with-primary-inline span:first-of-type': {
         '@apply font-semibold': {}
     },
     '.radio-label.with-info span:nth-of-type(2)': {
         '@apply block mt-0.5 font-normal': {}
     },
-    '.radio-label.with-info-inline span:nth-of-type(2)': {
+    '.radio-label.with-primary-inline span:nth-of-type(2)': {
         '@apply pl-2 font-normal': {}
     },
 
     // Radio card
 
     '.radio-cards label': {
-        '@apply relative bg-white h-full flex p-4 w-full rounded ring-1 ring-neutral-400 hover:ring-neutral-500 cursor-pointer': {}
+        '@apply relative bg-white h-full flex p-4 w-full rounded ring-1 ring-neutral-200 hover:ring-neutral-300 cursor-pointer': {}
     },
     '.radio-cards label.selected': {
-        '@apply ring-info-200 bg-info-50 bg-opacity-50 hover:cursor-default': {}
+        '@apply ring-primary-200 bg-primary-50 hover:cursor-default': {}
     },
     '.radio-cards label span': {
         '@apply cb-text-copy-regular': {}
@@ -45,10 +45,10 @@ module.exports = RadioGroup = (styles) => ({
         '@apply w-5 h-5 invisible': {}
     },
     '.radio-cards label.selected h3': {
-        '@apply text-neutral-700': {}
+        '@apply text-neutral-800': {}
     },
     '.radio-cards label.selected svg': {
-        '@apply text-info-800 visible': {}
+        '@apply text-primary-500 visible': {}
     },
     '.radio-cards.simple label h3': {
         '@apply font-medium text-center mx-auto': {}
@@ -57,7 +57,7 @@ module.exports = RadioGroup = (styles) => ({
     // Radio compact
 
     '.radio-compact': {
-        '@apply border border-neutral-300 bg-white divide-x divide-neutral-400 rounded': {}
+        '@apply border border-neutral-200 bg-white divide-x divide-neutral-200 rounded': {}
     },
     '.radio-compact label': {
         '@apply py-2 px-6 flex flex-1 items-center justify-center cb-text-copy-regular font-medium whitespace-nowrap cursor-pointer focus:outline-none hover:bg-neutral-50': {}
@@ -69,7 +69,7 @@ module.exports = RadioGroup = (styles) => ({
         '@apply rounded-r': {}
     },
     '.radio-compact label.selected': {
-        '@apply bg-info-50': {}
+        '@apply bg-primary-50': {}
     },
 
     // Radio stacked
@@ -96,10 +96,10 @@ module.exports = RadioGroup = (styles) => ({
         '@apply relative -space-y-px': {}
     },
     '.radio-cards.tabular label.selected': {
-        '@apply z-20 ring-0 border-info-200': {}
+        '@apply z-20 ring-0 border-primary-200': {}
     },
     '.radio-cards.tabular label': {
-        '@apply relative ring-0 border border-neutral-300 hover:border-neutral-400 p-4 flex cursor-pointer md:pl-4 md:pr-6 md:grid md:grid-cols-3 focus:outline-none rounded-none hover:z-10': {}
+        '@apply relative ring-0 border border-neutral-200 hover:border-neutral-300 p-4 flex cursor-pointer md:pl-4 md:pr-6 md:grid md:grid-cols-3 focus:outline-none rounded-none hover:z-10': {}
     },
     '.radio-cards.tabular label:first-child': {
         '@apply rounded-t': {}
@@ -123,7 +123,7 @@ module.exports = RadioGroup = (styles) => ({
         '@apply -space-y-px rounded-md bg-white ring-0': {}
     },
     '.radio-cards.panels label': {
-        '@apply relative border border-neutral-300 hover:border-neutral-400 p-4 flex gap-3 cursor-pointer focus:outline-none rounded-none ring-0 hover:z-10': {}
+        '@apply relative border border-neutral-200 hover:border-neutral-300 p-4 flex gap-3 cursor-pointer focus:outline-none rounded-none ring-0 hover:z-10': {}
     },
     '.radio-cards.panels label:first-child': {
         '@apply rounded-t': {}
@@ -132,7 +132,7 @@ module.exports = RadioGroup = (styles) => ({
         '@apply rounded-b': {}
     },
     '.radio-cards.panels label.selected': {
-        '@apply z-20 ring-0 border-info-200': {}
+        '@apply z-20 ring-0 border-primary-200': {}
     },
 
 

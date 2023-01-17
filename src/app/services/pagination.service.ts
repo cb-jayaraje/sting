@@ -11,7 +11,7 @@ export class PaginationService {
             title: 'Simple card pagination',
             code: ` 
             <div
-            class="flex items-center justify-between rounded-b-lg border-t border-neutral-300 bg-white px-4 py-3 sm:px-6">
+            class="flex items-center justify-between rounded-b-lg border-t border-neutral-200 bg-white px-4 py-3 sm:px-6">
             <div class="hidden sm:flex sm:flex-1 sm:items-center sm:justify-between">
                 <div>
                     <p class="cb-text-copy-regular">Showing 1 to 10 of 97 results</p>
@@ -19,7 +19,7 @@ export class PaginationService {
                 <div>
                     <nav class="isolate inline-flex -space-x-px rounded-md shadow-sm" aria-label="Pagination">
                         <a
-                            class="relative inline-flex items-center rounded-l-md border border-neutral-400 bg-white px-2 py-2 text-neutral-700 hover:bg-neutral-50 focus:z-20">
+                            class="relative inline-flex items-center rounded-l-md border border-neutral-200 bg-white px-2 py-2 text-neutral-600 hover:bg-neutral-50 focus:z-20">
                             <span class="sr-only">Previous</span>
                             <!-- Heroicon name: mini/chevron-left -->
                             <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
@@ -30,21 +30,21 @@ export class PaginationService {
                             </svg>
                         </a>
                         <a aria-current="page"
-                            class="relative z-10 inline-flex items-center border border-info-200 bg-info-50 px-4 py-2 cb-text-copy-regular focus:z-20">1</a>
+                            class="relative z-10 inline-flex items-center border border-primary-200 bg-primary-50 px-4 py-2 cb-text-copy-regular focus:z-20">1</a>
                         <a
-                            class="relative inline-flex items-center border border-neutral-400 bg-white px-4 py-2 cb-text-copy-regular hover:bg-neutral-50 focus:z-20">2</a>
+                            class="relative inline-flex items-center border border-neutral-200 bg-white px-4 py-2 cb-text-copy-regular hover:bg-neutral-50 focus:z-20">2</a>
                         <a
-                            class="relative hidden items-center border border-neutral-400 bg-white px-4 py-2 cb-text-copy-regular hover:bg-neutral-50 focus:z-20 md:inline-flex">3</a>
+                            class="relative hidden items-center border border-neutral-200 bg-white px-4 py-2 cb-text-copy-regular hover:bg-neutral-50 focus:z-20 md:inline-flex">3</a>
                         <span
-                            class="relative inline-flex items-center border border-neutral-400 bg-white px-4 py-2 cb-text-copy-regular">...</span>
+                            class="relative inline-flex items-center border border-neutral-200 bg-white px-4 py-2 cb-text-copy-regular">...</span>
                         <a
-                            class="relative hidden items-center border border-neutral-400 bg-white px-4 py-2 cb-text-copy-regular hover:bg-neutral-50 focus:z-20 md:inline-flex">8</a>
+                            class="relative hidden items-center border border-neutral-200 bg-white px-4 py-2 cb-text-copy-regular hover:bg-neutral-50 focus:z-20 md:inline-flex">8</a>
                         <a
-                            class="relative inline-flex items-center border border-neutral-400 bg-white px-4 py-2 cb-text-copy-regular hover:bg-neutral-50 focus:z-20">9</a>
+                            class="relative inline-flex items-center border border-neutral-200 bg-white px-4 py-2 cb-text-copy-regular hover:bg-neutral-50 focus:z-20">9</a>
                         <a
-                            class="relative inline-flex items-center border border-neutral-400 bg-white px-4 py-2 cb-text-copy-regular hover:bg-neutral-50 focus:z-20">10</a>
+                            class="relative inline-flex items-center border border-neutral-200 bg-white px-4 py-2 cb-text-copy-regular hover:bg-neutral-50 focus:z-20">10</a>
                         <a
-                            class="relative inline-flex items-center rounded-r-md border border-neutral-400 bg-white px-2 py-2 text-neutral-700 hover:bg-neutral-50 focus:z-20">
+                            class="relative inline-flex items-center rounded-r-md border border-neutral-200 bg-white px-2 py-2 text-neutral-700 hover:bg-neutral-50 focus:z-20">
                             <span class="sr-only">Next</span>
                             <!-- Heroicon name: mini/chevron-right -->
                             <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"

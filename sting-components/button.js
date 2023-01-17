@@ -45,7 +45,7 @@ module.exports = Button = (styles) => ({
         '@apply text-primary-50 bg-primary-800 hover:bg-primary-900 active:bg-primary-800 focus:outline-none border border-transparent': {},
     },
     '.theme-sting .btn-secondary': {
-        '@apply text-primary-700 hover:text-primary-800 bg-primary-50 hover:bg-primary-100 active:bg-primary-600 focus:outline-none border border-primary-100 hover:border-primary-200': {}, 
+        '@apply text-primary-600 hover:text-primary-700 bg-primary-50 hover:bg-primary-100 active:bg-primary-600 focus:outline-none border border-primary-100 hover:border-primary-200': {}, 
     },
     '.theme-sting .btn-outline': {
         '@apply text-primary-600 hover:text-primary-700 bg-transparent hover:bg-primary-50 active:bg-transparent focus:outline-none border border-primary-500': {}, 

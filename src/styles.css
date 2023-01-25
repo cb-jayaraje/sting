@@ -245,16 +245,27 @@
     --color-neutral-800: 33 38 44;
     --color-neutral-900: 11 13 15;
 
-    --color-info-50: 240 245 245;
-    --color-info-100: 211 223 225;
-    --color-info-200: 182 202 205;
-    --color-info-300: 153 181 185;
-    --color-info-400: 124 160 165;
-    --color-info-500: 98 135 139;
-    --color-info-600: 77 105 108;
-    --color-info-700: 55 74 77;
-    --color-info-800: 33 45 47;
-    --color-info-900: 11 15 16;
+    /* --color-info-50: 246 245 238;
+    --color-info-100: 228 224 205;
+    --color-info-200: 210 203 172;
+    --color-info-300: 192 182 139;
+    --color-info-400: 174 161 106;
+    --color-info-500: 149 136 81;
+    --color-info-600: 116 105 63;
+    --color-info-700: 83 75 45;
+    --color-info-800: 50 45 27;
+    --color-info-900: 17 15 9; */
+
+    --color-info-50: 239 245 245;
+    --color-info-100: 208 224 225;
+    --color-info-200: 177 203 206;
+    --color-info-300: 146 182 186;
+    --color-info-400: 115 161 166;
+    --color-info-500: 89 136 140;
+    --color-info-600: 69 106 109;
+    --color-info-700: 49 75 78;
+    --color-info-800: 30 45 47;
+    --color-info-900: 10 15 16;
 
     --color-green-50: 236 249 238;
     --color-green-100: 197 236 205;

@@ -1,19 +1,15 @@
 /* You can add global styles to this file and also import other style files */
 @import "~prismjs/plugins/toolbar/prism-toolbar.css";
 @import "~prismjs/themes/prism-okaidia";
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Sora:wght@100;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Sora:wght@100;600&display=swap");
 @tailwind base;
 
 @tailwind components;
 
-
 @tailwind utilities;
 
 @layer base {
-  
-
   :root {
-
     --color-brand-50: 255 235 230;
     --color-brand-100: 255 214 204;
     --color-brand-200: 255 173 153;
@@ -47,7 +43,7 @@
     --color-primary-800: 1 42 56;
     --color-primary-900: 1 25 34;
 
-    --color-neutral-50: 248	249	250;
+    --color-neutral-50: 248 249 250;
     --color-neutral-100: 241 243 245;
     --color-neutral-200: 233 236 239;
     --color-neutral-300: 222 226 230;
@@ -55,10 +51,10 @@
     --color-neutral-500: 173 181 189;
     --color-neutral-600: 134 142 150;
     --color-neutral-700: 90 99 108;
-    --color-neutral-800: 52	58 64;
-    --color-neutral-900: 33	37 41;
+    --color-neutral-800: 52 58 64;
+    --color-neutral-900: 33 37 41;
 
-    --color-info-50: 231 245 255;
+    --color-info-50: 240 245 245;
     --color-info-100: 208 235 255;
     --color-info-200: 165 216 255;
     --color-info-300: 116 192 252;
@@ -90,7 +86,7 @@
     --color-orange-700: 247 103 7;
     --color-orange-800: 232 89 12;
     --color-orange-900: 195 65 14;
-    
+
     --color-red-50: 255 245 245;
     --color-red-100: 255 227 227;
     --color-red-200: 255 201 201;
@@ -101,13 +97,9 @@
     --color-red-700: 240 62 62;
     --color-red-800: 224 49 49;
     --color-red-900: 201 42 42;
+  }
 
-   
-        
-    }
-
-    .theme-leap {
-
+  .theme-leap {
     --color-brand-50: 255 239 234;
     --color-brand-100: 255 215 200;
     --color-brand-200: 255 174 144;
@@ -184,9 +176,6 @@
     --color-red-700: 119 25 16;
     --color-red-800: 64 15 15;
     --color-red-900: 51 2 2;
-     
-
-
   }
 
   .theme-sting {
@@ -256,16 +245,16 @@
     --color-neutral-800: 33 38 44;
     --color-neutral-900: 11 13 15;
 
-    --color-info-50: 246 245 238;
-    --color-info-100: 228 224 205;
-    --color-info-200: 210 203 172;
-    --color-info-300: 192 182 139;
-    --color-info-400: 174 161 106;
-    --color-info-500: 149 136 81;
-    --color-info-600: 116 105 63;
-    --color-info-700: 83 75 45;
-    --color-info-800: 50 45 27;
-    --color-info-900: 17 15 9;
+    --color-info-50: 240 245 245;
+    --color-info-100: 211 223 225;
+    --color-info-200: 182 202 205;
+    --color-info-300: 153 181 185;
+    --color-info-400: 124 160 165;
+    --color-info-500: 98 135 139;
+    --color-info-600: 77 105 108;
+    --color-info-700: 55 74 77;
+    --color-info-800: 33 45 47;
+    --color-info-900: 11 15 16;
 
     --color-green-50: 236 249 238;
     --color-green-100: 197 236 205;
@@ -288,7 +277,7 @@
     --color-orange-700: 121 46 6;
     --color-orange-800: 73 28 4;
     --color-orange-900: 24 9 1;
-    
+
     --color-red-50: 252 233 233;
     --color-red-100: 245 189 188;
     --color-red-200: 238 145 144;
@@ -299,11 +288,7 @@
     --color-red-700: 111 17 17;
     --color-red-800: 67 10 10;
     --color-red-900: 22 3 3;
-}
-
-
-
-
+  }
 
   html,
   body {
@@ -335,36 +320,35 @@ div.code-toolbar > .toolbar > .toolbar-item > button {
   @apply font-semibold text-lg;
 }
 
-.preview-box{
+.preview-box {
   @apply p-8 flex justify-center bg-gradient-to-b from-white to-gray-50 h-auto w-auto;
 }
 
-.preview-box-2{
+.preview-box-2 {
   @apply p-8 bg-gradient-to-b from-white to-gray-50 h-auto;
 }
 
 .cb-intro-copy {
-@apply my-8 p-8 bg-neutral-100;
+  @apply my-8 p-8 bg-neutral-100;
 }
 .cb-intro-copy h2 {
-@apply mb-4 max-w-2xl cb-text-h2;
+  @apply mb-4 max-w-2xl cb-text-h2;
 }
 .cb-intro-copy h3 {
-@apply mb-4 max-w-2xl cb-text-h4;
+  @apply mb-4 max-w-2xl cb-text-h4;
 }
 .cb-intro-copy p {
-@apply max-w-3xl cb-text-copy-regular;
+  @apply max-w-3xl cb-text-copy-regular;
 }
 .cb-intro-copy ul {
-@apply flex flex-wrap gap-6 my-8 cb-text-copy-regular;
+  @apply flex flex-wrap gap-6 my-8 cb-text-copy-regular;
 }
 .cb-intro-copy ul li {
-@apply w-1/4 p-6 bg-neutral-50 rounded-md;
+  @apply w-1/4 p-6 bg-neutral-50 rounded-md;
 }
 .cb-intro-copy ul.basic-list {
-@apply inline-flex my-8 max-w-lg;
+  @apply inline-flex my-8 max-w-lg;
 }
 .cb-intro-copy ul.basic-list li {
-@apply w-auto bg-transparent m-0 p-0;
+  @apply w-auto bg-transparent m-0 p-0;
 }
-

@@ -5,28 +5,29 @@ import { HighlightService } from 'src/app/services/high-light.service';
 @Component({
   selector: 'app-installation',
   templateUrl: './installation.component.html',
-  styleUrls: ['./installation.component.css']
+  styleUrls: ['./installation.component.css'],
 })
 export class InstallationComponent implements OnInit {
-
   htmlPre = '';
-compUnescape='';
-html: SafeHtml = '';
-highlighted: boolean = false;
-codePreview= '';
+  compUnescape = '';
+  html: SafeHtml = '';
+  highlighted: boolean = false;
+  codePreview = '';
 
-  constructor(public sanitizer: DomSanitizer, private titleService: Title, private highlightService: HighlightService,) {
-    this.titleService.setTitle("Sting - Installation");
-   }
+  constructor(
+    public sanitizer: DomSanitizer,
+    private titleService: Title,
+    private highlightService: HighlightService
+  ) {
+    this.titleService.setTitle('Sting - Installation');
+  }
 
-   ngAfterViewChecked() {
+  ngAfterViewChecked() {
     this.highlightService.highlightAll();
     this.highlighted = true;
-
   }
 
   ngOnInit(): void {
-
     this.codePreview = ` 
     <!doctype html>
     <html class="theme-sting">
@@ -35,11 +36,11 @@ codePreview= '';
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Chargebee</title>
     <!--Sting CDN link -->
-    <link rel="stylesheet" href="https://cbproductdesign.devcb.in/sting-ui/cdn/sting.min.1.1.0.css">
+    <link rel="stylesheet" href="https://cbproductdesign.devcb.in/sting-ui/cdn/sting.1.4.3.min.css">
     <!--Tailwind CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!--Theme CDN -->
-    <link rel="stylesheet" href="https://cbproductdesign.devcb.in/sting-ui/cdn/theme.sting.css">
+    <link rel="stylesheet" href="https://cbproductdesign.devcb.in/sting-ui/cdn/theme-sting.2.min.css">
     <!--Tailwind config-->
     <script src="https://cbproductdesign.devcb.in/sting-ui/cdn/config.js"></script>
 
@@ -65,7 +66,6 @@ codePreview= '';
     
     </div>
     </body>
-    </html>`
+    </html>`;
   }
-
 }

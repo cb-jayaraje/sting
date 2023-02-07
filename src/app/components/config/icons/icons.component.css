@@ -1,0 +1,18 @@
+.color-box {
+    @apply space-y-1.5 p-1.5 
+}
+.color-box__div {
+    @apply flex w-full rounded dark:ring-1 dark:ring-inset dark:ring-white/10 h-16 place-items-center
+}
+.color-box__div p {
+    @apply inline mx-auto text-copy text-center leading-none
+}
+.color-box__div2 {
+    @apply px-0.5 md:flex md:justify-between md:space-x-2
+}
+.color-box__hex {
+    @apply text-neutral-700 font-mono lowercase dark:text-neutral-300 text-copy-small
+}
+.color-box__value {
+    @apply w-6 font-bold text-neutral-600 2xl:w-full text-copy-small
+}

@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { ComponentsComponent } from './components/components.component';
 import { ColorsComponent } from './components/config/colors/colors.component';
+import { IconsComponent } from './components/config/icons/icons.component';
 import { InstallationComponent } from './components/config/installation/installation.component';
 import { ThemesComponent } from './components/config/themes/themes.component';
 import { TypographyComponent } from './components/config/typography/typography.component';
@@ -58,6 +59,7 @@ const routes: Routes = [
           { path: 'list-containers', component: ListContainersComponent },
           { path: 'modals', component: ModalsComponent },
           { path: 'colors', component: ColorsComponent },
+          { path: 'icons', component: IconsComponent },
           { path: 'typography', component: TypographyComponent },
           { path: 'themes', component: ThemesComponent },
           { path: 'table', component: TableComponent },

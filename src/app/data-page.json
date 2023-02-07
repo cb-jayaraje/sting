@@ -73,8 +73,7 @@
       "title": "Brand",
       "subMenu": [
         { "title": "Colors", "link": "colors" },
-        { "title": "Typography", "link": "typography" },
-        { "title": "Icons", "link": "icons" }
+        { "title": "Typography", "link": "typography" }
       ]
     },
     {

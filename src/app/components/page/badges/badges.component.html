@@ -1,21 +1,33 @@
 <div class="cb-intro-copy">
-<p>Badges are a common element in user interfaces and are used to display additional information or highlight specific content. When designing badges for a design system, it's important to consider the following guidelines:</p>
+  <p>Badges are a common element in user interfaces and are used to display additional information or highlight specific
+    content. When designing badges for a design system, it's important to consider the following guidelines:</p>
 
-<ul>
-  <li><strong>Use badges sparingly:</strong> Badges should be used sparingly, as they can be visually distracting and draw attention away from other content. It's generally best to limit the use of badges to only the most important or relevant information.</li>
-  
-  <li><strong>Use clear and concise labels:</strong> The labels for badges should be clear and concise, using as few words as possible. Avoid using ambiguous or vague labels.</li>
-  
-  <li><strong>Use a consistent badge style:</strong> The style of the badges should be consistent throughout the design system. This includes the font, color, and overall layout of the badges.</li>
-  
-  <li><strong>Use active and inactive states:</strong> It should be clear to users which badges are currently active and which are inactive. This can be achieved through the use of visual indicators such as bold or underlined text or a different background color.</li>
-  
-  <li><strong>Consider the context in which badges are used:</strong> The design of badges should be appropriate for the context in which they are used. For example, badges used to highlight errors or warnings should have a different visual style than badges used to highlight new or popular content.</li>
-</ul>
-  
-  <p>By following these guidelines, you can create an effective and intuitive badge interface that helps users quickly understand and identify important information.</p>
+  <ul>
+    <li><strong>Use badges sparingly:</strong> Badges should be used sparingly, as they can be visually distracting and
+      draw attention away from other content. It's generally best to limit the use of badges to only the most important
+      or relevant information.</li>
+
+    <li><strong>Use clear and concise labels:</strong> The labels for badges should be clear and concise, using as few
+      words as possible. Avoid using ambiguous or vague labels.</li>
+
+    <li><strong>Use a consistent badge style:</strong> The style of the badges should be consistent throughout the
+      design system. This includes the font, color, and overall layout of the badges.</li>
+
+    <li><strong>Use active and inactive states:</strong> It should be clear to users which badges are currently active
+      and which are inactive. This can be achieved through the use of visual indicators such as bold or underlined text
+      or a different background color.</li>
+
+    <li><strong>Consider the context in which badges are used:</strong> The design of badges should be appropriate for
+      the context in which they are used. For example, badges used to highlight errors or warnings should have a
+      different visual style than badges used to highlight new or popular content.</li>
+  </ul>
+
+  <p>By following these guidelines, you can create an effective and intuitive badge interface that helps users quickly
+    understand and identify important information.</p>
 
 </div>
+
+
 
 <app-common *ngFor="let convertedData of convertedDatas" [activeTab]="'preview'" [codePreview]="convertedData.code"
   [codeHtml]="convertedData.code" [title]="convertedData.title">

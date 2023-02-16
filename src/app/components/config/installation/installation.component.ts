@@ -39,7 +39,9 @@ codePreview= '';
     <!--Tailwind CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!--Theme CDN -->
-    <link rel="stylesheet" href="https://cbproductdesign.devcb.in/sting-ui/cdn/theme.sting.css">
+    <link rel="stylesheet" href="https://cb-design.netlify.app/sting_tokens.css">
+    <!--Icon CDN -->
+    <link rel="stylesheet" href="https://cb-design.netlify.app/sting-icons.1.0.js">
     <!--Tailwind config-->
     <script src="https://cbproductdesign.devcb.in/sting-ui/cdn/config.js"></script>
 

@@ -12,7 +12,7 @@ module.exports = InlineAlert = (styles) => ({
     "@apply bg-green-50 border-green-200": {}
   },
   ".inline-alert-container": {
-    "@apply flex items-start gap-4 p-4 rounded-lg border max-w-[928]": {}
+    "@apply flex items-start gap-4 p-4 rounded-lg border max-w-4xl": {}
   },
   ".inline-alert-simple": {
     "@apply flex items-center gap-2": {}

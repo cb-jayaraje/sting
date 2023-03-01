@@ -5,6 +5,9 @@ const Table = require("./sting-components/table");
 const InputGroups = require("./sting-components/input-groups");
 
 const Alerts = require("./sting-components/alerts");
+const InlineAlert = require("./sting-components/inline-alerts");
+const Banner = require("./sting-components/banner");
+const Icons = require("./sting-components/icon");
 //const colors = require("./sting-components/colors.js");
 const colors = require("./sting-components/default-colors.js");
 const fontSize = require("./sting-components/font-style.js");
@@ -50,6 +53,9 @@ module.exports = plugin.withOptions(
       addComponents(Checkout());
       addComponents(Toggle());
       addComponents(RadioGroup());
+      addComponents(InlineAlert());
+      addComponents(Banner());
+      addComponents(Icons());
       // addComponents(Forms());
       // addComponents(List());
       // addComponents(Pagination());

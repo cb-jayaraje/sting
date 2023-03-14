@@ -7,18 +7,20 @@ module.exports = Button = (styles) => ({
     "@apply antialiased px-2.5 py-1.5 cb-text-copy-small border border-transparent font-medium rounded focus:outline-none disabled:cursor-not-allowed disabled:opacity-30 cursor-pointer":
       {},
   },
-  ".btn-rounded": {
+  ".btn-rounded, .btn-icon-only": {
     "@apply btn rounded p-2": {},
   },
-  ".btn-rounded svg": {
+
+  ".btn-rounded svg, .btn-icon-only svg": {
     "@apply w-5 h-5": {},
   },
-  ".btn-rounded-small": {
+  ".btn-rounded-small, .btn-sm-icon-only": {
     "@apply btn rounded p-1.5": {},
   },
-  ".btn-rounded-small svg": {
+  ".btn-rounded-small svg, .btn-sm-icon-only svg": {
     "@apply h-4 w-4": {},
   },
+
   ".btn-icon-trailing": {
     "@apply ml-2 -mr-0.5 h-4 w-4": {},
   },

@@ -34,13 +34,13 @@ export class InstallationComponent implements OnInit {
     <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Chargebee</title>
+   <title>WEG</title>
     <!--Sting CDN link -->
-    <link rel="stylesheet" href="https://cbproductdesign.devcb.in/sting-ui/cdn/sting.1.4.3.min.css">
+    <link rel="stylesheet" href="https://cbproductdesign.devcb.in/sting-ui/cdn/sting.min.css">
     <!--Tailwind CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!--Theme CDN -->
-    <link rel="stylesheet" href="https://cbproductdesign.devcb.in/sting-ui/cdn/theme-sting.2.min.css">
+    <link rel="stylesheet" href="https://cbproductdesign.devcb.in/sting-ui/cdn/theme-sting.min.css">
     <!--Tailwind config-->
     <script src="https://cbproductdesign.devcb.in/sting-ui/cdn/config.js"></script>
 

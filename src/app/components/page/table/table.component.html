@@ -146,7 +146,7 @@
 
 <app-common [activeTab]="'preview'" [codePreview]="convertedDatas[1].code" [codeHtml]="convertedDatas[1].code"
     [title]="convertedDatas[1].title">
-    <div class="preview-box ">
+    <div class="preview-box !h-96">
         <div class="w-full mx-auto ">
 
             <!-- Tables starts -->
@@ -256,7 +256,7 @@
                                     </span>
                                 </p>
                             </td>
-                            <td class="table-body-data-action">
+                            <td class="table-body-data-action dropDown" appToggleDropdown>
                                 <div class="w-full flex justify-center">
 
                                     <button type="button" class="btn-small btn-borderless">
@@ -268,7 +268,8 @@
                                         </svg>
                                     </button>
 
-                                    <div class="hidden dropdown right-16 mt-6 !w-56 z-50 dropdown-divider" role="menu">
+                                    <div class="dropdown-container dropdown  right-16 mt-6 !w-56 z-50 dropdown-divider"
+                                        role="menu">
                                         <div role="none">
                                             <a role="menuitem" tabindex="-1" id="menu-item-0">View details</a>
                                             <a role="menuitem" tabindex="-1" id="menu-item-1">Edit</a>

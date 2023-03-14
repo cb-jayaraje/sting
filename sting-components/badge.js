@@ -87,16 +87,23 @@ module.exports = Badge = (styles) => ({
     "@apply px-2 py-0.5 text-xs": {},
   },
   " .badge-small": {
-    "@apply px-2 py-0.5 cb-text-copy-small rounded-full": {},
+    "@apply pl-2 pr-2 py-0.5 cb-text-copy-small": {},
   },
   ".badge-icon-small": {
-    "@apply pr-0.5 pl-2 py-0.5 text-copy-small rounded-full": {},
+    "@apply pr-0.5 pl-2 py-0.5 cb-text-copy-small rounded-full": {},
+  },
+  ".badge-small button": {
+    "@apply -mr-1": {},
   },
   ".badge-icon-base": {
     "@apply px-0.5 pr-1 pl-2.5 py-0.5 text-copy-regular rounded-full": {},
   },
   ".badge-base": {
     "@apply px-3 py-0.5 cb-text-copy-regular": {},
+  },
+
+  ".badge-base button": {
+    "@apply -mr-2": {},
   },
 
   ".badge-neutral": {

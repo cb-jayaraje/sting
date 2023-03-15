@@ -36,7 +36,7 @@ import { ToggleComponent } from './components/page/toggle/toggle.component';
 import { HomeComponent } from './home/home.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: '/components', pathMatch: 'full' },
+  { path: '', redirectTo: '/components/page/installation', pathMatch: 'full' },
   { path: 'home', component: HomeComponent },
   {
     path: 'components',

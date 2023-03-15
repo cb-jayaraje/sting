@@ -29,6 +29,9 @@ module.exports = {
         "copy-small": "0.79rem",
         "copy-upper": "0.702rem",
       },
+      maxWidth: {
+        "8xl": "90rem",
+      },
       animation: {
         fade: "fadeIn 1s ease-in-out",
       },

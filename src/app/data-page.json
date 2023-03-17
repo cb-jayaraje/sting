@@ -66,77 +66,81 @@
 
   "leftNav": [
     {
-      "title": "Getting Started",
-      "subMenu": [{ "title": "Installation", "link": "installation" }]
-    },
-    {
-      "title": "Brand",
+      "title": "Overview",
       "subMenu": [
-        { "title": "Colors", "link": "colors" },
-        { "title": "Typography", "link": "typography" }
+        { "title": "About Sting", "link": "about-sting" },
+        { "title": "What's New", "link": "new" }
       ]
     },
     {
-      "title": "Patterns",
-      "subMenu": [{ "title": "Design Principles", "link": "design-principles" }]
+      "title": "Principles",
+      "subMenu": [
+        { "title": "Feedback", "link": "feedback" },
+        { "title": "Metaphors", "link": "metaphors" },
+        { "title": "Conversation", "link": "conversation" },
+        { "title": "Grouping", "link": "grouping" }
+      ]
     },
     {
-      "title": "Elements",
+      "title": "Foundations",
       "subMenu": [
-        { "title": "Buttons", "link": "buttons" },
-        { "title": "Badges", "link": "badges" },
-        { "title": "Dropdowns", "link": "dropdowns" },
-        { "title": "Page Headings", "link": "page-headings" },
-        { "title": "Stats", "link": "stats" }
+        { "title": "Accessibility", "link": "feedback", "status": "coming" },
+        { "title": "Content", "link": "content", "status": "coming" },
+        { "title": "Color", "link": "colors" },
+        { "title": "Typography", "link": "typography" },
+        { "title": "Icons", "link": "Icons", "status": "coming" }
+      ]
+    },
+    {
+      "title": "Prototying",
+      "subMenu": [
+        { "title": "Get Started", "link": "installation" },
+        { "title": "Frameworks", "link": "frameworks", "status": "coming" },
+        { "title": "Resources", "link": "resources", "status": "coming" },
+        { "title": "Design Kits", "link": "design-kits", "status": "coming" }
       ]
     },
 
     {
-      "title": "Forms",
-      "subMenu": [
-        { "title": "Input Groups", "link": "input-groups" },
-        { "title": "Select Menus", "link": "select-menus" },
-        { "title": "Toggles", "link": "toggles" },
-        { "title": "Checkbox", "link": "checkbox" },
-        { "title": "Radio Groups", "link": "radio-groups" }
-      ]
-    },
-    {
-      "title": "Lists",
-      "subMenu": [
-        { "title": "Stacked Lists", "link": "stacked-lists" },
-        { "title": "Tables", "link": "table" }
-      ]
-    },
-    {
-      "title": "Feedback",
+      "title": "Components",
       "subMenu": [
         { "title": "Alerts", "link": "alerts" },
-        { "title": "Notifications", "link": "notifications" }
-      ]
-    },
-    {
-      "title": "Navigation",
-      "subMenu": [
-        { "title": "Tabs", "link": "tabs" },
-        { "title": "Steps", "link": "steps" },
-        { "title": "Paginations", "link": "pagination" },
-        { "title": "Breadcrumbs", "link": "breadcrumbs" }
-      ]
-    },
-
-    {
-      "title": "Overlays",
-      "subMenu": [
+        { "title": "Badges", "link": "badges" },
+        { "title": "Banners", "link": "badges", "status": "new" },
+        { "title": "Breadcrumbs", "link": "breadcrumbs" },
+        { "title": "Buttons", "link": "buttons" },
+        { "title": "Cards", "link": "cards" },
+        { "title": "Checkbox", "link": "checkbox" },
         { "title": "Containers", "link": "containers" },
+        { "title": "Divider", "link": "divider", "status": "coming" },
+        { "title": "Dropdowns", "link": "dropdowns" },
+        { "title": "Feeds", "link": "feeds", "status": "coming" },
+        { "title": "Grid Lists", "link": "grid" },
+        { "title": "Input Groups", "link": "input-groups" },
         { "title": "Modals", "link": "modals" },
-        { "title": "Cards", "link": "cards" }
+        { "title": "Notifications", "link": "notifications" },
+        { "title": "Page Headings", "link": "page-headings" },
+        { "title": "Paginations", "link": "pagination" },
+        { "title": "Radio Groups", "link": "radio-groups" },
+        { "title": "Select Menus", "link": "select-menus" },
+        { "title": "Stacked Lists", "link": "stacked-lists" },
+        { "title": "Stats", "link": "stats" },
+        { "title": "Steps", "link": "steps" },
+        { "title": "Tabs", "link": "tabs" },
+        { "title": "Tables", "link": "table", "status": "update" },
+        { "title": "Toggles", "link": "toggles" }
       ]
+    },
+    {
+      "title": "Templates",
+      "subMenu": [
+        { "title": "Sign-in and Registration", "link": "sign-in-forms" },
+        { "title": "List Containers", "link": "list-containers" },
+        { "title": "Checkout", "link": "checkout" }
+      ]
+    },
+    {
+      "templates": []
     }
-  ],
-  "templates": [
-    { "title": "Sign-in and Registration", "link": "sign-in-forms" },
-    { "title": "List Containers", "link": "list-containers" },
-    { "title": "Checkout", "link": "checkout" }
   ]
 }

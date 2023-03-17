@@ -1,125 +1,172 @@
-<main class="flex-1">
-  
-  <div class="cb-intro-copy">
-  
-  <p>Typography is an important element of any design system, as it can be used to establish a consistent visual hierarchy and create a cohesive brand identity. Here are some guidelines for designing a typography system for a design system:</p>
-  
-  <ul>
-    <li><strong>Choose a primary typeface:</strong> Select a primary typeface that will be used consistently throughout the design system. This typeface should be legible, easy to read, and appropriate for the intended audience.</li>
-    
-    <li><strong>Use a limited number of typefaces:</strong> It's generally best to use a limited number of typefaces in a design system, as too many typefaces can create visual clutter and make it difficult for users to process information.</li>
-    
-    <li><strong>Consider accessibility:</strong> Choose typefaces that are accessible and legible for users with visual impairments. This may include using high-contrast color combinations and avoiding the use of thin or decorative typefaces.</li>
-    
-    <li><strong>Use typography consistently:</strong> Use the same typefaces and font styles consistently throughout the design system to create a cohesive visual identity. This includes using the same font sizes, line heights, and letter spacing across different UI elements.</li>
-    
-    <li><strong>Use typography to convey meaning:</strong> Use typography to convey meaning and create visual interest. For example, you might use a larger, bolder typeface for headings and a smaller, lighter typeface for body text.</li>
-    
-  </ul>
-    
-    <p>By following these guidelines, you can create a typography system that is cohesive, accessible, and effective in conveying meaning and establishing brand identity.</p>
-  
-  </div>
-  
-  <div class="relative mx-auto">
-      
+<div class="min-w-0  flex-auto  flex ">
+  <main class="relative z-0   flex-1 focus:outline-none " id="c1">
+
+    <p class="cb-text-copy-large mt-4 max-w-3xl leading-6">Typography is an important element of any design system, as
+      it can be used to establish a consistent visual
+      hierarchy and create a cohesive brand identity. Here are some guidelines for designing a typography system for a
+      design system:</p>
+
+    <div class="relative mx-auto">
+
       <div class="py-2 space-y-12">
         <!-- <div>
           <p class="cb-text-copy-large max-w-3xl mb-8">Our font hierarchy has been considered to elevate clarity, and each text style reflects the proper sentiment to facilitate our users' experience.</p>
           <div class="max-w-2xl">
           </div>
         </div> -->
-      
-      <div class="mx-auto pt-6 space-y-16">
 
-        <!-- Set starts -->
-        <div class="w-full">
-          <div class="flex items-center justify-between">
-            <p class="cb-text-copy-upper">Font Stack</p>
-          </div>
+        <div class="mx-auto pt-6 space-y-16">
 
-          <div
-            class="w-full p-8 mt-4 overflow-hidden rounded-md bg-gradient-to-b from-neutral-50/50 to-neutral-50 ring-1 ring-neutral-100">
-            <div class="space-y-10">
-              <div>
-                <p class="hint-text">Heading
-                </p>
-                <p class="cb-text-h4">Sora</p>
-              </div>
-              <div>
-                <p class="hint-text">Body</p>
-                <p class="cb-text-h6">Inter</p>
+          <!-- Set starts -->
+          <div class="w-full">
+            <div class="flex items-center justify-between">
+              <p class="cb-text-copy-upper">Font Stack</p>
+            </div>
+
+            <div
+              class="w-full p-8 mt-4 overflow-hidden rounded-md bg-gradient-to-b from-neutral-50/50 to-neutral-50 ring-1 ring-neutral-100">
+              <div class="space-y-10">
+                <div>
+                  <p class="hint-text">Heading
+                  </p>
+                  <p class="cb-text-h4">Sora</p>
+                </div>
+                <div>
+                  <p class="hint-text">Body</p>
+                  <p class="cb-text-h6">Inter</p>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-        <!-- Set ends -->
+          <!-- Set ends -->
 
+        </div>
       </div>
     </div>
-  </div>
-
-</main>
 
 
-<app-common *ngFor="let convertedData of convertedDatas" [activeTab]="'preview'" [codePreview]="convertedData.code"
-  [codeHtml]="convertedData.code" [title]="convertedData.title">
-  <div class="p-8 flex items-center justify-start bg-neutral-50">
-    <div class="w-full max-w-5xl">
 
-      <div class="space-y-10">
-        <div>
-          <p class="hint-text">
-            cb-text-display</p>
-          <p class="cb-text-display">When anger arises, think of the consequences.</p>
-        </div>
-        <div>
-          <p class="hint-text">cb-text-h1</p>
-          <h1 class="cb-text-h1">When anger arises, think of the consequences.</h1>
-        </div>
-        <div>
-          <p class="hint-text">cb-text-h2</p>
-          <h2 class="cb-text-h2">When anger arises, think of the consequences.</h2>
-        </div>
-        <div>
-          <p class="hint-text">cb-text-h3</p>
-          <h3 class="cb-text-h3">When anger arises, think of the consequences.</h3>
-        </div>
-        <div>
-          <p class="hint-text">cb-text-h4</p>
-          <h4 class="cb-text-h4">When anger arises, think of the consequences.</h4>
-        </div>
-        <div>
-          <p class="hint-text">cb-text-h5</p>
-          <h5 class="cb-text-h5">When anger arises, think of the consequences.</h5>
-        </div>
-        <div>
-          <p class="hint-text">cb-text-h6</p>
-          <h6 class="cb-text-h6">When anger arises, think of the consequences.</h6>
-        </div>
-        <div>
-          <p class="hint-text">
-            cb-text-copy-large</p>
-          <p class=" cb-text-copy-large max-w-3xl">If you are depressed you are living in the past, if you are anxious you are living in the future. If you are at peace, you are living in the present.</p>
-        </div>
-        <div>
-          <p class="hint-text">
-            cb-text-copy-regular</p>
-          <p class="cb-text-copy-regular max-w-2xl">If you are depressed you are living in the past, if you are anxious you are living in the future. If you are at peace, you are living in the present.
-          </p>
-        </div>
-        <div>
-          <p class="hint-text">
-            cb-text-copy-small</p>
-          <p class="cb-text-copy-small max-w-xl">If you are depressed you are living in the past, if you are anxious you are living in the future. If you are at peace, you are living in the present.</p>
-        </div>
-        <div>
-          <p class="hint-text">
-            cb-text-copy-upper</p>
-          <p class="cb-text-copy-upper max-w-lg">If you are depressed you are living in the past, if you are anxious you are living in the future. If you are at peace, you are living in the present.</p>
+
+    <app-common *ngFor="let convertedData of convertedDatas" [activeTab]="'preview'" [codePreview]="convertedData.code"
+      [codeHtml]="convertedData.code" [title]="convertedData.title">
+      <div class="p-8 flex items-center justify-start bg-neutral-50">
+        <div class="w-full max-w-5xl">
+
+          <div class="space-y-10">
+            <div>
+              <p class="hint-text">
+                cb-text-display</p>
+              <p class="cb-text-display">When anger arises, think of the consequences.</p>
+            </div>
+            <div>
+              <p class="hint-text">cb-text-h1</p>
+              <h1 class="cb-text-h1">When anger arises, think of the consequences.</h1>
+            </div>
+            <div>
+              <p class="hint-text">cb-text-h2</p>
+              <h2 class="cb-text-h2">When anger arises, think of the consequences.</h2>
+            </div>
+            <div>
+              <p class="hint-text">cb-text-h3</p>
+              <h3 class="cb-text-h3">When anger arises, think of the consequences.</h3>
+            </div>
+            <div>
+              <p class="hint-text">cb-text-h4</p>
+              <h4 class="cb-text-h4">When anger arises, think of the consequences.</h4>
+            </div>
+            <div>
+              <p class="hint-text">cb-text-h5</p>
+              <h5 class="cb-text-h5">When anger arises, think of the consequences.</h5>
+            </div>
+            <div>
+              <p class="hint-text">cb-text-h6</p>
+              <h6 class="cb-text-h6">When anger arises, think of the consequences.</h6>
+            </div>
+            <div>
+              <p class="hint-text">
+                cb-text-copy-large</p>
+              <p class=" cb-text-copy-large max-w-3xl">If you are depressed you are living in the past, if you are
+                anxious you are living in the future. If you are at peace, you are living in the present.</p>
+            </div>
+            <div>
+              <p class="hint-text">
+                cb-text-copy-regular</p>
+              <p class="cb-text-copy-regular max-w-2xl">If you are depressed you are living in the past, if you are
+                anxious you are living in the future. If you are at peace, you are living in the present.
+              </p>
+            </div>
+            <div>
+              <p class="hint-text">
+                cb-text-copy-small</p>
+              <p class="cb-text-copy-small max-w-xl">If you are depressed you are living in the past, if you are anxious
+                you are living in the future. If you are at peace, you are living in the present.</p>
+            </div>
+            <div>
+              <p class="hint-text">
+                cb-text-copy-upper</p>
+              <p class="cb-text-copy-upper max-w-lg">If you are depressed you are living in the past, if you are anxious
+                you are living in the future. If you are at peace, you are living in the present.</p>
+            </div>
+          </div>
+
         </div>
       </div>
+    </app-common>
+
+    <p class="cb-text-h3 pt-10" id="c2">Guidelines</p>
+
+    <div class="cb-intro-copy">
+
+
+
+
+
+      <ul>
+        <li><strong>Choose a primary typeface:</strong> Select a primary typeface that will be used consistently
+          throughout the design system. This typeface should be legible, easy to read, and appropriate for the intended
+          audience.</li>
+
+        <li><strong>Use a limited number of typefaces:</strong> It's generally best to use a limited number of typefaces
+          in a design system, as too many typefaces can create visual clutter and make it difficult for users to process
+          information.</li>
+
+        <li><strong>Consider accessibility:</strong> Choose typefaces that are accessible and legible for users with
+          visual impairments. This may include using high-contrast color combinations and avoiding the use of thin or
+          decorative typefaces.</li>
+
+        <li><strong>Use typography consistently:</strong> Use the same typefaces and font styles consistently throughout
+          the design system to create a cohesive visual identity. This includes using the same font sizes, line heights,
+          and letter spacing across different UI elements.</li>
+
+        <li><strong>Use typography to convey meaning:</strong> Use typography to convey meaning and create visual
+          interest. For example, you might use a larger, bolder typeface for headings and a smaller, lighter typeface
+          for body text.</li>
+
+      </ul>
+
+      <p>By following these guidelines, you can create a typography system that is cohesive, accessible, and effective
+        in conveying meaning and establishing brand identity.</p>
 
     </div>
+  </main>
+
+  <div class="cb-content-right-panel ">
+    <nav aria-labelledby="on-this-page-title">
+      <div class=" ">
+        <div class=" cb-text-copy-regular">
+          <h3 class=" cb-text-h4" [ngClass]="{'hidden': contentData.length === 0}">Content</h3>
+          <ul class="py-4 space-y-2">
+
+
+            <li class=" cb-text-h6" *ngFor="let content of contentData" (click)="scrollTo(content.id)">
+              {{content.title}}</li>
+
+          </ul>
+        </div>
+
+      </div>
+    </nav>
+
   </div>
-</app-common>
+
+</div>

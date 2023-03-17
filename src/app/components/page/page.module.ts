@@ -35,6 +35,12 @@ import { BreadcrumbsComponent } from './breadcrumbs/breadcrumbs.component';
 import { StatsComponent } from './stats/stats.component';
 import { NotificationsComponent } from './notifications/notifications.component';
 import { DesignPatternsComponent } from './design-patterns/design-patterns.component';
+import { AboutStingComponent } from './about-sting/about-sting.component';
+import { NewComponent } from './new/new.component';
+import { FeedbackComponent } from './feedback/feedback.component';
+import { MetaphorsComponent } from './metaphors/metaphors.component';
+import { ConversationComponent } from './conversation/conversation.component';
+import { GroupingComponent } from './grouping/grouping.component';
 
 @NgModule({
     declarations: [
@@ -69,7 +75,13 @@ import { DesignPatternsComponent } from './design-patterns/design-patterns.compo
         BreadcrumbsComponent,
         StatsComponent,
         NotificationsComponent,
-        DesignPatternsComponent
+        DesignPatternsComponent,
+        AboutStingComponent,
+        NewComponent,
+        FeedbackComponent,
+        MetaphorsComponent,
+        ConversationComponent,
+        GroupingComponent
         
   ],
     imports: [

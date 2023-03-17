@@ -70,32 +70,7 @@
 
         <div class="h-10"></div>
         <div class="cb-text-h1 ">{{title}}</div>
-        <div class="min-w-0  flex-auto  flex " id="c1">
-            <main class="relative z-0   flex-1 focus:outline-none  ">
-
-                <router-outlet></router-outlet>
-            </main>
-
-
-            <div class="cb-content-right-panel ">
-                <nav aria-labelledby="on-this-page-title">
-                    <div class=" ">
-                        <div class=" cb-text-copy-regular">
-                            <h3 class=" cb-text-h4">Content</h3>
-                            <ul class="py-4 space-y-2">
-
-
-                                <li class=" cb-text-h6" *ngFor="let content of contentPage"
-                                    (click)="scrollTo(content.id)">{{content.title}}</li>
-
-                            </ul>
-                        </div>
-
-                    </div>
-                </nav>
-
-            </div>
-        </div>
+        <router-outlet></router-outlet>
 
     </div>
 </div>

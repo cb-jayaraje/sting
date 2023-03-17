@@ -7,8 +7,8 @@
             <div class="group p-0.5 rounded-lg flex bg-gray-100 hover:bg-gray-200">
                 <button type="button" (click)="activeTab = 'preview'"
                     class="inline-flex px-2.5 py-2 items-center text-[12.64px] inter antialiased leading-[14px] font-medium text-gray-600"
-                        [ngClass]="activeTab === 'preview' ? 'bg-white shadow-sm rounded transition ease-in duration-400' : ''">
-                        <!-- <svg aria-hidden="true" width="20" height="20" fill="none" class="lg:mr-2 text-primary-300">
+                    [ngClass]="activeTab === 'preview' ? 'bg-white shadow-sm rounded transition ease-in duration-400' : ''">
+                    <!-- <svg aria-hidden="true" width="20" height="20" fill="none" class="lg:mr-2 text-primary-300">
                             <path
                                 d="M17.25 10c0 1-1.75 6.25-7.25 6.25S2.75 11 2.75 10 4.5 3.75 10 3.75 17.25 9 17.25 10z"
                                 stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
@@ -16,8 +16,7 @@
                             <circle cx="10" cy="10" r="2.25" stroke="currentColor" stroke-width="1.5"
                                 stroke-linecap="round" stroke-linejoin="round" />
                         </svg> -->
-                        <span class="sr-only lg:not-sr-only"
-                            [ngClass]="activeTab === 'preview' ? '' : ''">Preview</span>
+                    <span class="sr-only lg:not-sr-only" [ngClass]="activeTab === 'preview' ? '' : ''">Preview</span>
                 </button>
                 <button type="button" (click)="activeTab = 'code'"
                     class="inline-flex px-2.5 py-2 items-center text-[12.64px] inter antialiased leading-[14px] font-medium text-gray-600"
@@ -28,8 +27,7 @@
                         <path d="M13.75 6.75l3.5 3.25-3.5 3.25M6.25 13.25L2.75 10l3.5-3.25" stroke="currentColor"
                             stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                     </svg> -->
-                    <span class="sr-only lg:not-sr-only"
-                        [ngClass]="activeTab === 'code' ? '' : '' ">Code</span>
+                    <span class="sr-only lg:not-sr-only" [ngClass]="activeTab === 'code' ? '' : '' ">Code</span>
                 </button>
 
 
@@ -43,9 +41,9 @@
 
     <div class="relative bg-gray-500 rounded-lg ring-1 ring-gray-900 ring-opacity-5 overflow-hidden">
         <div [ngClass]="{ 'block': activeTab === 'preview', 'hidden': activeTab !== 'preview' }" class="block">
-            <div class="min-w-full sm:min-w-[392px] relative sm:pr-4 ">
+            <div class="relative sm:pr-4 ">
                 <!-- <div  class="bg-white resize-x overflow-auto " [ngClass]="previewHeight" > -->
-                <div class="bg-white resize-x overflow-auto  h-auto" [ngClass]="previewHeight">
+                <div class="bg-white resize-x overflow-hidden  h-auto" [ngClass]="previewHeight">
 
 
                     <!--priview-->

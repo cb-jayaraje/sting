@@ -1,16 +1,17 @@
 import { Component, OnInit } from '@angular/core';
 import { CommonService } from 'src/app/services/common.service';
+
 const CONTENT_DATA = [
-  { id: 'c1', title: 'Brand palette' },
-  { id: 'c2', title: 'Core UI palette' },
-  { id: 'c3', title: 'Semantic palette' },
+  { id: 'c1', title: 'Guidelines' },
+  { id: 'c2', title: 'Examples' },
 ];
+
 @Component({
-  selector: 'app-colors',
-  templateUrl: './colors.component.html',
-  styleUrls: ['./colors.component.css'],
+  selector: 'app-metaphors',
+  templateUrl: './metaphors.component.html',
+  styleUrls: ['./metaphors.component.css'],
 })
-export class ColorsComponent implements OnInit {
+export class MetaphorsComponent implements OnInit {
   contentData: any;
   constructor(private commonService: CommonService) {}
 

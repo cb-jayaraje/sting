@@ -333,15 +333,19 @@ div.code-toolbar > .toolbar > .toolbar-item > button {
 }
 
 .preview-box {
-  @apply p-8 flex justify-center bg-gradient-to-b from-white to-gray-50 h-auto w-auto;
+  @apply p-8 flex justify-center bg-gradient-to-b from-white to-gray-50 h-auto max-w-3xl;
 }
 
 .preview-box-2 {
   @apply p-8 bg-gradient-to-b from-white to-gray-50 h-auto;
 }
 
+.code-toolbar {
+  @apply max-w-3xl;
+}
+
 .cb-intro-copy {
-  @apply my-8 p-8 bg-neutral-100;
+  @apply my-8 p-8 pl-0 pt-0;
 }
 .cb-intro-copy h2 {
   @apply mb-4 max-w-2xl cb-text-h2;
@@ -356,11 +360,31 @@ div.code-toolbar > .toolbar > .toolbar-item > button {
   @apply flex flex-wrap gap-6 my-8 cb-text-copy-regular;
 }
 .cb-intro-copy ul li {
-  @apply w-1/4 p-6 bg-neutral-50 rounded-md;
+  @apply p-6 bg-neutral-50 rounded-md;
 }
 .cb-intro-copy ul.basic-list {
   @apply inline-flex my-8 max-w-lg;
 }
 .cb-intro-copy ul.basic-list li {
   @apply w-auto bg-transparent m-0 p-0;
+}
+
+.cb-content-right-panel {
+  @apply hidden xl:sticky xl:top-[4.5rem] xl:-mr-6 xl:block xl:h-[calc(100vh-4.5rem)] xl:flex-none xl:overflow-y-auto xl:py-3 xl:pr-6;
+}
+
+.cb-content-right-panel nav {
+  @apply w-64;
+}
+.cb-content-right-panel nav > div {
+  @apply space-y-4 pl-16;
+}
+
+.cb-content-right-panel nav li {
+  @apply hover:text-primary-600 cursor-pointer;
+}
+
+* {
+  scroll-behavior: smooth;
+  scroll-padding-top: 100px; /* this pixel should match fixed header height */
 }

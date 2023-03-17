@@ -1,7 +1,23 @@
-<div class="min-w-0  flex-auto px-4 py-16  lg:pr-0 lg:pl-8 xl:px-20 flex gap-x-20">
-  <main class="relative z-0 w-full flex-1 focus:outline-none ">
+<div class="min-w-0  flex-auto  flex " id="c1">
+  <main class="relative z-0   flex-1 focus:outline-none  ">
 
-    <!-- <div class="cb-intro-copy">
+
+    Buttons allow users to perform actions and choose with a single tap.
+
+    <app-common *ngFor="let convertedData of convertedDatas" [activeTab]="'preview'" [codePreview]="convertedData.code"
+      [codeHtml]="convertedData.code" [title]="convertedData.title">
+      <div class="preview-box">
+        <div class="  mx-auto self-center text-center">
+          <div class="">
+            <div [innerHTML]="convertedData.code | safeHtml"></div>
+          </div>
+
+        </div>
+      </div>
+    </app-common>
+
+    <p class="cb-text-h3 pt-10" id="c2">Guidelines</p>
+    <div class="cb-intro-copy">
 
       <p>Buttons are an important element in user interfaces, as they allow users to take action and interact with the
         interface. When designing buttons for a design system, it's important to consider the following guidelines:</p>
@@ -42,20 +58,7 @@
         take
         action and interact with the interface.</p>
 
-    </div> -->
-
-
-    <app-common *ngFor="let convertedData of convertedDatas" [activeTab]="'preview'" [codePreview]="convertedData.code"
-      [codeHtml]="convertedData.code" [title]="convertedData.title">
-      <div class="preview-box">
-        <div class="w-full min-w-2xl mx-auto self-center text-center">
-          <div class="">
-            <div [innerHTML]="convertedData.code | safeHtml"></div>
-          </div>
-
-        </div>
-      </div>
-    </app-common>
+    </div>
 
     <div class="my-16 space-y-8">
       <h2 class="cb-text-h3">Compositions</h2>
@@ -137,11 +140,19 @@
   </main>
 
 
-  <div
-    class="  hidden xl:sticky xl:top-[4.5rem] xl:-mr-6 xl:block xl:h-[calc(100vh-4.5rem)] xl:flex-none xl:overflow-y-auto xl:py-16 xl:pr-6">
+  <div id="c2"
+    class="  hidden xl:sticky xl:top-[4.5rem] xl:-mr-6 xl:block xl:h-[calc(100vh-4.5rem)] xl:flex-none xl:overflow-y-auto xl:py-16 xl:pr-6 ">
     <nav aria-labelledby="on-this-page-title" class="w-64">
-      <div class="fixed space-y-3 pl-20">
-        <!-- <div class=" cb-text-copy-regular" *ngFor="let data of [1,2,3,5]; let i = index">Section {{i+1}}asdasd </div> -->
+      <div class=" space-y-3 pl-16">
+        <div class=" cb-text-copy-regular">
+          <h3 class=" cb-text-h4">Content</h3>
+          <ul class="py-4 space-y-2">
+
+
+            <li class=" cb-text-h6" *ngFor="let content of contentData">{{content.title}}</li>
+
+          </ul>
+        </div>
 
       </div>
     </nav>

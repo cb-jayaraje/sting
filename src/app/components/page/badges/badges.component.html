@@ -1,41 +1,76 @@
-<div class="cb-intro-copy">
-  <p>Badges are a common element in user interfaces and are used to display additional information or highlight specific
-    content. When designing badges for a design system, it's important to consider the following guidelines:</p>
+<div class="min-w-0  flex-auto  flex ">
+  <main class="relative z-0   flex-1 focus:outline-none " id="c1">
+    <p class="cb-text-copy-large mt-4 max-w-3xl leading-6"> Badges are a common element in user interfaces and are used
+      to display additional information or highlight specific content.
+    </p>
 
-  <ul>
-    <li><strong>Use badges sparingly:</strong> Badges should be used sparingly, as they can be visually distracting and
-      draw attention away from other content. It's generally best to limit the use of badges to only the most important
-      or relevant information.</li>
+    <app-common *ngFor="let convertedData of convertedDatas" [activeTab]="'preview'" [codePreview]="convertedData.code"
+      [codeHtml]="convertedData.code" [title]="convertedData.title">
+      <div class="preview-box">
+        <div class="w-full max-w-5xl ">
 
-    <li><strong>Use clear and concise labels:</strong> The labels for badges should be clear and concise, using as few
-      words as possible. Avoid using ambiguous or vague labels.</li>
+          <div [innerHTML]="convertedData.code | safeHtml"></div>
 
-    <li><strong>Use a consistent badge style:</strong> The style of the badges should be consistent throughout the
-      design system. This includes the font, color, and overall layout of the badges.</li>
+        </div>
+      </div>
+    </app-common>
 
-    <li><strong>Use active and inactive states:</strong> It should be clear to users which badges are currently active
-      and which are inactive. This can be achieved through the use of visual indicators such as bold or underlined text
-      or a different background color.</li>
+    <p class="cb-text-h3 pt-10" id="c2">Guidelines</p>
+    <div class="cb-intro-copy">
+      <p>Badges are a common element in user interfaces and are used to display additional information or highlight
+        specific
+        content. When designing badges for a design system, it's important to consider the following guidelines:</p>
 
-    <li><strong>Consider the context in which badges are used:</strong> The design of badges should be appropriate for
-      the context in which they are used. For example, badges used to highlight errors or warnings should have a
-      different visual style than badges used to highlight new or popular content.</li>
-  </ul>
+      <ul>
+        <li><strong>Use badges sparingly:</strong> Badges should be used sparingly, as they can be visually distracting
+          and
+          draw attention away from other content. It's generally best to limit the use of badges to only the most
+          important
+          or relevant information.</li>
 
-  <p>By following these guidelines, you can create an effective and intuitive badge interface that helps users quickly
-    understand and identify important information.</p>
+        <li><strong>Use clear and concise labels:</strong> The labels for badges should be clear and concise, using as
+          few
+          words as possible. Avoid using ambiguous or vague labels.</li>
 
-</div>
+        <li><strong>Use a consistent badge style:</strong> The style of the badges should be consistent throughout the
+          design system. This includes the font, color, and overall layout of the badges.</li>
 
+        <li><strong>Use active and inactive states:</strong> It should be clear to users which badges are currently
+          active
+          and which are inactive. This can be achieved through the use of visual indicators such as bold or underlined
+          text
+          or a different background color.</li>
 
+        <li><strong>Consider the context in which badges are used:</strong> The design of badges should be appropriate
+          for
+          the context in which they are used. For example, badges used to highlight errors or warnings should have a
+          different visual style than badges used to highlight new or popular content.</li>
+      </ul>
 
-<app-common *ngFor="let convertedData of convertedDatas" [activeTab]="'preview'" [codePreview]="convertedData.code"
-  [codeHtml]="convertedData.code" [title]="convertedData.title">
-  <div class="preview-box">
-    <div class="w-full max-w-5xl ">
-
-      <div [innerHTML]="convertedData.code | safeHtml"></div>
+      <p>By following these guidelines, you can create an effective and intuitive badge interface that helps users
+        quickly
+        understand and identify important information.</p>
 
     </div>
-  </div>
-</app-common>
+
+  </main>
+
+  <section class="cb-content-right-panel ">
+    <nav aria-labelledby="on-this-page-title">
+      <div class=" ">
+        <div class=" cb-text-copy-regular">
+          <h3 class=" cb-text-h4" [ngClass]="{'hidden': contentData.length === 0}">Content</h3>
+          <ul class="py-4 space-y-2">
+
+
+            <li class=" cb-text-h6" *ngFor="let content of contentData" (click)="scrollTo(content.id)">
+              {{content.title}}</li>
+
+          </ul>
+        </div>
+
+      </div>
+    </nav>
+
+  </section>
+</div>

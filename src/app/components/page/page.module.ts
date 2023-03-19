@@ -41,6 +41,7 @@ import { FeedbackComponent } from './feedback/feedback.component';
 import { MetaphorsComponent } from './metaphors/metaphors.component';
 import { ConversationComponent } from './conversation/conversation.component';
 import { GroupingComponent } from './grouping/grouping.component';
+import { ComingSoonComponent } from './coming-soon/coming-soon.component';
 
 @NgModule({
     declarations: [
@@ -81,7 +82,8 @@ import { GroupingComponent } from './grouping/grouping.component';
         FeedbackComponent,
         MetaphorsComponent,
         ConversationComponent,
-        GroupingComponent
+        GroupingComponent,
+        ComingSoonComponent
         
   ],
     imports: [

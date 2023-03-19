@@ -1,77 +1,52 @@
-<div class="min-w-0  flex-auto  flex ">
-  <main class="relative z-0   flex-1 focus:outline-none " id="c1">
+<p class="cb-text-copy-large mt-4 max-w-3xl leading-6"> Alerts are a common design pattern used to communicate
+  important information or actions to users.
+</p>
+<!-- Main area starts -->
+<div class="border-b border-neutral-200 pb-8"></div>
 
-    <p class="cb-text-copy-large mt-4 max-w-3xl leading-6"> Alerts are a common design pattern used to communicate
-      important information or actions to users.
-    </p>
-    <!-- Main area starts -->
-    <div class="border-b border-neutral-200 pb-8"></div>
+<app-common *ngFor="let convertedData of convertedDatas" [activeTab]="'preview'" [codePreview]="convertedData.code"
+  [codeHtml]="convertedData.code" [title]="convertedData.title">
+  <div class="preview-box">
+    <div class="w-full max-w-2xl mx-auto ">
 
-    <app-common *ngFor="let convertedData of convertedDatas" [activeTab]="'preview'" [codePreview]="convertedData.code"
-      [codeHtml]="convertedData.code" [title]="convertedData.title">
-      <div class="preview-box">
-        <div class="w-full max-w-2xl mx-auto ">
-
-          <div [innerHTML]="convertedData.code | safeHtml"></div>
-
-        </div>
-      </div>
-    </app-common>
-    <p class="cb-text-h3 pt-10" id="c2">Guidelines</p>
-    <div class="cb-intro-copy">
-
-      <p>Alerts are a common design pattern used to communicate important information or actions to users. Here are some
-        guidelines for designing alert elements within a design system:</p>
-
-      <ul>
-        <li><strong>Use clear, concise language:</strong> Alerts should convey important information in a clear, concise
-          manner. Avoid using jargon or technical language, and keep the message brief and to the point.</li>
-
-        <li><strong>Use appropriate color and visual hierarchy:</strong> Use color and visual hierarchy to draw
-          attention to the alert and convey the level of importance. For example, a warning or error message might use a
-          bright, bold color, while a less critical message might use a softer, more muted color.</li>
-
-        <li><strong>Consider mobile-friendliness:</strong> When designing for small screens, consider how the alert will
-          be displayed. It may be necessary to use a different layout or truncate the message to ensure that the alert
-          is easy to read and understand on a smaller screen.</li>
-
-        <li><strong>Use appropriate spacing and alignment:</strong> Proper spacing and alignment can help to make the
-          alert more legible and easier to read. Use consistent spacing between elements and align elements according to
-          the overall layout of the page.</li>
-
-        <li><strong>Provide clear actions or next steps:</strong> Alerts should clearly communicate any necessary
-          actions or next steps for the user. Make it easy for users to understand what they need to do and how to do
-          it.</li>
-      </ul>
-
-      <p>By following these guidelines, you can help to create an alert experience that is clear, concise, and easy to
-        understand for your users.</p>
+      <div [innerHTML]="convertedData.code | safeHtml"></div>
 
     </div>
-
-
-  </main>
-
-
-  <div class="cb-content-right-panel ">
-    <nav aria-labelledby="on-this-page-title">
-      <div class=" ">
-        <div class=" cb-text-copy-regular">
-          <h3 class=" cb-text-h4" [ngClass]="{'hidden': contentData.length === 0}">Content</h3>
-          <ul class="py-4 space-y-2">
-
-
-            <li class=" cb-text-h6" *ngFor="let content of contentData" (click)="scrollTo(content.id)">
-              {{content.title}}</li>
-
-          </ul>
-        </div>
-
-      </div>
-    </nav>
-
   </div>
+</app-common>
+<p class="cb-text-h3 pt-10" id="c2">Guidelines</p>
+<div class="cb-intro-copy">
+
+  <p>Alerts are a common design pattern used to communicate important information or actions to users. Here are some
+    guidelines for designing alert elements within a design system:</p>
+
+  <ul>
+    <li><strong>Use clear, concise language:</strong> Alerts should convey important information in a clear, concise
+      manner. Avoid using jargon or technical language, and keep the message brief and to the point.</li>
+
+    <li><strong>Use appropriate color and visual hierarchy:</strong> Use color and visual hierarchy to draw
+      attention to the alert and convey the level of importance. For example, a warning or error message might use a
+      bright, bold color, while a less critical message might use a softer, more muted color.</li>
+
+    <li><strong>Consider mobile-friendliness:</strong> When designing for small screens, consider how the alert will
+      be displayed. It may be necessary to use a different layout or truncate the message to ensure that the alert
+      is easy to read and understand on a smaller screen.</li>
+
+    <li><strong>Use appropriate spacing and alignment:</strong> Proper spacing and alignment can help to make the
+      alert more legible and easier to read. Use consistent spacing between elements and align elements according to
+      the overall layout of the page.</li>
+
+    <li><strong>Provide clear actions or next steps:</strong> Alerts should clearly communicate any necessary
+      actions or next steps for the user. Make it easy for users to understand what they need to do and how to do
+      it.</li>
+  </ul>
+
+  <p>By following these guidelines, you can help to create an alert experience that is clear, concise, and easy to
+    understand for your users.</p>
+
 </div>
+
+
 
 
 

@@ -48,10 +48,16 @@
                 <h3 class="inter antialiased text-[14.22px] font-semibold leading-[18.48px] text-[#3F4E54] mb-2">
                     {{nav.title}}</h3>
                 <ul class=" sub-li">
-                    <li *ngFor="let subNav of nav.subMenu" (click)="selectTitle(subNav.title)">
-                        <a (click)="onClickLeftMenu(subNav.link)" [routerLink]="path+subNav.link"
-                            routerLinkActive="active">{{subNav.title}} <span class="badge-mini "
-                                [ngClass]="{'hidden': !subNav.status, 'badge-green': subNav.status ==='new', 'badge-primary': subNav.status ==='update', 'badge-info': subNav.status ==='coming' }">{{getStatusValue(subNav.status)}}</span></a>
+                    <li *ngFor="let subNav of nav.subMenu">
+
+
+
+                        <a (click)="onClickLeftMenu(subNav)"
+                            [routerLink]="subNav.status !=='coming' ? path+subNav.link : path+'coming'"
+                            routerLinkActive="active"
+                            [ngClass]="{'cursor-not-allowed opacity-50': subNav.status ==='coming'}">{{subNav.title}}
+                            <span class="badge-mini "
+                                [ngClass]="{'hidden': !subNav.status, 'badge-green': subNav.status ==='new', 'badge-primary': subNav.status ==='update', 'badge-info cursor-not-allowed': subNav.status ==='coming' }">{{getStatusValue(subNav.status)}}</span></a>
                     </li>
 
                 </ul>

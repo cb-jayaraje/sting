@@ -4,10 +4,6 @@ import { from, map } from 'rxjs';
 import { CommonService } from 'src/app/services/common.service';
 import { TypographyServices } from 'src/app/services/typography.service';
 import * as data from './../../../data.json';
-const CONTENT_DATA = [
-  { id: 'c1', title: 'Typography' },
-  { id: 'c2', title: 'Guidelines' },
-];
 
 @Component({
   selector: 'app-typography',
@@ -16,7 +12,6 @@ const CONTENT_DATA = [
 })
 export class TypographyComponent implements OnInit {
   componentData: any = data;
-  contentData: any;
   htmlPre = '';
   compUnescape = '';
 
@@ -35,7 +30,6 @@ export class TypographyComponent implements OnInit {
 
   ngOnInit(): void {
     this.typoDatas = this.typoService.typographyDatas;
-    this.contentData = CONTENT_DATA;
 
     //this.convertedDatas = this.selectMenus;
 

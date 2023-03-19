@@ -81,7 +81,8 @@
                 <nav aria-labelledby="on-this-page-title">
                     <div class=" ">
                         <div class=" cb-text-copy-regular">
-                            <h3 class=" cb-text-h4">Content</h3>
+                            <h3 class=" cb-text-h4" [ngClass]="{'hidden': contentPage && contentPage.length == 0 }">
+                                Content</h3>
                             <ul class="py-4 space-y-2">
 
 

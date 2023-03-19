@@ -40,6 +40,7 @@ import { HomeComponent } from './home/home.component';
 import { MetaphorsComponent } from './components/page/metaphors/metaphors.component';
 import { ConversationComponent } from './components/page/conversation/conversation.component';
 import { GroupingComponent } from './components/page/grouping/grouping.component';
+import { ComingSoonComponent } from './components/page/coming-soon/coming-soon.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/components/page/installation', pathMatch: 'full' },
@@ -54,7 +55,7 @@ const routes: Routes = [
         children: [
           { path: '', redirectTo: '/components', pathMatch: 'full' },
           // {path: 'components', component: ComponentsComponent},
-          { path: 'about-sting', component: AboutStingComponent },
+          { path: 'about', component: AboutStingComponent },
           { path: 'new', component: NewComponent },
           { path: 'feedback', component: FeedbackComponent },
           { path: 'metaphors', component: MetaphorsComponent },
@@ -90,6 +91,7 @@ const routes: Routes = [
           { path: 'stats', component: StatsComponent },
           { path: 'notifications', component: NotificationsComponent },
           { path: 'design-principles', component: DesignPatternsComponent },
+          { path: 'coming-soon', component: ComingSoonComponent },
         ],
       },
     ],

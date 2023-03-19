@@ -5,18 +5,12 @@ import { map } from 'rxjs/operators';
 import { BadgesService } from 'src/app/services/badges.service';
 import { CommonService } from 'src/app/services/common.service';
 
-const CONTENT_DATA = [
-  { id: 'c1', title: 'Badges' },
-  { id: 'c2', title: 'Guidelines' },
-];
-
 @Component({
   selector: 'app-badges',
   templateUrl: './badges.component.html',
   styleUrls: ['./badges.component.css'],
 })
 export class BadgesComponent implements OnInit {
-  contentData: any;
   componentData: any = [];
 
   htmlPre = '';
@@ -36,7 +30,6 @@ export class BadgesComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.contentData = CONTENT_DATA;
     this.badges = this.inputgroupService.badgeDatas;
 
     from(this.badges)

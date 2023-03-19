@@ -1,3 +1,16 @@
+<p class="cb-text-copy-large mt-4 leading-6"> Cards are a common design pattern used to display related information in a
+  compact and visually appealing way.
+</p>
+
+<app-common *ngFor="let convertedData of convertedDatas" [activeTab]="'preview'" [codePreview]="convertedData.code"
+  [codeHtml]="convertedData.code" [title]="convertedData.title">
+  <div class="py-10 m-auto px-10 preview-box">
+    <div [innerHTML]="convertedData.code | safeHtml" class="flex items-center w-full justify-center"></div>
+  </div>
+</app-common>
+
+<p class="cb-text-h3 pt-10" id="c2">Guidelines</p>
+
 <div class="cb-intro-copy">
 
   <p>Cards are a common design pattern used to display related information in a compact and visually appealing way. Here
@@ -29,12 +42,3 @@
     understand for your users.</p>
 
 </div>
-
-<div class=" tCard">hjasfdiuasodih</div>
-
-<app-common *ngFor="let convertedData of convertedDatas" [activeTab]="'preview'" [codePreview]="convertedData.code"
-  [codeHtml]="convertedData.code" [title]="convertedData.title">
-  <div class="py-10 m-auto px-10 preview-box">
-    <div [innerHTML]="convertedData.code | safeHtml" class="flex items-center w-full justify-center"></div>
-  </div>
-</app-common>

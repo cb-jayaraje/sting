@@ -49,7 +49,7 @@ export class SidenavComponent implements OnInit {
   ngOnInit(): void {
     // console.log(this.route.snapshot.url);
 
-    console.log(this.searchService.getList());
+    // console.log(this.searchService.getList());
 
     this.searchDatas = this.searchService.getList();
 
@@ -89,8 +89,11 @@ export class SidenavComponent implements OnInit {
     }
     return statusText;
   }
-  onClickLeftMenu(path: string) {
-    console.log(path);
-    this.rightPanelService.contentDataList(path);
+  onClickLeftMenu(subnav: any) {
+    console.log(subnav.status);
+    if (subnav.status !== 'coming') {
+      this.rightPanelService.contentDataList(subnav.link);
+      this.commonService.setPageTitle(subnav.title);
+    }
   }
 }

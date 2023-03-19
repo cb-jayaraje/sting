@@ -5,18 +5,12 @@ import { AlertService } from 'src/app/services/alert.service';
 import { CommonService } from 'src/app/services/common.service';
 import * as data from './../../../data.json';
 
-const CONTENT_DATA = [
-  { id: 'c1', title: 'Alerts' },
-  { id: 'c2', title: 'Guidelines' },
-];
-
 @Component({
   selector: 'app-alerts',
   templateUrl: './alerts.component.html',
   styleUrls: ['./alerts.component.css'],
 })
 export class AlertsComponent implements OnInit {
-  contentData: any;
   componentData: any = data;
 
   htmlPre = '';
@@ -37,7 +31,6 @@ export class AlertsComponent implements OnInit {
 
   ngOnInit(): void {
     this.alerts = this.alertService.alertDatas;
-    this.contentData = CONTENT_DATA;
 
     from(this.alerts)
       .pipe(

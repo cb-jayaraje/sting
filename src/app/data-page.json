@@ -68,7 +68,7 @@
     {
       "title": "Overview",
       "subMenu": [
-        { "title": "About Sting", "link": "about-sting" },
+        { "title": "About Sting", "link": "about" },
         { "title": "What's New", "link": "new" }
       ]
     },
@@ -84,20 +84,20 @@
     {
       "title": "Foundations",
       "subMenu": [
-        { "title": "Accessibility", "link": "feedback", "status": "coming" },
-        { "title": "Content", "link": "content", "status": "coming" },
+        { "title": "Accessibility", "link": "coming-soon", "status": "coming" },
+        { "title": "Content", "link": "coming-soon", "status": "coming" },
         { "title": "Color", "link": "colors" },
         { "title": "Typography", "link": "typography" },
-        { "title": "Icons", "link": "Icons", "status": "coming" }
+        { "title": "Icons", "link": "coming-soon", "status": "coming" }
       ]
     },
     {
       "title": "Prototying",
       "subMenu": [
         { "title": "Get Started", "link": "installation" },
-        { "title": "Frameworks", "link": "frameworks", "status": "coming" },
-        { "title": "Resources", "link": "resources", "status": "coming" },
-        { "title": "Design Kits", "link": "design-kits", "status": "coming" }
+        { "title": "Frameworks", "link": "coming-soon", "status": "coming" },
+        { "title": "Resources", "link": "coming-soon", "status": "coming" },
+        { "title": "Design Kits", "link": "coming-soon", "status": "coming" }
       ]
     },
 
@@ -112,10 +112,10 @@
         { "title": "Cards", "link": "cards" },
         { "title": "Checkbox", "link": "checkbox" },
         { "title": "Containers", "link": "containers" },
-        { "title": "Divider", "link": "divider", "status": "coming" },
+        { "title": "Divider", "link": "coming-soon", "status": "coming" },
         { "title": "Dropdowns", "link": "dropdowns" },
-        { "title": "Feeds", "link": "feeds", "status": "coming" },
-        { "title": "Grid Lists", "link": "grid" },
+        { "title": "Feeds", "link": "coming-soon", "status": "coming" },
+        { "title": "Grid Lists", "link": "coming-soon", "status": "coming" },
         { "title": "Input Groups", "link": "input-groups" },
         { "title": "Modals", "link": "modals" },
         { "title": "Notifications", "link": "notifications" },

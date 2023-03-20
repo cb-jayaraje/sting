@@ -35,13 +35,24 @@
                 <img src="./assets/images/sting-logo.svg" />
             </div>
 
-            <div class="hidden">
-                <div class="relative">
-                    <div class="search-hero ">
-                        <input class="form-control" type="text" name="search" [(ngModel)]="searchText"
-                            autocomplete="off"
-                            placeholder="&#61442;  Start searching for a hero by id or name or country">
+            <div class="">
+                <div class="relative form-control">
+
+                    <div class="relative">
+                        <div class="input-icon-leading">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="input-icon">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
+                            </svg>
+
+
+                        </div>
+                        <input type="text" name="search" id="search" class="input !rounded-r-none pl-10"
+                            autocomplete="off" [disabled]="searchDisabled" placeholder="Search..."
+                            (click)="onKeydown($event)">
                     </div>
+
                     <div class=" absolute bg-black z-50">
 
                         <ul>

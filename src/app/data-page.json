@@ -138,9 +138,6 @@
         { "title": "List Containers", "link": "list-containers" },
         { "title": "Checkout", "link": "checkout" }
       ]
-    },
-    {
-      "templates": []
     }
   ]
 }

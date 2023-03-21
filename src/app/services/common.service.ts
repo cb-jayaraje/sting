@@ -11,6 +11,8 @@ export class CommonService {
   private _theme = new BehaviorSubject<string>('theme-sting');
   private _theme$ = this._theme.asObservable();
 
+  private ststemTheme$ = new BehaviorSubject<string>('dark');
+
   private _pageTitle = new BehaviorSubject<string>('');
   private _pageTitle$ = this._pageTitle.asObservable();
 
@@ -64,5 +66,15 @@ export class CommonService {
     var offsetPosition = elementPosition + window.pageYOffset - headerOffset;
 
     ele.scrollIntoView({});
+  }
+
+  onClickSytemTheme() {
+    this.ststemTheme$.value === 'dark'
+      ? this.ststemTheme$.next('light')
+      : this.ststemTheme$.next('dark');
+  }
+
+  getSystemMode(): Observable<string> {
+    return this.ststemTheme$;
   }
 }

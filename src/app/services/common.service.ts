@@ -11,7 +11,7 @@ export class CommonService {
   private _theme = new BehaviorSubject<string>('theme-sting');
   private _theme$ = this._theme.asObservable();
 
-  private ststemTheme$ = new BehaviorSubject<string>('dark');
+  private ststemTheme$ = new BehaviorSubject<string>('light');
 
   private _pageTitle = new BehaviorSubject<string>('');
   private _pageTitle$ = this._pageTitle.asObservable();

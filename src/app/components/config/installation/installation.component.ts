@@ -13,6 +13,8 @@ export class InstallationComponent implements OnInit {
   html: SafeHtml = '';
   highlighted: boolean = false;
   codePreview = '';
+  frameworkCodePreview: string = '';
+  npmInstall: string = '';
 
   constructor(
     public sanitizer: DomSanitizer,
@@ -31,41 +33,41 @@ export class InstallationComponent implements OnInit {
     this.codePreview = ` 
     <!doctype html>
     <html class="theme-sting">
+    
     <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>WEG</title>
-    <!--Sting CDN link -->
-    <link rel="stylesheet" href="https://cbproductdesign.devcb.in/sting-ui/cdn/sting.min.css">
-    <!--Tailwind CDN -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <!--Theme CDN -->
-    <link rel="stylesheet" href="https://cbproductdesign.devcb.in/sting-ui/cdn/theme-sting.min.css">
-    <!--Tailwind config-->
-    <script src="https://cbproductdesign.devcb.in/sting-ui/cdn/config.js"></script>
-
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Chargebee</title>
+        <!--Sting CDN link -->
+        <link rel="stylesheet" href="https://cbproductdesign.devcb.in/sting-ui/cdn/sting.min.1.1.0.css">
+        <!--Tailwind CDN -->
+        <script src="https://cdn.tailwindcss.com"></script>
+        <!--Theme CDN -->
+        <link rel="stylesheet" href="https://cb-design.netlify.app/sting_tokens.css">
+        <!--Icon webcomponent CDN -->
+        <script src="https://cb-design.netlify.app/sting-icons.1.0.js"></script>
+        <!--Tailwind config-->
+        <script src="https://cbproductdesign.devcb.in/sting-ui/cdn/config.js"></script>
+    
     </head>
+    
     <body>
-      <!--tailwind utilities -->
-      <h1 class="text-3xl font-bold underline">
-        Hello world!
-    </h1>
-
+        <!--tailwind utilities -->
+        <h1 class="text-3xl font-bold underline">
+            Hello world!
+        </h1>
     
-    <div class="pt-10 w-96">
-
-    <!--sting components-->           
-    <div class="form-control">
-    <label for="email" class="label">Email</label>
-    <div class="mt-1">
-    <input type="email" name="email" id="email" class="input" placeholder="you@example.com" aria-describedby="email-description">
-    </div>
-    <p class="help-text" id="email-description">We'll only use this for spam.</p>
-    </div>
-
-    
-    </div>
     </body>
+    
     </html>`;
+
+    this.npmInstall = `npm i cb-sting@latest`;
+
+    this.frameworkCodePreview = `
+    <head>
+        <link rel="stylesheet" href="https://cb-design.netlify.app/sting_tokens.css">
+        <!--Icon webcomponent CDN -->
+        <script src="https://cb-design.netlify.app/sting-icons.1.0.js"></script>
+    </head>`;
   }
 }

@@ -67,6 +67,19 @@ module.exports = plugin.withOptions(
       // addComponents(Tooltip());
       // Typography().handler(options);
       addComponents(Container());
+      addComponents({
+        ".tCard": {
+          backgroundColor: "#fff",
+          borderRadius: ".25rem",
+          boxShadow: "0 2px 4px rgba(0,0,0,0.2)",
+          "&:hover": {
+            boxShadow: "0 10px 15px rgba(0,0,0,0.2)",
+          },
+          "@media (min-width: 500px)": {
+            borderRadius: ".5rem",
+          },
+        },
+      });
     };
   },
   function () {

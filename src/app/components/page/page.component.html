@@ -1,10 +1,22 @@
 <!-- <app-sub-header></app-sub-header> -->
-<div class="w-full m-auto  dark:bg-black flex">
+<app-header></app-header>
+<div
+    class="relative mx-auto flex max-w-8xl justify-center pl-10 md:pl-0  md:justify-start sm:px-2  dark:bg-black gap-x-10 ">
 
-    <app-sidenav></app-sidenav>
+    <div class="hidden lg:relative lg:block lg:flex-none">
+        <!-- <div class="absolute inset-y-0 right-0 w-[50vw] bg-white border border-r-neutral-100 dark:hidden"></div> -->
+        <div class="absolute top-16 bottom-0 right-0 hidden h-12 w-px bg-gradient-to-t from-slate-800 dark:block">
+        </div>
+        <div class="absolute top-28 bottom-0 right-0 hidden w-px bg-slate-800 dark:block"></div>
+        <div class="sticky top-[4.5rem] -ml-0.5 h-[calc(100vh-4.5rem)] overflow-y-auto overflow-x-hidden  pl-0.5">
+            <app-sidenav></app-sidenav>
+        </div>
+    </div>
 
-    <div class="w-full pb-16 pl-64 pr-8 pt-5">
-        <div class="">
+
+
+    <div class=" pr-8 ">
+        <!-- <div class="">
 
             <div class="flex justify-end relative dropDown" appDropdown>
 
@@ -53,10 +65,38 @@
 
         <div>
             <div class="cb-text-h1">{{title}}</div>
+        </div> -->
+
+
+        <div class="h-10"></div>
+        <div class="cb-text-h1 ">{{title}}</div>
+        <div class="min-w-0  flex-auto  flex " id="c1">
+            <main class="relative z-0   flex-1 focus:outline-none  ">
+
+                <router-outlet></router-outlet>
+            </main>
+
+
+            <div class="cb-content-right-panel ">
+                <nav aria-labelledby="on-this-page-title">
+                    <div class=" ">
+                        <div class=" cb-text-copy-regular">
+                            <h3 class=" cb-text-h4" [ngClass]="{'hidden': contentPage && contentPage.length == 0 }">
+                                Content</h3>
+                            <ul class="py-4 space-y-2">
+
+
+                                <li class=" cb-text-h6" *ngFor="let content of contentPage"
+                                    (click)="scrollTo(content.id)">{{content.title}}</li>
+
+                            </ul>
+                        </div>
+
+                    </div>
+                </nav>
+
+            </div>
         </div>
 
-
-
-        <router-outlet></router-outlet>
     </div>
 </div>

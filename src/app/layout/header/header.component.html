@@ -1,4 +1,4 @@
-<header class=" bg-white">
+<!-- <header class=" bg-white">
     <div class="flex   w-[80%] m-auto justify-between items-center border-b border-gray-100 py-5">
         <div class="flex items-center gap-2">
             <a routerLink="/" class="font-extrabold  text-3xl"><span class="text-red-500">S</span>ting</a>
@@ -25,4 +25,72 @@
         </div>
     </div>
   </header>
+ -->
 
+<header
+    class="bg-white dark:bg-gray-900 sticky  top-0 z-50  items-center justify-between bg-white px-4 py-5 shadow transition duration-500 dark:shadow-none sm:px-6 lg:px-8">
+    <div class="max-w-8xl mx-auto">
+        <div class="flex items-center">
+            <div class="relative flex flex-grow basis-0 items-center">
+                <img src="./assets/images/sting-logo.svg" />
+            </div>
+
+            <div class="">
+                <div class="relative form-control">
+
+                    <div class="relative">
+                        <div class="input-icon-leading">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="input-icon">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
+                            </svg>
+
+
+                        </div>
+                        <input type="text" name="search" id="search" class="input !rounded-r-none pl-10"
+                            autocomplete="off" [disabled]="searchDisabled" placeholder="Search..."
+                            (click)="onKeydown($event)">
+                    </div>
+
+                    <div class=" absolute bg-black z-50">
+
+                        <ul>
+                            <li *ngFor="let searchData of searchDatas | filter : searchText"><a
+                                    [routerLink]="searchData.link"></a>
+                            </li>
+                        </ul>
+
+                    </div>
+
+                    <app-search (colseSearchModal)="closeModal($event)" *ngIf="searchModal"></app-search>
+
+                </div>
+            </div>
+
+
+            <div>
+                <button class="btn-icon-only btn btn-neutral-borderless" (click)="onClickMode()">
+                    <svg *ngIf="isDarkMode; else sun" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                        fill="currentColor" className="w-6 h-6">
+                        <path
+                            d="M12 2.25a.75.75 0 01.75.75v2.25a.75.75 0 01-1.5 0V3a.75.75 0 01.75-.75zM7.5 12a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM18.894 6.166a.75.75 0 00-1.06-1.06l-1.591 1.59a.75.75 0 101.06 1.061l1.591-1.59zM21.75 12a.75.75 0 01-.75.75h-2.25a.75.75 0 010-1.5H21a.75.75 0 01.75.75zM17.834 18.894a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 10-1.061 1.06l1.59 1.591zM12 18a.75.75 0 01.75.75V21a.75.75 0 01-1.5 0v-2.25A.75.75 0 0112 18zM7.758 17.303a.75.75 0 00-1.061-1.06l-1.591 1.59a.75.75 0 001.06 1.061l1.591-1.59zM6 12a.75.75 0 01-.75.75H3a.75.75 0 010-1.5h2.25A.75.75 0 016 12zM6.697 7.757a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 00-1.061 1.06l1.59 1.591z" />
+                    </svg>
+
+                    <ng-template #sun><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                            className="w-6 h-6">
+                            <path fillRule="evenodd"
+                                d="M9.528 1.718a.75.75 0 01.162.819A8.97 8.97 0 009 6a9 9 0 009 9 8.97 8.97 0 003.463-.69.75.75 0 01.981.98 10.503 10.503 0 01-9.694 6.46c-5.799 0-10.5-4.701-10.5-10.5 0-4.368 2.667-8.112 6.46-9.694a.75.75 0 01.818.162z"
+                                clipRule="evenodd" />
+                        </svg>
+
+                    </ng-template>
+
+                </button>
+            </div>
+
+        </div>
+    </div>
+
+
+</header>

@@ -40,8 +40,8 @@ export class ButtonService {
 
             <!--outline icon circular-->
             <div>
-              <button class="btn btn-primary btn-rounded">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+              <button class="btn-primary btn-icon-only">
+                <svg class="h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
                   <path fill-rule="evenodd"
                     d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
                     clip-rule="evenodd" />
@@ -89,7 +89,7 @@ export class ButtonService {
 
             <!--outline small icon circular-->
             <div>
-              <button class="btn-rounded-small btn-primary">
+              <button class="btn-sm-icon-only btn-primary">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-4 h-4">
                   <path fill-rule="evenodd"
                     d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
@@ -120,7 +120,7 @@ export class ButtonService {
 
           <!--outline button with icon-->
           <div>
-            <butto class="btn btn-secondary btn-icon">
+            <button class="btn btn-secondary btn-icon">
               <svg class="btn-icon-leading" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
                 fill="currentColor" aria-hidden="true">
                 <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
@@ -144,7 +144,7 @@ export class ButtonService {
 
           <!--outline icon circular-->
           <div>
-            <button class="btn-rounded btn-secondary">
+            <button class="btn-icon-only btn-secondary">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
                 <path fill-rule="evenodd"
                   d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
@@ -164,12 +164,12 @@ export class ButtonService {
 
           <!--outline button small-->
           <div>
-            <button class=" btn btn-small btn-secondary ">Button</button>
+            <button class=" btn-small btn-secondary ">Button</button>
           </div>
 
           <!--outline button small with icon-->
           <div>
-            <button class="btn btn-small  btn-secondary btn-icon">
+            <button class=" btn-small  btn-secondary btn-icon">
               <svg class="btn-icon-leading mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
                 fill="currentColor" aria-hidden="true">
                 <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
@@ -181,7 +181,7 @@ export class ButtonService {
 
           <!--outline button small with trailing icon-->
           <div>
-            <button class="btn btn-small btn-secondary btn-icon">
+            <button class=" btn-small btn-secondary btn-icon">
             Button
               <svg class="btn-icon-trailing" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
                 fill="currentColor" aria-hidden="true">
@@ -193,7 +193,7 @@ export class ButtonService {
 
           <!--outline button with rounded icon-->
           <div>
-            <button class="btn-rounded-small btn-secondary">
+            <button class="btn-sm-icon-only btn-secondary">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-4 h-4">
               <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" /></svg>
             </button>
@@ -222,7 +222,7 @@ export class ButtonService {
 
           <!--outline button with icon-->
           <div>
-            <butto class="btn btn-outline btn-icon">
+            <button class="btn btn-outline btn-icon">
               <svg class="btn-icon-leading" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
                 fill="currentColor" aria-hidden="true">
                 <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
@@ -234,7 +234,7 @@ export class ButtonService {
 
           <!--outline button with trailing icon-->
           <div>
-            <butto class="btn btn-outline btn-icon">
+            <button class="btn btn-outline btn-icon">
             Button
               <svg class="btn-icon-trailing" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
                 fill="currentColor" aria-hidden="true">
@@ -246,7 +246,7 @@ export class ButtonService {
 
           <!--outline icon circular-->
           <div>
-            <button class="btn-rounded btn-outline">
+            <button class="btn-icon-only btn-outline">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
                 <path fill-rule="evenodd"
                   d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
@@ -266,12 +266,12 @@ export class ButtonService {
 
           <!--outline button small-->
           <div>
-            <button class="btn btn-small btn-outline ">Button</button>
+            <button class="btn-small btn-outline ">Button</button>
           </div>
 
           <!--outline button small with icon-->
           <div>
-            <button class="btn btn-small btn-outline btn-icon">
+            <button class=" btn-small btn-outline btn-icon">
               <svg class="btn-icon-leading mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
                 fill="currentColor" aria-hidden="true">
                 <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
@@ -283,7 +283,7 @@ export class ButtonService {
 
           <!--outline button small with trailing icon-->
           <div>
-            <button class="btn btn-small btn-outline btn-icon">
+            <button class="btn-small btn-outline btn-icon">
             Button
               <svg class="btn-icon-trailing" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
                 fill="currentColor" aria-hidden="true">
@@ -295,7 +295,7 @@ export class ButtonService {
 
           <!--outline button with rounded icon-->
           <div>
-            <button class="btn-rounded-small btn-outline">
+            <button class="btn-sm-icon-only btn-outline">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-4 h-4">
               <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" /></svg>
             </button>
@@ -348,7 +348,7 @@ export class ButtonService {
 
           <!--borderless icon circular-->
           <div>
-            <button class="btn-rounded btn btn-borderless">
+            <button class="btn-icon-only btn-borderless">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
                 <path fill-rule="evenodd"
                   d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
@@ -392,7 +392,7 @@ export class ButtonService {
 
           <!--borderless icon circular-->
           <div>
-            <button class="btn-rounded-small btn btn-borderless">
+            <button class="btn-sm-icon-only btn-borderless">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-4 h-4">
                 <path fill-rule="evenodd"
                   d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
@@ -441,7 +441,7 @@ export class ButtonService {
 
           <!--outline icon circular-->
           <div>
-            <button class="btn-rounded btn btn-neutral">
+            <button class="btn-icon-only btn btn-neutral">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
                 <path fill-rule="evenodd"
                   d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
@@ -490,7 +490,7 @@ export class ButtonService {
 
           <!--neutral icon circular-->
           <div>
-            <button class="btn-rounded-small btn btn-neutral">
+            <button class="btn-sm-icon-only btn btn-neutral">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-4 h-4">
                 <path fill-rule="evenodd"
                   d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
@@ -546,7 +546,7 @@ export class ButtonService {
 
           <!--borderless icon circular-->
           <div>
-            <button class="btn-rounded btn btn-neutral-borderless">
+            <button class="btn-icon-only btn btn-neutral-borderless">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
                 <path fill-rule="evenodd"
                   d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
@@ -590,7 +590,7 @@ export class ButtonService {
 
           <!--borderless icon circular-->
           <div>
-            <button class="btn-rounded-small btn btn-neutral-borderless">
+            <button class="btn-sm-icon-only btn btn-neutral-borderless">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-4 h-4">
                 <path fill-rule="evenodd"
                   d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
@@ -625,7 +625,7 @@ export class ButtonService {
             
         <!--danger icon circular-->
         <div>
-          <button class="btn-rounded btn-danger">
+          <button class="btn-icon-only btn-danger">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
             <path fill-rule="evenodd" d="M8.75 1A2.75 2.75 0 006 3.75v.443c-.795.077-1.584.176-2.365.298a.75.75 0 10.23 1.482l.149-.022.841 10.518A2.75 2.75 0 007.596 19h4.807a2.75 2.75 0 002.742-2.53l.841-10.52.149.023a.75.75 0 00.23-1.482A41.03 41.03 0 0014 4.193V3.75A2.75 2.75 0 0011.25 1h-2.5zM10 4c.84 0 1.673.025 2.5.075V3.75c0-.69-.56-1.25-1.25-1.25h-2.5c-.69 0-1.25.56-1.25 1.25v.325C8.327 4.025 9.16 4 10 4zM8.58 7.72a.75.75 0 00-1.5.06l.3 7.5a.75.75 0 101.5-.06l-.3-7.5zm4.34.06a.75.75 0 10-1.5-.06l-.3 7.5a.75.75 0 101.5.06l.3-7.5z" clip-rule="evenodd" />
           </svg>
@@ -658,7 +658,7 @@ export class ButtonService {
 
           <!--danger icon circular-->
           <div>
-            <button class="btn-rounded-small btn-danger">
+            <button class="btn-sm-icon-only btn-danger">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
             <path fill-rule="evenodd" d="M8.75 1A2.75 2.75 0 006 3.75v.443c-.795.077-1.584.176-2.365.298a.75.75 0 10.23 1.482l.149-.022.841 10.518A2.75 2.75 0 007.596 19h4.807a2.75 2.75 0 002.742-2.53l.841-10.52.149.023a.75.75 0 00.23-1.482A41.03 41.03 0 0014 4.193V3.75A2.75 2.75 0 0011.25 1h-2.5zM10 4c.84 0 1.673.025 2.5.075V3.75c0-.69-.56-1.25-1.25-1.25h-2.5c-.69 0-1.25.56-1.25 1.25v.325C8.327 4.025 9.16 4 10 4zM8.58 7.72a.75.75 0 00-1.5.06l.3 7.5a.75.75 0 101.5-.06l-.3-7.5zm4.34.06a.75.75 0 10-1.5-.06l-.3 7.5a.75.75 0 101.5.06l.3-7.5z" clip-rule="evenodd" />
           </svg>

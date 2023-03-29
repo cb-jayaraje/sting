@@ -1,22 +1,7 @@
-<div class="cb-intro-copy">
-  
-    <p>Breadcrumbs are a type of navigation element that allow users to quickly understand their current location within a website or application, and easily navigate back to previous pages. Here are some guidelines for designing breadcrumbs in a design system:</p>
-    
-    <ul>
-      <li><strong>Use clear, descriptive labels:</strong> The labels in a breadcrumb trail should accurately reflect the content and structure of the site. Use clear, concise language that accurately describes the content of each page.</li>
-      
-      <li><strong>Provide clear visual hierarchy:</strong> Make it easy for users to identify the current page and the available options for navigating to other pages. This can be achieved through the use of visual hierarchy, such as using larger or bolder text for the current page and smaller, lighter text for other pages.</li>
-      
-      <li><strong>Offer a range of navigation options:</strong> In addition to previous and next buttons, consider including options for jumping to the first or last page, as well as options for skipping ahead or back by a certain number of pages.</li>
-      
-      <li><strong>Consider mobile-friendliness:</strong> When designing for small screens, consider how the breadcrumb elements will be displayed. It may be necessary to hide some navigation options or use a different layout to ensure that the breadcrumb is easy to use on a smaller screen.</li>
-      
-      <li><strong>Use appropriate spacing and alignment:</strong> Proper spacing and alignment can help to make the breadcrumb elements more legible and easier to use. Use consistent spacing between elements and align elements according to the overall layout of the page.</li>
-    </ul>
-      
-      <p>By following these guidelines, you can help to create a breadcrumb experience that is clear, intuitive, and easy to use for your users.</p>
-    
-    </div>
+<p class="cb-text-copy-large mt-4 max-w-3xl leading-6"> Breadcrumbs are a type of navigation element that allow
+    users to quickly understand their current location within
+    a website or application, and easily navigate back to previous pages.
+</p>
 
 <app-common *ngFor="let convertedData of convertedDatas" [activeTab]="'preview'" mainTitle="pageheadings"
     [codePreview]="convertedData.code" [codeHtml]="convertedData.code" [title]="convertedData.title">
@@ -28,3 +13,52 @@
         </div>
     </div>
 </app-common>
+
+
+<p class="cb-text-h3 pt-10" id="c2">Guidelines</p>
+<div class="cb-intro-copy">
+
+    <p>Breadcrumbs are a type of navigation element that allow users to quickly understand their current
+        location within
+        a website or application, and easily navigate back to previous pages. Here are some guidelines for
+        designing
+        breadcrumbs in a design system:</p>
+
+    <ul>
+        <li><strong>Use clear, descriptive labels:</strong> The labels in a breadcrumb trail should accurately
+            reflect
+            the content and structure of the site. Use clear, concise language that accurately describes the
+            content of
+            each page.</li>
+
+        <li><strong>Provide clear visual hierarchy:</strong> Make it easy for users to identify the current page
+            and the
+            available options for navigating to other pages. This can be achieved through the use of visual
+            hierarchy,
+            such as using larger or bolder text for the current page and smaller, lighter text for other pages.
+        </li>
+
+        <li><strong>Offer a range of navigation options:</strong> In addition to previous and next buttons,
+            consider
+            including options for jumping to the first or last page, as well as options for skipping ahead or
+            back by a
+            certain number of pages.</li>
+
+        <li><strong>Consider mobile-friendliness:</strong> When designing for small screens, consider how the
+            breadcrumb
+            elements will be displayed. It may be necessary to hide some navigation options or use a different
+            layout to
+            ensure that the breadcrumb is easy to use on a smaller screen.</li>
+
+        <li><strong>Use appropriate spacing and alignment:</strong> Proper spacing and alignment can help to
+            make the
+            breadcrumb elements more legible and easier to use. Use consistent spacing between elements and
+            align
+            elements according to the overall layout of the page.</li>
+    </ul>
+
+    <p>By following these guidelines, you can help to create a breadcrumb experience that is clear, intuitive,
+        and easy
+        to use for your users.</p>
+
+</div>

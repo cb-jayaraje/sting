@@ -5,30 +5,31 @@ import { HighlightService } from 'src/app/services/high-light.service';
 @Component({
   selector: 'app-installation',
   templateUrl: './installation.component.html',
-  styleUrls: ['./installation.component.css']
+  styleUrls: ['./installation.component.css'],
 })
 export class InstallationComponent implements OnInit {
-
   htmlPre = '';
-compUnescape='';
-html: SafeHtml = '';
-highlighted: boolean = false;
-codePreview= '';
-frameworkCodePreview= '';
-npmInstall= '';
+  compUnescape = '';
+  html: SafeHtml = '';
+  highlighted: boolean = false;
+  codePreview = '';
+  frameworkCodePreview: string = '';
+  npmInstall: string = '';
 
-  constructor(public sanitizer: DomSanitizer, private titleService: Title, private highlightService: HighlightService,) {
-    this.titleService.setTitle("Sting - Installation");
-   }
+  constructor(
+    public sanitizer: DomSanitizer,
+    private titleService: Title,
+    private highlightService: HighlightService
+  ) {
+    this.titleService.setTitle('Sting - Installation');
+  }
 
-   ngAfterViewChecked() {
+  ngAfterViewChecked() {
     this.highlightService.highlightAll();
     this.highlighted = true;
-
   }
 
   ngOnInit(): void {
-
     this.codePreview = ` 
     <!doctype html>
     <html class="theme-sting">
@@ -51,7 +52,6 @@ npmInstall= '';
     </head>
     
     <body>
-
         <!--tailwind utilities -->
         <h1 class="text-3xl font-bold underline">
             Hello world!
@@ -59,19 +59,15 @@ npmInstall= '';
     
     </body>
     
-    </html>`
+    </html>`;
 
-    this.npmInstall = `npm i cb-sting@latest`
+    this.npmInstall = `npm i cb-sting@latest`;
 
     this.frameworkCodePreview = `
     <head>
-
         <link rel="stylesheet" href="https://cb-design.netlify.app/sting_tokens.css">
         <!--Icon webcomponent CDN -->
         <script src="https://cb-design.netlify.app/sting-icons.1.0.js"></script>
-
-    </head>
-    `
+    </head>`;
   }
-
 }

@@ -1,25 +1,7 @@
-<div class="cb-intro-copy">
-  
-  <p>Checkboxes are a common design pattern used to allow users to select multiple options from a list of choices. Here are some guidelines for designing checkbox elements within a design system:</p>
-  
-  <ul>
-    <li><strong>Use clear, descriptive labels:</strong> The labels for the checkboxes should clearly describe the purpose of each option and the type of input expected.</li>
-    
-    <li><strong>Use appropriate visual hierarchy:</strong> Make it easy for users to identify the different options within the checkbox group and the current selection. This can be achieved through the use of visual hierarchy, such as using larger or bolder text for the selected options and smaller, lighter text for the other options.</li>
-    
-    <li><strong>Consider mobile-friendliness:</strong> When designing for small screens, consider how the checkboxes will be displayed. It may be necessary to use a different layout or truncate the labels to ensure that the checkboxes are easy to use on a smaller screen.</li>
-    
-    <li><strong>Use appropriate spacing and alignment:</strong> Proper spacing and alignment can help to make the checkboxes more legible and easier to use. Use consistent spacing between elements and align elements according to the overall layout of the page.</li>
-    
-    <li><strong>Provide clear feedback:</strong> When a checkbox is selected, provide clear feedback to the user to indicate the status of the selection. This can be achieved through the use of visual or auditory cues.</li>
-    
-  </ul>
-    
-    <p>By following these guidelines, you can help to create a checkbox experience that is clear, intuitive, and easy to use for your users.</p>
-  
-  </div>
-  
-  <app-common *ngFor="let convertedData of convertedDatas" [activeTab]="'preview'" [codePreview]="convertedData.code"
+<p class="cb-text-copy-large mt-4 leading-6"> Checkboxes are a common design pattern used to allow users to select
+  multiple options from a list of choices.
+</p>
+<app-common *ngFor="let convertedData of convertedDatas" [activeTab]="'preview'" [codePreview]="convertedData.code"
   [codeHtml]="convertedData.code" [title]="convertedData.title">
   <div class="preview-box !justify-start">
     <div class="w-full max-w-5xl ">
@@ -29,3 +11,36 @@
     </div>
   </div>
 </app-common>
+
+<p class="cb-text-h3 pt-10" id="c2">Guidelines</p>
+
+<div class="cb-intro-copy">
+
+  <p>Checkboxes are a common design pattern used to allow users to select multiple options from a list of choices. Here
+    are some guidelines for designing checkbox elements within a design system:</p>
+
+  <ul>
+    <li><strong>Use clear, descriptive labels:</strong> The labels for the checkboxes should clearly describe the
+      purpose of each option and the type of input expected.</li>
+
+    <li><strong>Use appropriate visual hierarchy:</strong> Make it easy for users to identify the different options
+      within the checkbox group and the current selection. This can be achieved through the use of visual hierarchy,
+      such as using larger or bolder text for the selected options and smaller, lighter text for the other options.</li>
+
+    <li><strong>Consider mobile-friendliness:</strong> When designing for small screens, consider how the checkboxes
+      will be displayed. It may be necessary to use a different layout or truncate the labels to ensure that the
+      checkboxes are easy to use on a smaller screen.</li>
+
+    <li><strong>Use appropriate spacing and alignment:</strong> Proper spacing and alignment can help to make the
+      checkboxes more legible and easier to use. Use consistent spacing between elements and align elements according to
+      the overall layout of the page.</li>
+
+    <li><strong>Provide clear feedback:</strong> When a checkbox is selected, provide clear feedback to the user to
+      indicate the status of the selection. This can be achieved through the use of visual or auditory cues.</li>
+
+  </ul>
+
+  <p>By following these guidelines, you can help to create a checkbox experience that is clear, intuitive, and easy to
+    use for your users.</p>
+
+</div>

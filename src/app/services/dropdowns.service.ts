@@ -1,14 +1,12 @@
-import { Injectable } from "@angular/core";
+import { Injectable } from '@angular/core';
 
-@Injectable({providedIn: 'root'})
-
+@Injectable({ providedIn: 'root' })
 export class DropdownsService {
-
-    badgeDatas= [
-        {
-            id: 'dropdown_1',
-            title: 'Simple',
-            code: `
+  badgeDatas = [
+    {
+      id: 'dropdown_1',
+      title: 'Simple',
+      code: `
             <div class="form-control">
               <div class="relative inline-block text-left">
                 <div>
@@ -36,12 +34,12 @@ export class DropdownsService {
                 </div>
               </div>
             </div>
-            `
-        },
-        {
-            id: 'dropdown_2',
-            title: 'With dividers',
-            code: `
+            `,
+    },
+    {
+      id: 'dropdown_2',
+      title: 'With dividers',
+      code: `
             <div class="relative inline-block text-left">
               <div>
                 <button type="button" class="btn-rounded btn btn-neutral" id="menu-button" aria-expanded="true"
@@ -73,12 +71,12 @@ export class DropdownsService {
                 </div>
               </div>
             </div>
-          `
-        },
-        {
-        id: 'dropdown_3',
-        title: 'With icon',
-        code: ` 
+          `,
+    },
+    {
+      id: 'dropdown_3',
+      title: 'With icon',
+      code: ` 
         <div class="form-control">
           <div class="relative inline-block text-left">
             <div>
@@ -140,16 +138,16 @@ export class DropdownsService {
             </div>
           </div>
         </div>
-        `
-        } ,
-        {
-        id: 'dropdown_4',
-        title: 'with borderless button',
-        code: ` 
+        `,
+    },
+    {
+      id: 'dropdown_4',
+      title: 'with borderless button',
+      code: ` 
         <div class="form-control">
           <div class="relative inline-block text-left">
             <div>
-              <button type="button" class="btn-rounded btn btn-neutral btn-borderless" id="menu-button" aria-expanded="true"
+              <button type="button" class="btn-rounded btn  btn-borderless" id="menu-button" aria-expanded="true"
                 aria-haspopup="true">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
                   stroke="currentColor" class="w-5 h-5">
@@ -175,9 +173,7 @@ export class DropdownsService {
             </div>
           </div>
         </div>
-        `
-        } ,
-    ];
-
-    
-  }
+        `,
+    },
+  ];
+}

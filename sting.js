@@ -23,6 +23,7 @@ const Typography = require("./sting-components/typography");
 const Card = require("./sting-components/card");
 const Container = require("./sting-components/container");
 const Breadcrumb = require("./sting-components/breadcrumb");
+const Banner = require("./sting-components/banner");
 
 module.exports = plugin.withOptions(
   function () {
@@ -34,6 +35,7 @@ module.exports = plugin.withOptions(
       // addComponents(Alert());
       // addComponents(Avatar());
       addComponents(Badge());
+      addComponents(Banner());
       addComponents(Modal());
       addComponents(Breadcrumb());
       addComponents(Button());

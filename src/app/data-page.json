@@ -106,7 +106,7 @@
       "subMenu": [
         { "title": "Alerts", "link": "alerts" },
         { "title": "Badges", "link": "badges" },
-        { "title": "Banners", "link": "badges", "status": "new" },
+        { "title": "Banners", "link": "banners", "status": "new" },
         { "title": "Breadcrumbs", "link": "breadcrumbs" },
         { "title": "Buttons", "link": "buttons" },
         { "title": "Cards", "link": "cards" },

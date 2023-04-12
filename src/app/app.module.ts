@@ -55,7 +55,7 @@ import { ClickedOutsideDirective } from './shared/click-outside/clicked-outside.
     HighlightDirective,
     SearchComponent,
     FilterPipe,
-    ClickedOutsideDirective
+    ClickedOutsideDirective,
     
   ],
   imports: [

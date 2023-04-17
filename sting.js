@@ -6,7 +6,6 @@ const InputGroups = require("./sting-components/input-groups");
 
 const Alerts = require("./sting-components/alerts");
 const InlineAlert = require("./sting-components/inline-alerts");
-const Banner = require("./sting-components/banner");
 const Icons = require("./sting-components/icon");
 //const colors = require("./sting-components/colors.js");
 const colors = require("./sting-components/default-colors.js");
@@ -26,6 +25,7 @@ const Typography = require("./sting-components/typography");
 const Card = require("./sting-components/card");
 const Container = require("./sting-components/container");
 const Breadcrumb = require("./sting-components/breadcrumb");
+const Banner = require("./sting-components/banner");
 
 module.exports = plugin.withOptions(
   function () {
@@ -37,6 +37,7 @@ module.exports = plugin.withOptions(
       // addComponents(Alert());
       // addComponents(Avatar());
       addComponents(Badge());
+      addComponents(Banner());
       addComponents(Modal());
       addComponents(Breadcrumb());
       addComponents(Button());
@@ -54,7 +55,7 @@ module.exports = plugin.withOptions(
       addComponents(Toggle());
       addComponents(RadioGroup());
       addComponents(InlineAlert());
-      addComponents(Banner());
+
       addComponents(Icons());
       // addComponents(Forms());
       // addComponents(List());

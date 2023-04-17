@@ -41,6 +41,7 @@ import { MetaphorsComponent } from './components/page/metaphors/metaphors.compon
 import { ConversationComponent } from './components/page/conversation/conversation.component';
 import { GroupingComponent } from './components/page/grouping/grouping.component';
 import { ComingSoonComponent } from './components/page/coming-soon/coming-soon.component';
+import { BannersComponent } from './components/page/banners/banners.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/components/page/installation', pathMatch: 'full' },
@@ -56,6 +57,7 @@ const routes: Routes = [
           { path: '', redirectTo: '/components', pathMatch: 'full' },
           // {path: 'components', component: ComponentsComponent},
           { path: 'about', component: AboutStingComponent },
+          { path: 'banners', component: BannersComponent },
           { path: 'new', component: NewComponent },
           { path: 'feedback', component: FeedbackComponent },
           { path: 'metaphors', component: MetaphorsComponent },

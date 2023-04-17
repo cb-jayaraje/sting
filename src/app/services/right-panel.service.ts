@@ -227,6 +227,14 @@ export class RightPanelService implements OnInit {
       title: 'installation',
       menu: [],
     },
+    {
+      id: 'm27',
+      title: 'banners',
+      menu: [
+        { id: 'c1', title: 'Toggles' },
+        { id: 'c2', title: 'Guidelines' },
+      ],
+    },
   ];
 
   private _pageName = new BehaviorSubject<any>('');

@@ -42,6 +42,7 @@ import { MetaphorsComponent } from './metaphors/metaphors.component';
 import { ConversationComponent } from './conversation/conversation.component';
 import { GroupingComponent } from './grouping/grouping.component';
 import { ComingSoonComponent } from './coming-soon/coming-soon.component';
+import { BannersComponent } from './banners/banners.component';
 
 @NgModule({
     declarations: [
@@ -83,7 +84,8 @@ import { ComingSoonComponent } from './coming-soon/coming-soon.component';
         MetaphorsComponent,
         ConversationComponent,
         GroupingComponent,
-        ComingSoonComponent
+        ComingSoonComponent,
+        BannersComponent
         
   ],
     imports: [

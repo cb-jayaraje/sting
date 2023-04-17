@@ -1,0 +1,137 @@
+<p class="cb-text-copy-large mt-4 leading-6"> Banners allow users to perform actions and choose with a single tap.
+</p>
+
+<app-common *ngFor="let convertedData of convertedDatas" [activeTab]="'preview'" [codePreview]="convertedData.code"
+    [codeHtml]="convertedData.code" [title]="convertedData.title">
+    <div class="preview-box">
+        <div class="  mx-auto self-center ">
+            <div class="">
+                <div [innerHTML]="convertedData.code | safeHtml"></div>
+            </div>
+
+        </div>
+    </div>
+</app-common>
+
+<p class="cb-text-h3 pt-10" id="c2">Guidelines</p>
+<div class="cb-intro-copy">
+
+    <p>Buttons are an important element in user interfaces, as they allow users to take action and interact with the
+        interface. When designing buttons for a design system, it's important to consider the following guidelines:</p>
+
+    <ul>
+        <li><strong>Use clear and descriptive labels:</strong> The text on a button should clearly and accurately
+            describe
+            the action that will be taken when the button is clicked. Avoid using ambiguous or vague labels.</li>
+
+        <li><strong>Use a consistent button style:</strong> The style of the buttons should be consistent throughout the
+            design system. This includes the font, color, size, and overall layout of the buttons.</li>
+
+        <li><strong>Use appropriate button sizes:</strong> Button sizes should be appropriate for the context in which
+            they
+            are used. Large buttons may be more suitable for primary actions, while smaller buttons may be more suitable
+            for
+            secondary actions.</li>
+
+        <li><strong>Use appropriate button colors:</strong> Button colors should be used to communicate the importance
+            or
+            context of the action being taken. For example, a red button may be used to indicate a destructive action,
+            while a
+            green button may be used to indicate a positive action.</li>
+
+        <li><strong>Use hover and active states:</strong> It should be clear to users which button is currently being
+            hovered over or clicked on. This can be achieved through the use of visual indicators such as changes in
+            color
+            or
+            size.</li>
+
+        <li><strong>Consider the use of icon buttons:</strong> Icon buttons can be used in addition to or in place of
+            text
+            labels to provide a more visually appealing and concise design. However, it's important to ensure that the
+            meaning
+            of the button is still clear to users.</li>
+    </ul>
+
+    <p>By following these guidelines, you can create a clear and intuitive button interface that helps users easily
+        take
+        action and interact with the interface.</p>
+
+</div>
+
+<div class="my-16 space-y-8">
+    <h2 class="cb-text-h3">Compositions</h2>
+    <div class="flex gap-32">
+
+        <div class="">
+            <div class="alert alert-success mb-4">
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                        <path fill-rule="evenodd"
+                            d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                            clip-rule="evenodd" />
+                    </svg>
+                    <div>
+                        <h3>Do</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="divide-y divide-neutral-100">
+                <div class="flex gap-4 py-4">
+                    <button class=" btn btn-neutral-borderless ">Button</button>
+                    <button class=" btn btn-neutral ">Button</button>
+                    <button class=" btn btn-primary ">Button</button>
+                </div>
+                <div class="flex gap-4 py-4">
+                    <button class=" btn btn-neutral-borderless ">Button</button>
+                    <button class=" btn btn-neutral ">Button</button>
+                    <button class=" btn btn-secondary ">Button</button>
+                </div>
+                <div class="flex gap-4 py-4">
+                    <button class=" btn btn-neutral-borderless ">Button</button>
+                    <button class=" btn btn-neutral ">Button</button>
+                    <button class=" btn btn-outline ">Button</button>
+                </div>
+                <div class="flex gap-4 py-4">
+                    <button class=" btn btn-neutral-borderless ">Button</button>
+                    <button class=" btn btn-neutral ">Button</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="">
+            <div class="alert alert-danger mb-4">
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                        <path fill-rule="evenodd"
+                            d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z"
+                            clip-rule="evenodd" />
+                    </svg>
+                    <div>
+                        <h3>Don't</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="divide-y divide-neutral-100">
+                <div class="flex gap-4 py-4">
+                    <button class=" btn btn-borderless ">Button</button>
+                    <button class=" btn btn-secondary ">Button</button>
+                    <button class=" btn btn-primary ">Button</button>
+                </div>
+                <div class="flex gap-4 py-4">
+                    <button class=" btn btn-outline ">Button</button>
+                    <button class=" btn btn-secondary ">Button</button>
+                    <button class=" btn btn-primary ">Button</button>
+                </div>
+                <div class="flex gap-4 py-4">
+                    <button class=" btn btn-outline ">Button</button>
+                    <button class=" btn btn-secondary ">Button</button>
+                </div>
+                <div class="flex gap-4 py-4">
+                    <button class=" btn btn-neutral-borderless ">Button</button>
+                    <button class=" btn btn-borderless ">Button</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>

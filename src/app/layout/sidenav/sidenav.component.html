@@ -1,12 +1,8 @@
-<div class="w-56 h-full bg-white border-r border-gray-200 fixed overflow-scroll py-4">
-    <div class="flex flex-shrink-0 items-center px-4">
-        <a routerLink="/" class=" cursor-pointer"> <img class="h-8 w-auto" src="assets/images/sting-logo.svg"
-                alt="Your Company"></a>
-    </div>
-    <div class="h-5"></div>
-    <div class=" relative px-4">
+<div class="w-64 h-full border-r border-r-neutral-100  overflow-scroll">
 
-        <div class="form-control">
+    <div class="  px-4">
+
+        <!-- <div class="form-control">
             <label for="search" class="sr-only">Search</label>
             <div class="flex">
                 <div class="relative flex flex-grow items-stretch focus-within:z-10">
@@ -21,14 +17,14 @@
                     <input type="text" name="search" id="search" class="input !rounded-r-none pl-10" autocomplete="off"
                         [disabled]="searchDisabled" placeholder="Search..." (click)="onKeydown($event)">
                     <div class="input-icon-trailing">
-                        <!-- Heroicon name: solid/question-mark-circle -->
-                        <kbd
-                            class="inline-flex items-center rounded border border-gray-200 px-2 font-sans text-sm font-medium text-gray-400">⌘K</kbd>
-                    </div>
-                </div>
+                        
+        <kbd
+            class="inline-flex items-center rounded border border-gray-200 px-2 font-sans text-sm font-medium text-gray-400">⌘K</kbd>
+    </div>
+</div>
 
-            </div>
-        </div>
+</div>
+</div> -->
 
         <div class="search-hero hidden">
             <input class="form-control" type="text" name="search" [(ngModel)]="searchText" autocomplete="off"
@@ -44,16 +40,25 @@
         </div>
     </div>
 
-    <div class="h-5"></div>
 
-    <nav class="flex-1 space-y-8 bg-white px-5" aria-label="Sidebar">
+
+    <nav class="flex-1 space-y-8  pt-5" aria-label="Sidebar">
         <ul *ngFor="let nav of leftNav.leftNav">
             <li class="block">
-                <h3 class="inter antialiased text-[14.22px] font-semibold leading-[18.48px] text-[#3F4E54] mb-2">
+                <h3
+                    class="inter antialiased text-[14.22px] font-semibold leading-[18.48px] text-[#3F4E54] dark:text-gray-400 mb-2">
                     {{nav.title}}</h3>
-                <ul class=" sub-li">
-                    <li *ngFor="let subNav of nav.subMenu" (click)="selectTitle(subNav.title)">
-                        <a [routerLink]="path+subNav.link" routerLinkActive="active">{{subNav.title}}</a>
+                <ul class=" sub-li ">
+                    <li *ngFor="let subNav of nav.subMenu">
+
+
+
+                        <a (click)="onClickLeftMenu(subNav)"
+                            [routerLink]="subNav.status !=='coming' ? path+subNav.link : path+'coming'"
+                            routerLinkActive="active"
+                            [ngClass]="{'cursor-not-allowed opacity-50': subNav.status ==='coming'}">{{subNav.title}}
+                            <span class="badge-mini "
+                                [ngClass]="{'hidden': !subNav.status, 'badge-green': subNav.status ==='new', 'badge-primary': subNav.status ==='update', 'badge-info cursor-not-allowed': subNav.status ==='coming' }">{{getStatusValue(subNav.status)}}</span></a>
                     </li>
 
                 </ul>

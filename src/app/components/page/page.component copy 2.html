@@ -1,0 +1,76 @@
+<!-- <app-sub-header></app-sub-header> -->
+<app-header></app-header>
+<div
+    class="relative mx-auto flex max-w-8xl justify-center pl-10 md:pl-0  md:justify-start sm:px-2  dark:bg-black gap-x-10 ">
+
+    <div class="hidden lg:relative lg:block lg:flex-none">
+        <!-- <div class="absolute inset-y-0 right-0 w-[50vw] bg-white border border-r-neutral-100 dark:hidden"></div> -->
+        <div class="absolute top-16 bottom-0 right-0 hidden h-12 w-px bg-gradient-to-t from-slate-800 dark:block">
+        </div>
+        <div class="absolute top-28 bottom-0 right-0 hidden w-px bg-slate-800 dark:block"></div>
+        <div class="sticky top-[4.5rem] -ml-0.5 h-[calc(100vh-4.5rem)] overflow-y-auto overflow-x-hidden  pl-0.5">
+            <app-sidenav></app-sidenav>
+        </div>
+    </div>
+
+
+
+    <div class=" pr-8 ">
+        <!-- <div class="">
+
+            <div class="flex justify-end relative dropDown" appDropdown>
+
+                <div x-transition:enter="transition ease-out duration-100"
+                    x-transition:enter-start="transform opacity-0 scale-95"
+                    x-transition:enter-end="transform opacity-100 scale-100"
+                    x-transition:leave="transition ease-in duration-75"
+                    x-transition:leave-start="transform opacity-100 scale-100"
+                    x-transition:leave-end="transform opacity-0 scale-95"
+                    class="absolute right-0 z-10 mt-9 w-max origin-top-right rounded-md bg-white shadow-lg ring-1 ring-[#E9ECEE] focus:outline-none"
+                    role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1">
+                    <div role="none">
+                        <a (click)="changeTheme('')"
+                            class="block px-3 py-2 inter antialiased text-[12.64px] font-normal leading-[16.43px] text-[#3F4E54] hover:bg-[#F4F6F6] rounded-t-md flex items-center"
+                            role="menuitem" tabindex="-1" id="menu-item-0">
+                            <span class="h-2.5 w-2.5 rounded-full bg-sky-500 mr-2"></span> Default </a>
+                        <a (click)="changeTheme('theme-leap')"
+                            class="block px-3 py-2 inter antialiased text-[12.64px] font-normal leading-[16.43px] text-[#3F4E54] hover:bg-[#F4F6F6] flex items-center"
+                            role="menuitem" tabindex="-1" id="menu-item-0">
+                            <span class="h-2.5 w-2.5 rounded-full bg-[#6200ea] mr-2"></span> Leap </a>
+                        <a (click)="changeTheme('theme-sting')"
+                            class="block px-3 py-2 inter antialiased text-[12.64px] font-normal leading-[16.43px] text-[#3F4E54] hover:bg-[#F4F6F6] rounded-b-md flex items-center"
+                            role="menuitem" tabindex="-1" id="menu-item-0">
+                            <span class="h-2.5 w-2.5 rounded-full bg-[#012A38] mr-2"></span> Sting </a>
+                    </div>
+                </div>
+                <button
+                    class="inline-flex items-center px-2.5 py-1.5 border border-[#D3D9DC] text-[12.64px] inter antialiased leading-[14px] font-medium rounded bg-white text-[#012A38] hover:bg-[#EDEFF0]/50 active:bg-[#E6EAEB] hover:text-[#01222D]">
+                    <div class="flex ">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                            class="h-3.5 w-3.5 mr-1.5 -ml-0.5">
+                            <path fill-rule="evenodd"
+                                d="M3.5 2A1.5 1.5 0 002 3.5V15a3 3 0 106 0V3.5A1.5 1.5 0 006.5 2h-3zm11.753 6.99L9.5 14.743V6.257l1.51-1.51a1.5 1.5 0 012.122 0l2.121 2.121a1.5 1.5 0 010 2.122zM8.364 18H16.5a1.5 1.5 0 001.5-1.5v-3a1.5 1.5 0 00-1.5-1.5h-2.136l-6 6zM5 16a1 1 0 100-2 1 1 0 000 2z"
+                                clip-rule="evenodd" />
+                        </svg>
+                        <span class="">Theme</span>
+                    </div>
+
+                </button>
+
+
+            </div>
+
+        </div>
+
+
+        <div>
+            <div class="cb-text-h1">{{title}}</div>
+        </div> -->
+
+
+        <div class="h-10"></div>
+        <div class="cb-text-h1 ">{{title}}</div>
+        <router-outlet></router-outlet>
+
+    </div>
+</div>

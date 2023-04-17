@@ -6,7 +6,9 @@ import { IconsComponent } from './components/config/icons/icons.component';
 import { InstallationComponent } from './components/config/installation/installation.component';
 import { ThemesComponent } from './components/config/themes/themes.component';
 import { TypographyComponent } from './components/config/typography/typography.component';
+import { FeedbackComponent } from './components/page/feedback/feedback.component';
 import { LayoutComponent } from './components/layout/layout.component';
+import { AboutStingComponent } from './components/page/about-sting/about-sting.component';
 import { AlertsComponent } from './components/page/alerts/alerts.component';
 import { BadgesComponent } from './components/page/badges/badges.component';
 import { BreadcrumbsComponent } from './components/page/breadcrumbs/breadcrumbs.component';
@@ -20,6 +22,7 @@ import { DropdownsComponent } from './components/page/dropdowns/dropdowns.compon
 import { InputGroupsComponent } from './components/page/input-groups/input-groups.component';
 import { ListContainersComponent } from './components/page/list-containers/list-containers.component';
 import { ModalsComponent } from './components/page/modals/modals.component';
+import { NewComponent } from './components/page/new/new.component';
 import { NotificationsComponent } from './components/page/notifications/notifications.component';
 import { PageHeadingComponent } from './components/page/page-heading/page-heading.component';
 import { PageComponent } from './components/page/page.component';
@@ -34,9 +37,13 @@ import { TableComponent } from './components/page/table/table.component';
 import { TabsComponent } from './components/page/tabs/tabs.component';
 import { ToggleComponent } from './components/page/toggle/toggle.component';
 import { HomeComponent } from './home/home.component';
+import { MetaphorsComponent } from './components/page/metaphors/metaphors.component';
+import { ConversationComponent } from './components/page/conversation/conversation.component';
+import { GroupingComponent } from './components/page/grouping/grouping.component';
+import { ComingSoonComponent } from './components/page/coming-soon/coming-soon.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: '/home', pathMatch: 'full' },
+  { path: '', redirectTo: '/components/page/installation', pathMatch: 'full' },
   { path: 'home', component: HomeComponent },
   {
     path: 'components',
@@ -48,6 +55,12 @@ const routes: Routes = [
         children: [
           { path: '', redirectTo: '/components', pathMatch: 'full' },
           // {path: 'components', component: ComponentsComponent},
+          { path: 'about', component: AboutStingComponent },
+          { path: 'new', component: NewComponent },
+          { path: 'feedback', component: FeedbackComponent },
+          { path: 'metaphors', component: MetaphorsComponent },
+          { path: 'conversation', component: ConversationComponent },
+          { path: 'grouping', component: GroupingComponent },
           { path: 'input-groups', component: InputGroupsComponent },
           { path: 'sign-in-forms', component: SignInFormsComponent },
           { path: 'checkout', component: GelatoComponent },
@@ -77,7 +90,8 @@ const routes: Routes = [
           { path: 'breadcrumbs', component: BreadcrumbsComponent },
           { path: 'stats', component: StatsComponent },
           { path: 'notifications', component: NotificationsComponent },
-          { path: 'design-patterns', component: DesignPatternsComponent },
+          { path: 'design-principles', component: DesignPatternsComponent },
+          { path: 'coming-soon', component: ComingSoonComponent },
         ],
       },
     ],

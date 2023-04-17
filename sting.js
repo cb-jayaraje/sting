@@ -27,6 +27,10 @@ const Card = require("./sting-components/card");
 const Container = require("./sting-components/container");
 const Breadcrumb = require("./sting-components/breadcrumb");
 
+const VerticalNavigation = require("./sting-components/vertical-navigation");
+const SectionHeader = require("./sting-components/section-header");
+const StackedList = require("./sting-components/stacked-list");
+
 module.exports = plugin.withOptions(
   function () {
     return function (options) {
@@ -45,6 +49,7 @@ module.exports = plugin.withOptions(
       addComponents(SelectMenus());
       addComponents(Table());
       addComponents(Card());
+      addComponents(SectionHeader());
       // addComponents(Dialog());
       // addComponents(Drawer());
       addComponents(Dropdown());
@@ -56,17 +61,32 @@ module.exports = plugin.withOptions(
       addComponents(InlineAlert());
       addComponents(Banner());
       addComponents(Icons());
+      addComponents(StackedList())
       // addComponents(Forms());
       // addComponents(List());
       // addComponents(Pagination());
       // addComponents(Skeleton());
       // addComponents(Spinner());
+      addComponents(VerticalNavigation());
       addComponents(Tabs());
       addComponents(Checkbox());
       addComponents(Typography());
       // addComponents(Tooltip());
       // Typography().handler(options);
       addComponents(Container());
+      addComponents({
+        ".tCard": {
+          backgroundColor: "#fff",
+          borderRadius: ".25rem",
+          boxShadow: "0 2px 4px rgba(0,0,0,0.2)",
+          "&:hover": {
+            boxShadow: "0 10px 15px rgba(0,0,0,0.2)",
+          },
+          "@media (min-width: 500px)": {
+            borderRadius: ".5rem",
+          },
+        },
+      });
     };
   },
   function () {

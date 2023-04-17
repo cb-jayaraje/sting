@@ -68,8 +68,7 @@
     {
       "title": "Overview",
       "subMenu": [
-        { "title": "About Sting", "link": "about" },
-        { "title": "What's New", "link": "new" }
+        { "title": "What's New", "link": "coming-soon", "status": "coming" }
       ]
     },
     {

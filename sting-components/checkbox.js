@@ -1,7 +1,7 @@
 module.exports = Checkbox = (styles) => ({ 
 
     '.checkbox': {
-        '@apply focus:ring-primary-500 h-4 w-4 text-primary-500 border-neutral-400 rounded' : {}
+        '@apply focus:ring-primary-600 h-4 w-4 text-primary-600 border-neutral-300 rounded' : {}
     },
     '.checkbox-group p': {
         '@apply cb-text-copy-regular': {}

@@ -3,21 +3,21 @@ module.exports = InputGroups = (styles) => ({
     "@apply space-y-1": {},
   },
   ".form-control .input, .input": {
-    "@apply block w-full cb-text-copy-regular rounded border-neutral-200 shadow-sm focus:border-info-400 focus:ring-info-400 placeholder-neutral-500":
+    "@apply block w-full cb-text-copy-regular rounded border-neutral-300 shadow-sm focus:border-primary-600 focus:ring-primary-600 placeholder-neutral-400":
       {},
   },
   ".form-control .label": {
-    "@apply cb-text-copy-regular font-medium": {},
+    "@apply cb-text-copy-regular font-medium text-neutral-700": {},
   },
   ".form-control .help-text": {
-    "@apply py-1 cb-text-copy-small": {},
+    "@apply py-1 cb-text-copy-small text-neutral-500": {},
   },
   ".form-control .input-error": {
-    "@apply block w-full pr-10 border-red-500 focus:outline-none focus:ring-red-500 focus:border-red-500 sm:text-sm rounded-md cb-text-copy-regular":
+    "@apply block w-full pr-10 border-red-600 focus:outline-none focus:ring-red-600 focus:border-red-500 sm:text-sm rounded-md cb-text-copy-regular":
       {},
   },
   ".form-control .error-text": {
-    "@apply py-1 cb-text-copy-small text-red-800": {},
+    "@apply py-1 cb-text-copy-small text-red-600": {},
   },
   ".form-control .hint-text": {
     "@apply cb-text-copy-regular text-neutral-600": {},

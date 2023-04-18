@@ -46,15 +46,15 @@ module.exports = Button = (styles) => ({
 
   // Sting theme
   ".btn-primary, .theme-sting .btn-primary": {
-    "@apply text-primary-50 bg-primary-800 hover:bg-primary-900 active:bg-primary-800 focus:ring-info-800 border border-transparent":
+    "@apply  text-primary-50 bg-primary-800 hover:bg-primary-700 active:bg-primary-600 active:text-white focus:ring-info-800":
       {},
   },
   ".theme-sting .btn-secondary, .btn-secondary": {
-    "@apply text-primary-600 hover:text-primary-700 bg-primary-50 hover:bg-primary-100 active:bg-primary-50 focus:outline-none border border-primary-100 hover:border-primary-200":
+    "@apply text-primary-700 hover:text-primary-700 bg-primary-200 hover:bg-primary-300 active:bg-primary-400 active:text-primary-800 focus:outline-none":
       {},
   },
   ".theme-sting .btn-outline, .btn-outline": {
-    "@apply text-primary-600 hover:text-primary-700 bg-transparent hover:bg-primary-50 active:bg-transparent focus:outline-none border border-primary-500":
+    "@apply text-primary-600 bg-transparent hover:bg-primary-50 hover:text-primary-700 active:bg-primary-100  active:text-primary-700 focus:outline-none border border-primary-600":
       {},
   },
   ".theme-sting .btn-borderless, .btn-borderless": {
@@ -64,14 +64,14 @@ module.exports = Button = (styles) => ({
   //     '@apply text-white bg-info-800 hover:bg-info-900 active:bg-info-800 hover:text-white focus:outline-none border border-transparent border-b-info-900': {},
   // },
   ".theme-sting .btn-neutral, .btn-neutral": {
-    "@apply bg-transparent hover:bg-neutral-50 text-neutral-600 hover:text-neutral-700 active:bg-neutral-50 border border-neutral-200 hover:border-neutral-300 focus:ring-neutral-200":
+    "@apply bg-transparent hover:bg-neutral-50 text-neutral-600 hover:text-neutral-700 active:bg-neutral-100 border border-neutral-200 hover:border-neutral-300 focus:ring-neutral-200":
       {},
   },
   ".theme-sting .btn-neutral-borderless, .btn-neutral-borderless": {
-    "@apply bg-transparent text-neutral-600 hover:bg-neutral-50": {},
+    "@apply bg-transparent text-neutral-600 hover:bg-neutral-50 text-neutral-600 hover:text-neutral-700 active:bg-neutral-100": {},
   },
   ".theme-sting .btn-danger, .btn-danger": {
-    "@apply text-red-600 bg-transparent hover:bg-red-50 border border-red-200 hover:border-red-300 focus:ring-red-400":
+    "@apply text-white bg-red-500 border hover:bg-red-600 active:bg-red-700 focus:ring-red-400":
       {},
   },
 

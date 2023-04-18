@@ -107,21 +107,21 @@ module.exports = Badge = (styles) => ({
   },
 
   ".badge-neutral": {
-    "@apply badge bg-neutral-50 text-neutral-700 border border-neutral-200": {},
+    "@apply badge bg-neutral-100 text-neutral-700": {},
   },
   ".badge-neutral button": {
     "@apply text-neutral-600 hover:bg-neutral-100 focus:bg-neutral-50 focus:text-neutral-600 ml-1":
       {},
   },
   ".badge-primary": {
-    "@apply badge bg-primary-50 text-primary-600 border border-primary-100": {},
+    "@apply badge bg-primary-100 text-primary-700": {},
   },
   ".badge-primary button": {
     "@apply text-primary-600 hover:bg-primary-200 focus:bg-primary-100": {},
   },
 
   ".badge-minimal": {
-    "@apply badge border border-neutral-200 text-neutral-600": {},
+    "@apply badge border border-neutral-300 text-neutral-600": {},
   },
   ".badge-minimal button": {
     "@apply text-neutral-600 hover:bg-neutral-100 focus:bg-neutral-50 focus:text-primary-700":
@@ -137,14 +137,14 @@ module.exports = Badge = (styles) => ({
   },
 
   ".badge-red": {
-    "@apply badge text-red-600 bg-red-50 border border-red-100": {},
+    "@apply badge text-red-700 bg-red-100 border border-red-100": {},
   },
   ".badge-red button": {
     "@apply text-red-600 hover:bg-red-100 hover:text-red-700 focus:bg-red-50 focus:text-red-600":
       {},
   },
   ".badge-green": {
-    "@apply badge text-green-600 bg-green-50 border border-green-100": {},
+    "@apply badge text-green-700 bg-green-100 border border-green-100": {},
   },
   ".badge-green button": {
     "@apply text-green-600 hover:bg-green-100 hover:text-green-700 focus:bg-green-50 focus:text-green-600":
@@ -152,7 +152,7 @@ module.exports = Badge = (styles) => ({
   },
 
   ".badge-orange": {
-    "@apply badge text-orange-600 bg-orange-50 border border-orange-100": {},
+    "@apply badge text-orange-700 bg-orange-100 border border-orange-100": {},
   },
   ".badge-orange button": {
     "@apply text-orange-600 hover:bg-orange-100 hover:text-orange-700 focus:bg-orange-50 focus:text-orange-600":

@@ -46,15 +46,15 @@ module.exports = Button = (styles) => ({
 
   // Sting theme
   ".btn-primary, .theme-sting .btn-primary": {
-    "@apply  text-primary-50 bg-primary-800 hover:bg-primary-700 active:bg-primary-600 focus:ring-info-800":
+    "@apply  text-primary-50 bg-primary-800 hover:bg-primary-700 active:bg-primary-600 active:text-white focus:ring-info-800":
       {},
   },
   ".theme-sting .btn-secondary, .btn-secondary": {
-    "@apply text-primary-700 hover:text-primary-700 bg-primary-200 hover:bg-primary-300 active:bg-primary-400 focus:outline-none":
+    "@apply text-primary-700 hover:text-primary-700 bg-primary-200 hover:bg-primary-300 active:bg-primary-400 active:text-primary-800 focus:outline-none":
       {},
   },
   ".theme-sting .btn-outline, .btn-outline": {
-    "@apply text-primary-600 bg-transparent hover:bg-primary-50 active:bg-primary-100 focus:outline-none border border-primary-600":
+    "@apply text-primary-600 bg-transparent hover:bg-primary-50 hover:text-primary-700 active:bg-primary-100  active:text-primary-700 focus:outline-none border border-primary-600":
       {},
   },
   ".theme-sting .btn-borderless, .btn-borderless": {

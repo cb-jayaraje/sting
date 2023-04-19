@@ -30,6 +30,7 @@ const Banner = require("./sting-components/banner");
 const VerticalNavigation = require("./sting-components/vertical-navigation");
 const SectionHeader = require("./sting-components/section-header");
 const StackedList = require("./sting-components/stacked-list");
+const SettingList = require("./sting-components/setting-list");
 
 module.exports = plugin.withOptions(
   function () {
@@ -63,6 +64,7 @@ module.exports = plugin.withOptions(
 
       addComponents(Icons());
       addComponents(StackedList())
+      addComponents(SettingList());
       // addComponents(Forms());
       // addComponents(List());
       // addComponents(Pagination());

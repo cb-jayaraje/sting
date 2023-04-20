@@ -1,7 +1,7 @@
 module.exports = Banner = (styles) => ({
     
     ".banner-container": {
-        "@apply flex shadow-md shadow-neutral-100 gap-16 px-8 py-6 card max-w-[1136]": {}
+        "@apply flex card shadow-md shadow-neutral-100 gap-16 px-8 py-6 max-w-[1136px]": {}
       },
       ".info-container": {
         "@apply flex gap-16 py-2": {}

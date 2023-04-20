@@ -280,7 +280,7 @@ div.code-toolbar > .toolbar > .toolbar-item > button {
 }
 
 .cb-content-right-panel {
-  @apply hidden xl:sticky xl:top-[4.5rem] xl:-mr-6 xl:block xl:h-[calc(100vh-4.5rem)] xl:flex-none xl:overflow-y-auto xl:py-3 xl:pr-6;
+  @apply hidden xl:sticky xl:top-[6rem] xl:-mr-6 xl:block xl:h-[calc(100vh-4.5rem)] xl:flex-none xl:overflow-y-auto xl:py-3 xl:pr-6;
 }
 
 .cb-content-right-panel nav {

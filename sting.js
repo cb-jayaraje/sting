@@ -31,6 +31,7 @@ const VerticalNavigation = require("./sting-components/vertical-navigation");
 const SectionHeader = require("./sting-components/section-header");
 const StackedList = require("./sting-components/stacked-list");
 const SettingList = require("./sting-components/setting-list");
+const PageHeading = require("./sting-components/page-heading");
 
 module.exports = plugin.withOptions(
   function () {
@@ -74,6 +75,7 @@ module.exports = plugin.withOptions(
       addComponents(Tabs());
       addComponents(Checkbox());
       addComponents(Typography());
+      addComponents(PageHeading())
       // addComponents(Tooltip());
       // Typography().handler(options);
       addComponents(Container());

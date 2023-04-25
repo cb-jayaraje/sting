@@ -151,6 +151,10 @@ module.exports = {
     700: "var(--color-brand-700)",
     800: "var(--color-brand-800)",
     900: "var(--color-brand-900)",
+    'one': 'var(--color-brand-accent-500)',
+    'two': 'var( --color-brand-primary-800)',
+    'three': 'var(--color-brand-lime-500)',
+    'four': 'var(--color-brand-info-100)',
   },
 
   primary: {

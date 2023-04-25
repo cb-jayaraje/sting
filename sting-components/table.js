@@ -7,7 +7,7 @@ module.exports = Table = (styles) => ({
       '@apply bg-neutral-100 py-3.5 pr-4 text-left cb-text-copy-regular font-medium': {}
   },
   ".table-container": {
-    "@apply rounded-lg border border-neutral-100 overflow-hidden": {}
+    "@apply rounded-lg border border-neutral-100 overflow-x-auto": {}
   },
   ".table": {
     "@apply min-w-full": {}

@@ -1,17 +1,25 @@
 <!-- <app-sub-header></app-sub-header> -->
 <app-header></app-header>
 <div
-    class="relative mx-auto grid grid-cols-5 gap-1 max-w-8xl justify-center pl-10 md:pl-0  md:justify-start sm:px-2  dark:bg-black ">
+    class="relative mx-auto grid grid-cols-5 gap-1 max-w-8xl justify-center md:pl-10 md:justify-start  dark:bg-black ">
 
-    <div class="hidden lg:relative lg:block lg:flex-none">
+    <div class="hidden left-0 px-4 lg:px-0 bg-white lg:relative lg:block lg:flex-none">
         <div class="absolute top-28 bottom-0 right-0 hidden w-px bg-slate-800 dark:block"></div>
         <div class="sticky top-[4.5rem] -ml-0.5 h-[calc(100vh-4.5rem)] overflow-y-auto overflow-x-hidden  pl-0.5">
             <app-sidenav></app-sidenav>
         </div>
     </div>
 
+    <!-- <div class="fixed left-8 px-4 lg:px-0 bg-white z-[999] ">
+            <button class="btn-icon-only btn btn-neutral">
+                <svg width="42" height="43" viewBox="0 0 42 43" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M5.25 12.0059C5.25 11.281 5.83763 10.6934 6.5625 10.6934H35.4375C36.1624 10.6934 36.75 11.281 36.75 12.0059C36.75 12.7307 36.1624 13.3184 35.4375 13.3184H6.5625C5.83763 13.3184 5.25 12.7307 5.25 12.0059ZM5.25 21.1934C5.25 20.4685 5.83763 19.8809 6.5625 19.8809H35.4375C36.1624 19.8809 36.75 20.4685 36.75 21.1934C36.75 21.9182 36.1624 22.5059 35.4375 22.5059H6.5625C5.83763 22.5059 5.25 21.9182 5.25 21.1934ZM5.25 30.3809C5.25 29.656 5.83763 29.0684 6.5625 29.0684H35.4375C36.1624 29.0684 36.75 29.656 36.75 30.3809C36.75 31.1057 36.1624 31.6934 35.4375 31.6934H6.5625C5.83763 31.6934 5.25 31.1057 5.25 30.3809Z" fill="#0F172A"/>
+                </svg>
+                    
+            </button>
+    </div> -->
 
-    <div class=" col-span-3" id="c1">
+    <div class=" lg:col-span-3 col-span-5 px-8 lg:px-0 overflow-hidden" id="c1">
 
         <main class="relative z-0 focus:outline-none  ">
             <div class="cb-text-h1 pt-10 ">{{title}}</div>

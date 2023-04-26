@@ -1,10 +1,10 @@
 module.exports = Typography = (styles) => ({
   ".cb-text-header": {
-    "@apply font-semibold tracking-tight text-neutral-800 dark:text-neutral-400 max-w-4xl font-Sora antialiased":
+    "@apply font-semibold tracking-tight text-neutral-800 max-w-4xl font-Sora antialiased":
       {},
   },
   ".cb-text-copy": {
-    "@apply font-Inter font-normal text-neutral-600 dark:text-neutral-300 leading-snug antialiased":
+    "@apply font-Inter font-normal text-neutral-600 leading-snug antialiased":
       {},
   },
   ".cb-text-display": {

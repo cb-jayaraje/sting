@@ -151,18 +151,18 @@ export class ModalService {
       title: 'Simple modal with alert',
       code: `      
       <!-- Simple modal with alert-->
-      <div
-        class="modal-regular"
-      >
+      <div class="modal-regular">
         <div class="sm:flex sm:items-start">
           <div class="mt-0 sm:mt-0 sm:ml-0 sm:text-left">
             <div class="w-full flex items-center justify-between">
-              <h5 class="modal-title"  id="modal-title">
+              <h5 class="modal-title" id="modal-title">
                 Delete Subscription
               </h5>
               <button class="btn-rounded-small btn btn-borderless">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-4 h-4">
-                  <path fill-rule="evenodd" d="M5.47 5.47a.75.75 0 011.06 0L12 10.94l5.47-5.47a.75.75 0 111.06 1.06L13.06 12l5.47 5.47a.75.75 0 11-1.06 1.06L12 13.06l-5.47 5.47a.75.75 0 01-1.06-1.06L10.94 12 5.47 6.53a.75.75 0 010-1.06z" clip-rule="evenodd" />
+                  <path fill-rule="evenodd"
+                    d="M5.47 5.47a.75.75 0 011.06 0L12 10.94l5.47-5.47a.75.75 0 111.06 1.06L13.06 12l5.47 5.47a.75.75 0 11-1.06 1.06L12 13.06l-5.47 5.47a.75.75 0 01-1.06-1.06L10.94 12 5.47 6.53a.75.75 0 010-1.06z"
+                    clip-rule="evenodd" />
                 </svg>
               </button>
             </div>
@@ -172,23 +172,22 @@ export class ModalService {
                 will also be deleted along with the subscription.
               </p>
             </div>
-            <div class="mt-6 alert alert-danger">
-              <div>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 20 20"
-                  fill="currentColor"
-                  aria-hidden="true"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z"
-                    clip-rule="evenodd"
-                  />
-                </svg>
-                <div>This action cannot be undone.</div>
+
+            <div class="alert-container alert-danger my-4 flex">
+              <div class="alert-icon">
+                <information-circle class="h-5 w-5"></information-circle>
               </div>
+
+              <div class="details-wrapper flex flex-col gap-4">
+
+                <div class="alert-details flex flex-col gap-2">
+                  <h6 class="alert-header cb-text-h6">This action cannot be undone.</h6>
+                </div>
+
+              </div>
+
             </div>
+
           </div>
         </div>
         <div class="mt-6 sm:flex sm:flex-row-reverse gap-4">

@@ -21,24 +21,28 @@ module.exports = Button = (styles) => ({
     "@apply h-4 w-4": {},
   },
 
-  ".btn-icon-trailing": {
-    "@apply ml-2 -mr-0.5 h-4 w-4": {},
+  ".btn-icon": {
+    "@apply h-4 w-4": {},
   },
+
+  ".btn-small .btn-icon": {
+    "@apply h-3.5 w-3.5": {},
+  },
+
   ".btn-icon-leading": {
-    "@apply mr-2 -ml-0.5 h-4 w-4": {},
-  },
-  ".btn-small .btn-icon-trailing": {
-    "@apply ml-1.5 -mr-0.5 h-3.5 w-3.5": {},
+    "@apply inline-flex gap-2 items-center": {},
   },
   ".btn-small .btn-icon-leading": {
-    "@apply mr-1 -ml-0.5 h-3.5 w-3.5": {},
+    "@apply inline-flex gap-1 items-center": {},
   },
-  ".btn-icon-leading": {
-    "@apply mr-2 -ml-0.5 h-4 w-4": {},
+  
+  ".btn-icon-trailing": {
+    "@apply inline-flex  gap-2 items-center flex-row-reverse": {},
   },
-  ".btn-icon": {
-    "@apply inline-flex items-center": {},
+  ".btn-small .btn-icon-trailing": {
+    "@apply inline-flex gap-1 items-center flex-row-reverse": {},
   },
+
   ".btn-link": {
     "@apply px-0.5 antialiased font-medium text-primary-600 underline underline-offset-2 hover:text-primary-700":
       {},

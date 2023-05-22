@@ -19,6 +19,7 @@
     "@angular/platform-browser-dynamic": "~13.1.0",
     "@angular/router": "~13.1.0",
     "aos": "^2.3.4",
+    "cb-sting": "^1.6.2",
     "ng2-search-filter": "^0.5.1",
     "prismjs": "^1.26.0",
     "rxjs": "~7.4.0",

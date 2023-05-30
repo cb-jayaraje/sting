@@ -29,7 +29,7 @@ module.exports = Button = (styles) => ({
 
 
   ".btn-rounded-lg, .btn-lg-icon-only": {
-    "@apply btn-lg rounded w-auto border-0": {},
+    "@apply btn-lg rounded w-auto border-0 px-3": {},
   },
   ".btn-rounded-lg svg, .btn-lg-icon-only svg": {
     "@apply h-4 w-4": {},

@@ -93,7 +93,10 @@ export class RightPanelService implements OnInit {
       title: 'buttons',
       menu: [
         { id: 'c1', title: 'Button' },
-        { id: 'c2', title: 'Guidelines' },
+        { id: 'c2', title: 'Architecture' },
+        { id: 'c3', title: 'Sizes' },
+        { id: 'c4', title: 'Structure' },
+        { id: 'c5', title: 'Variant' },
       ],
     },
     {

@@ -294,6 +294,10 @@ div.code-toolbar > .toolbar > .toolbar-item > button {
   @apply hover:text-primary-600 cursor-pointer;
 }
 
+.cb-content-block-heading {
+  @apply bg-neutral-100 text-neutral-700 w-auto cb-text-copy-small p-2 rounded-md text-center
+}
+
 * {
   scroll-behavior: smooth;
   scroll-padding-top: 100px; /* this pixel should match fixed header height */

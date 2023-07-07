@@ -1,7 +1,7 @@
 <p class="cb-text-copy-large mt-4 leading-6"> Buttons allow users to perform actions and choose with a single tap.
 </p>
 
-<app-common *ngFor="let convertedData of convertedDatas" [activeTab]="'preview'" [codePreview]="convertedData.code"
+<!-- <app-common *ngFor="let convertedData of convertedDatas" [activeTab]="'preview'" [codePreview]="convertedData.code"
   [codeHtml]="convertedData.code" [title]="convertedData.title">
   <div class="preview-box">
     <div class="  mx-auto self-center text-center">
@@ -11,126 +11,321 @@
 
     </div>
   </div>
-</app-common>
+</app-common> -->
 
-<p class="cb-text-h3 pt-10" id="c2">Guidelines</p>
+<div class="border bg-neutral-50 h-96 my-10"></div>
+
+
+<p class="cb-text-h3 pt-10" id="c2">Architecture</p>
+
 <div class="cb-intro-copy">
 
-  <p>Buttons are an important element in user interfaces, as they allow users to take action and interact with the
-    interface. When designing buttons for a design system, it's important to consider the following guidelines:</p>
-
-  <ul>
-    <li><strong>Use clear and descriptive labels:</strong> The text on a button should clearly and accurately
-      describe
-      the action that will be taken when the button is clicked. Avoid using ambiguous or vague labels.</li>
-
-    <li><strong>Use a consistent button style:</strong> The style of the buttons should be consistent throughout the
-      design system. This includes the font, color, size, and overall layout of the buttons.</li>
-
-    <li><strong>Use appropriate button sizes:</strong> Button sizes should be appropriate for the context in which
-      they
-      are used. Large buttons may be more suitable for primary actions, while smaller buttons may be more suitable
-      for
-      secondary actions.</li>
-
-    <li><strong>Use appropriate button colors:</strong> Button colors should be used to communicate the importance
-      or
-      context of the action being taken. For example, a red button may be used to indicate a destructive action,
-      while a
-      green button may be used to indicate a positive action.</li>
-
-    <li><strong>Use hover and active states:</strong> It should be clear to users which button is currently being
-      hovered over or clicked on. This can be achieved through the use of visual indicators such as changes in color
-      or
-      size.</li>
-
-    <li><strong>Consider the use of icon buttons:</strong> Icon buttons can be used in addition to or in place of
-      text
-      labels to provide a more visually appealing and concise design. However, it's important to ensure that the
-      meaning
-      of the button is still clear to users.</li>
-  </ul>
-
-  <p>By following these guidelines, you can create a clear and intuitive button interface that helps users easily
-    take
-    action and interact with the interface.</p>
+  <p>An organized and systematic architecture of various button design elements, including size, format, appearance, variant, and state, for a cohesive and consistent design system.</p>
+  <div class=" h-4"></div>
+  <div>
+    <img src="./assets/images/buttons-architecture.svg" />
+  </div>
 
 </div>
 
-<div class="my-16 space-y-8">
-  <h2 class="cb-text-h3">Compositions</h2>
-  <div class="flex gap-32">
 
-    <div class="">
-      <div class="alert alert-success mb-4">
-        <div>
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-            <path fill-rule="evenodd"
-              d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-              clip-rule="evenodd" />
-          </svg>
-          <div>
-            <h3>Do</h3>
-          </div>
-        </div>
+<h3 class=" cb-text-h3 pt-10 " id="c3">Sizes</h3>
+<div class="cb-intro-copy space-y-5">
+
+  <p class="">To provide clarity to users, it's crucial to implement button sizes consistently across products. Each button size serves a particular purpose, and using them appropriately impacts the user experience.</p>
+  <div class="border rounded-lg flex items-center gap-x-8 justify-center h-36">
+      <div>
+        <p class=" cb-text-copy-regular text-neutral-400">Regular</p>
+        <button class="btn btn-neutral btn-icon-leading"> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class=" btn-icon">
+          <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd" />
+        </svg>
+         Label</button>
       </div>
-      <div class="divide-y divide-neutral-100">
-        <div class="flex gap-4 py-4">
-          <button class=" btn btn-neutral-borderless ">Button</button>
-          <button class=" btn btn-neutral ">Button</button>
-          <button class=" btn btn-primary ">Button</button>
-        </div>
-        <div class="flex gap-4 py-4">
-          <button class=" btn btn-neutral-borderless ">Button</button>
-          <button class=" btn btn-neutral ">Button</button>
-          <button class=" btn btn-secondary ">Button</button>
-        </div>
-        <div class="flex gap-4 py-4">
-          <button class=" btn btn-neutral-borderless ">Button</button>
-          <button class=" btn btn-neutral ">Button</button>
-          <button class=" btn btn-outline ">Button</button>
-        </div>
-        <div class="flex gap-4 py-4">
-          <button class=" btn btn-neutral-borderless ">Button</button>
-          <button class=" btn btn-neutral ">Button</button>
-        </div>
+      <div>
+        <p class=" cb-text-copy-regular text-neutral-400">Large</p>
+        <button class="btn-lg btn-neutral btn-icon-leading"> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class=" btn-icon">
+          <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd" />
+        </svg>
+         Label</button>
       </div>
+       
+  </div>
+
+  <div>
+    <div class=" grid grid-cols-12 border-b border-b-neutral-100 pb-4">
+      <div class=" col-span-3">Size</div>
+      <div>Description</div>
     </div>
-
-    <div class="">
-      <div class="alert alert-danger mb-4">
-        <div>
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-            <path fill-rule="evenodd"
-              d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z"
-              clip-rule="evenodd" />
-          </svg>
-          <div>
-            <h3>Don't</h3>
-          </div>
-        </div>
+    <div class="h-4"></div>
+    <div class=" flex gap-x-10 justify-between ">
+      <div class=" ">
+        <div class="cb-content-block-heading">Regular</div>
       </div>
-      <div class="divide-y divide-neutral-100">
-        <div class="flex gap-4 py-4">
-          <button class=" btn btn-borderless ">Button</button>
-          <button class=" btn btn-secondary ">Button</button>
-          <button class=" btn btn-primary ">Button</button>
-        </div>
-        <div class="flex gap-4 py-4">
-          <button class=" btn btn-outline ">Button</button>
-          <button class=" btn btn-secondary ">Button</button>
-          <button class=" btn btn-primary ">Button</button>
-        </div>
-        <div class="flex gap-4 py-4">
-          <button class=" btn btn-outline ">Button</button>
-          <button class=" btn btn-secondary ">Button</button>
-        </div>
-        <div class="flex gap-4 py-4">
-          <button class=" btn btn-neutral-borderless ">Button</button>
-          <button class=" btn btn-borderless ">Button</button>
-        </div>
-      </div>
+      <p class=" w-[75%] cb-text-copy">Use the regular button size when vertical space is limited, or when buttons are paired with input fields. It's the most commonly used button size for various use cases, including tables.</p>
     </div>
+  </div>
 
+
+
+
+  <div class=" flex gap-x-10 justify-between ">
+    <div class=" ">
+      <div class="cb-content-block-heading">Large</div>
+    </div>
+    <p class=" w-[75%] cb-text-copy">Use the large button size for the most critical actions, especially those located at the top of a page. It's also suitable for buttons needed in larger components like side panels or modals.</p>
   </div>
 </div>
+
+
+<h3 class=" cb-text-h3 pt-10 " id="c4">Structure</h3>
+<div class="cb-intro-copy space-y-5">
+
+  <p>The defined button structure comprises spacing, font and icon sizing, container dimensions, and other design elements. It's recommended to adhere to this structure for a cohesive and consistent design.</p>
+
+  <div class="flex justify-center w-full ">
+    <img src="./assets/images/button-structre2.svg" alt="">
+  </div>
+</div>
+
+<h3 class=" cb-text-h3 pt-10 " id="c5">Variant</h3>
+<div class=" h-4"></div>
+<div class=" space-y-8">
+  <div class="grid grid-cols-3 gap-4 border-b border-b-neutral-100 pb-4">
+    <div class="">Variant</div>
+    <div class="col-span-2">Description</div>
+  </div>
+
+  <div class="grid grid-cols-4">
+    <div class=""><button class="btn btn-primary">primary</button></div>
+    <div class="col-span-3 cb-text-copy-regular">
+      <p class="">Use this button for the most important action on the page. This button should only be used once per screen (excluding modal dialogs), and is intended to draw attention to actions that are of higher priority than others. Note that not every screen may require a primary button.</p>
+    </div>
+  </div>
+
+  <div class="grid grid-cols-4">
+    <div class=""><button class="btn btn-secondary">primary-light</button></div>
+    <div class="col-span-3 cb-text-copy-regular">
+      <p class="">Use this button for significant actions when the primary filled button cannot be used. It is designed to emphasise actions of higher priority and should not be used simultaneously with the primary filled button.</p>
+    </div>
+  </div>
+
+  <div class="grid grid-cols-4">
+    <div class=""><button class="btn btn-outline">primary-outline</button></div>
+    <div class="col-span-3 cb-text-copy-regular">
+      <p class="">Use this button for less prominent actions or sub-tasks on a page, particularly when a primary filled button is already being used for the main action. It can be used independently or in combination with a primary filled button when there are multiple actions to take on the page.</p>
+    </div>
+  </div>
+
+
+  <div class="grid grid-cols-4">
+    <div class=""><button class="btn btn-borderless">primary-borderless</button></div>
+    <div class="col-span-3 cb-text-copy-regular">
+      <p class="">Use this button for non-destructive actions that do not require immediate attention or response, such as viewing details, expanding or collapsing sections, or performing positive actions on a line item or molecular level, such as editing or modifying. Avoid using the primary borderless button for actions with a higher potential impact, as the primary button is better suited for that purpose.</p>
+    </div>
+  </div>
+
+  <div class="grid grid-cols-4">
+    <div class=""><button class="btn btn-neutral">neutral</button></div>
+    <div class="col-span-3 cb-text-copy-regular">
+      <p class="">Use this button at the page level to provide a discarding or neutral actions, such as Cancel, Ignore, Skip, Clear, Undo, Reset, in conjunction with a primary or danger button. It should never be used alone, and should not be used for a positive action.</p>
+    </div>
+  </div>
+
+  <div class="grid grid-cols-4">
+    <div class=""><button class="btn btn-neutral-outline">neutral-outline</button></div>
+    <div class="col-span-3 cb-text-copy-regular">
+      <p class="">Use this button for section-level discarding or neutral actions, such as Cancel, Ignore, Skip, Clear, Undo, Reset. It should be used in conjunction with a primary or danger button, and should not be used alone or for positive actions.</p>
+    </div>
+  </div>
+
+  <div class="grid grid-cols-4">
+    <div class=""><button class="btn btn-neutral-borderless">neutral-borderless</button></div>
+    <div class="col-span-3 cb-text-copy-regular">
+      <p class="">Use this button for section-level discarding or neutral actions, such as Cancel, Ignore, Skip, Clear, Undo, Reset. It should be used in conjunction with a primary or danger button, and should not be used alone or for positive actions.</p>
+    </div>
+  </div>
+
+  <div class="grid grid-cols-4">
+    <div class=""><button class="btn btn-danger">danger</button></div>
+    <div class="col-span-3 cb-text-copy-regular">
+      <p class="">Use this button for actions that have a high potential for destructive impact on the user's data, such as deleting or removing information at the page level or through modal dialogs. It is designed to draw the user's attention to the potential risks involved with this action, and should be used sparingly.</p>
+    </div>
+  </div>
+
+  <div class="grid grid-cols-4">
+    <div class=""><button class="btn btn-danger-outline">danger-outline</button></div>
+    <div class="col-span-3 cb-text-copy-regular">
+      <p class="">Use this button for actions that have a moderate potential for destructive impact on the user's data, such as deleting or removing information at the section level within a page. It provides a visual distinction from other buttons while still maintaining a subdued appearance, and should be used only in situations where the user understands the potential risks involved.</p>
+    </div>
+  </div>
+
+  <div class="grid grid-cols-4">
+    <div class=""><button class="btn btn-danger-borderless">danger-borderless</button></div>
+    <div class="col-span-3 cb-text-copy-regular">
+      <p class="">Use this button for actions that have a lower potential for destructive impact on the user's data, such as deleting or removing information at the line item or molecular level within a page. Its minimal design indicates potential risks without being overly distracting, and should be used only in situations where the user understands the potential risks involved.</p>
+    </div>
+  </div>
+
+</div>
+
+
+<h3 class=" cb-text-h3 pt-10 " id="c6">Format</h3>
+<div class=" h-4"></div>
+<div class=" space-y-8">
+  <div class="cb-text-copy-regular">
+    <p>Explore a variety of button formats, each offering unique visual compositions to facilitate engaging user interactions and meet diverse design needs. Select the optimal format that effectively communicates your design and enhances the overall user experience.</p>
+  </div>
+
+  <div class="flex justify-center w-full ">
+    <img src="./assets/images/button-format3.svg" alt="">
+  </div>
+
+  <div class="grid grid-cols-3 gap-4 border-b border-b-neutral-100 pb-4">
+    <div class="">Variant</div>
+    <div class="col-span-2">Description</div>
+  </div>
+
+  <div class="grid grid-cols-4">
+    <div class=""><button class="btn cb-content-block-heading">text-with-icon</button></div>
+    <div class="col-span-3 cb-text-copy-regular">
+      <p class="">Use the text-with-icon variant when you need to display text alongside an icon. This variant is suitable for scenarios where both the text and icon convey important information or functionality.</p>
+    </div>
+  </div>
+
+  <div class="grid grid-cols-4">
+    <div class=""><button class="btn cb-content-block-heading">text-only</button></div>
+    <div class="col-span-3 cb-text-copy-regular">
+      <p class="">The text-only variant is ideal when you want to display plain text without any accompanying icons. It provides a clean and minimalistic appearance, focusing solely on the textual content.</p>
+    </div>
+  </div>
+
+  <div class="grid grid-cols-4">
+    <div class=""><button class="btn cb-content-block-heading">icon-only</button></div>
+    <div class="col-span-3 cb-text-copy-regular">
+      <p>When you need to showcase icons as standalone elements, use the icon-only variant. This variant is suitable for situations where the icon itself conveys the intended action or purpose.</p>
+    </div>
+  </div>
+
+
+  <div class="grid grid-cols-4">
+    <div class=""><button class="btn cb-content-block-heading">full-width</button></div>
+    <div class="col-span-3 cb-text-copy-regular">
+<p>The full-width variant is designed to span the entire width of its container. It is commonly used for buttons placed in horizontal navigation bars or sections that require a wider visual presence.</p>
+    </div>
+  </div>
+
+  <div class="grid grid-cols-4">
+    <div class=""><button class="btn cb-content-block-heading">neutral</button></div>
+    <div class="col-span-3 cb-text-copy-regular">
+      <p class="">Use this button at the page level to provide a discarding or neutral actions, such as Cancel, Ignore, Skip, Clear, Undo, Reset, in conjunction with a primary or danger button. It should never be used alone, and should not be used for a positive action.</p>
+    </div>
+  </div>
+
+  <div class="grid grid-cols-4">
+    <div class=""><button class="btn cb-content-block-heading">grouped-text</button></div>
+    <div class="col-span-3 cb-text-copy-regular">
+      <p class="">Use the grouped-text variant when you want to display multiple buttons with text content in a grouped manner. This variant is useful for presenting related actions or options in a cohesive layout.</p>
+    </div>
+  </div>
+
+  <div class="grid grid-cols-4">
+    <div class=""><button class="btn cb-content-block-heading">grouped-icon</button></div>
+    <div class="col-span-3 cb-text-copy-regular">
+      <p class="">Use this button for section-level discarding or neutral actions, such as Cancel, Ignore, Skip, Clear, Undo, Reset. It should be used in conjunction with a primary or danger button, and should not be used alone or for positive actions.</p>
+    </div>
+  </div>
+
+  
+
+</div>
+
+
+<h3 class=" cb-text-h3 pt-10 " id="c6">Composition</h3>
+<div class=" h-4"></div>
+<div class=" space-y-8">
+  <div class=" cb-text-copy-regular">
+    <p>Explore a variety of button formats that enable engaging user interactions and cater to diverse design needs. When implementing buttons, we kindly encourage selecting from the provided formats to ensure consistency and coherence. Choose the format that best aligns with your design goals, enhancing the overall experience effortlessly.</p>
+  </div>
+
+  <div class="border border-neutral-100 rounded-lg p-5 flex items-center justify-center">
+      <div class=" space-y-8">
+        <div class="flex items-center gap-x-4">
+          <button class="btn btn-neutral-borderless">Neutral Borderless</button>
+          <button class="btn btn-neutral">Neutral Default</button>
+          <button class="btn btn-primary">Primary Default</button>
+        </div>
+
+
+        <div class="flex items-center gap-x-4">
+          <button class="btn btn-neutral-borderless">Neutral Borderless</button>
+          <button class="btn btn-neutral">Neutral Default</button>
+          <button class="btn btn-danger">Danger Default</button>
+        </div>
+
+
+        <div class="flex items-center gap-x-4">
+          <button class="btn btn-neutral-borderless">Neutral Borderless</button>
+          <button class="btn btn-neutral-outline">Neutral Outline</button>
+          <button class="btn btn-secondary">Primary Light</button>
+        </div>
+
+        <div class="flex items-center gap-x-4">
+          <button class="btn btn-neutral-borderless">Neutral Borderless</button>
+          <button class="btn btn-neutral-outline">Neutral Outline</button>
+          <button class="btn btn-outline">Primary Outline</button>
+        </div>
+
+        <div class="flex items-center gap-x-4">
+          <button class="btn btn-neutral-borderless">Neutral Borderless</button>
+          <button class="btn btn-neutral-outline">Neutral Outline</button>
+          <button class="btn btn-danger-outline">Danger Outline</button>
+        </div>
+
+        <div class="flex items-center gap-x-4 justify-end">
+          <button class="btn btn-neutral-outline">Neutral Outline</button>
+          <button class="btn btn-outline">Primary Outline</button>
+        </div>
+
+        <div class="flex items-center gap-x-4 justify-end">
+          <button class="btn btn-neutral-outline">Neutral Outline</button>
+          <button class="btn btn-danger-outline">Danger Outline</button>
+        </div>
+
+        <div class="flex items-center gap-x-4 justify-end">
+          <button class="btn btn-neutral-outline">Neutral Outine</button>
+          <button class="btn btn-danger-outline">Danger Outline</button>
+        </div>
+
+        <div class="flex items-center gap-x-4 justify-end">
+          <button class="btn btn-neutral-borderless">Neutral Borderless</button>
+          <button class="btn btn-danger-outline">Danger Outline</button>
+        </div>
+
+
+        <div class="flex items-center gap-x-4 justify-end">
+          <button class="btn btn-neutral-borderless">Neutral Borderless</button>
+          <button class="btn btn-neutral-outline">Neutral Outline</button>
+        </div>
+
+        <div class="flex items-center gap-x-4 justify-end">
+          <button class="btn btn-neutral-borderless">Neutral Borderless</button>
+          <button class="btn btn-borderless">Primary Borderless</button>
+        </div>
+
+        <div class="flex items-center gap-x-4 justify-end">
+          <button class="btn btn-neutral-borderless">Neutral Borderless</button>
+          <button class="btn btn-danger-borderless">Danger Borderless</button>
+        </div>
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+

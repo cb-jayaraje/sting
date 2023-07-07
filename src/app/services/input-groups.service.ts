@@ -10,10 +10,7 @@ export class inputGroupsService {
             id: "input_1",
             title: "Input with label",
             code: `
-            <div class="form-control">
-              <label for="email" class="label">Email</label>
-              <input type="email" name="email" id="email" class="input" placeholder="you@example.com">
-            </div>
+            <div class="input-group"> <label for="example" class="input-label">Label</label> <div class="input-join"> <input type="field" name="field" id="example" class="input custom-input" placeholder="Placeholder"/> </div> </div>
             `
         },
 
@@ -21,11 +18,8 @@ export class inputGroupsService {
             id: "input_2",
             title: "Input with label and help text",
             code: `
-            <div class="form-control">
-              <label for="email" class="label">Email</label>
-              <input type="email" name="email" id="email" class="input" placeholder="you@example.com" aria-describedby="email-description">
-              <p class="help-text" id="email-description">We'll only use this for spam.</p>
-            </div>
+            <div class="input-group"> <label for="example" class="input-label">Label</label> <div class="input-join"> <input type="field" name="field" id="example" class="input custom-input" placeholder="Placeholder"/> </div> <p class="input-help-text" id="field-description">Enter the secure passcode we sent to your email for a secure login</p></div>
+
            `
          },
  
@@ -66,18 +60,12 @@ export class inputGroupsService {
               id: "input_5",
               title: "Input with leading icon",
               code: `
-              <div class="form-control">
-                <label for="email" class="label">Email</label>
-                <div class="relative">
-                  <div class="input-icon-leading">
-                    <svg class="input-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                      <path d="M3 4a2 2 0 00-2 2v1.161l8.441 4.221a1.25 1.25 0 001.118 0L19 7.162V6a2 2 0 00-2-2H3z" />
-                      <path d="M19 8.839l-7.77 3.885a2.75 2.75 0 01-2.46 0L1 8.839V14a2 2 0 002 2h14a2 2 0 002-2V8.839z" />
-                    </svg>
-                  </div>
-                  <input type="email" name="email" id="email" class="input pl-10" placeholder="you@example.com">
-                </div>
-              </div>
+              <div class="input-group"> <label for="example" class="input-label">Label</label> <div class="input-join"> <span class="input-join-item"> 
+  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"  class="h-4 w-4 text-neutral-300">
+    <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
+  </svg>
+  
+ </span> <input type="field" name="field" id="example" class="input custom-input" placeholder="Placeholder"/> </div> </div>
               `
               },
          

@@ -1,12 +1,23 @@
 module.exports = Button = (styles) => ({
+
   " .btn": {
     "@apply antialiased rounded bg-white px-2.5 py-2.5 font-medium cb-text-copy-small leading-3 focus:outline-none cursor-pointer h-8 inline-flex items-center justify-center disabled:btn-disabled":
+      {},
+  },
+  " .btn:disabled , .btn-lg:disabled": {
+    "@apply hover:!bg-neutral-100 active:!bg-neutral-200 active:!text-white focus:!ring-neutral-500":
       {},
   },
   ".btn-small": {
     "@apply antialiased px-2.5 py-1.5 cb-text-copy-small border border-transparent font-medium rounded focus:outline-none disabled:cursor-not-allowed disabled:opacity-30 cursor-pointer":
       {},
   },
+
+  " .btn-regular": {
+    "@apply antialiased rounded bg-white px-2.5 py-2.5 font-medium cb-text-copy-small leading-3 focus:outline-none cursor-pointer h-8 inline-flex items-center justify-center disabled:btn-disabled":
+      {},
+  },
+  
   ".btn-lg": {
     "@apply antialiased rounded bg-white px-4 py-3 font-medium cb-text-copy-regular leading-4 focus:outline-none disabled:btn-disabled cursor-pointer h-10 inline-flex items-center justify-center":{}
   },
@@ -98,11 +109,11 @@ module.exports = Button = (styles) => ({
     "@apply  text-primary-50 bg-primary-800 hover:bg-primary-700 active:bg-primary-600 active:text-white focus:ring-info-500":
       {},
   },
-  ".theme-sting .btn-secondary, .btn-secondary": {
+  ".theme-sting .btn-secondary, .btn-secondary, .btn-primary-light": {
     "@apply text-primary-700 hover:text-primary-800 bg-primary-300 hover:bg-primary-400 active:bg-primary-500 active:text-primary-800 focus:outline-none":
       {},
   },
-  ".theme-sting .btn-outline, .btn-outline": {
+  ".theme-sting .btn-outline, .btn-outline, .btn-primary-outline": {
     "@apply text-primary-600 bg-transparent hover:bg-primary-50 hover:text-primary-700 active:bg-primary-100  active:text-primary-700 focus:outline-none border border-primary-300 disabled:disabled-outline":
       {},
   },
